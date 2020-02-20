@@ -1,428 +1,9 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <link rel="alternate" href="/atom.xml" title="SuGarSBN" type="application/atom+xml">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-
-
-<script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '7.5.0',
-    exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: false,
-    pangu: false,
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: './public/search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    sidebarPadding: 40
-  };
-</script>
-
-  <meta name="description" content="生命的清供 ——朱良志">
-<meta name="keywords" content="-语文 -阅读材料">
-<meta property="og:type" content="article">
-<meta property="og:title" content="生命的清供">
-<meta property="og:url" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;index.html">
-<meta property="og:site_name" content="SuGarSBN">
-<meta property="og:description" content="生命的清供 ——朱良志">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image002.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image004.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image006.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image008.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image010.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image012.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image014.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image016.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image018.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image019.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image021.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image023.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image025.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image027.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image029.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image031.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image033.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image035.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image037.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image039.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image041.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image043.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image045.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image039.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image039.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image039.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image047.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image049.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image051.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image053.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image055.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image057.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image059.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image061.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image061.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image063.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image065.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image067.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image069.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image071.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image073.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image075.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image077.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image079.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image081.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image083.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image085.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image087.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image089.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image091.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image093.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image095.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image097.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image099.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image101.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image103.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image105.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image107.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image109.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image111.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image113.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image115.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image117.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image119.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image121.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image123.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image125.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image127.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image129.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image131.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image132.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image134.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image136.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image138.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image140.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image142.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image144.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image146.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image148.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image150.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image152.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image154.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image156.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image158.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image160.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image162.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image164.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image166.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image168.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image170.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image172.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image174.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image176.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image178.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image180.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image182.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image184.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image186.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image188.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image190.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image192.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image194.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image192.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image196.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image198.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image200.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image202.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image204.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image206.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image206.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image208.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image206.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image210.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image206.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image211.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image213.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image213.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image215.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image217.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image219.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image221.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image223.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image225.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image227.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image229.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image233.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image235.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image237.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image239.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image241.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image243.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image245.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image247.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image249.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image251.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image253.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image255.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image257.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image259.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image261.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image263.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image265.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image267.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image269.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image213.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image271.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image271.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image273.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image275.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image277.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image279.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image281.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image283.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image285.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image287.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image288.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image290.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image292.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image294.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image296.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image298.jpg">
-<meta property="og:updated_time" content="2020-02-20T12:21:49.747Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;02&#x2F;17&#x2F;%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B&#x2F;clip_image002.jpg">
-
-<link rel="canonical" href="http://sugarsbn.github.io/2020/02/17/%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
-  };
-</script>
-
-  <title>生命的清供 | SuGarSBN</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
-
-    <div>
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">SuGarSBN</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-  </div>
-
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-</div>
-
-
-<nav class="site-nav">
-  
-  <ul id="menu" class="menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
-  </ul>
-
-</nav>
-  <div class="site-search">
-    <div class="popup search-popup">
-    <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none"
-           placeholder="搜索..." spellcheck="false"
-           type="text" id="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result"></div>
-
-</div>
-<div class="search-pop-overlay"></div>
-
-  </div>
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content">
-            
-
-  <div class="posts-expand">
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://sugarsbn.github.io/2020/02/17/%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="SuBonan">
-      <meta itemprop="description" content="Maybe,We can make a deal">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SuGarSBN">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          生命的清供
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-17 23:27:57" itemprop="dateCreated datePublished" datetime="2020-02-17T23:27:57+08:00">2020-02-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-20 20:21:49" itemprop="dateModified" datetime="2020-02-20T20:21:49+08:00">2020-02-20</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%AD%E6%96%87/" itemprop="url" rel="index">
-                    <span itemprop="name">-语文</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <p>生命的清供 ——朱良志 </p>
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>生命的清供</title>
+    <url>/2020/02/17/%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>生命的清供 ——朱良志 </p>
 <a id="more"></a>
 
 <p><img src="/2020/02/17/%E7%94%9F%E5%91%BD%E7%9A%84%E6%B8%85%E4%BE%9B/clip_image002.jpg" alt="封面"></p>
@@ -1296,210 +877,752 @@
 <p>今夏得暇来重新整理此书，基本保持了原书的面貌，纠正了本书初版中的误植，充实了本书的一些内容，改写了部分章节，增加了引用文献的出处，并更换了全书近半以上的图片（这对这本由图说文的小书来说尤为重要）。现在呈现给读者，敬请批评指正。</p>
 <p>感谢读者多年来对本书乃至我的研究的支持和帮助；感谢北京大学出版社综合编辑室主任杨书澜老师，没有她的组稿和砥砺，不可能有此书的出现；感谢中华书局的宋志军、马燕二位老师，他们的专业指导和严谨的态度，是本书第二版能顺利出版的关键。</p>
 <p>作者记于2015年9月30日</p>
+]]></content>
+      <categories>
+        <category>-语文</category>
+      </categories>
+      <tags>
+        <tag>-语文 -阅读材料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《论时代精神》</title>
+    <url>/2020/02/14/%E8%AE%BA%E6%97%B6%E4%BB%A3%E7%B2%BE%E7%A5%9E/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>论时代精神</strong></p>
+<a id="more"></a>
 
-    </div>
-
-    
-    
-    
-
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/%E8%AF%AD%E6%96%87-%E9%98%85%E8%AF%BB%E6%9D%90%E6%96%99/" rel="tag"># -语文 -阅读材料</a>
-          </div>
-
-        
-
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-                <a href="/2020/02/14/%E8%AE%BA%E6%97%B6%E4%BB%A3%E7%B2%BE%E7%A5%9E/" rel="next" title="《论时代精神》">
-                  <i class="fa fa-chevron-left"></i> 《论时代精神》
-                </a>
-            </div>
-
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-            </div>
-          </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
-  </div>
-
-
-          </div>
-          
-    
-  <div class="comments" id="comments">
-    <div id="lv-container" data-id="city" data-uid="MTAyMC80Nzc2NC8yNDI2MQ=="></div>
-  </div>
-  
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-		
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Table-of-Contents"><span class="nav-number">1.</span> <span class="nav-text">Table of Contents</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引子"><span class="nav-number">2.</span> <span class="nav-text">引子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一-秋江待渡"><span class="nav-number">3.</span> <span class="nav-text">一　秋江待渡</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-生命清供"><span class="nav-number">4.</span> <span class="nav-text">二　生命清供</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三-新桐初引"><span class="nav-number">5.</span> <span class="nav-text">三　新桐初引</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四-暮鸦宾鸿"><span class="nav-number">6.</span> <span class="nav-text">四　暮鸦宾鸿</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五-好雪片片"><span class="nav-number">7.</span> <span class="nav-text">五　好雪片片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六-山静日长"><span class="nav-number">8.</span> <span class="nav-text">六　山静日长</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七-苇岸泊舟"><span class="nav-number">9.</span> <span class="nav-text">七　苇岸泊舟</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#八-落花时节"><span class="nav-number">10.</span> <span class="nav-text">八　落花时节</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#九-寒潭鹤影"><span class="nav-number">11.</span> <span class="nav-text">九　寒潭鹤影</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十-潇湘八景"><span class="nav-number">12.</span> <span class="nav-text">十　潇湘八景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十一-口如扁担"><span class="nav-number">13.</span> <span class="nav-text">十一　口如扁担</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十二-秋月正孤"><span class="nav-number">14.</span> <span class="nav-text">十二　秋月正孤</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十三-乾坤草亭"><span class="nav-number">15.</span> <span class="nav-text">十三　乾坤草亭</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十四-明河见影"><span class="nav-number">16.</span> <span class="nav-text">十四　明河见影</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十五-云烟飘缈"><span class="nav-number">17.</span> <span class="nav-text">十五　云烟飘缈</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二版后记"><span class="nav-number">18.</span> <span class="nav-text">第二版后记</span></a></li></ol></div>
-      </div>
-      <!--/noindex-->
-	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26092806&auto=1&height=66"></iframe>
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="SuBonan"
-      src="/images/avatar.gif">
-  <p class="site-author-name" itemprop="name">SuBonan</p>
-  <div class="site-description" itemprop="description">Maybe,We can make a deal</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">8</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="feed-link motion-element">
-    <a href="/atom.xml" rel="alternate">
-      <i class="fa fa-rss"></i>RSS
-    </a>
-  </div>
+<p>南京师范大学附属中学 沈上</p>
+<p>  “一代有一代之文学。”每个时代的文艺创作大都有一个主旋律。对此，我们不妨称之为时代精神。</p>
+<p>  也许政治家会严肃地批评某位作家：“您的作品脱离了人民群众，离现实生活太远了……”可这其实是笑话。</p>
+<p>  并非离现实太远，而是离政治太远。</p>
+<p>  真正的“超现实主义”是不存在的。</p>
+<p>  艺术家们不同的性格和经历会锤炼成各自独特而鲜明的艺术风格，可内在的精神渊源往往一脉相承。任何杰出的作家都或多或少地受到时代精神的影响，任何伟大的作品都或隐或现地折射出时代精神的侧影。</p>
+<p>  这里所说的时代精神，与“表现主义”“达达主义”“批判现实主义”种种全不相干的。时代精神不受表现形式所左右。</p>
+<p>  文艺复兴产生了古典文学，启蒙运动、狂飙突进掀起了启蒙主义文学，这五六百年间出现过无数作家和流派，可贯穿的精神只有一个：那就是人文主义。那就是对“人”的理解和发现。</p>
+<p>  莎士比亚和卢梭，《哈姆雷特》与《新爱洛绮丝》展现的是同一时代精神。</p>
+<p>  那么20世纪的时代精神究竟是什么？</p>
+<p>  从《九三年》到《尤利西斯》，从伟大精深的思想内容到“痴人说梦”般的不知所云，这究竟是进步还是倒退？</p>
+<p>  从莫泊桑、契诃夫对现实冷静、入木三分的刻画到虚无怪诞的意识流手法，这后者的价值究竟何在？</p>
+<p>  20世纪爆发了两次空前的世界大战，人类文明遭到了毁灭性的打击。残酷的战争深深触动了人们的精神世界。于是就有了《西线无战事》，就有了《永别了，武器》，就有了《喧哗与骚动》……直至今日，二战依然是小说家和大导演们不断发掘的题材。</p>
+<p>  于是就有人认为，20世纪的时代精神就是对和平的呼吁，对战争的抨击。</p>
+<p>  可我以为，这仅仅是时代精神的一个方面，或者说，真正的时代精神涵盖了这个主题，更为深远。</p>
+<p>  20世纪的时代精神是：对人类生存状态的深深的思索，对人类最后的梦想的不懈追求，以及这一切所带来的焦灼、躁动、温情与感伤。</p>
+<p>  这个时代精神渗透在20世纪所有伟大作家的灵魂里面，渗透在他们所有的杰作里面。</p>
+<p>  并且，更重要的是，这个时代精神将在本世纪延续。</p>
+<p>  20世纪的战后文明是空前繁荣的。物质文明的飞速发展超越了以往任何一个时代，近百年来创造的财富胜过过去数千年的总和。无疑，在21世纪将出现更多的不可思议的奇迹。</p>
+<p>  吸毒、淫乱、赌博、物欲横流……</p>
+<p>  道德在沦丧，信仰在泯灭。</p>
+<p>  这是一个永恒真理与不息的欲望之间反复斗争的时代。</p>
+<p>  真正伟大的艺术家们并未沉湎于物质文明所带来的巨大欢乐之中，或者说他们入于其中，出乎其外。</p>
+<p>  他们从未放弃过对人类最终梦想的追求。</p>
+<p>  那就是盖茨比颤抖着伸出手去企及的缥缈的绿灯。</p>
+<p>  那就是厄秀拉在垂死病中忘乎所以的绚丽的虹……</p>
+<p>  可现实的巨大反差使他们感到深深的苦闷和缓灭。</p>
+<p>  即使在反战的现实题材的创作中，这样的情绪也无处不在，请看雷马克与海明威被评论家们称作什么–“迷惘的一代”。</p>
+<p>  在另一类作品中，在看似脱离现实，描绘“梦境”的作品中，更充满着这样的情绪，这是一类往往让人们觉得难以索解的作品，《尤利西斯》《荒原狼》《虹》……</p>
+<p>  对这类作品的评价往往毁誉参半。</p>
+<p>  可我要说的是，这类作品看似荒诞不经，却并未脱离这个时代。相反，他们紧密的切合着时代精神的脉搏。</p>
+<p>  文学已经发展到了一个阶段，不仅可以用来阐明伟大的思想，还可以并且应当用来表现哪怕仅仅是微妙的一种情绪。</p>
+<p>  前者是雨果在《九三年》中阐发的“人道”“博爱”，后者就是川端康成《雪国》《伊豆的舞女》中所展现的人生的温情和感伤。</p>
+<p>  两者同样有不可磨灭的艺术价值。</p>
+<p>  对斯蒂芬茨威格，人们很容易感受到《看不见的收藏》《日内瓦湖畔的插曲》中的时代气息，却很难理解《巫山云》《一个女人一生中的二十四小时》中打破常规的躁动不安的东西–激情。而这恰恰更是对生存状态深深的思索。</p>
+<p>  现代文学更注重的是直觉，而非理性。</p>
+<p>  在绘画领域也同样如此。既是一个对绘画一窍不通者站在《飞过麦田的乌鸦》《呐喊》这类作品面前也会深深感觉到画家内心的痛苦和压抑、灵魂的扭曲，而他本人可能甚至不会欣赏最普通的一幅素描。</p>
+<p>  这就是金黄的麦田与乌黑的乌鸦，鲜明的色彩之间产生的视觉冲击，这就是直觉的力量。</p>
+<p>  缪斯女神张开热烈的双臂去拥抱激情和直觉，所谓的逻辑和理性将被拒之门外。</p>
+<p>  对劳伦斯，人们总以为他写的是恋爱小说，但事实全非如此，这仅仅是他情感的一个载体。在《虹》背后，是他深深的焦灼和伤痛。</p>
+<p>  托马斯哈代式的田园牧歌时代已经一去不复返，取而代之的是“污浊”，是工业文明时代，是高高的烟囱中冒出的黑烟。他的美好的追求只剩下山峦之间的彩虹。</p>
+<p>  所有的伟大的艺术家都是痛苦的。</p>
+<p>  所有的锦衣玉食、生活安逸舒适的艺术家都是蹩脚的。</p>
+<p>  彷徨。极端。</p>
+<p>  海明威的墓志铭是这样写的：“恕我不再起来！”</p>
+<p>  海子在卧轨自杀前的绝笔是《面朝大海春暖花开》，少有的明媚之作。</p>
+<p>  1972年川端康成含煤气管自杀……</p>
+<p>  艺术家们自杀的人数超过以往任何时代，他们为自己选择的是同样的结局。</p>
+<p>  虽则没有任何凭据，我丝毫也不怀疑，在海明威举起猎枪的一瞬间，在芥川龙之介吞下安眠药的一瞬间，在川端康成打开煤气管道的一瞬间，在海子在铁轨上躺下去的一瞬间，在温暖的灵魂离开躯壳的那一刻，他们看到的是同一样的东西，他们思考是同一个问题。</p>
+<p>  内容决定形式。这就可以解释为何20世纪的小说家们不约而同地采用了意识流这类荒诞离奇的艺术表现手法，这是内在的焦灼和苦闷的外化。只有这种类似呓语的东西才能贴切地表达他们的思想和感情。</p>
+<p>  因此，用人们惯用的语言风格和艺术手法的分析来解读这样的作品是愚蠢可笑的。逻辑并无用处。</p>
+<p>  在20世纪，中国人的作品没有得到世界的广泛认同，但所谓“东西方文化差异”只是塞责之辞。</p>
+<p>  近十年来，鲜明的民族特色在什么地方？对时代精神的把握又在什么地方？</p>
+<p>  巴金们垂垂老矣，张贤亮、贾平凹们的创造力和热情在文革后的十余年中迸发殆尽，七十年代所谓“晚生代作家”等上文坛后的表现令人失望。</p>
+<p>  然而这仅仅是火山的休眠期。</p>
+<p>  美国、欧洲、日本正在经历一个时代，中国也已进入这个时代，中国也将会出现菲茨杰拉德，去响应一个遥远的呼唤。</p>
+<p>  在此后的五十年中，都市文学将会兴起。浮艳媚俗、感官刺激的充斥是不可避免的，但清醒、严肃的作品也将诞生。</p>
+<p>  这个时代不缺少掌声和欢笑，迫切需要的是深思和泪水。</p>
+<p>  焦灼、躁动、温情和感伤。</p>
+<p>  这就是在海明威的作品中，在川端康成的作品中，在菲茨杰拉德的作品中反复回响的旋律，并且将在新的世纪延续，直至有一天，人类“用活生生的真理构造起来的建筑”矗立在这个美丽的星球上。</p>
+<p>  这不是倒退，而是前进。</p>
+<p>  这不是堕落，而是上升。</p>
+<p>  这也不是颓废、消极、感伤主义，而是人类追求梦想所必须跋涉的漫长的道路。</p>
+<p>  这是一个破茧成蝶的新生的过程。</p>
+<p>  这就是我对时代精神的理解，这就是我十七年来数百个日夜思索建立的不可动摇的信仰。就如同我信仰自由平等、民主共和、人道和博爱。</p>
+<p>  1827年，《克伦威尔》序言的发表宣告了一个浪漫主义时代的到来。可这篇东西不但不能创造一个时代，还将遭遇冷笑、白眼和嘲讽：“这小子异想天开，观点偏激，神经大概有问题。”“失之偏颇”大概是可以期望的最温和的评价，然而，我坚信一点–</p>
+<p>  假如我能够活到七十岁，我将看见几个或一群旅客，他们从荒芜的荆棘的沙漠上归来。他们拖着疲惫的沉重的步履，他们带着满身的伤痛和血泪，来到缪斯女神的圣殿里。然后，用他们手中熏黑的矿灯和孩童般凝视的眼睛重新闪烁出我今天的观点。</p>
+<p>  同时，我更加坚信，不容怀疑，甚至超过相信我自身的存在：</p>
+<p>  高山覆盖的积雪将要融化。</p>
+<p>  阳光将洒满每一个角落。</p>
+<p>  不再有饥饿、贫困和战争。</p>
+<p>  自由平等的歌声响彻每一个民族。</p>
+<p>  人们终于又可以像在物欲横流的时代到来前那样，真诚的生活……</p>
+<p>  在我们逆流而上的小舟前面，是一年年临近的极乐的未来</p>
+<p>  （发表于2002年第10期的《语文学习》，作者沈上当年为我校高二学生） </p>
+]]></content>
+      <categories>
+        <category>-语文</category>
+      </categories>
+      <tags>
+        <tag>-阅读材料 -语文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《我是农民的儿子》</title>
+    <url>/2020/02/14/%E6%88%91%E6%98%AF%E5%86%9C%E6%B0%91%E7%9A%84%E5%84%BF%E5%AD%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><del>阅读材料</del></p>
+<a id="more"></a>
 
 
 
-      </div>
+<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>　 本书紧紧围绕农村，收藏了摩罗、刘亮程等知名作家的抒情散文。文章饱含了作者对乡村、对故土、对自然、对父老乡亲的深厚感情。在作者们的血脉里，依然流淌着父兄的滞重的血液，他们的心，依然为日日剧变着的家园而悸动。他们如实写下目睹耳闻的故园的一切，自始至终，不曾以聪明人的方式利用农民的痛苦。文章里蕴藏着一种痛，一种打动人心的坚实的力量，无论是否有乡村生活经历的人读到这些文字，都不会无动于衷。 这是一本有关农村题材散文的结集，收入当代20余位作家，记叙农村情事的散文多篇。其中既有摩罗、刘亮程等广有影响的作家，也有许多近年崛起的中青年作家。本书紧紧围绕农村，饱含了作者对乡村、对故土、对自然、对父老乡亲的深厚感情。蕴藏着一种痛，一种打动人心的坚实的力量，无论是否有乡村生活经历的人读到这些文字，都不会无动于衷。</p>
+<pre><code>——林贤治</code></pre><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>  我是农民的儿子/摩罗 </p>
+<p>  先父/刘亮程 </p>
+<p>  做闲懒人，过没钱的生活/刘亮程 </p>
+<p>  捉迷藏/刘亮程 </p>
+<p>  人畜共居的村庄/刘亮程 </p>
+<p>  城市牛哞/刘亮程 </p>
+<p>  丧乱/朝阳 </p>
+<p>  父父子子/朝阳 </p>
+<p>  养母/杨新雨 </p>
+<p>  小姨夫/聂尔 </p>
+<p>  一个人是怎样烂掉的/王小鲁 </p>
+<p>  民如鸟兽/程宝林 </p>
+<p>  父老乡亲哪里去了/刘鸿伏 </p>
+<p>  消失的村庄/江子 </p>
+<p>  永远的暗疾/江子 </p>
+<p>  杀伐之类/鲁顺民 </p>
+<p>  穿过有想象力的高原/鲁顺民 </p>
+<p>  南方以南：村庄/黄海 </p>
+<p>  有一种忧伤，比路途锦长/杨献平 </p>
+<p>  乡村四季/谢宗玉 </p>
+<p>  关于乡村/小山 </p>
+<p>  黑暗的村庄/马叙 </p>
+<p>  烈焰的遗迹/傅菲 </p>
+<p>  乡下纸牌/黑白 </p>
+<p>  北风/张毅 </p>
+<p>  所有的天空都是你的/江飞 </p>
+<p>  附录：幸亏我不是农民/姜琍敏</p>
+<h1 id="我是农民的儿子"><a href="#我是农民的儿子" class="headerlink" title="我是农民的儿子"></a><strong>我是农民的儿子</strong></h1><p>摩罗</p>
+<p>  我是农民的儿子，而且是世世代代农民的儿子。</p>
+<p>按照最近半个世纪最流行的说法，很早很早以前，人类被分为两类，一类叫奴隶主，一类叫奴隶。过了一些世代，一类叫地主，一类叫农民。再后来，一类叫资本家，一类叫工人。</p>
+<p>  历史延伸到最近半个世纪，中国人的分类有所改变。一类叫做农业人口，一类叫做非农业人口。这两类人的社会地位，他们所拥有的经济资源，他们的劳动方式和分配方式，他们在社会各个阶层和各种行业中流动的权利和机会，样样都判若天壤。在这个历史时期，除了死刑之外，政府对自己认定的坏人最大的惩罚就是让他们像农民一样从事农业劳动。虚构艺术中对一个生命最大的折磨就是将他打入地狱变成厉鬼。在我们时代的现实生活中则作实为打农民。小时候我常常听大人说：“我们种田的还怕什么？我都已经是农民了，他再怎么治我也不过是让我种田，他抓我坐牢也还是让我种田，他还敢不让我干活？”一句牢骚话，表明了农民已经处在社会的最底层。</p>
+<p>  走进大都市以后，我才知道实际上我的家乡山清水秀，比地狱漂亮多了。我这几年常常想回家定居，但这并不意味着我把家乡误作天堂。经过最近二十几年的社会变革，农业人口和非农业人口的基本格局依然没有改变。</p>
+<p>我们考虑中国的问题，很少将农民视为一个群体而纳入我们的视野之中，很少将农民作为一个完整的人来考虑他们的需求、权利和感受。比如讨论图书馆、博物馆等文化设施的建设问题，讨论健康保障体系、国民福利待遇、国民权益、老年人生活保障和文化娱乐、弱智残疾人员救助等问题，农民肯定不在其中。</p>
+<p>  我每次回家都有一种负罪感。虽然我在城里只是一般的市民，并没有过上富足的日子，但一回到农村就感觉自己在城里拥有的太多，面对农民觉得不好意思。我的穿戴比他们好些，回家过年是坐硬卧，而他们则是坐硬座，有的甚至是站着回去的。他们每年在外面奔波，外出打工多是做泥瓦匠、木匠，基本在汕头一带搞土建。打工很辛苦，却赚不到多少钱。一年到头夫妻双双也不过能够攒下几千块钱。有的到年底还拿不到全款，只能领到一千多块钱。在政府总理出面讲话之前，政府没有什么有力措施为农民讨工钱，许多人的工钱一拖就几年，最后甚至竹篮打水一场空。农民没有任何地方可以申诉，没有任何法规或者政策能够真正维护他们的权利和利益。有一年我在六月份回过一次家，在村里住了两个多礼拜，发现村里的青壮年男子几乎全部出去打工了，有些年轻女子也出去了，在村里悠悠走着的多是老人和小孩，感觉空气里有几分凄凉。</p>
+<p>  留下来的那些家庭主妇们，大抵都是一脸的苍白、蜡黄，一看就是严重的营养不良。她们除了要忙地里的活，还要操持家务，三顿饭就随便打发了。这些妇女的牺牲精神很强，只要是老公和儿子出去打工了，一般都舍不得吃点好东西。只有来了客人，才会想到买点肉吃。那些回到深圳之后，我有很长一段时间满脑子都是农妇们严重营养不良的面容……</p>
+<p>  农民的生活如此的不堪一击，而现在城里很多有钱人提倡定期体检，已进入保养阶段了。两者一对比，农民的生活状况是多么艰辛。我老想写一篇文章，题目都想好了，叫做《咱们村里的非正常死亡》。我在那个五百多人口的山村长大，却见证了许多非正常死亡。十多年前，乐平一家小煤窑着火，烧死了二十多人，我们乡死了七个，其中我们村有两个。这两个人当时只有三十几岁，正是上有老下有小的时期。煤窑烧起来以后，窑主立即把窑门封闭起来以切断氧气，防止发生更恶劣的事故，那些死难者就这样被捂在里面化为灰烬，家里人只能拿几件他们生前穿过的衣服堆了一个衣冠冢。妻儿老小都在艰难中度日。那次着火发生在元旦那天，我们村里那两位死难者都是12月31日赶到煤窑的，想挣点钱回家过年的，哪知道第二天就把命搭进去了。迫于生计，我们村里许多人不得不从事这种最危险的工作，有的人至今还年年去乐平的小煤窑挑煤。我每年春节回家见到他们都为他们能够活着回家过年而感到庆幸。</p>
+<p>  近些年农村好的变化肯定也有，生活水平确实有所提高，日用消费品等生活资料比我们小时候要丰富的多，体现在饮食方面比较明显。七十年代末，农村一年到头也吃不到一次水果，但现在镇上的水果摊并不少见，村里的小店也常常兼卖水果。我小时候我们那个乡一天只卖一头猪肉，而且只在集市上卖，现在稍大点的村子里就有个肉摊子。一个摊子一天卖上二三十斤肉没有问题。在住房方面，现在盖楼房的农民也不少，两层或者三层的小洋楼。虽然外装修饰色彩不调配，常常让我感到刺眼，但能看得出是花了很多钱的。当然，他们一般都是靠打工或者做生意赚些钱才能盖的起楼房，靠种田是万万不可能的。</p>
+<p>  但无论这些东西怎么变化，农村最根本的东西没有变，主要是农民的命运还没有改变，他们在社会结构中的地位没有改变，还是几乎被排斥在社会体制之外。我在家乡见到过不少水灾，那些颗粒无收的灾民依然要向乡村两级组织交上各种费用。而他们所得到的救灾物资，常常只是每家分上三两斤面条。一个乡政府养着百十号人。湖北省某个镇，光是凭关系来的临时工就有四十八人，加上国家干部恐怕就有几百人之多，他们个个都是向农民要钱的。这几年一些知识分子在努力呼吁落实农民的国民待遇问题，我觉得这些要求太高了。对于中国农民来说，最切实的是给他们起码的生存权利的问题。</p>
+<p>  农民的休闲时间，除了看电视就是打麻将，基本上没有其他的文化消费。电视看的大多是十四寸、十七寸的黑白电视，而且那些节目都是无聊透顶的。打麻将都是会来点小刺激的赌博。这种风气在农村是很普遍的。</p>
+<p>农村用电的节约程度不是城里人所能想像出来的。能关灯尽量关，灯泡都是用瓦数很低的，那种光线让人昏昏欲睡。</p>
+<p>这种昏昏欲睡的灯光正好暗合了中国农民的心境和命运。家里的兄弟们对于未来生活的向往无非就是每年出去打工赚些钱回来，县乡村三级的统筹提留款等等不要年年往上涨，家里能够盖起一栋楼房，以及祈愿家里人不要有什么病灾……如此而已。至于其他诸如赚更多的钱，把自己变成城里人等更美好的愿望，则根本不敢想。那种能够赚上很多钱在城里买房定居的人，我们那一带极少，一般几个村子才能出一两个这样能干的人。一般的农民不可能有这么大的愿望。</p>
+<p>  农民对自己的处境和命运非常清醒。他们谁都知道自己是人下之人，知道自己即使具有治国之材也不可能有自己的舞台，哪怕到乡政府做一个小喽罗也不可能——因为小喽罗也是体制中的人，而他是体制之外的人。他们长期处于欲说还休，大痛不言的状态。</p>
+<p>  最近几年，一批对社会具有高度责任感的学者不断就三农问题发出呼吁。“农民真穷，农村真苦，农业真危险”几乎成了全社会的共识。政府也不断调整农村政策，宣布要不断给农民减税，还要提高农产品价格，农民很受鼓舞，但愿这是一个好兆头。</p>
+<p>  在我们农村，通过考学走出乡村，改变自己命运的大概有二十多人，这些吃上“皇粮”的人有的留在山村学校教书，有的在深圳、杭州、南昌等地工作，现在在上海的就我一个（据我所知）。让子女摆脱农民身份是一个农民能够想到的最大梦想。如果自己的子女能够过上城里人的生活，对于一个农民来说就是最大的光荣。</p>
+<p>  弟弟考上大学，转成非农业户口之后，我的一个哥哥深有感触的对我的父母说，以后他们的子女就是城里人了，不再是乡下人。我们的子女还是乡下人，一家人的命就不再一样啦，他们即使有机会走进城市，也只是在脚手架上挥汗如雨，如果他们敢于在街上逛一逛，整个社会体制都会对他们保持高度警惕，陪伴他们的是各种审视、询问，各种收容搜查甚至拘留等等。</p>
+<p>  我作为一个农民的儿子，思维总是受到这种身份的审批。每次看到城里的老太太或者年轻的女性牵着一条小狗遛弯，我就想，她们与其和小狗交流，还不如和人交流。如果收养农村的一个孤儿，不比养一条狗更有感情，更有意义？时下这个社会为什么如此难以进行人性的沟通？那些有钱人如果能够把自己富余的财力、精力转移到社会公益事业上来，不是对社会更有益处？而他们的幸福生活不是更太平吗？我这话说出来，人家也许会觉得我不近人情，可是我自己觉得这才是最近人情的想法。我心里装着那么多乡村孤儿，他们的命运比城里的一条狗要艰苦许多，我由狗的境遇联想到人的境遇不正是人之常情？</p>
+<p>  我也经常告诫自己，不能每时每刻都用这种眼光审视城市，尤其不能用这种眼光要求别人，但是，发出告诫的是理性，支配理性的是本能。用农民的眼光看待世事，已经是我无可更改的本能。农民自己没有话语权利，当他们的儿子进了城做了文化人，也很难为他们说上话。当下不少非农民家庭出身的贤达人士正在为改变农民的境遇而竭力呼吁。我一听见他们的声音就恨不得向他们脱帽致敬！可是，真正知痛知痒的话，哪是局外人所能说的清楚的？农民别说是改变自己的命运是如何的不易，就连传达出自己的声音都是十分艰难。</p>
+<p>  所有的农民本能的都希望通过自己的子女进城改变家庭的命运，不过这些努力都不过是复制电影上流行的“你撤退，我掩护”的故事模式。留下来作为后盾的不堪一击，固然难免一死。逃脱者面对亲人的沦陷更加无能为力，也只能痛不欲生的仰天长嚎！很多农民的儿子进城之后根本不想让别人知道他是农民的儿子，原因就是回避心理。我却能在所有场合告白我的身份：我是农民的儿子。</p>
+<p>我因为是农民的儿子而尝尽了无论是城里人还是乡下人都永远不可能知道的千辛万苦。尽管如此，我从来没有因为自己是农民的儿子而在城里人面前惭愧过，但是在内心的一个隐秘角落里，我时时刻刻都感到惭愧而负疚——那是面对我所来自的那个群体的原罪感。</p>
+<p> 原罪的意思是：与生俱来的，无可摆脱的。            </p>
+<h1 id="先父"><a href="#先父" class="headerlink" title="先父"></a><strong>先父</strong></h1><p>刘亮程</p>
+<p>　　在一个家里，儿子守着父亲老去，就像父亲看着儿子长大成人。这个过程中儿子慢慢懂得老是怎么回事。父亲在前面趟路。父亲离开后儿子会知道自己40岁时该做什么，50岁、60岁时要考虑什么。到了七八十岁，该放下什么，去着手操劳什么。 </p>
+<p>　　 </p>
+<p>　　 </p>
+<p>　　可是，我没有这样一个老父亲。 </p>
+<p>　　我比年少时更需要一个父亲，他住在我隔壁，夜里我听他打呼噜，很费劲地喘气。看他躬腰推门进来，一脸皱纹，眼皮耷拉，张开剩下两颗牙齿的嘴，对我说一句话。我们在一张餐桌上吃饭，他坐上席，我在他旁边，看着他颤巍巍伸出一只青筋暴露的手，已经抓不住什么，又抖抖地勉力去抓住。听他咳嗽，大口喘气———这就是数年之后的我自己。一个父亲，把全部的老年展示给儿子。一如我把整个童年、青年带回到他眼前。 </p>
+<p>　　在一个家里，儿子守着父亲老去，就像父亲看着儿子长大成人。这个过程中儿子慢慢懂得老是怎么回事。父亲在前面趟路。父亲离开后儿子会知道自己40岁时该做什么，50岁、60岁时要考虑什么。到了七八十岁，该放下什么，去着手操劳什么。 </p>
+<p>　　可是，我没有这样一个老父亲。 </p>
+<p>　　我活得比你还老的时候，身心的一部分仍旧是一个孩子。我叫你爹，叫你父亲，你再不答应。我叫你爹的那部分永远地长不大了。 </p>
+<p>　　多少年后，我活到你死亡的年龄：37岁。我想，我能过去这一年，就比你都老了。作为一个女儿的父亲，我会活得更老。那时想起年纪轻轻就离去的你，就像怀想一个早夭的儿子。你给我童年，我自己走向青年、中年。 </p>
+<p>　　我的女儿只看见过你的坟墓。我清明带着她上坟，让她跪在你的墓前磕头，叫你爷爷。你这个没福气的人，没有活到她张口叫你爷爷的年龄。如果你能够，在那个几乎活不下去的年月，想到多少年后，会有一个孙女伏在耳边轻声叫你爷爷，亲你胡子拉碴的脸，或许你会为此活下去。但你没有。 </p>
+<p>　　留下5个儿女的父亲，在5条回家的路上。一到夜晚，村庄的5个方向有你的脚步声。狗都不认识你了。5个儿女分别出去开门，看见不同的月色星空。他们早已忘记模样的父亲，一脸漆黑，埋没在夜色中。 </p>
+<p>　　多年来儿女们记住的，是5个不同的父亲。或许根本没有一个父亲。所有对你的记忆都是空的。我们好像从来就没有过你。只是觉得跟别人一样应该有一个父亲，尽管是一个死去的父亲。每年清明我们上坟去看你，给你烧纸，烧烟和酒。边烧边在坟头吃喝说笑。喝剩下的酒埋在你的头顶。临走了再跪在墓碑前叫声父亲。 </p>
+<p>　　我们真的有过一个父亲吗？ </p>
+<p>　　在我8岁，你离世的第二年，我看见12岁时的光景：个头稍高一些，胳膊长到锨把粗，能抱动两块土块，背一大捆柴从野地回来，走更远的路去大队买东西———那是我大哥当时的岁数。我和他隔了4年，看见自己在慢慢朝一捆背不动的柴走近，我的身体正一碗饭、一碗水地，长到能背起一捆柴、一袋粮食。 </p>
+<p>　　然后我到了16岁，外出上学。19岁到安吉小镇工作。那时大哥已下地劳动，我有了跟他不一样的生活,我再不用回去种地。 </p>
+<p>　　可是，到了40岁，我对年岁突然没有了感觉。路被尘土蒙蔽。我不知道40岁以后的下一年我是多大。我的父亲没有把那时的人生活给我看。他藏起我的老年，让我时刻回到童年，在那里，他的儿女永远都记得他收工回来的那些黄昏，晚饭的香味飘在院子。我们记住的饭菜全是那时的味道。我一生都在找寻那个傍晚那顿饭的味道。我已忘了是什么饭，那股香气飘散在空气里，一家人围坐在桌旁，等父亲的影子伸进院子，等他带回一身尘土，在院门外拍打。 </p>
+<p>　　一次次，我们回到有他的年月，回到他收工回来的那些傍晚，看见他一身尘土，头上落着草叶。他把铁锨立在墙根，一脸疲惫。母亲端来水让他洗脸，他坐在土墙的阴影里，一动不动，好像叹着气，我们全在一旁看着他。多少年后，他早不在人世，我们还在那里一动不动看着他。我们叫他父亲，声音传不过去。盛好饭，碗递不过去。 </p>
+<p>　　我将在黑暗中孤独地走下去，没有你引路。 </p>
+<p>　　如果你在身旁，我会早早知道，自己的腿在多大年龄变老，走不动路。眼睛在哪一年秋天花去。这一年到来时，我会有时间给自己准备老花镜和拐仗。我会在眼睛彻底失明前，记住回家的路和那些常用物件的位置。我会知道你在多大年龄开始为自己准备后事，吩咐你的大儿子，准备一口好棺材，白松木的，两条木凳支起，放在草棚下。着手还外欠的债。把你一生交往的好朋友介绍给儿子，你死后无论我走到哪，遇到什么难事，认识你的人会说，这是你的后人。他们中的某个人，会伸手帮我一把。 </p>
+<p>　　可是，没有一个叫父亲的人，白发飘飘，把我向老年引。我不知道老是什么样子。我的腿不把酸痛告诉我。我的腰不把弯曲告诉我。我的皮肤不把皱纹告诉我。我老了我不知道。就像我年少时，不知道自己是一个孩子，我去沙漠砍柴，打土块，背猪草，干大人的活。没人告诉我我是个孩子。父亲离开的第二天我们全长大了，从最小的妹妹，到我。你剩给我们的全是大人的日子。我的童年不见了。直到有一天，我背一大捆柴回家，累了在一户人家墙根歇息，那家的女人问我多大了，我说13岁。她说，你还是个孩子，就干这么重的活。我羞愧地低下头，看见自己细细的腿和胳膊，露着肋骨的前胸和独自长大的一双脚。都这么多年了，我以为自己早长大了，可还小小的，个子不高，没有多少劲。背不动半麻袋粮食。 </p>
+<p>　　如果寿命跟遗传有关，在你死亡的年龄，我会做好该做的事。如果我活过你死亡的年龄，我就再无遗憾。我活的比你更长寿。我的儿女们，会有一个长寿的父亲。他们会比我活得更长久。有一个老父亲在前面引领。他们会活得自在从容。 </p>
+<p>　　现在，我在你没活过的年龄，给你说出这些。我说的时候，我能感觉到你在听。我也在听，父亲。 </p>
+<p>　　 </p>
+<h1 id="后父"><a href="#后父" class="headerlink" title="后父"></a>后父</h1><p>刘亮程</p>
+<p>　　我们家住的地方有一条金沟河，民国时“日产斗金”。现在已少有人淘金了，上游河岸千疮百孔，到处是淘金人留下的无底金洞。金子淘完了，河又变成河。我们住在下游，用淘洗过金子的河水浇地，也能在河边的淤沙中看见闪闪发亮的金屑。这一带的老户人家，对金子从不稀罕，谁家没有过成疙瘩的黄金？我们家就有过一褡裢金子，那是多少我都不敢说出来。听我后父讲，他父亲在那时，也去上游的山里淘金。是在麦收后，地里没啥活了，赶上马车，一人拿一把小鬃毛刷子，在河边的石头缝儿里扫金子。全是颗粒金，几十天就弄半袋子。 </p>
+<p>　　我们家那一褡裢金子，后来不知去向。后父只是说整光了。咋整光的？就不说了。有几年他说自己藏的有金子呢，有几年又说没有了。我们就在他的金子谎话里，过了一年又一年。到现在，家里再没有人会相信他藏的有金子。 </p>
+<p>　　但我们家确实有过一褡裢金子。我后父也确实是一个有过金子的人，他说起金子来，一脸的自足和不在乎。 </p>
+<p>　　我们家邻居也有过一褡裢金子。那家的王老爷子，却从来不提金子的事。我后父说，他们家的金子，在解放前三区革命逃战乱时，过玛纳斯河，家里的马不够用，把一褡裢金子交给本村的一个骑马人。过河后就失散了。 </p>
+<p>　　多少年后，王老爷子竟然找到了那个人，他就住在河对面的玛纳斯县，那个人也承认帮助驮过一褡裢金子，但过河后为了逃命，就把金子扔了。 </p>
+<p>　　“命要紧，哪能顾上金子。”那个人说。 </p>
+<p>　　王老爷子开始不信，后来偷偷打探了几年，这家人穷得钩子上揽毡，根本不像有金子的人家。后来就不追要了。王老爷子也再不提金子的事了。 </p>
+<p>　　那我们家的金子呢？后父闭口不说。早先我们住在他的旧房子，他有时给我母亲说金子的事。我们隐约觉得他藏的有金子。他是这里的老户，老新疆人，家底子厚。啥叫家底子，就是墙根子底下埋的有金子。听说村里的老户人家，都藏的有金子，却从来不说自己有。成疙瘩的金子埋在破房子底下，自己过穷日子，装得跟没钱人似的。我母亲也半信半疑地觉得我后父有金子。他不拿出来，可能是留了一手。 </p>
+<p>　　我们家搬出太平渠村那天，有用的东西都装上拖拉机，几只羊也装上了拖拉机，我母亲想，这下后父该把金子挖出来了吧。我们要搬到元兴宫去生活，后父的旧院子也便宜卖给了村里的光棍冯四，他不会把金子留给别人吧。可是，后父只是磨磨蹭蹭在他的旧院子转了几圈，捡了几根烂木棒扔到车上。然后，自己也上到车上。 </p>
+<p>　　 </p>
+<p>　　这地方的有钱人，有过好多金子的人家，突然全变成了穷人。留下的全是有关金子的故事，不知道金子去了哪里。 </p>
+<p>　　20世纪七八十年代，经常有人到我们这地方来挖金子。有一年大地主张寿山的孙子带一帮人，在他们家的老庄子上挖了三个月，留下一个大坑。另一年中地主方家的后人又在自家的老房子下挖了一个大坑。最大的一个坑是小地主唐人田家羊倌的后人挖的。羊倌曾看见唐家的人把一个坛子埋在羊圈下面。坛子由两个人抬，里面肯定是贵重东西。羊倌夜里睡在羊圈棚顶，看得清清楚楚。敌人打来时，唐家人仓惶逃跑，没顾上把东西挖出来。后来也再没有唐家人音信，可能没逃掉，全被杀死了。 </p>
+<p>　　那个坑是三台推土机挖的，挖了两年。头一年挖到冬天停工了。第二年开春又挖了一个月。金子真是贵重，一点点东西，就要人挖这么大的坑。听人说，金子在地下会走动。但人又不知道金子会朝哪个方向走动，一年走几步。几十年来可能早已离开老地方，走得很远。也可能会朝下走，越走越深。或朝上走，走到地面，早被人拾走。所以，人在埋金子的羊圈棚下挖不到金子，便会把坑往大往深挖。这个坑一旦开挖了，便不会轻易罢休。因为挖坑要花钱雇人雇车，还要向当地的“土地爷”交土管费。假如花一万块钱还没找到金子，他就会再投五千块。这跟赌博押宝一样，总不甘心，金子会在下一锨土里，下一铲就会推出那个装金子的坛子。结果坑越挖越大，直挖到河边，挖到别人家墙根。往往是坑挖得越大，越证明没挖到东西。 </p>
+<p>　　在我们村边，那个挖得最深最大的坑，已经被当成水库。我们叫金坑水库。另几个小一点的坑被村民放水养鱼，有叫金鱼塘的，叫金塘子的。这些土坑纷纷被村民承包，合同一定六十年。那些人都鬼得很，借养鱼的钱把坑又往大往深挖，说是整理鱼塘，其实想侥幸找到金子。找不到也不要紧，养着鱼，占着坑。反正有一坛金子在里面呢。这里的老户人，都相信金子没有走远。好多走远的人又回来，守着早已破败的老房底子。从没听说谁挖到或拾到过金子。但埋金子的地方会被人牢牢记住。多少年后谁做梦听到黄金的动静，这地方又会无端地被挖一个大坑。 </p>
+<p>　　我后父的旧院子，以后会不会被我们挖成一个大坑呢。 </p>
+<p>　　有时候我想，后父可能真的藏有金子呢，他经常回太平渠村去看他的老房子，早年家里有马车时赶着马车去，后来我们家搬到县城，马车卖了，他就坐班车去。说是去要账。那院老房子作价四百五十块钱卖给冯四，只给了二百块，剩下的钱一直要不回来。冯四没钱。一年四季都没钱。他是五保户，不种地，村里救济一点口粮。冯四不可能把口粮卖掉还我们家的钱。后父知道这些，但依旧每年去要。去了跟冯四一起住在老房子里。我们就想，他可能打着要钱的幌子，去看他埋的金子。这么多年，他来来去去地到太平渠，可能已经把金子挖出来，挖出来会藏哪儿呢？可能已经埋到我们现在的房子底下。 </p>
+<p>　　也许他没挖出来，那些金子依旧在太平渠的老房子底下。也许后父把它埋进去时就没想过要挖出来，他是留给自己的。留到最后，不知道会以什么样的方式给我们。也许他隐约说那一褡裢金子的时候，就已经把它给了我们。后父现在有八十岁了，因为年龄大了，这几年去太平渠少了，金子的事也说得少了。但经常说村里的老房子，说冯四的钱还没给，说要把老房子收回来。后父这样看重他的老房子，总让我们觉得那个老房底子下真的埋了金子。 </p>
+<p>　　将来有一天，我们会不会真的相信了那一褡裢金子的事，兄弟几个，雇一台推土机，轰轰隆隆地进到我们的老院子？ </p>
+<p>改于2010年10月</p>
+<h1 id="做闲懒人，过没钱的生活"><a href="#做闲懒人，过没钱的生活" class="headerlink" title="做闲懒人，过没钱的生活"></a>做闲懒人，过没钱的生活</h1><p>刘亮程</p>
+<h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>　　我认识一个孤老头,也不老,50岁上下的样子,和我们家同住在城郊村。他不种地,却靠地生活。春天农民播种时,他在街上闲转。喜欢在棋摊上看人下棋,有时给别人指点两招,却从不动手下。或许一动手下就有输赢,输一盘要给摊主交四毛钱,所以他不动手,看大半天棋,一分钱不花,也把棋瘾过了。夏天庄稼成熟季节,他便夹一条麻袋,到田地里转了,坐在地头看人家收割。人家前脚收完,他后脚进地。麦子割了拾麦穗,黄豆割了捡黄豆。土豆挖了刨土豆。还在麦地边挖老鼠洞。听说他曾在一个老鼠洞里挖出过两麻袋麦穗,加一麻袋麦粒。从七月开始,田野里的收获不断。一直到十一月,雪盖住庄稼地,他满载捡拾的粮食回城里过冬。他只收不种,不投入成本,所以他的日子比一些种地的农民过得好。他在别人收过的地里捡的东西,除了自己吃喝,还有剩余,换成钱,一年的穿戴零花都够了。</p>
+<p>　　我有点羡慕这个人,如果我不是靠写能挣一点碎银子,我希望去过这个人的生活。不种地,有地也租给别人。学这个人的样,别人忙春播夏管时,我闲着晒太阳；等别人收完,我夹一条麻袋,在地里躬躬腰,一年的粮食就有了。</p>
+<p>　　我把这个想法说给一个没事干又没钱花的穷亲戚,我想启发他去干这个行当。我说,让你在城里捡垃圾,你肯定不会干,丢人得很。尤其小地方,大家从小一块长大,人家做官乘小车,你要饭拾垃圾,面子上过不去。所以捡垃圾、擦鞋这些活都是外乡人干,本地人穷死在家里也不干。但你去地里拾粮食,这不丢人吧。收获季节大家都在地里忙。</p>
+<p>　　我的穷亲戚说,这比捡垃圾更丢人。这叫拾的吃。比要的吃好不到哪里。</p>
+<p>　　真是没办法。</p>
+<p>　　今年十·一回老家沙湾县,和小侄儿侄女骑自行车到田地里转,路过一片收过的花生地,地里到处是花生粒。问旁边拾棉花的人,这是谁家的花生,掉了这么多,怎么不复收。</p>
+<p>　　说顾不上了,棉花都拾不完。</p>
+<p>　　那我们捡一些可以吗。问。</p>
+<p>　　捡吧。不然就全是老鼠的了。答。</p>
+<p>　　我和侄儿侄女捡了半小时,没怎么挪窝,把两辆自行车篓捡满了。半冬天的零嘴儿就有了。</p>
+<p>　　我们新疆的秋天,离冬天太近了,一场大雪,没收回来的全埋掉,冬天老鼠在雪底下找农民漏收的粮食吃。老鼠不种地,也一年四季有粮食吃。老鼠和人一样懂得储存粮食。老鼠的财富观可能和农民一样:仓里有粮,心里不慌。老鼠慌的时候就往人家里跑。在地里拾不到粮食,就要到人家里来偷。所以农民收获时,总要有意无意在地里掉一些,老鼠在地里拾够了,就不会进村。村里人要没粮食吃了,就往城里跑,往有钱有粮食的地方跑,这和老鼠的想法一样。老鼠算动物界的富翁了,因为它懂得储藏粮食。我们说一个人”穷得跟猴子一样”,猴子不会储藏,就两只手,即使碰到一片苞谷地,也只会掰一个扔一个,到头了依然穷得屁股都遮不住。</p>
+<p>　　我小时候,村里有个姓魏的妇女,走路从不抬头,眼睛总盯着路面。听说她老早前在路上拾到一个戒指,此后就把眼睛盯到路上了。我不知道那么多年间她又拾到啥值钱东西了,肯定会有很多收获。连我这样很少往路面上看的人,偶尔低头,都能拾到几张钱,或别的什么。何况一个人一辈子在路上拾东西,可能早成富翁了。我上个月去南疆,正是摘收棉花季节。路上多是运载棉花的拖拉机。在漫长的道路旁,我看见几个沿路拾棉花的人,已经装满了几个袋子。从车上颠落的棉花,风吹刮下来的棉花,一团一团,散在路两边。他们沿路往前拾。</p>
+<p>　　可能谁都曾梦想过,一出门被一块黄金绊倒,爬起来就成百万富翁。可是绝大多数人,一辈子只被土块和石头绊倒过。不是黄金不绊他们的脚。是他们压根不知道低头。像那个姓魏的妇女,把眼光盯在路上,拾点别人的遗财过日子,也许早把日子过好了。想想,一年有多少人丢东西在路上。一些是随手扔的,别人没用处了你有用处。一些是不小心丢的,路走完了才想起来,早不知道丢在哪条路上。这样的东西,捡到了想还都没办法还——找不到失主。我听说一个在城市扫大街的妇女,扫了两年,就买了一栋楼。你想垃圾里面有多少别人丢掉的金银财宝。</p>
+<p>　　以上是我认识的最会生活的两个人。这些年我虽然住在城里,但我的父母兄弟,亲戚朋友都在乡下过穷日子,我为他们的生计着急,常常替他们想一些办法,就常想起这两个人。当然,可能还有更好的办法,做生意呀,开个小作坊加工点什么呀,但这都要投资。他们哪有钱,你想出的好致富门路,他找你来借钱,借不借?凡投资都有风险,赔了怎么办?连种地都成了风险最大的行业。就今年,棉花掉价,多少棉农血本无归。辛辛苦苦劳动一年,最后倒赔一笔钱。</p>
+<p>　　那个拾粮食的老头肯定不会赔。现在,大雪封地,赔了本的农民呆在家里,雪上加霜,过更加贫穷的日子,发愁明年的生计。春天播种借的款没法还掉,明年春播又找谁借钱。许多农民不种麦子,把地全种棉花,棉花卖的钱买粮食吃。如果棉花倒赔钱了,吃粮食都成问题。而那个拾粮食吃的老头从不发愁,此刻他在自己的温暖小屋里,富富有余地过冬。</p>
+<h2 id="二"><a href="#二" class="headerlink" title="　　二"></a>　　二</h2><p>　　这些年,我看到许多人,在忙忙碌碌地赔钱。辛辛苦苦,没有过上好日子,反而负债累累。不见得你想办法去挣钱了,就能挣来。钱是纸做的,握在黑心人手里,你的辛苦和劳动并不能感动他。什么都不做的人反倒最保险。我的大哥,从三十岁开始想办法挣钱,什么都干过了,干一个赔一个,到现在背了一身债。我粗算了一下,他要是一开始就啥也不做,当个闲懒人,用赔掉的那些钱,也能过上不错的日子。可是谁又能挡住自己不去做事呢。我若不出来,我也会凭着年轻的冲动,做一些事情。那个年代,大家都在做事情,银行的钱又那么好借。谁不想折腾钱呀。在我们那地方,银行的好多小分理处都被折腾得倒闭了,借钱的人却没富裕。不知道钱倒腾到哪去了。</p>
+<p>　　现在想想,完全可以不做什么,去过一种闲懒生活。其实我喜欢村里那些好吃懒做的人。一个小地方的活儿是有限的。说通俗点,就是就业机会和岗位是有限的,不需要人人去忙碌。那些闲不住有活儿干的人,要感谢没事干的人。忙人要感谢闲懒人,是他们把就业的机会给了你。或者说,因为你把有限的活儿干了,把有限的钱挣了,别人就没事干,只能闲着,没钱。所以在西方福利保障健全的国家,呆在家里没事干的人,总是在享受由那些忙碌的人提供的生活救助,什么事不干都能活一辈子。你不工作本身就已经减轻了社会的就业压力,为社会作出了贡献。我们以往老批评懒人,认为个人的贫穷是懒造成。社会就这样无赖地把贫穷的责任推到一贫如洗的穷人身上,自己脱得干干净净。</p>
+<p>　　忙人已经把世界折腾得不像样子了。忙人忙着在山上挖洞、江河上筑堤。忙着拆迁、占地、建厂子。在广大农村,政府忙着赶农民致富,强行动员农民养海狸鼠、种水葫芦、栽果树,果树挖掉种葡萄。倒腾来倒腾去,土地没安宁过。结果呢,倒霉的是农民。地倒腾坏了,农民被倒腾得吃饭都成问题了。</p>
+<p>　　好在我们现在知道穷人的无辜了。在一些地方,政府不再动员农民去做不合时宜的事情,而是鼓励农民在有限的土地内,先种够粮食,解决吃饭问题,再谋求其它。</p>
+<p>　　在南疆的一些村庄,麦子收完后,村长就要把每家每户的麦种收上来,统一保管在村里的库房,春播时再还给农民。不这样做,到了春播时一些人家就连种子都吃光了。交种子那天,每家派一个人,背大半袋麦子送过去,口袋上写着名字,不过秤,春天从库房背出来的时候,自然就知道是不是背进去时的重量。这个不知谁发明的集体保管种子的办法,真是行之有效。村民少吃几顿饭,只要饿不死人,谁都不用负责。播不下种,地撂荒了,村长要负责任,乡长也要负责任。吃饭依旧是一些地方,一些人的头等大事,其它都还顾不上。</p>
+<p>　　我去过那些村庄,一小块绿洲,陷在无边的沙漠中。人均七八分地,种麦子都不够口粮。我若住在那样的村庄,也想不出更好的生活办法。也许他们那样生活已经是最好的选择了。在根本没办法挣到钱的状况下,学会过一种没有钱的生活,学会用少得可怜的一点点钱,把日子过下去。忘掉新衣服是啥样子,忘掉新皮鞋啥样子。肉嘛,想一想味道就行了。总之我是吃过肉的。谁年轻时没风光一时。少走路就不会磨坏鞋子,少干活就节省衣服。那一小块土地,忙死也长不出金子。还不如闲着,少用劲少吃粮食。节俭着过啊。</p>
+<h2 id="三"><a href="#三" class="headerlink" title="　　三"></a>　　三</h2><p>一般人到了四十岁才会变得节俭务实,不敢乱花钱了。二十岁的时候没有钱,但有一个花十个,不害怕没钱。一来钱不是自己的。父母给的。二来在做梦的年纪,相信自己的三十岁里堆满了金子。到了三十岁果然要比二十岁时富有一些,但并没有堆满金子。又梦想四十岁里堆满金子,依旧不害怕没钱,请朋友吃喝,仗义疏财,自信千金散尽还复来,天生我才必有用。可是,到了四十岁,就什么都看清楚了。官能当多大,钱能挣多少,都清楚了。他再不会梦想五十岁里会堆满金子。只会清楚地看见五十岁里逐渐老掉的自己,逐渐衰弱的身体,生老病死。这时手里的每一块钱都变得珍贵,不敢乱花了。他知道钱像岁月一样,流失便不会回来。后半生里,花大钱的事躲不过去,随便一场病,几年几十年的积蓄就没有了。以前人们不怕老,老了可以享儿孙的福,儿孙即是财富。年轻力壮时,只要多费点劲,生养一群儿女,就什么都不怕了。一群儿女中总有一两个出息的,孝敬的。如果你活得长寿,享受到孙子、重孙子的福,就算福寿无疆了。财算什么,财造福人了,才算财富。如今谁还敢把养老的事寄托在儿女身上。有国家工资的人,靠养老金。没工资的农民、无业者,把前半生里挣的一点钱,紧紧捏住。哪敢随便花啊。更多的无业者,前半生里一无积蓄,老年后的日子,就不知道怎么过了。一个小地方的活儿是有限的。说通俗点,就是就业机会和岗位是有限的,不需要人人去忙碌。那些闲不住有活儿干的人,要感谢没事干的人。忙人要感谢闲懒人,是他们把就业的机会给了你。或者说,因为你把有限的活儿干了,把有限的钱挣了,别人就没事干,只能闲着,没钱。</p>
+<p>　　我认识一个孤老头,也不老,50岁上下的样子,和我们家同住在城郊村。他不种地,却靠地生活。春天农民播种时,他在街上闲转。喜欢在棋摊上看人下棋,有时给别人指点两招,却从不动手下。或许一动手下就有输赢,输一盘要给摊主交四毛钱,所以他不动手,看大半天棋,一分钱不花,也把棋瘾过了。夏天庄稼成熟季节,他便夹一条麻袋,到田地里转了,坐在地头看人家收割。人家前脚收完,他后脚进地。麦子割了拾麦穗,黄豆割了捡黄豆。土豆挖了刨土豆。还在麦地边挖老鼠洞。听说他曾在一个老鼠洞里挖出过两麻袋麦穗,加一麻袋麦粒。从七月开始,田野里的收获不断。一直到十一月,雪盖住庄稼地,他满载捡拾的粮食回城里过冬。他只收不种,不投入成本,所以他的日子比一些种地的农民过得好。他在别人收过的地里捡的东西,除了自己吃喝,还有剩余,换成钱,一年的穿戴零花都够了。</p>
+<p>　　我有点羡慕这个人,如果我不是靠写能挣一点碎银子,我希望去过这个人的生活。不种地,有地也租给别人。学这个人的样,别人忙春播夏管时,我闲着晒太阳；等别人收完,我夹一条麻袋,在地里躬躬腰,一年的粮食就有了。</p>
+<p>　　我把这个想法说给一个没事干又没钱花的穷亲戚,我想启发他去干这个行当。我说,让你在城里捡垃圾,你肯定不会干,丢人得很。尤其小地方,大家从小一块长大,人家做官乘小车,你要饭拾垃圾,面子上过不去。所以捡垃圾、擦鞋这些活都是外乡人干,本地人穷死在家里也不干。但你去地里拾粮食,这不丢人吧。收获季节大家都在地里忙。</p>
+<p>　　我的穷亲戚说,这比捡垃圾更丢人。这叫拾的吃。比要的吃好不到哪里。</p>
+<p>　　真是没办法。</p>
+<p>　　今年十·一回老家沙湾县,和小侄儿侄女骑自行车到田地里转,路过一片收过的花生地,地里到处是花生粒。问旁边拾棉花的人,这是谁家的花生,掉了这么多,怎么不复收。</p>
+<p>　　说顾不上了,棉花都拾不完。</p>
+<p>　　那我们捡一些可以吗。问。</p>
+<p>　　捡吧。不然就全是老鼠的了。答。</p>
+<p>　　我和侄儿侄女捡了半小时,没怎么挪窝,把两辆自行车篓捡满了。半冬天的零嘴儿就有了。</p>
+<p>　　我们新疆的秋天,离冬天太近了,一场大雪,没收回来的全埋掉,冬天老鼠在雪底下找农民漏收的粮食吃。老鼠不种地,也一年四季有粮食吃。老鼠和人一样懂得储存粮食。老鼠的财富观可能和农民一样:仓里有粮,心里不慌。老鼠慌的时候就往人家里跑。在地里拾不到粮食,就要到人家里来偷。所以农民收获时,总要有意无意在地里掉一些,老鼠在地里拾够了,就不会进村。村里人要没粮食吃了,就往城里跑,往有钱有粮食的地方跑,这和老鼠的想法一样。老鼠算动物界的富翁了,因为它懂得储藏粮食。我们说一个人”穷得跟猴子一样”,猴子不会储藏,就两只手,即使碰到一片苞谷地,也只会掰一个扔一个,到头了依然穷得屁股都遮不住。</p>
+<p>　　我小时候,村里有个姓魏的妇女,走路从不抬头,眼睛总盯着路面。听说她老早前在路上拾到一个戒指,此后就把眼睛盯到路上了。我不知道那么多年间她又拾到啥值钱东西了,肯定会有很多收获。连我这样很少往路面上看的人,偶尔低头,都能拾到几张钱,或别的什么。何况一个人一辈子在路上拾东西,可能早成富翁了。我上个月去南疆,正是摘收棉花季节。路上多是运载棉花的拖拉机。在漫长的道路旁,我看见几个沿路拾棉花的人,已经装满了几个袋子。从车上颠落的棉花,风吹刮下来的棉花,一团一团,散在路两边。他们沿路往前拾。</p>
+<p>　　可能谁都曾梦想过,一出门被一块黄金绊倒,爬起来就成百万富翁。可是绝大多数人,一辈子只被土块和石头绊倒过。不是黄金不绊他们的脚。是他们压根不知道低头。像那个姓魏的妇女,把眼光盯在路上,拾点别人的遗财过日子,也许早把日子过好了。想想,一年有多少人丢东西在路上。一些是随手扔的,别人没用处了你有用处。一些是不小心丢的,路走完了才想起来,早不知道丢在哪条路上。这样的东西,捡到了想还都没办法还——找不到失主。我听说一个在城市扫大街的妇女,扫了两年,就买了一栋楼。你想垃圾里面有多少别人丢掉的金银财宝。</p>
+<p>　　以上是我认识的最会生活的两个人。这些年我虽然住在城里,但我的父母兄弟,亲戚朋友都在乡下过穷日子,我为他们的生计着急,常常替他们想一些办法,就常想起这两个人。当然,可能还有更好的办法,做生意呀,开个小作坊加工点什么呀,但这都要投资。他们哪有钱,你想出的好致富门路,他找你来借钱,借不借?凡投资都有风险,赔了怎么办?连种地都成了风险最大的行业。就今年,棉花掉价,多少棉农血本无归。辛辛苦苦劳动一年,最后倒赔一笔钱。</p>
+<p>　　那个拾粮食的老头肯定不会赔。现在,大雪封地,赔了本的农民呆在家里,雪上加霜,过更加贫穷的日子,发愁明年的生计。春天播种借的款没法还掉,明年春播又找谁借钱。许多农民不种麦子,把地全种棉花,棉花卖的钱买粮食吃。如果棉花倒赔钱了,吃粮食都成问题。而那个拾粮食吃的老头从不发愁,此刻他在自己的温暖小屋里,富富有余地过冬。</p>
+<h2 id="四"><a href="#四" class="headerlink" title="四"></a>四</h2><p>　　这些年,我看到许多人,在忙忙碌碌地赔钱。辛辛苦苦,没有过上好日子,反而负债累累。不见得你想办法去挣钱了,就能挣来。钱是纸做的,握在黑心人手里,你的辛苦和劳动并不能感动他。什么都不做的人反倒最保险。我的大哥,从三十岁开始想办法挣钱,什么都干过了,干一个赔一个,到现在背了一身债。我粗算了一下,他要是一开始就啥也不做,当个闲懒人,用赔掉的那些钱,也能过上不错的日子。可是谁又能挡住自己不去做事呢。我若不出来,我也会凭着年轻的冲动,做一些事情。那个年代,大家都在做事情,银行的钱又那么好借。谁不想折腾钱呀。在我们那地方,银行的好多小分理处都被折腾得倒闭了,借钱的人却没富裕。不知道钱倒腾到哪去了。</p>
+<p>　　现在想想,完全可以不做什么,去过一种闲懒生活。其实我喜欢村里那些好吃懒做的人。一个小地方的活儿是有限的。说通俗点,就是就业机会和岗位是有限的,不需要人人去忙碌。那些闲不住有活儿干的人,要感谢没事干的人。忙人要感谢闲懒人,是他们把就业的机会给了你。或者说,因为你把有限的活儿干了,把有限的钱挣了,别人就没事干,只能闲着,没钱。所以在西方福利保障健全的国家,呆在家里没事干的人,总是在享受由那些忙碌的人提供的生活救助,什么事不干都能活一辈子。你不工作本身就已经减轻了社会的就业压力,为社会作出了贡献。我们以往老批评懒人,认为个人的贫穷是懒造成。社会就这样无赖地把贫穷的责任推到一贫如洗的穷人身上,自己脱得干干净净。</p>
+<p>　　忙人已经把世界折腾得不像样子了。忙人忙着在山上挖洞、江河上筑堤。忙着拆迁、占地、建厂子。在广大农村,政府忙着赶农民致富,强行动员农民养海狸鼠、种水葫芦、栽果树,果树挖掉种葡萄。倒腾来倒腾去,土地没安宁过。结果呢,倒霉的是农民。地倒腾坏了,农民被倒腾得吃饭都成问题了。</p>
+<p>　　好在我们现在知道穷人的无辜了。在一些地方,政府不再动员农民去做不合时宜的事情,而是鼓励农民在有限的土地内,先种够粮食,解决吃饭问题,再谋求其它。</p>
+<p>　　在南疆的一些村庄,麦子收完后,村长就要把每家每户的麦种收上来,统一保管在村里的库房,春播时再还给农民。不这样做,到了春播时一些人家就连种子都吃光了。交种子那天,每家派一个人,背大半袋麦子送过去,口袋上写着名字,不过秤,春天从库房背出来的时候,自然就知道是不是背进去时的重量。这个不知谁发明的集体保管种子的办法,真是行之有效。村民少吃几顿饭,只要饿不死人,谁都不用负责。播不下种,地撂荒了,村长要负责任,乡长也要负责任。吃饭依旧是一些地方,一些人的头等大事,其它都还顾不上。</p>
+<p>　　我去过那些村庄,一小块绿洲,陷在无边的沙漠中。人均七八分地,种麦子都不够口粮。我若住在那样的村庄,也想不出更好的生活办法。也许他们那样生活已经是最好的选择了。在根本没办法挣到钱的状况下,学会过一种没有钱的生活,学会用少得可怜的一点点钱,把日子过下去。忘掉新衣服是啥样子,忘掉新皮鞋啥样子。肉嘛,想一想味道就行了。总之我是吃过肉的。谁年轻时没风光一时。少走路就不会磨坏鞋子,少干活就节省衣服。那一小块土地,忙死也长不出金子。还不如闲着,少用劲少吃粮食。节俭着过啊。</p>
+<h2 id="五"><a href="#五" class="headerlink" title="五"></a>五</h2><p>　　一般人到了四十岁才会变得节俭务实,不敢乱花钱了。二十岁的时候没有钱,但有一个花十个,不害怕没钱。一来钱不是自己的。父母给的。二来在做梦的年纪,相信自己的三十岁里堆满了金子。到了三十岁果然要比二十岁时富有一些,但并没有堆满金子。又梦想四十岁里堆满金子,依旧不害怕没钱,请朋友吃喝,仗义疏财,自信千金散尽还复来,天生我才必有用。可是,到了四十岁,就什么都看清楚了。官能当多大,钱能挣多少,都清楚了。他再不会梦想五十岁里会堆满金子。只会清楚地看见五十岁里逐渐老掉的自己,逐渐衰弱的身体,生老病死。这时手里的每一块钱都变得珍贵,不敢乱花了。他知道钱像岁月一样,流失便不会回来。后半生里,花大钱的事躲不过去,随便一场病,几年几十年的积蓄就没有了。以前人们不怕老,老了可以享儿孙的福,儿孙即是财富。年轻力壮时,只要多费点劲,生养一群儿女,就什么都不怕了。一群儿女中总有一两个出息的,孝敬的。如果你活得长寿,享受到孙子、重孙子的福,就算福寿无疆了。财算什么,财造福人了,才算财富。如今谁还敢把养老的事寄托在儿女身上。有国家工资的人,靠养老金。没工资的农民、无业者,把前半生里挣的一点钱,紧紧捏住。哪敢随便花啊。更多的无业者,前半生里一无积蓄,老年后的日子,就不知道怎么过了。</p>
+<p>　　我们确实不知道那些没收入的人们在怎么过日子。他们买面买米的钱从哪里来,中午的时候,他们跟我们一样在吃午饭吗?他们吃的是些什么饭呢?我们光知道身边有多少多少贫困人口,却不知道他们的贫困是什么。因为我们从来没走进那些贫民的家里,看看他们碗里的饭,看看他们的被褥,还有他们的孩子。社会的贫穷被广大的穷人隐藏起来。穷人越来越远离繁华、远离闹市,把财富垒筑的城市让给富人们——这座城市不久前,还是他们的庄稼地和果园,后来就变成富人的天堂了。穷人退后到边缘,悄无声息地过自己的穷日子。在他们中间,有我大哥、叔叔和姨姨,有我多年不曾往来的亲戚。他们穷得几乎过不下去,却从未到城里来向我借一块钱。他们从来就会过穷日子。偶尔一两年,好像也富裕过,好景不长,很快又穷得啥都没有了。</p>
+<p>　　我们确实不知道那些没收入的人们在怎么过日子。他们买面买米的钱从哪里来,中午的时候,他们跟我们一样在吃午饭吗?他们吃的是些什么饭呢?我们光知道身边有多少多少贫困人口,却不知道他们的贫困是什么。因为我们从来没走进那些贫民的家里,看看他们碗里的饭,看看他们的被褥,还有他们的孩子。社会的贫穷被广大的穷人隐藏起来。穷人越来越远离繁华、远离闹市,把财富垒筑的城市让给富人们——这座城市不久前,还是他们的庄稼地和果园,后来就变成富人的天堂了。穷人退后到边缘,悄无声息地过自己的穷日子。在他们中间,有我大哥、叔叔和姨姨,有我多年不曾往来的亲戚。他们穷得几乎过不下去,却从未到城里来向我借一块钱。他们从来就会过穷日子。偶尔一两年,好像也富裕过,好景不长,很快又穷得啥都没有了。</p>
+<h1 id="人畜共居的村庄"><a href="#人畜共居的村庄" class="headerlink" title="人畜共居的村庄"></a><strong>人畜共居的村庄</strong></h1><p>作者：刘亮程</p>
+<p>有时想想，在黄沙梁做一头驴，也是不错的。只要不年纪轻轻就被人宰掉，拉拉车，吃吃草，亢奋时叫两声，平常的时候就沉默，心怀驴胎，想想眼前嘴前的事儿。只要不懒，一辈子也挨不了几鞭。况且现在机器多了，驴活得比人悠闲，整日在村里村外溜达，调情撒欢。不过，闲得没事对一头驴来说是最最危险的事。好在做了驴就不想这些了，活一日乐一日，这句人话，用在驴身上才再合适不过。</p>
+<p>做一条小虫呢，在黄沙梁的春花秋草间，无忧无虑把自己短暂快乐的一生蹦达完。虽然只看见漫长岁月悠悠人世间某一年的光景，却也无憾。许多年头都是一样的，麦子青了黄，黄了青，变化的仅仅是人的心境。做一条狗呢？</p>
+<p>或者做一棵树，长在村前村后都没关系，只要不开花，不是长得很直，便不会挨斧头。一年一年地活着，叶落归根，一层又一层，最后埋在自己一生的落叶里，死和活都是一番境界。如此看来，在黄沙梁做一个人，倒是件极普通平凡的事。大不必因为你是人就趾高气扬，是狗就垂头丧气。在黄沙梁，每个人都是名人，每个人都默默无闻。每个牲口也一样，就这么小小的一个村庄，谁还能不认识谁呢。谁和谁多少不发生点关系，人也罢牲口也罢。</p>
+<p>你敢说张三家的狗不认识你李四。它只是叫不上你的名字——它的叫声中有一句可能就是叫你的，只是你听不懂。也从不想去弄懂一头驴子，见面更懒得抬头和它打招呼。可那驴却一直惦记着你，那年它在你家地头吃草，挨过你一锨。好狠毒的一锨，你硬是让这头爱面子的驴死后不能留一张完整的好皮。这么多年它一直在瞅机会给你一蹄子呢。还有路边泥塘中的那两头猪，一上午哼哼叽叽，你敢保证它不是在议论你们家的事。猪夜夜卧在窗根，你家啥事它不清楚。</p>
+<p>对于黄沙梁，其实你不比一只盘旋其上的鹰看得全面，也不会比一匹老马更熟悉它的路。人和牲畜相处几千年，竟没找到一种共同语言，有朝一日坐下来好好谈谈。想必牲口肯定有许多话要对人说，尤其人之间的是是非非，牲口肯定比人看得清楚。而人，除了要告诉牲口“你必须顺从”外，肯定再不愿与牲口多说半句。</p>
+<p>人畜共居在一个小小村庄里，人出生时牲口也出世，傍晚人回家牲口也归圈。弯曲的黄土路上，不是人跟着牲口走便是牲口跟着人走。</p>
+<p>人踩起的尘土落在牲口身上。牲口踩起的尘土落在人身上。</p>
+<p>家和牲口棚是一样的土房，墙连墙窗挨窗。人忙急了会不小心钻进牲口棚，牲口也会偶尔装糊涂走进人的居室。看上去似亲戚如邻居，却又根本不是那么回事，日子久了难免会认成一种动物。</p>
+<p>比如你的腰上总有股用不完的牛劲。你走路的架势像头公牛，腿叉得很开，走路一摇三摆。你的嗓音中常出现狗叫鸡鸣。别人叫你“瘦狗”是因为你确实不像瘦马瘦骡子。多少年来你用半匹马的力气和女人生活和爱情。你的女人，是只老鸟了还那样依人。</p>
+<p>数年前一个冬天，你觉得有一匹马在某个黑暗角落盯你。你有点怕，它做了一辈子牲口，是不是后悔了，开始揣摸人。那时你的孤独和无助确实被一匹马看见了。周围的人，却总以为你是快乐的，像一只无忧无虑的夏虫，一头乐不知死的驴子、猪……</p>
+<p>其实这些活物，都是从人的灵魂里跑出来的。上帝没让它们走远，永远和人呆在一起，让人从这些动物身上看清自己。而人的灵魂中，其实还有一大群惊世的巨兽被禁锢着，如藏龙如伏虎。它们从未像狗一样咬脱锁链，跑出人的心宅肺院。偶尔跑出来，也会被人当疯狗打了，消灭了。在人心中活着的，必是些巨蟒大禽。</p>
+<p>在人身边活下来的，却只有这群温顺之物了。</p>
+<p>人把它们叫牲口，不知道它们把人叫啥。</p>
+<p>——我们都是这样活着的。</p>
+<h1 id="《城市牛哞》"><a href="#《城市牛哞》" class="headerlink" title="《城市牛哞》"></a><strong>《城市牛哞》</strong></h1><p>**    ——刘亮程**</p>
+<p>　　 </p>
+<p>　　我是在路过街心花园时，一眼看见花园中冒着热气的一堆牛粪的。在城市能见到这种东西我有点不敢相信，城市人怎么也对牛粪感起兴趣？我翻进花园，抓起一把闻了闻，是正宗的乡下牛粪，一股熟悉的遥远乡村的气息扑鼻而来，沁透心肺。那些在乡下默默无闻的牛，苦了一辈子最后被宰掉的牛，它们知不知道自己的牛粪被运到城市，作为上好肥料养育着城里的花草树木。它们知道牛圈之外有一个叫乌鲁木齐的城市吗？ </p>
+<p>　　一次我在街上看到从乡下运来的一卡车牛，它们并排横站在车厢里，像一群没买到坐票的乘客，东张西望，目光天真而好奇。我低着头，不敢看它们。我知道它们是被运来干啥的，在卡车缓缓开过的一瞬，我听到熟悉的一声牛哞，紧接着一车牛的眼睛齐刷刷盯住了我：它们认出我来了……这不是经常扛一把铁锨在田间地头转悠的那个农民吗，他不好好种地跑到城里干啥来了。瞧他挟一只黑包在人群中奔波的样子，跟在乡下时挟一条麻袋去偷玉米是一种架势。我似乎听到牛议论我，我羞愧得抬不起头。 </p>
+<p>　　这些牛不是乘车来逛街的。街上没有牛需要的东西，也没有牛要干的活。城市的所有工作被一种叫市民的承榄了，他们不需要牲畜。牛只是作为肉和皮子被运到城市。他们为了牛肉的新鲜才把活牛运到城里。一头牛从宰杀到骨肉被分食，这段时间体现了一个城市的胃口和消化速度。早晨还活蹦乱跳的一头牛，中午已摆上市民的餐桌，进入肠胃转化成热量和情欲。 </p>
+<p>　　而牛知不知道它们的下场呢？它们会不会正天真地想，是人在爱护它们抬举它们呢。它们耕了一辈子地，拉了一辈子车，驮了一辈子东西，立下大功劳了。人把它们当老工人或劳动模范一样尊敬和爱戴，从千万头牛中选出些代表，免费乘车到城里旅游一趟，让它们因这仅有的一次荣耀而忘记一辈子的困苦与屈辱，对熬煎了自己一生的社会和生活再没有意见，无怨无悔。 </p>
+<p>　　牛会不会在屠刀搭在脖子上时还做着这样的美梦呢？ </p>
+<p>　　我是从装满牛的车厢跳出来的那一个。是冲断缰绳跑掉的那一个。 </p>
+<p>　　是挣脱屠刀昂着鲜红的血脖子远走他乡的那一个。 </p>
+<p>　　多少次我看着比人高大有力的牛，被人轻轻松松地宰掉，它们不挣扎，不逃跑，甚至不叫一声，似乎那一刀捅进去很舒服。我在心里一次次替它们逃跑，用我的两只脚，用我远不如牛的那点力气，替千千万万头牛在逃啊逃，从一个村庄到另一个村庄，最终逃到城市，躲在熙熙攘攘的人群中，让他们再认不出来。我尽量装得跟人似的，跟一个城里人似的说话、做事和走路。但我知道我和他们是两种动物。我沉默无语，偶尔在城市的喧嚣中发出一两声沉沉牛哞，惊动周围的人。他们惊异地注视着我，说我发出了天才的声音。我默默地接受着这种赞誉，只有我知道这种声音曾经遍布大地，太普通、太平凡了。只是发出这种声音的喉管被人们一个个割断了。多少伟大生命被人们当食物吞噬。人们用太多太珍贵的东西喂了肚子。浑厚无比的牛哞在他们的肠胃里翻个滚，变作一个咯或一个屁被排掉–工业城市对所有珍贵事物的处理方式无不类似于此。 </p>
+<p>　　那一天，拥拥挤挤的城里人来来往往，汉人注意到坐在街心花园的一堆牛粪上一根接一根抽烟的我，他们顶多把我当成给花园施肥的工人或花匠。我已经把自己伪装得不像农民。几个月前我扔掉铁锨和锄头跑到城市，在一家文化单位打工。我遇到许多才华横溢的文人，他们家里摆着成架成架的书，读过古今中外的所有名著。被书籍养育的他们，个个满腹经纶。我感到惭愧，感到十分窘迫。我的家里除了成堆的苞谷棒子，便是房前屋后的一堆堆牛粪，我唯一的养分便是这些牛粪。小时候在牛粪堆上玩耍，长大后又担着牛粪施肥。长年累月地熏陶我的正是弥漫在空气中的牛粪味儿。我不敢告诉他们，我就是在这种熏陶中长大、并混到文人作家的行列中。 </p>
+<p>　　这个城市正一天天长高，但我感到它是脆弱的、苍白的，我会在适当的时候给城市上点牛粪，我是个农民，只能用农民的方式做我能做到的，尽管无济于事。我也会在适当时候邀请我的朋友们到一堆牛粪上采坐坐，他们饱食了现代激素，而人类最本原的底肥是万不可少的。没这种底肥的人如同无本之木，是结不出硕大果实的。 </p>
+<p>　　好在城市人已经认识到牛粪的价值。他们把雪白雪白的化肥卖给农民，又廉价从农民手中换来珍贵无比的牛粪养育花草树木。这些本该养育伟大事物的贵重养料，如今也只能育肥城市人的闲情逸致了。 </p>
+<h1 id="丧乱"><a href="#丧乱" class="headerlink" title="丧乱"></a>丧乱</h1><p>朝阳</p>
+<h2 id="一、"><a href="#一、" class="headerlink" title="一、"></a>一、</h2><p>没有人相信我所说的一切，包括睡在我身旁的妻子。</p>
+<p>我从睡梦中醒来，我听到了窗外鸟叫的声音，这是传说中的那只鸟，它只叫了两声，然后消失了。</p>
+<p>我知道这意味着什么。</p>
+<p>我希望能再听到这种声音，我希望再次证实这种声音。但是没有。</p>
+<p>那种声音无法描述。</p>
+<p>它在深夜的时候来到我的窗前，它是不详之鸟。</p>
+<p>我已经知道，在这个夜晚，我的祖母去世了。</p>
+<p>这是2002年农历9月7日夜晚，一只迷信中传说的不详之鸟，飞临我的窗外。我祖母在这个夜晚告别人世。就在这个夜晚，同样的鸟叫声在我老家的窗外啼叫。我姑母听到了这种叫声。她后来说，在听到鸟叫之后，她知道我祖母的魂灵已经走了，那只鸟是来召唤我祖母的魂灵的。她赶紧给我祖母穿上老衣。两个小时之后，我祖母离开了人世。</p>
+<p>我无法说服谁，因为我首先无法说服自己的妻子。但是这已经不重要了，重要的是，我的祖母去世了。</p>
+<h2 id="二、"><a href="#二、" class="headerlink" title="二、"></a>二、</h2><p>我开始准备行囊。</p>
+<p>我们家族之树中最老的一枚叶子凋落了，她行世86年。没有人知道她的名字，包括我父亲。在我祖母去世之后，我祖母的名字永远成了一个秘密。</p>
+<p>我开始准备行囊，还有在情感上的关于我祖母的所有的积蓄。很少。我发现我远没有我母亲去世时那么难过。我们是隔世的感情。</p>
+<p>不，不仅如此。还因为，我祖母是作为我母亲的对立面出现的。她一直站在我母亲的对面。她是一个标准的婆婆，她永远都认定，自己才是儿子最值得信赖的人，是媳妇篡改了自己的儿子。她不可爱。一直到晚年，一直到她再也没有力气和我母亲争斗，一直到我母亲去世，她才容纳了我母亲。我母亲也是在一个深夜离开人世的，当我和我父亲把这个消息告诉她时，她把头埋在被子里。我三十年里第一次看她落泪。我祖母说：</p>
+<p>我儿子怎么这么命苦呢？</p>
+<p>过了片刻，她又说了一句话：</p>
+<p>老天爷还让我活在人世干什么呢？</p>
+<p>这一年我母亲53岁，我祖母83岁。</p>
+<h2 id="三、"><a href="#三、" class="headerlink" title="三、"></a>三、</h2><p>村子里的人们说，我叔父是个具体的人。在我们村子里，具体的人还有村子东头的宝羊哥，村子西头的骡子叔。</p>
+<p>给我叔父介绍对象的时候，对方问，人怎么样？媒人就说，人本分着呢，具体人么。对方就没有再问。</p>
+<p>那是一个冬天，我和我叔父去临村买粮去。我祖母肿胀着脸坐在炕上。她叮嘱我叔父：叫你叔把秤秤好。我们就踏着月光上路了。是个冷清的夜晚，天空像一碗稀汤寡水的饭。我和叔父走在无人的路上，我不知道和叔父说话。我叔父走一段路说一句话。他说：狗。前边蹲着一只狗。他说：快收玉米了。玉米在我们身旁。又走了一段路，他唱了一句戏。我没有听明白词，那像一种自言自语。他哼了一种腔调，然后就没有了声音。我们从后门进入了一户人家，他们的前门关着。整个村子似乎都睡了。我们用很短的语言做完了交易。要扎口袋的时候，那个人又从自家的囤子里抓了一把玉米。我们不知道感谢，抬了粮食朝外走。身后是那家关门的声音，艰涩的无法比喻的声音。快要出村的时候，我闻到了一股香气，是醋溜白菜的香气。我一下子就闻出来了。我叔父说：醋溜白菜，谁家在炒醋溜白菜。我能听到他喉结转动的声音。我们低着头，抬着玉米回家。我祖母从炕上下来，她手里端着油灯。她解开袋子，抓起一把玉米，放了两颗到嘴里。我们听到清脆的玉米被咬碎的声音，那是包谷晒干水分以后发出的声音。我叔父说：人家给多抓了一把。</p>
+<h2 id="四、"><a href="#四、" class="headerlink" title="四、"></a>四、</h2><p>这个夜晚像一副着色过重的铅笔画，永远留在我心里。我祖母的身影似乎一直在油灯前晃动。对黑暗的惧怕和对饥饿的恐惧糅合在一起，从未分离。</p>
+<p>现在，我站在了我祖母的灵柩前。我祖母躺在这里，我叔父跪在他的身旁。这是许多年以前那个夜晚的三个当事人。我祖母的嘴唇上放着一粒包谷，这是人世最后的一颗粮食，放在她的嘴边，由她带进坟墓，帮她驱赶另外一个世界的饥饿。我摸着我祖母的手。这已经是另外一个世界的手了吗？饥饿已经远离这个老人了吗？饥饿曾经多么严重地袭击了我们，饥饿至今还留在我的身体里。饥饿使我变得肥胖，饥饿使我在吃饭时丧失理智。我始终无法拒绝食物的诱惑，我面对食物时总是有一种无法克制的冲动。我吃得很快。我讨厌我妻子贵族化的细嚼慢咽，她对待食物的态度更像一个厌食症患者。我的胃有强大的消化功能。我总是把他们撑得很饱。吃饭对我来说就是必须把胃撑饱，让自己的胃变成一个马力强大的容器。当然，几乎所有的中国餐馆都在以自己的喧闹、丰盛、人满为患，来证明一个备受贫穷、饥饿困扰的国度，来证明一群人备受饥饿迫害的童年，我从来没有认为那是一群美食家。</p>
+<p>我祖母躺在这里，躺在她满是灰尘的家里。人们来来往往，从她的身旁走过。柜子上那台十四寸的黑白电视上歇着一层灰尘，留着一些已经无法辨认的指纹。它几乎就是一个摆设。对我祖母来说，电视展示的外部世界毫无意义，电视只是对现在生活的一种干扰，电视只是虚拟了一个幸福的世界，而这个世界和她没有任何关系。它改变不了什么。她不允许家里人看电视，她觉得任何娱乐都是毫无必要的。她容忍不了家里的任何闲人，她具体地、分门别类地安排自己的生活。没有尽头的生活像没有尽头的路，她只是不停地走，从来不看远方。她没有任何爱好，她没有任何信仰。你甚至看不出她哪怕是对生活的一点热情。她只靠本能生活，她只是在日子中一天一天熬过。她要看着种子下地，她要看粮食收回来，她驱赶家里的任何一个人，她要把他们赶到地里去。她让人难以忍受。她让人觉得，如果生活就是这样，生活就是一场徒劳，她让人觉得，生命如果是这样，生命就没有任何意义可言。但是，她不接受任何指责，她不指望任何人理解自己。这一切只是因为，她对人世已经不抱任何幻想。她把希望给过丈夫，丈夫撇下了她，她把希望给了儿女，儿女们带给她更大的不幸。她四十岁时丧失了丈夫，她的女儿在五十岁时丧失了丈夫，她的儿子，我的父亲，在五十岁时丧失了妻子，他们先她而去，集体腰斩了她对人生的希望，她生活在没有希望的深渊里。无常的灾难让一个缺少文化的农村妇女不敢再对生活抱有任何幻想，生活对她来说就是受难，以自己的生命抵抗无法预知的命运。没有人知道她怎样在漫长的岁月中杀掉自己的所有爱好和希望，把自己变成一个八十多岁让人无法理解的老人。到最后，她似乎连疼痛感也丧失了，她在八十多岁时摔断了胳膊，自己躺了几天，又起来了。</p>
+<p>她躺在这里，我不知道她在死亡降临的那一刻想些什么。她感到恐惧吗？她对她生活的这个世界留恋吗？她能回忆起自己早逝的丈夫吗？她曾经快乐过吗？从来都没有人真正走进过她的内心，从来都没有人理解她的人生。现在，一个孤独的老人上路了。她从来没有相信过存在另外一个世界，她就这样完了吗？</p>
+<p>在她告别人世的最后一晚，她已经四天没有吃喝，输液的针头无法插进她的血管。她最后的一个动作是，把身边的电灯拉着，拉灭，再拉着，再拉灭。她不断重复这个动作，似乎在考验自己还有没有力气生活在这个世界。那是一只15瓦的电灯，她认为15瓦的电灯已经足够照亮整个夜晚。在凌晨五点的时候，她停止了这个动作。她放弃了。</p>
+<p>我祖母的一生结束了。</p>
+<p>她姓何，86岁。是我们家族的源头。我的追溯到此为止。</p>
+<h2 id="五、"><a href="#五、" class="headerlink" title="五、"></a>五、</h2><p>就像一棵高龄的大树，你既不知道它从何而来，也不知道要长到何年何月。你只认识离自己最近的那几枚叶子，你和他们生活在一起，最后又不得不和他们告别。当离你最近的那枚叶子飘然落下，才知道，是自己该回家的时候了。</p>
+<p>农村，这个时候无可回避地出现了。</p>
+<p>人们一直企图美化这两个字，在文学化的称谓中，它常常变为“田园”，人们试图把它变为一个和风光相关的地方。但是对一个农民来说，他必然无可选择的生活在农村，而不是田园。</p>
+<p>1984年的秋天，我和我母亲去镇上交粮。那是一个雨后的下午。太阳，金色的太阳，无比美好地照在我和我母亲的身上。我们拉着架子车，我们在泥泞中奋力前行，架子车上拉着粮食。这是我们要交给公家的粮食，这是我们最后一次向公家交粮。在交上这批粮食之后，我们将成为一个公家人。按照那个年代的规定，要进入城市，必须向城市交纳一定的粮食，才能获得吃商品粮的资格。</p>
+<p>1984年也许是知识分子最美好的年代之一，许多像我父亲那样独自在城市里奋斗了几十年的知识分子，被允许可以将自己的家人转入城市。而我则成了这一事件的见证人。</p>
+<p>我和我母亲骄傲地穿过村子泥泞的街道，愉快地穿过乡亲们的目光，享受着乡亲们的议论。那是一个多么让人难忘的下午，我使劲地帮着我母亲推着车子，一点也不感到累。后来，当我母亲突然离开这个人世，我再一次踏上这条路，将我母亲的遗体送回久违的故乡时，许多年以前的那个下午再一次出现在我眼前，我的眼泪再也抑制不住，喷涌而出。</p>
+<p>就在这样的一个下午，我们摆脱了农村生活，摆脱了让人难以忍受的艰苦的体力劳动，摆脱了让人煎熬的贫穷和窘迫。农村，不再是我必然的生活土壤。尽管，城市生活对我们来说还很不明朗，但是，我们已经获得了一张可能兑现的幸福生活的保障，我们完成了自己人生路上的身份转换。在那个时代，一旦你成为一个吃商品粮的公家人，你得到的不仅是物质上的帮助，你甚至得到了人的尊严。</p>
+<p>但是，一切都是从不公平开始，你不能不相信命运，我的父母把我生在关中平原上这个落后的农村，不是由我决定的，甚至也不是由他们决定。是无法抉择的命运在我生命的源头决定了我的未来。</p>
+<p>农村，不仅意味着物质的极端匮乏，而且意味着人生没有希望；</p>
+<p>城市不但意味着生活得到保障，而且意味着人生的多种可能！</p>
+<p>正因为如此，我鄙视一切把农村视作田园的人们，他们不能理解劳动给予身体的痛苦和重压。在整个关中平原，在整个中国的土地上，我不知道有多少像我母亲和祖母那样的农民，他们把生活叫做受苦，把农民叫做下苦人。你仔细看看那些下苦人吧，他们的腰一律向下弯，他们的腿几乎都变成了罗圈腿。他们告诉你，劳动能使人变成残疾，他们告诉你，劳动是一种受难，他们告诉你，工作着不是美丽的。劳动，是怎样使我的祖父祖母们变得丑陋！</p>
+<p>一个农民，从他的孩子时代起，他的人生就意味着摆脱农村生活，拼命挤向城市！</p>
+<p>所以才有一辈又一辈的人要从农村冲出去，不再回来！</p>
+<p>所以有我和我母亲拉着粮食，在那个阳光灿烂的下午，走过满是泥泞的村道。</p>
+<p>在1984年的那个秋天里，我们的家庭摆脱了农村生活，奔向不可预知的未来。我告别了村前的树木，告别了村后的庄稼，告别了人对人的不尊重。我父亲宣告了我们家族史上最重大的转变。</p>
+<h2 id="六、"><a href="#六、" class="headerlink" title="六、"></a>六、</h2><p>但是，无可挽回的是，总会有一天，你得回来，这一切不由你安排，这是命运，是前定。</p>
+<h2 id="七、"><a href="#七、" class="headerlink" title="七、"></a>七、</h2><p>也许应该回顾一下我童年经历的关中葬礼，它藏在我的记忆里，它随时可能消失，但是，伴随我祖母的离世，它再次被唤醒。</p>
+<p>在一个生命突然撒手的那一刻，是一声一声的嚎啕大哭，在夜晚的村落里传播。村中的老人们从梦中惊醒，知道又一个同伴先自己而去了。他们会赶到这家，帮忙在屋子里支起床，把亡故的人抬到床上。香点上了，蜡烛点着了，遗像悬挂起来了，灵堂设立起来了。第二天一大早，戴上孝的孝子们开始奔赴一个又一个村落报丧，告诉自己的亲戚们，这个家庭中生命的传递者不辞而别。亡者生命的根须在这个时候被全部提起，一个也不能少。遗留任何一个亲戚都会给两家今后的关系带来困扰。亲戚们按照自己的亲疏安排时间，向那个亡魂召唤的村落进发。他们在进门后的第一件事是，扑向灵堂，面朝死者，放声大哭。声音在这个时候显得至关重要。会哭的妇女们会哭出各种花样，抱怨死者狠心撇下苦命的自己，哭死者一生受苦，未享一天福就告别人世。哭的人未必痛心彻肺，但总能引起旁边的家属泪水涟涟。再三劝阻之后，亲戚停了泪，用手帕擦了眼泪，问人是什么时候走的，棺材做好了没有，定在什么时候埋，埋在哪里。一边问的时候，一边还揣摩死者的衣服，说衣服都合适死者像生时一样安详，没有受罪。儿女们就回答了：是昨夜鸡叫时分走的，棺材是早就做好的。画棺材的画匠今日就来。坟定在村西的老坟地里。时间定在腊月二十七，都是礼宾先生定的。</p>
+<p>下午画匠就来了。画匠的父亲原来就是画匠。画匠死后，画匠的儿子也成了画匠。画匠的儿子像他的父亲一样，在棺材上刷漆，描彩。他在棺材上画上童男童女，龙子龙孙，画上标准化的祝福。他什么都像他父亲，包括在耳朵上夹一支铅笔。礼宾先生定好了墓穴，打墓的人就忙了。主人每天都备了四样菜，又提了酒送到墓地里去。让匠人们吃饱，老人留下话了，把棺材画好点，把墓打深点儿。</p>
+<p>入殓的时间早就定好了。这是最后一次看见自己的亲人，然后死者将被放进棺材。儿孙们大哭着，呼唤自己的亲父亲娘。旁边的人就劝了，说别哭了，再看一眼吧，看看枕头放的平不平，看衣服展不展，把老人的眼睛闭好，把他的双唇闭上，在他的身下放上松柏，在他的脑旁放上打鸣的公鸡，再看最后一眼，合上棺材，这是这个人在人世上最后一次露脸，他现在谢幕了。</p>
+<p>整个村子的人都被动员起来了。有人来吊唁，有人来烧香，有人来帮忙。前院里搭了帐篷，后院里支了锅灶。掌勺的是村里专做红白喜事的炉头，管事的是村子里最贴心最可靠的人。桌凳是从学校租来的。几个晚上里，屋子里都有打麻将的人，陪死者度过最后的几个晚上。礼宾先生是最忙的人，他在下葬的头天开始执行葬礼的仪式。先带着孝子们到村口跪迎来送礼的朋友们，然后带着孝子们去村外的坟地请祖先的灵位。从近到远，上溯三代祖宗，今天晚上，他们都将被请会回家里，大家共同做伴，带上这个家族中最新辞世的一位，去另外一个世界。男子们请灵去了，女子们都在村口跪迎着。远远地看着一颗白纸糊的灯笼摇摇晃晃引领着一队白衣人过来，女人们就哭成一片。</p>
+<p>晚上，村子里的人们都围在灵堂周围，看一个一个儿孙亲戚祭奠。吹鼓手们看礼宾先生的手势吹奏着音乐。乡亲们评价谁是祭奠最好的一个。有人叹息着，这个村子里祭奠最好的一个如今也已经不在人世了。</p>
+<p>第二天，在锣鼓声中起灵了。儿女们扶着灵柩，一路哭到坟地。三村四邻的人们，会敲锣鼓的就拿着家伙敲呀敲，不会的就横起肩膀抬了棺材。一路吹打到了坟地，当舅做姑的朝坟地里打墓的匠人扔了烟酒，棺材就落地了。老人们扛着锨来埋这个比自己先走的同伴，边扔土边骂，驴日的，比我还小两个月呢，跑得到快。扛着锨往主人家吃饭时，看见一个女的还在村口一步三跪地哭着，人们说，这是死者的女儿……</p>
+<p>这种具有民俗意味的描述很容易引起猎奇者的好奇心，文化研究者很容易把它作为一个文化研究的标本。在不牵涉自己内心感情的时候，人们很容易变得清明。但是这一次，我不是一个旁观者。</p>
+<h2 id="八、"><a href="#八、" class="headerlink" title="八、"></a>八、</h2><p>我站在了我祖母的葬礼面前，我又一次站在故乡的土地上。我的身份再一次得到确认。人们通过我祖母的葬礼回忆我，人们通过那些参加我祖母葬礼的朋友来检验我在城市的地位。</p>
+<p>我再一次跪到了故乡的土地上，这是我叛逃过的土地。我们家族的历史被上溯到我所不知道的祖先那里，我的身后跟着我叫不上来名字的我祖母的子侄。我感到不知所措。我似乎加入到了一个陌生的队伍之中，这是我祖母的葬礼，但是一切似乎都和我没有关系。</p>
+<p>我看着礼宾先生忙活着。他戴着一副眼睛，他开始念祭祖文，他似乎并不回避面前的本子。他念得抑扬顿挫，但是我已经听出来了，这不过是他主持葬礼的所有祖先的祭祖文，我甚至能辨认出这篇辗转多次的祭文中的错别字。没有人指出这个错误，这个时候的执拗显得不通人情。但是我怀疑没有人听出其中的错误。人们管他叫“李白”先生，但是你稍做思考，也许会觉得那应该是“礼宾”先生。</p>
+<p>我听见乐队在奏乐，他们奏《世上只有妈妈好》，奏《好汉歌》，奏《好人一生平安》，奏《亚洲雄风》。他们甚至将这场悲哀的活动变成了一场杂耍：他们在鼻孔插上唢呐，他们要展示自己鼻子非凡的承受力，他们要向人们证明鼻子的另一种功能。他们把我的儿子架在唢呐上继续吹奏，他们要求围观的乡亲们给一点掌声，他们把我祖母的葬礼变成了展示技艺的表演场。而那些身披道袍，口念佛经的人们，他们赶走牛头马面阎王小鬼，请来玉皇大帝东海龙王保佑我的祖母在未来的世界中不受任何磨难；</p>
+<p>我看见围观的人们，他们是一些老人和孩子，甚至包括村子里那些智障者，他们坐在风中，他们被灯光色彩声音吸引，他们叫闹起哄，不愿回家。我跪在他们面前，为他们表演我祖母的葬礼，他们品评，他们鉴赏，他们决定舆论……</p>
+<p>是的，这是我祖母的葬礼，但一切已经与我无关。它是一个村子长期寂寞后的欢聚，是一场集体参与的文化活动。它已经无关悲哀和死亡。它庄严吗？它可以把香烛插在粪头上；它荒诞吗？它可以正经到让你明天在村子里无地自容，永远抬不起头来；它是一场仪式化的活动吗？它像一场折磨，更像一场折腾，到处充满着错误、误会、将错就错和得过且过；它充满秩序吗？碗丢了盆打了，麻将牌被偷了，烟酒被管事的拿回自家了；它紧张吗？低效率的劳作和不负责任的推诿随处可见；它是一次富裕后的心理补偿吗？似乎每个人都处于饥饿之中，碗筷来不及洗人们就扑了过去，人们还是喜欢吃肥腻的肉，并用馒头夹上菜把它带回家里；它是一次下层人民的娱乐吗？你能在上层文化生活中看到这种对喧闹的喜欢和确认，你能感到戏噱似乎才是我们民族的基本文化品味，滑稽、玩笑感以及没有正经才是中国人的真正生活；它是一种迷信吗？包括那只在深夜飞临我窗前的不详之鸟。我被告知，除了我所生活的这个物质的世界，再没有第二个世界。人在肉体消亡的那一天，也是灵魂消散的那一天。我的精神世界里没有天国，我的未来通向冰冷的不可知的死亡，我的纪念缺乏一种合理的支持，只能依靠我的梦境来提醒。它让你怀恋过去吗？过去比现在更让人难堪。生活得不到应有的审视，失去嗅觉辨别力的鼻子把厕所和猪圈修建在离锅台不远的地方。饥饿使人丧失理智，村子里风传屎壳郎可以烧着吃，并且说北村的某个女人吃了之后白白胖胖不生病。最初还有人嘲笑，但接着就有人去效仿。缺少娱乐的童年里，屎壳郎成了玩伴，它们被养在瓶子里，带角的和不带角的进行角力。你当然不能否认生活中一些美好的事物，但是你总能在其中发现肮脏和不洁。你认为这是社会的失职，对农民的旁观和不负责任，导致的乡村衰落？或者是知识阶层的良心缺失，包括像我这样从乡村出走的人，抛弃乡村，抛弃社会的最底层，把自己纯化成一个不沾泥土的城里人？不，他们看重的本来就是知识的世俗和物质功用。他们希望摆脱农民的命运，他们拼命地供自己的孩子考大学，但是一旦孩子们的知识对现状产生反思作用的时候，他们立即会表现出一种反知识的情绪，他们对知识的容纳甚至只允许一个人停留在初中文化程度，容许到他不能反思反抗为止。它麻醉他们，使他们成为自己的依附者。它坚决排斥那些具有独立思考能力的农民，那些人是农民中的另类，或者不是农民！</p>
+<h2 id="九、"><a href="#九、" class="headerlink" title="九、"></a>九、</h2><p>这就是我所得出的结论吗？这是一个农民子弟的发言吗？不，绝不是！</p>
+<p>批评他们太容易了，因为他们几乎从不反驳，他们从来没有拥有过发言的阵地。他们是农民，他们是社会的弱者，他们天然地处于社会的最底层。人类是生而平等的吗？对农民来说不是；人类是生而自由的吗？对农民来说不是；人类与生俱来就有免受饥饿、冻馁，享受教育和公共卫生的权利吗？对于农民来说，没有！</p>
+<p>人类从一开始就处于不平等的境地，社会一开始就为自由设置了障碍，偏见和愚昧从一个农民出生的那一天就已经包围了他。最早是被饥饿驱赶，然后是被知识摈弃，这就是一个农民的历史。电视虚拟了农民们的处境，使人们以为农民和整个世界处于相同的幸福生活之中。但是没有，获取知识的代价在提高，城市的壁垒日益坚固。贫穷的将更加贫穷，富有的将更加富有，一半是海水，一半是火焰，这是不得不接受现状。数量，只是因为数量巨大，他们似乎才经得起欺诈。城市使他们更加自卑。他们将变得越来越短视。如果政权不对这个备受凌辱的阶层加意照顾，如果精神生活不能善意地呵护那种由农业生活培养起来的朴素的道德感，他们就必然地成为社会的对立面，他们会很快堕落为无法束缚的一群。他们被迫封闭自己，他们将在一种低质量的生态环境中形成自己的文化。如果法理的精神不能烛照这世界上最可怜的一群，如果知识不能改变命运，他们只能以非理性的行为报复整个社会。</p>
+<p>这一切，都不是他们的责任。</p>
+<h2 id="十、"><a href="#十、" class="headerlink" title="十、"></a>十、</h2><p>我跪在这里，跪在故乡的土地上。我看见我父亲，他剧烈的咳嗽仿佛陷入泥潭的推土机不能自拔。他试图用尽全身力气把嗓子清理干净，但每一次只能带动新一轮的高潮到来。这就是我的父亲，对于我来说，他曾经是一个英雄，一个知识的掌管者，一个财富的创造者，一个灾难的拯救者，一个神奇的魔术师，他使生活呈现出多种色彩。但是，伴随着少年时代的结束，我的君王一般，不可替代的父亲开始像油画一样剥落．他开始呈现让我感到陌生、难以接受的一面：他多事．低能，懦弱，脾气暴躁，自以为是，甚至谄媚，他喜欢出人头地，委曲求全却又自私懒惰甚至充满欲望。当然，也包括他的说话，不漂亮的方言。但是，当我跪在这里，我突然觉得，我父亲即便一生中没有做过任何一件事，但是他把我们带进城市，他依然是一个伟大的父亲！</p>
+<p>死亡是一种告别，从我母亲开始，现在又是我的祖母。我触摸了我亲人们的身体，我无法填补他们离去后的巨大空白。他们，是我血脉的上游，他们，是我生命的赐予者，他们让我永远无法轻松。</p>
+<p>在这个世界上，有些人，我永远见不到了。</p>
+<h1 id="《父父子子》"><a href="#《父父子子》" class="headerlink" title="《父父子子》"></a>《父父子子》</h1><p> 朝阳 (2017-12-05 07:15:00)转载▼</p>
+<p>标签： 文学 杂谈     分类： 品味人生</p>
+<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>他穿着黑色的西服，贴身是白色的衬衣，胸前打着 深蓝色的领带，头发泛着讨人嫌的油光。他带着抱歉的神 情看我，尴尬的微笑饱含期待。我怎么也把这个人和我叔 父联系不起来，我叔父此刻也许在家乡的地头手持铁锨翻 地，身上穿着历史悠久的衣服，头发终年难得一洗。回到家 里端起一碗传统在千年以上的饭菜，把它们倒进自己的嘴 里。然后走近猪圈，发出响声，对着跑出来的猪看一会儿。 对我叔父来说，这相当于饭后的娱乐。</p>
+<p>现在，他的儿子，我的兄弟，像一个长期生活在城市里的人，西装革履，站在我面前。他来问我借手机。他需要一部退役的手机，而他知道我恰好有一部。我没有理由不借给自己的兄弟。那个东西并不值钱，放着也是放着。他在最合适的时机开口，让我觉得自己没有主动借给他似乎应该心怀歉疚。</p>
+<p>他是那种非常会开口借东西的人。他不会堵住你的 门，强行以兄弟之情博得你的同情。他委婉地、抱歉地、不 好意思地向你表示：我只是在工作和生活中遇到了暂时的 困难，这些困难固然有很多客观原因，但主要还是由于我的 不努力造成的。向你们借钱是一件让我惭愧的事，但是我 一定会努力的……</p>
+<p>他不借太多，开口一百，或者五十，但绝对不会超过二百。他不会让你为难，他理解你的处境。他知道他的兄长们在城市中谋生也不容易，所以他只借一百。他使拒绝成为一件困难的事情。</p>
+<p>通常就是这样。</p>
+<p>这次，他借一个没有用的手机。我的堂弟。</p>
+<p>拿上手机，他说：哥，那我走了。</p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>我祖母几乎没有看过电视。但是，当我父母把她接到城市之后，看电视成为她惟一打发时间的活动。</p>
+<p>她看着电视，电视上的播音员在说话。是新闻联播。</p>
+<p>我祖母说：这两个娃下午咋又来了?</p>
+<p>我母亲说：每天下午都来呢。</p>
+<p>我祖母说：每天说这么多话把人都负累死了。</p>
+<p>我母亲说；挣的就是那个钱么。</p>
+<p>电视上正在开会，领导们正襟危坐，服务员端茶倒水。</p>
+<p>我祖母说：这个娃有福的，做的事轻省的!</p>
+<p>我母亲说：轻省是轻省，把水倒错了也处分呢。</p>
+<p>我母亲是家里惟一能寻找到我祖母语言逻辑的人，也是我祖母能呆在城市的惟一原因。我母亲先我祖母而逝，在丢了我母亲之后，我祖母再没有进入城市。她全心全意地呆在家里，守着我叔父一家。直到去世。</p>
+<p>在去世前两个月，我父亲捎话，我祖母想见我。这让我奇怪。坦率地说，我从来没有从我祖母身上感到过爱，我觉得在我祖母身上，感情从来不是平均分布的，她似乎把更多的心血倾注在我叔父一家人身上。</p>
+<p>看着我，我祖母说：见到你我就心甘了。</p>
+<p>我笑着说：见面的时间多着呢。</p>
+<p>我祖母说：我时间到了。人一辈子跟个柴草棍一样，说断就断了。</p>
+<p>过了一会儿，她又说：把娃给我照顾好，照顾好婆就走得心甘了。她说的是我堂弟。</p>
+<p>我父亲开玩笑说：你光惦记亲孙子呢。</p>
+<p>我祖母说：都是亲的，你们在城里，我不操心。</p>
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p>也许，在我祖母眼里，我所生活的城市，甚至我们村庄以外的整个世界，都是我可以随时联络随时支援的场所，只要有人发出呼叫，我就应该随时赶到救援。这种救援应该毫不迟疑没有丝毫的犹豫，因为这种呼救和血脉紧密相连。</p>
+<p>但是，每一次接到求救信号，我都有一种莫名的烦躁。我觉得我似乎游动在无边无际的海洋中，永远没有到达的尽头。我想摆脱这一切，我想过自己独立的生活，哪怕这种生活是不幸福的。我在心中不止一次祈祷，祈祷给我打电话的人比我更幸福。但是，每一次拒绝对我来说都是痛苦的，每一次拒绝都让我感到有我祖母我叔父的眼睛在看着我。我施援的仿佛不是我的兄弟，而是我的祖母我的叔父。</p>
+<p>不管是一百或者五十，最后我都出手了。每一次出乎我都暗含希望，希望这五十或者一百块钱能发生神奇的作用，让他骤然翻身，改变命运。我告诉自己，他确实不像我叔父，但是像我叔父我就心满意足可以坦然资助吗?像我叔父那样面朝黄土又有什么出路?我既然否定了我叔父的出路，又怎么能否定他的出路?让一无所有的他在这个城市中突然变成一个有产者不是太苛刻了吗?我难道不知道像他这样的青年生活在城市是多么艰难吗?我有什么理由责备他呢?他无依无靠，除了沿着血脉上溯寻找帮助，让他在这个世界上去找谁?如果连血亲都无法信赖，他应该再去哪里找到帮助？</p>
+<p>在这个城市中，血缘如此稀薄，但又如此让人难以剥离。</p>
+<h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><p>汽车在甩开西安之后开始进山，它拼命吼叫，要爬上山坡。我随着车厢东倒西歪，感觉自己随时可能被扔出去。更要命的是我感到冷，我的脚冻得发疼，我的脚指头好像让人用铁锤砸了一样。这种疼痛让我不时回想起我母亲在村口送我时的情景。她手里牵着我弟弟，看着我和我父亲渐渐走远。我父亲说：让你妈回家。我对我母亲和弟弟喊：妈，你们回去。我母亲招了招手。我知道我母亲已经泪流满面。进入城市的兴奋在那一刻被分离的痛苦代替了，我觉得我可能永远见不上我母亲了。我想起连环画中的一个镜头，一个小孩子被卖掉了，一个人把他带走了，他母亲瘫倒在地。我觉得我就要变成那个男孩予了。现在，汽车进山了，我对眼前的景物产生不了一丝好感，我只想起我母亲，我母亲给我的温暖。我父亲似乎早已经从分别中解脱出来，若无其事地和旁边的人说笑，他对能进入山中似乎感到特别兴奋。并且，面对一个丝毫也不可爱的山口，我父亲背了一句诗：雪拥蓝关马不前。我父亲拥有这种令我敬畏的能力，他看见一个地方能念出一句诗。他曾经亲手抄下一小本子的诗，让我母亲在家里督促我背诵。我母亲不知道这些诗词的意思，我也不知道。我们家的窗台上贴的是：横眉冷对千夫指，俯首甘为孺子牛。我们家的中堂贴的是：何时共剪西窗烛，却话巴山夜雨时。我父亲把它贴在家里。它成为我必须温习的功课。我父亲希望我在作文中或者生活中能随时想到这些诗运用这些诗，他希望我能触景生情。现在，我父亲不断重复我熟悉的那些句子，他希望他的提醒能让我投入到这场歌颂山脉的活动之中，但是，我木然地看着周围的一切，内心一片悲凉。我让我父亲失望了。 ，在又一首诗之后，我们到达目的地。这是陕西南部一座小城，是我第一次进入的城市。这个城市在当时默默无闻，但是因为此后出现一位作家而闻名全国。在这个城市从事写作成为一件神圣的事情。这个城市叫商州，那个作家叫贾平凹。</p>
+<h2 id="5"><a href="#5" class="headerlink" title="5"></a>5</h2><p>我父亲喜欢在晚饭后写字作画，他常画的是梅花。他会吹笛子、拉大提琴、弹洋琴。他在学校的楼道拉大提琴时，大提琴声音愈发沉郁悲怆，让我心情黯淡。</p>
+<p>我认识了我父亲生活的城市。我从此过上了一种只有父亲在身边母亲不在身边的生活，此前的生活刚好相反。</p>
+<p>我接受两种不同的教育，这两种教育在本质上是相同的。如果是在我母亲身边，当我没有完成父亲交代的任务，我母亲告诉我的是：你的父亲在遥远的地方看着你，他对你充满期待……我父亲采取的办法略有不同，他柔情款款，在我的日记本上写一段话，末尾常常是：艰难困苦，玉汝欲成。想想你远在千里之外的祖母、母亲和叔父，他们正在田间地头忍受劳动之苦，他们把所有的希望都寄托在你身上……</p>
+<p>我几乎丧失了所有娱乐的欲望和冲动，简单的享受都能让我产生罪恶感。如果我考试成绩差，不用父亲说，我会关上门独自垂泪反省，会在日记上重复引用“游子吟”这首诗。我的这种自觉的反省精神最后波及到其他人。我发现在我父亲供职的学校当中，像我这种情况的孩子并不少，他们要么是母亲带着，要么是父亲带着，家都在农村。我和其中一个成为很要好的朋友，有一次，他竟然拿学习的录音机听流行歌曲的磁带，我一下子把磁带扔出门，然后说：你也不想想你妈这会儿在地里干什么!</p>
+<h2 id="6"><a href="#6" class="headerlink" title="6"></a>6</h2><p>我外祖父去世于大年初二。去世时 手里端着碗。</p>
+<p>去世前半年我外祖父病过一次，似乎已 经不济。在外工作的二舅父一家回来专门照 看，人似乎又没有问题，全家就走了。到了快 过年的时候，传回来的消息是要回家一块过 年，但是到了三十打电话，说此前请过假，过 年就不能不值班。我外祖父从三十等到初 一，从初一等到初二，最后知道完全不可能， 就没有力气端碗。身体已经衰成一把骨头。</p>
+<p>有一种东西把人和人相连，它在我们根 本察觉不到的地方存在，你无法衡量它在彼 此心中的分量。对有些人来说，它具有让人 难以置信的力量，可以驱赶死神延缓死亡， 而一旦丧失，活着似乎就没有意义。</p>
+<p>我外祖父的去世让我母亲伤痛欲绝，在 我母亲心中，我外祖父至少还可以再活五 年。而他之所以早走，有一半是因为儿女，因 为我母亲自己。</p>
+<p>我外祖母早逝，留下我母亲和两个舅 父。我外祖母去世时，我外祖父正当壮年。一 个男子要维持整个家庭显得力不从心。有人 为我外祖父重新说下一个人。我母亲是孩子 中的老大，晚上喝罢汤(在富饶的关中，晚上 没有吃晚饭一说，而是喝汤)，我外祖父征求 我母亲的意见。我外祖父刚说完话，我母亲 立即扑在炕边哭了起来。我外祖父一个晚上 无法入睡。第二天一大早，我外祖父说：不哭 了，不找人咱还照样过。然后就出了门。我母 亲关了前门，端起针线活，坐到了后院一棵 柿子树下，开始承担起一个家庭主妇要做的 一切。她说：她怕村子人笑话没娘的孩子针 线活丑。到了我母亲的晚年，她常会在不经 意中重新讲述这个故事。我能觉察出我母亲 心中的内疚和不安，她觉得我外祖父应该找 到一个人，也许只有那个人才能把我外祖父 照顾好，而这是一个女儿永远也办不到的。</p>
+<p>现在，来自我母亲血脉上游的路线全部切断了，一切都无可挽救了。</p>
+<p>守住这个家庭的是我的祖母，她带着我姑母、我父亲和我叔父。</p>
+<h2 id="7"><a href="#7" class="headerlink" title="7"></a>7</h2><p>我父亲脾气暴烈，这是我从前不知道的。</p>
+<p>我必须学会和父亲生活。他越是发怒，我越是沉静。我像一个抗击打能力极强的拳击手，接受我父亲所有言语的钩拳直拳。在他发怒完之后，我一言不发。</p>
+<p>我父亲极力要把我塑造成他认为的那种成功的孩子，那种孩子聪明好学能出人头地。</p>
+<p>我竭力走向反面。直到我父亲彻底对我失望。</p>
+<p>我领到高考录取通知单的那天，是，我父亲彻底对我绝望的一天。他自己从招生办拿回通知单，然后像一个武林高手一样，让那张通知单飞向我。他满含不屑地说：看看吧，师专。</p>
+<p>我知道我父亲是不满教师这个职业的。起码在我感知的这个世界上，在我所要面对的生活中，这个职业无奈、无力。这个职业根本无法承担一个家庭一个家族对一个人的要求。尽管我父亲投入到这个职业时是那么专心，尽管他对学生表现出的那种耐心在我身上从来没有体现过，但是，一旦转身面对社会，我还是能从他身上感觉到对教师这个职业的不屑和鄙夷。</p>
+<p>父与子的对抗一直是一个让人感兴趣的话题。它是伦理的、心理的，也是生理的。但是我始终无法找到一个满意的方法，让我真正看清我父亲。我和我父亲之间话很少，在几乎所有的问题上，我都反对我父亲。</p>
+<p>一直到今天。</p>
+<h2 id="8"><a href="#8" class="headerlink" title="8"></a>8</h2><p>我母亲的葬礼是我们村予最盛大的丧事之一。送花圈的人络绎不绝，不断有人开着汽车朝我们村子走来。有人。甚至在几十</p>
+<p>里以外的地方打听我们村子的位置。</p>
+<p>参加葬礼的人几乎没有我的同事、同学，而多数是我父亲的同事、朋友。他们既感叹我母亲的早逝，也同情我父亲的不幸。</p>
+<p>看着门前一摞又一摞的花圈，一叠又一叠的白绫，我姑母对我祖母说：你没有福，这些你享受不到了。本来这是你享受的。我祖母说：我看到了就行了，我知道我儿子就行了。</p>
+<p>我祖母的丧事后来就没有我母亲的大。</p>
+<h2 id="9"><a href="#9" class="headerlink" title="9"></a>9</h2><p>你们起床了没有?我父亲问。</p>
+<p>起来了，马上就出发。我说。</p>
+<p>快点儿啊。我父亲挂断电话。</p>
+<p>我对妻子和儿子说：快点几啊，我爸一会儿电话又来了。</p>
+<p>急什么呀，赶十一点到就行了。我妻子说。</p>
+<p>儿子仍然一副不情愿的样子：又回去，每年过年都回去。没意思。</p>
+<p>刷牙、洗脸、吃饭。收拾东西。</p>
+<p>我父亲的电话又来了：走哪儿了?</p>
+<p>我说快到了快到了。</p>
+<p>下了楼，儿子又要拿炮。我厉声喊道：不要拿了!</p>
+<p>妻子转身上楼去拿了。</p>
+<p>我转过身就朝前走。</p>
+<p>车站到处是人，提着大包小包。来一辆车就拼命往上挤。过年，让人头疼的过年，没有尽头。哪里来的这么多人。每个人都带着孩子。这些人穿着新衣服，似乎对挤车和出行充满兴趣。妻子和儿子终于来了，妻子手里拽着儿子。儿子说爸我拿着包，你和我妈往上挤。终于挤上去了，占到了座位。妻子说：每年都是这样，跟打仗似的。儿子说：咱们不会不回啊。我说：不回?二十年以后再说。妻子问：为什么?我说：我姑母在，我舅父舅母在，我叔父叔母在，怎么能不回去?除非他们都不在了。</p>
+<p>电话又响了，我父亲的，愤怒了：到底怎么回事?全家的亲戚都到了，就等你们?说完，电话挂了。</p>
+<p>终于到家了，一些我熟悉的面孔。我开始打招呼，说话，努力地说话。说庄稼，说雨水，说孩子，说孩子的男女上学工作。今年猪肉价又涨了，农业税取消了，表弟在城里打工一年没有拿上工资能不能想法找个人，我假装沉思在脑子里找人。表叔说能不能给孩子找个活重一点钱挣得少一点都行只要不叫呆在农村闲着就行。我表哥过来说你把哥忘了彻底忘了哥现在负担重得很两个孩子上学不争气你得想办法找个什么学校让学个技术，我想我表哥我是不应该忘记的我们是从小在一块玩大的我表哥总是照应我。我姑母流着眼泪说你爸现在脾气大得很我有话都不敢说，我说那是你兄弟么谁让你要这样的兄弟，我姑母笑了我对自己的幽默效果挺满意。吃完饭我去看远房的婶娘她腰疼腿疼一天吃一粒止痛片我掏出五十块钱塞到她手里……</p>
+<p>第二天，大年初二，该拜会岳父岳母了。十一点，老丈人电话打过来了：最多睡到一点，下午三点吃饭。儿子抢过电话：姥爷，给我买炮了没有?</p>
+<h2 id="10"><a href="#10" class="headerlink" title="10"></a>10</h2><p>个子是有点儿小了，但是看上去挺活泼，说话叽叽喳喳的，像一只鸟儿乱叫。似乎和所有的男生都交往，这一点看上去有些轻浮。不过和任何一个似乎都没有深交，也许只是说说话而已。当然，重要的是，她说普通话，标准的普通话，说话时有城市的气息。</p>
+<p>我就这样确定了我要追求的目标。我把班上的所有女孩比较了一番，最后终于确定了这一个。那时候，我把说普通话作为一个“绝对标准”，这个标准丝毫都不能降低。如果不是普通话，肯定不在我的考虑范围之内。结婚后，我把我的择偶标准告诉妻子，她极其失望地望着我，问：再没有其他的了?我身上就没有其他地方吸引你?我点点头，她拿起枕头朝我砸了过来，我大笑不止。</p>
+<h2 id="11"><a href="#11" class="headerlink" title="11"></a>11</h2><p>上我父亲生于一九四三年农历六月二十八，二十六岁时从陕西师范大学毕业，分配到陕西商州中学教书。十六年后，他把我们全家搬入商州。又五年，我们全家伤感地离开商州，回到故乡兴平。五十八岁时我父亲从家乡中学书记的位置上退休。经过我父亲之手进入城市中学读书的先后有：来自我父亲系统的我的表叔、我的表弟表妹、我表兄的一对儿女，来自我母亲系统的四个表弟和两个表妹，分属于我的两个舅父。我叔父的两个儿子，我的两个堂弟，在我父亲操办下当兵。倘若加上我们兄妹三人，共计十六人。</p>
+<h2 id="12"><a href="#12" class="headerlink" title="12"></a>12</h2><p>我父亲脾气暴烈，说话从不留情。我为之忧惧不安，惟恐语言的利刺伤及我的表弟表妹，让他们产生寄人篱下的感觉。但是面对我父亲身后这个庞大的团队，我又无话可说。我不知道，我父亲那么暴烈的脾气，又怎么会客许在家中支上一张床，接待一拔一拨的予侄?</p>
+<p>有一段时间，我的叔父我的姑父姑母我的舅父舅母把麦子磨成面送到我的家里，我母亲承担着一个家庭妇女的角色忙于做饭。这些粮食远远超出我表弟表妹的饭量，在生活极度紧张的情况下，多余的部分就成为对我们家庭不出声的支援。我在这种交换中感受到由血脉传递的温度，它们坚强无私，诚恳朴实，让人对生活永不绝望。</p>
+<p>但是，高估这种情感的价值显然理想化了。我在农村生活中见惯了兄弟阋墙、父子成仇、妯娌反目、亲戚一刀两断，而起源，常常不过是一件琐碎小事，一把小板凳一个小铁勺或者一尺布。兄弟俩甚至可以为几个包谷从村东厮打到村西，打得头破血流，老死不相往来，提起来目眦尽裂，隔代犹有遗恨。在兄弟阅墙的故事中，媳妇是最容易招致舆论声讨的对象，是媳妇的挑唆才导致一个和睦的家庭四分五裂。在那些极具文学色彩的描述中，结尾往往以媳妇的归顺宣告世界的和谐圆满。但是这个结尾恰恰无法对故事的起源做出合理的解释，这十结尾恰恰否定了血脉的存在。必须承认，媳妇始终是一个外来人，她并不只是在故事的开头，临时扮演一个外来人的角色。媳妇当然可以传递后代，但她同时可以稀释血亲，分裂家庭。她是一个合法的家庭分裂者。我们像一棵植物那样，从妻子那里开始分蘖，基因重组，走上新的生命道路。我结婚后的第一天，当新婚的妻子在饭桌摆上一盘鱼时，我突然间眼泪涌了出来，我不知道我的父母此刻在千什么，吃着什么。我不明白为什么我就这样和父母分产了，我就这样失去我的父母了。妻子不解地看着我，然后告诉我，会习惯的，慢慢就接受了。我的妻子是一个有准备的妻子。妻予永远都是一个准备充分的人，准备做一个新娘，做一个家庭的母亲。她是被嫁出去的，她本身就是被分裂出去的，她的被分裂已经告诉她，必须有属于自己的独立的生活，加入或者返回都是不可靠的，只有重组才是自己的出路。是的，我会习惯的，我告诉妻子。这种习惯包括独立生活，也包括责任的分解，或者说逃避。起码在我看来。当血亲越来越模糊的时候，我们告诉自己，有些事情我是可以不负责任的。当我的兄弟姐妹们在需要我帮助的时候，我有了毋须回避的借口，我有自己的家庭，我有自己必须尽的责任。这种借口随血脉渐远而理由充分，也宣告了感情的脆弱和不可靠。</p>
+<p>不能否认的是，血亲的淡漠常常来自于物质的窘困。不负责任常常包含无能为力，血亲之所以得到重视实在是因为无依无靠。灾难无常，突变骤生，命运的泪水除了向亲人倾倒再也找不到哭诉的对象。谁能在冥冥中帮我的至爱亲朋啊，在一天一天的祷告中，人变得越来越现实。</p>
+<p>迄今为止，我都不敢把生活过得放浪恣肆，我总觉得在我大笑的时候将会有不祥的事情发生。这倒不是我对塞翁失马、祸福相依这样的人生道理有着哲学的体认，而是，我觉得任何一个突如其来的灾难都可能把一个弱小的家庭打成内伤，让它难以生息。我得感谢我的家庭，我们虽称不上父慈予孝、母爱妻贤，但亲戚还都通情达理，我父亲脾气是刚硬了些，但凭借他提供的那个小城市的视窗，我得以窥见整个世界的面目。在血脉传递的温情中，在物质的挤压和逼迫中，我还保留了一方难得的精神空间。起码，在那个小城市，一个数学成绩极差的孩子，还拥有对文学生活想象的权利。</p>
+<h2 id="13"><a href="#13" class="headerlink" title="13"></a>13</h2><p>在我和父亲的长期较量中，我逐渐学会接受我父亲身上拥有的一切。作为一个标准的中国式的儿子，我温和恭谨，对父亲只做远距离的打量，从未试图进入他的内心世界。对我父亲的烦恼暴怒无奈，也只是在成年后，才有了以手试水的体味和感受。黄仁宇说，一个人的进学中举，表面上似乎只是个人的聪明和努力的结果，实则父祖节衣缩食，寡母的自我牺牲，贤妻的含辛茹苦，经常是这些成功的背景。而一旦功成，若不提供相应的负担，则不只是个人品德的堕落，还会造成社会结构性的道德断裂，成为一个民族无法治愈的内伤。我父亲几乎实践了这样一个定律，我们的家庭几乎是在走一条几千年几百年以前的道路。我亲眼看着我父亲画梅花的手换上炒瓢，大提琴的音乐在中年以后不再奏响，琴弦则变成了我自行车上的闸线。在漫长的几乎是没有止境的人生道路上，我父亲和像我父亲那样的人们，拉着早巳超载的车，拖着无边无际的绳索，收拾起属于个人的心事，拼命朝前赶。那种苦恼和暴怒剔除了个人的性格因素，更像是一种反抗和不服从。但是最后，他们几乎无一例外地遵从了命运的安排。最初，这种屈服也许还包含挑战，随后就转化为自觉的毫无意识的承担。这一切既加重了个人的命运负担，也聚拢了容易离散的血缘亲情。今天，当我坐在桌前写下这一切的时候，我知道，要我像我父亲那样，我是永远办不到了。似乎一切都可以成为拒绝我堂弟的借口，房子紧张，工资有限，夫妻双方家庭亲戚不对等可能引起的矛盾，等等。而随着血脉的渐行渐远，我在城市的嚣声中，渐渐找不到我的兄弟们的身影。诗人说：我看到人们向四下散去；</p>
+<p>我父亲现在没有任何爱好，不打麻将不玩扑克不下象棋围棋。惟一的爱好似乎是交游，交很多朋友，吃饭说话排遣寂寞。他喜欢看一本叫《报刊荟萃》的杂志，那上边常登政治秘闻红墙故事。他坚定地认为，台湾要搞独立就打，不信打不过一个小岛。他坦率地承认，现在生活是比过去好了，但是社舍风气还是存在问题。而解决问题的惟一办法是上溯，上溯到我们谁也无法说清的过去，那里有解决一切问题的灵丹妙药。我无法说服他，因为我们都生活在现在之中，现在的困惑现在的迷惘。一切问题都在现在发生，而一切问题都未必在现在能找到解决的办法。</p>
+<p>他在六十岁时决定给自已过一次生日，此前他从未有过生日的习惯。我们摆了四桌酒席，在有限的范围内通知应该到的客人。参加我父亲生日的有从五百里以外赶来的学生同事，，有从外地赶回来的我的表弟表妹。我弟弟喝得大醉。生日过得圆满，父亲也高兴。该来的人都来了，没有来的人还打电话祝福。我父亲说：我过生日他们不敢不来。</p>
+<p>我父亲。</p>
+<p>（《人民文学》2004年第7期）</p>
+<h1 id="消失的村庄"><a href="#消失的村庄" class="headerlink" title="消失的村庄"></a>消失的村庄</h1><p>■江 子</p>
+<p>　　 </p>
+<p>　　</p>
+<p>　　民办教师王大伟是二十多年来从我们村子消失的第一人。离开村子的时候，王大伟连一声招呼也不打——即使是与他生活多年的妻子和他的一对儿女。这一点让村里人觉得王大伟这个人有些狠心。王大伟与我们确实是不一样的人。第一，全村除了那些得了老花眼的老人为了生活方便偶尔戴一戴眼镜外，王大伟是惟一的一个一天到晚戴着眼镜的人。第二，王大伟经常在夜晚的月光下在村子学校门前的操场漫步，沉思，形状如同鬼魅，有时还会长叹一口气，好像是被天大的事给难做了——村里半夜起来解溲的人看见他在月光下叹气的样子都会这么认为。第三，王大伟经常对人们说一些莫名其妙的话，比如他说他要写一本书，一本小说或别的什么，那他这辈子就吃不完用不尽了。王大伟离家出走的第二天，村里出外做篾匠的李四保还在另一个镇上碰到过他，他们还说了好一阵子的话，可李四保并没有发现王大伟离开村子的哪怕一点点迹象。王大伟离开村子已经二十多年了，村里从没有过他的任何一点音讯。王大伟的失踪使他在乡里做公办教师的哥哥王大海养成了一个逛书店的习惯，几乎每隔半个月，他都要到县里的新华书店看新出版的书。王大海以为王大伟既然有过写书的念头说不定在书店里可以找到关于他的蛛丝马迹，但王大海多年的寻找显然一无所获。王大伟好像是故意躲了起来，存心不让村里人找到他。人海茫茫，一个人如果存心要躲起来，你就是花上九牛二虎之力也是枉然。王大伟既然铁定了心要躲起来，他真写了书也会用化名。书店那么多书，要找到王大伟用化名写的那本，其实是一件十分困难的事。</p>
+<p>　　接生婆李龙姑的儿子豆角是在去广东打工的路上失踪的。豆角去广东坐的是火车，可村里一起去打工的人在下车时竟然没有发现豆角的踪影——他的行李还在，里面还有李龙姑亲手煮的鸡蛋。村里人都猜豆角要么糊里糊涂在中途的某个小站下了车，要么是坐火车坐过了站。豆角是个只有十六岁的孩子，没读几年书，又没有出过远门，豆角的失踪就在所难免的了。再说了，铁路线那么长，每年都要装载那么多货物那么多人，丢个把人那并不是一件什么了不得的事情。——也有人说，豆角是被一阵风给刮走的。豆角长得奇瘦，一阵风就可以刮走他，这就是他被村里人唤作豆角的原因。豆角失踪的消息传到村里，李龙姑和她的丈夫差一点就昏了过去。之后他们就经常离开村子，沿着去广东的路线找他们的儿子。他们找遍了沿路的乡村城市，世面倒是见了不少（盘缠几乎是倾其所有），可儿子连影子都没见着。他们每次出去都带着一张硬纸——上面贴着十六岁的豆角的照片，请人用毛笔写着“寻找儿子刘晓春”（刘晓春是豆角的大名）。很多年过去了，那张照片至今也没有换过。村里人对这事很不以为然，都说如果豆角还活着，肯定已经不是照片上的样子了，接生婆李龙姑夫妇这样找儿子是瞎子点灯，白费蜡。</p>
+<p>　　王细金是村里最有钱的人。不仅在村里，就是在县里，王细金都是出了名的有钱人。他拥有全县用最齐全最先进的设备武装起来的一支打桩队伍。这些年县里大搞基建，王细金确实赚了不少。可他再有钱也不能保证他的儿子就不失踪。村里人说，正是因为他太有钱了他的儿子才会莫名其妙的不见了。王细金的儿子在县里重点中学读高中。王细金的儿子失踪是在一个晚自习后。失踪前他是和几个同学一起走的。他们在路口分手都愉快地进行了道别。可他并没有回到家里，而从路口到他家里只要五分钟——王细金的儿子就在这短短的五分钟的时间里给丢了。这件事情有些蹊跷，它不像是绑架，事后并没有人以此向王细金索要钱财，也不像报复，王细金这些年来并没有把什么人得罪到要他儿子性命的程度。他儿子的失踪是村里的一个天大的谜。王细金有两个儿子，一个大学毕业后在国务院工作，失踪的是他的小儿子。人们都说，王细金的两个儿子现在是一个在天上，一个在地下。儿子失踪后，王细金打起桩来要狠得多。这些年来，他的打桩队伍几乎把整个县的地都挖了一遍，可即使掘地三尺，他的小儿子还是生不见人死不见尸。</p>
+<p>　　酒鬼李大哈子的女人是在一个夜里突然不见了的。李大哈子的女人是一个善良贤惠的女人，才有才貌有貌，可李大哈子并不懂得珍惜。李大哈子喝醉了酒就喜欢揍他的女人，往死里揍，经常揍得他女人青一块紫一块的。经常在半夜里，李大哈子的家里就传出他女人的鬼哭狼嚎的声音。李大哈子的女人在村里就这样熬了许多年，可最终还是熬不住了，在一个夜晚乘李大哈子又喝得烂醉如泥时丢下一对儿女走了。走的时候除了几件换洗衣服，什么也没有带，但留下了一封信，信上歪歪扭扭地写着：带好思（错别字，应为“崽”——作者注）女，不要找我。（信纸上据说还有一大片泪渍）李大哈子醒来后追悔莫及，想到女人曾有过上庵吃斋的念头，就去远远近近的寺庙里找，但一无所获。有人说，就在他女人离家出走的前几天，有个货郎一直在村里转悠，他女人八成是被那个货郎拐走了。村里出过外头的人说，货郎操的是河南口音。河南离我们这里太远了，远的就像是另外一个世界。让把钱都拿去喝酒了的李大哈子去河南那么大而且远的地方找他的女人，这是一件很不现实的事。李大哈子的女人就这样神秘地消失了，那个货郎也从此再没有来过。</p>
+<p>　　除了这些人外，二十多年来村里失踪的人还有：铁匠大四子的女儿喜梅子，上世纪九十年代末去广东打工，开始进了一家毛织厂，来过信说因为嫌工资低和一个四川的女工出了厂，后来就杳无音讯；捕蛇人王三伢子他爹，患了老年痴呆症，在前年的某个下午，沿着墙角走着走着一不留神就没了踪影，至今家乡十里方圆许多村子的电线杆上，还留着王三伢子贴的已经字迹模糊的寻爹启事；六六陀去湖南贩卖假烟，开始的时候挣了不少钱，后来又一次去了湖南，就再也没有回来，据说走的时候身上带了三万块钱；杀猪佬刘汉章的女人带五岁的儿子去县城走亲戚，在大街上把儿子给走丢了，他女人从此发了疯，看到五六岁的男孩就追着叫儿子，让人看了十分难受，不过久了也就觉得平常不过了；最近失踪的是鼻涕客王老五，因为在村里开杂货店挣了点钱，显摆买了个手机，去年的某天接到了个莫名其妙的短信息，说他中了一个奖金为七万元的巨奖，他没有告诉任何人第二天就悄悄坐班车去了市里，然后坐上了去长春（短信息上说的颁奖城市）的火车，从此不知所终……</p>
+<p>　　从二十多年前的民办教师王大伟开始至今，村里失踪的人共有13人。这个数字是县里开展人口普查时统计出来的。村里对全村人进行统计时，人们突然又记起这些人来。在村里人的印象里，他们还是出走时的模样，比如王大伟还是那副戴着眼镜在月光下散步心事重重的样子，豆角还是十六岁，瘦得就像一根豆角……不过，他们的面目有的因时间久远而显得多少有些模糊，有的却清晰得仿佛昨天还见过他。对他们的去向，人们众说纷纭，有说肯定是被人拐卖了的，有说可能早已死在外头了的，有说或许因为加入了黑社会不敢和家里联系的，有说……村支书刘大眼是这样说的：“这些狗娘养的，他们八成是约好了的……他们是嫌我这个村支书当得太久了（狗日的刘大眼，竟然当了二十多年村支书！）。他们腻味我了，就一个接一个的去了一个我们永远找不到的地方，重新建起了一个村子……”</p>
+<p>　　——村里所有的人都愿意相信真有这样一个村子在。那里没有愚昧，没有贪婪，没有拐骗欺诈，没有暴力凶杀。人们在那里繁衍生息。村子四周都栽满了鲜花。</p>
+<p>　　</p>
+<p>　　</p>
+]]></content>
+      <categories>
+        <category>-语文</category>
+      </categories>
+      <tags>
+        <tag>-阅读材料 -语文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>回复日本物资</title>
+    <url>/2020/02/14/%E5%9B%9E%E5%A4%8D%E6%97%A5%E6%9C%AC%E7%89%A9%E8%B5%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><del>zxb的辣鸡题目</del></p>
+<a id="more"></a>
 
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
+<p><strong>亲爱的日本友人：</strong></p>
+<p>​    <strong>物资尽已收到，拳拳之心，不胜感激。另有诗词歌赋于其上，诗曰：“岂曰无衣，与子同袍”，病毒来势汹汹，而贵国愿与我国同仇敌忾，虽隔海相望，亦有身遥心迩之感，定将勃然奋励，待辽河冰融，富春花开，必攻克疫情，再以琼瑶相报，共把酒言欢。</strong></p>
+<p>​    <strong>中、日二国，一衣带水，古有大唐高僧，东渡日本；今有令和馈赠，空临荆州；一树花开，两地同赏；文词经贸，互通有无；山川异域，而愿共结来缘。</strong></p>
+<p><strong>我国本钟灵毓秀，人文荟萃之地，不乏文人墨客，江山才子。而今日新月异，迁客骚人无不计功谋利，少有捐华务实，兀兀穷年之士，再无青楼好梦，豆蔻工词。今见贵国兼收并蓄，细大不捐，以诗词相赠，如此掷地金声之言，着实令人自惭形秽。此次雪中送炭，吾辈定铭记不忘。</strong></p>
+<p><strong>此次抗疫，我国正处红日初升之时，胜利势在必得。度尽劫波兄弟在，相逢一笑泯恩仇，愿中、日二国以此为契，求同存异，休戚与共，郭睦邦交。</strong></p>
+<p><strong>此致</strong></p>
+]]></content>
+      <categories>
+        <category>-语文</category>
+      </categories>
+      <tags>
+        <tag>-思想 -语文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>核心词相关</title>
+    <url>/2020/02/14/%E6%A0%B8%E5%BF%83%E8%AF%8D/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><del>同学们个个都是人才，说话又好听</del></p>
+<a id="more"></a>
 
+<h2 id="和谐"><a href="#和谐" class="headerlink" title="和谐"></a>和谐</h2><p>定义：交融共生，包容矛盾，丰富充实，心灵体验。和谐是交响乐而不是独奏</p>
+<p>联想：1、圣埃克絮佩里：飞行的风险、黑暗的神秘、星空的灿烂、风雨的无情。独特体验与文学作品交融，人格价值与文学价值结合，成为和谐的大写的人。</p>
+<p>​     2、《要塞》：“你同意为之而死的东西，就是你能够为之而生的东西”</p>
+<p>​     3、索尔仁尼琴“一个世界不能只有一种声音”</p>
+<p>​     4、卡尔维诺《分成两半的子爵》善恶冲突，人性分裂到和谐统一</p>
+<p>​     5、《树上的男爵》通向完整的道路</p>
+<p>​      6、格里尔帕策“我热爱人类，特别是他们聚在一起，暂时忘记了各人的私立，融合为      一个整体时，因为神性就存在于这样一个整体上”</p>
+<h2 id="人格"><a href="#人格" class="headerlink" title="人格"></a>人格</h2><p>定义：独立于他人的品质，内在的精神支撑。</p>
+<p>联想：1、《德米安》“觉醒的人只有一项义务，找到自我，然后在心中坚守其一生”</p>
+<p>辜鸿铭：新文化浪潮中的落日余晖</p>
+<p>2、《在中国的屏风上》“您看，我留着一条辫子，它是一个象征，因为我是这个古老中国的最后代表”儒者的坚守，气节，文化底蕴</p>
+<p>3、《送浮屠文畅师序》“宜当告之以二帝三王之道，日月星辰之行，天地之所以著（显明），鬼神之所以幽，人物之所以蕃（茂盛），江河之所以流而语之”</p>
+<p>4、伍尔夫“她的记忆有着隐秘的两面，一面澄明，一面黑暗；一面寒冷，一面温热；一面是创造，一面是毁灭；一面铺洒着天堂之光，一面燃烧着地狱之火”</p>
+<p>5、李叔同：“修己，以清心为要；涉世，以慎言为先“</p>
+<p>6、小仲马“对于有接触智慧的人来说，热情应之应该是一个动力，正像风对于大海一样，风卷起海浪，使大海发怒，气势雄伟，然后风消失了，大海还是大海”八风不动</p>
+<p>7、叔本华“孤独时，人须委身于自己”“一个人内在所具备的愈多，求之于他人的愈少，他人能给自己的也愈少”</p>
+<p>8、鲁迅“我们极易变成奴隶，而且变了之后还万分欢喜”</p>
+<p>9、尼采的酒神精神和日神精神，走向自我和走向世界。</p>
+<h2 id="本色"><a href="#本色" class="headerlink" title="本色"></a>本色</h2><p>联想：1、黄宗羲“忠诚是人生的本色”</p>
+<p>​     2、爱迪生“羡慕就是无知，模仿就是自杀。无论好坏，你必须保持本色”</p>
+<p>​     3、启功“立身苦被浮名累，涉世无如本色难”</p>
+<h2 id="磨练"><a href="#磨练" class="headerlink" title="磨练"></a>磨练</h2><p>联想：1、车尔尼雪夫斯基“世界上没有天生的才气，才气必须经过磨练”</p>
+<p>​     2、巴尔扎克在巴黎贫民区的小屋里写作</p>
+<p>​     3、蔡元培“然所谓困苦者，乃锻炼之谓，非使之柔弱以自苦也”</p>
+<p>​     4、海涅”死亡是凉爽的夜晚，生活是痛苦的白天”热切地期待死亡的人同样会是热烈  地期待生命的人</p>
+<p>​      5、尼采“那些杀不死我的，终将使我更强大“</p>
+<p>​     6、里希特“苦难有如乌云，远望去但见墨黑一片，然而身临其辖时不过是灰色而已“</p>
+<p>​      7、《前方》“人们或是借着路，向前流浪，或是被命运抛到路上。四野茫茫，八面空空，眼前与心中，只剩下一条通往远方的路“</p>
+<p>​      8、史铁生“最后的练习是沿悬崖行走“</p>
+<h2 id="理想"><a href="#理想" class="headerlink" title="理想"></a>理想</h2><p>联想：1、雅斯贝尔斯“基于信仰追求的苍白无力的理想主义”想的地位高于理</p>
+<p>​     2、《格拉斯医生》理想的医生——职责。“爬到职责后面去”</p>
+<p>​     3、托尔斯泰理想的生活“窗外下雨，坐沙发，吃巧克力，读狄更斯“</p>
+<p>​     4、《荒原狼》“难道理想是为了实现而存在的吗？”</p>
+<p>​      5、昆德拉《不朽》“人不再把生命看作一条小路，而是一条公路：宛如这一站到下一站的路线。”</p>
+<p>​      6、理想有其合理性，如若像堂吉诃德一样知其不可而为之，容易走向荒谬。</p>
+<p>​      7、《麦田的守望者》“一个不成熟的理想主义者会为理想悲壮地死去，而一个成熟的理想主义者则愿意为理想苟且地活着”</p>
+<p>​      8、张闻天“生活的理想就是为了理想的生活”</p>
+<p>​      9、流沙河“理想是石，敲出星星之火；理想是火，点燃熄灭的灯；理想是灯，照亮前行的路；理想是路，引你走向黎明”</p>
+<h2 id="梦想"><a href="#梦想" class="headerlink" title="梦想"></a>梦想</h2><p>联想：1、萧伯纳“人生有两起悲剧，一是万念俱灰，另一是踌躇满志”</p>
+<p>​     2、生死为此岸，涅槃为彼岸。烦恼是中流，般若是船筏。</p>
+<p>​     3、保罗·瓦雷里《脚步》梦境中的幸福与现实的无奈</p>
+<p>​     4、拉斯克利尼科夫成为非凡之人”拿破仑”的梦想</p>
+<h2 id="志向"><a href="#志向" class="headerlink" title="志向"></a>志向</h2><p>联想：1、苏霍姆林斯基“志向是天才的幼苗……确定个人志向，选好专业，这是幸福的源泉”</p>
+<p>​     2、莎士比亚“志向不过是记忆的努力，生气勃勃地降生，但却很难成长”</p>
+<h2 id="目标-期待"><a href="#目标-期待" class="headerlink" title="目标/期待"></a>目标/期待</h2><p>联想：1、柳青《铜墙铁壁》“人一乱跑开就坏了，正好成了扫射的目标”</p>
+<p>​      2、曹文轩《前方》“对远方的期待实际是对周遭的不满，来日可期与当下颓靡，心灵      放逐与欲望牵绊”</p>
+<p>​      3、《鼠疫》人们对走出荒诞的期待，完成自己的朝圣，被压抑的热忱、流放给人的无力感都得以释放的那一刻</p>
+<p>​      4、李君南“当人不再追求，不再前行，不再期待，不再贡献自己于世界的探索与生命的延展，时间就只会夺走我们，而不是成就我们”</p>
+<h2 id="感恩"><a href="#感恩" class="headerlink" title="感恩"></a>感恩</h2><p>联想：1、《史记······范睢蔡泽列传》“一饭之德必偿，睚眦之德必报“</p>
+<p>​     2、陀思妥耶夫斯基“我怕我配不上我所受的苦难</p>
+<h2 id="思考-思想"><a href="#思考-思想" class="headerlink" title="思考/思想"></a>思考/思想</h2><p>联想：1、《德米安》“每个人一定要站在他自己的立足点，保持他自己的立场，独立思考，独立行动”</p>
+<p>​      2、托尔斯泰“要想获取他人的智慧，必须先独立思考</p>
+<p>​      3、阿纳托尔·法郎士“最难的的勇气是思想的勇气”</p>
+<p>​      4、莎士比亚：思想——自由的精灵</p>
+<p>​      5、西德尼：有高尚思想的人是永不会孤独的</p>
+<p>​      6、加缪：思想，可就是重新学习观察、关注自己，思想就是引导自己</p>
+<p>​      7、赫兹利特“人的思想如同一只钟，容易停摆，需要经常上发条”</p>
+<p>​      8、李二和《流浪的梦》“思想耻于萎靡或逍遥在阳光里，而总喜欢划破黑暗的撕裂之声。不朽的思想从来就甘受寂寞与屈辱，而不会随形就势，行季节之风”</p>
+<p>​      9、海德格尔“在我们这个可思虑的时代里最可思虑的是我们尚未思想“</p>
+<h2 id="智慧"><a href="#智慧" class="headerlink" title="智慧"></a>智慧</h2><p>联想：1、罗素“智慧是要独立思考，光明正大地看得世界的一切——善的、恶的、美的、       丑的；正视客观而不是害怕现实”</p>
+<p>2、伯里克利“我们爱好美丽的东西，但是没有因此而至于奢侈；我们爱好智慧，但是没有因此而至于柔弱”</p>
+<p>3、马塞尔”没有人给我们智慧，我们必须自己找到他”智慧起源于愚蠢的废墟上</p>
+<p>4、斯特恩“一盎司自己的智慧抵得上一吨别人的智慧“</p>
+<p>5、林贤治“智慧是磷火，不是石火和新火，无须摩擦，撞击，自然也无须点燃，而思想是大地的“？？？？</p>
+<p>6、马克思“智慧同智慧相碰，就迸溅出无数的火花“</p>
+<p>7、克林凯尔“可以碰到上千个学者，不一定碰上一个智者“</p>
+<p>8、《金刚经》“般若者,一切诸智慧中最为第一,无上无比无等,更无胜者,穷尽到边“</p>
+<p>9、王尔德“愚人创造了这个世界，智者不得不生活其中“</p>
+<h2 id="取舍-舍得"><a href="#取舍-舍得" class="headerlink" title="取舍/舍得"></a>取舍/舍得</h2><p>联想：1、赫拉克利特斯“所有事物都是流动的”</p>
+<p>​     2、舍掉善良淳朴，可以得到圣安娜勋章，和猪一样的日子。</p>
+<p>​     3、小美人鱼“死亡是喔感到唯一遗憾的是不能为爱而死”舍去的生命和情感</p>
+<p>​     4、《西西弗神话》“吾魂兮无求乎永生，竭尽兮人事之所能”</p>
+<p>​     5、《小王子》“用生命去换取比生命更长久的东西”</p>
+<p>​     6、鲁达基“有取有舍的人多么幸福，寡情的守财奴才是不幸“</p>
+<p>7、柏拉图“人生最遗憾的，莫过于，轻易放弃了不该放弃的，固执地坚持了不该坚持的“</p>
+<h2 id="回眸"><a href="#回眸" class="headerlink" title="回眸"></a>回眸</h2><p>定义：一束含情脉脉的光，在你心上烫出一个洞</p>
+<p>联想：1、史铁生“我已不在地坛，地坛在我”无需回眸</p>
+<p>2、《朝花夕拾》不是旧事重提，不仅是“茭白，香瓜”这些思想的蛊惑，而是注入了现在的理解，站在现在，与过去和解。</p>
+<p>3、海泽”死亡的到来，正帮助青春鼓起了即将被折断的羽翼。春天的风景，总是会从树上吹落成千上万还不曾结果的鲜花的”</p>
+<p>4、余华“回忆最好的地方就是可以自由选择”</p>
+<h2 id="境界"><a href="#境界" class="headerlink" title="境界"></a>境界</h2><p>联想：1、王国维三种境界“独上西楼望尽天涯路”“衣带渐宽终不悔”“众里寻他千百度”</p>
+<p>​      2、佛教的三种境界“落叶满空山，何处寻芳迹”“空山无人，水流花开”“万古长空，一朝 风月”</p>
+<p>​      3、真正的画家不应该停留在具体的视觉上，而应该用心灵的眼去观物，画出意念中     的世界，而不赢你局限于视觉中的具体存在，即应以大观小，大是人心灵的统摄力。</p>
+<p>​      4、冯友兰 人生四境界：自然境界——功利境界——道德境界——天地境界</p>
+<p>​      5、禅宗三境界：看山是山，看水是水；看山不是山，看水不是水；看山还是山，看水还是水</p>
+<p>​      6、《人间词话》“词，以境界为最上“</p>
+<p>​      7、道家三界：天界，人界，地界</p>
+<h2 id="友情"><a href="#友情" class="headerlink" title="友情"></a>友情</h2><p>联想：1、《荒原狼》“噢，要是我现在有一位朋友·····”“不，没有室内乐，没有朋友也行。无可奈何地苦苦寻求温暖岂不可笑。···我渴望得到孤独，天长日久……”</p>
+<p> 2、周国平《论孤独》“和别人在一起时，我向往孤独。孤独时，我又向往看到我的同类”安德烈和米哈伊尔</p>
+<p> 3、加缪“不要走在我的后面，因为我可能不会引路；不要走在我前面，因为我可能不会跟随；请走在我的身边，做我的朋友。”</p>
+<p> 4、爱默生和惠特曼，穿粗布衫和穿燕尾服的终究要分手</p>
+<p>  5、周国平“孤独中的写作则是一种自我治疗的方式，只是一开始作为一种补偿的写作，后来便获得了独立的价值”</p>
+<h2 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h2><p>联想：1、墨水瓶中融进了血肉才开始写作。（现实），阿赫玛托娃为万千苦难的人呐喊，辛波斯卡为行星环绕的星光所穿透的苍穹而惊异。</p>
+<p>​     2、托尔斯泰”在清水里泡三次，在血水里浴三次，在盐水里煮三次，我们就会纯净的不能再纯净了”</p>
+<h2 id="追求"><a href="#追求" class="headerlink" title="追求"></a>追求</h2><p>联想：1、《醋栗》“人所需要的不是三俄尺土地，也不是一个庄园，而是整个地球，整个大自然，在那广大的天地中人才能够尽情发挥他自由精神的所有品质和特点。”</p>
+<p>​      2、王尔德“每个圣人都有过去，每个罪人都有未来”“梦想家只能在月光下找到前进的方向，他为此遭受的惩罚是比所有人提前看到曙光”</p>
+<p>​      3、华兹华斯“一个崇高的目标，只要矢志不渝地追求，就会成为壮举”</p>
+<p>​      4、爱因斯坦“对真理和知识的追求并为之奋斗，是人的最高品质之一”</p>
+<h2 id="幸福"><a href="#幸福" class="headerlink" title="幸福"></a>幸福</h2><p>定义：当人么既有整合和谐的人生观又有实现人生目标的能力时，能达到的比较理想的生活状态</p>
+<p>联想：1、《圣经》“饥渴慕义的人有福了，因为他们必得饱足。”</p>
+<p>2、迪金森“呐喊着作战非常英勇/但我知道/更英勇的是与自己胸中/悲哀骑兵搏斗的 英雄”</p>
+<p>3、钱锺书《论快乐》“矛盾是智慧的代价，这是人生对人生观开的玩笑”“我们希望它来，希望它留，希望它再来，这三句概括人类努力的历史。”</p>
+<p>4、托尔斯泰“人的生活目的，无论现在还是将来，永远都是得到幸福“</p>
+<p>5、奥勒留“真正的幸福并不多。只有当幸福和善属于所有人，这才是真正的幸福和善，因此，只能期望得到符合于共同幸福的东西。谁为了这个目的而努力——谁就将为自己赢得幸福“</p>
+<p>6、托尔斯泰”通过爱与其他人灵魂，通过对自身神性的觉悟达到与上帝越来越紧密的结合，就是人生的意义即幸福所在”</p>
+<h2 id="友情-1"><a href="#友情-1" class="headerlink" title="友情"></a>友情</h2><p>定义：海底的陆地，连接座座岛屿</p>
+<p>联想：1、友情是“无缘之慈悲”，是无条件的，对所有人都平等的，是一种自觉而不自觉的行为</p>
+<p>   2、梁实秋《谈友谊》“规劝乃是朋友中应有之义，但是谈何容易……不可当着第三者的面行之…不可在他情绪不宁时行之”</p>
+<p>   3、蒙田“对于一般的友谊，人们会像提着绳索一样小心翼翼地前行，绳索须小心地呵护才不至于出现可能的断裂”</p>
+<p>   4、西塞罗“友谊的基础是美德…一个人的美德一旦表现出来，便会光芒四射，并且借助这种光芒，照见别人的美德。”</p>
+<h2 id="亲情"><a href="#亲情" class="headerlink" title="亲情"></a>亲情</h2><p>联想：1、《项脊轩志》“儿寒乎？欲食乎?吾从板外相为应答“</p>
+<p>​     2、《祭十二郎文》“与汝相养以声，相守以死“</p>
+<p>​      3、《我是农民的儿子》“我时刻感到惭愧儿内疚——那是面对我所来自的那个群体的  原罪感——与生俱来，无可摆脱“</p>
+<h2 id="审美"><a href="#审美" class="headerlink" title="审美"></a>审美</h2><p>联想：1、费舍尔父子“我们对周围事物的审美关照是情感的自发外射作用”</p>
+<p>​     2、张岱“桃则溪之，梅则屿之，竹则林之”</p>
+<p>​     3、《格拉斯医生》美的根源：对爱的向往，梦想。</p>
+<p>​      4、《月亮与六便士》“美是一种美妙、奇异的东西。艺术家只有通过灵魂的痛苦折磨   才能从宇宙的混沌中塑造出来”</p>
+<p>​      5、苏轼《寒食帖》无甜熟灵巧的刻画之美，稚拙天真，善书者。</p>
+<p>​      6、波德莱尔《献给美德颂歌》“只要减少世界的丑恶，光阴的重复！”对美贵族化德反例，美：神性+恶魔</p>
+<p>​      7、（未知出处）好得像夏日里的晚霞、晨荷上的露水，想揽揽不住，想掬掬不着，弄得他愁肠百转、五迷三道。</p>
+<p>​      8、托尔斯泰“质朴是美的必要条件”</p>
+<p>​      9、亚里士多德“美在于事物外在德秩序、匀称、明确”</p>
+<p>​      10、康德“美是无利害的愉悦”</p>
+<h2 id="正义"><a href="#正义" class="headerlink" title="正义"></a>正义</h2><p>联想：1、柏拉图《理想国》“正义是能够使节制、勇敢、智慧在这个城邦产生，并在它们产生之后一直保护它们的品质。”</p>
+<h2 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h2><p>联想：1、帕穆克《伊斯坦布尔》“呼愁”：不妨认为语言是一个社群所共有的情感表达，在帕穆克笔下，“呼愁”即是土耳其人所独有的语言，承载了真挚的情感。</p>
+<h2 id="积累"><a href="#积累" class="headerlink" title="积累"></a>积累</h2><p>联想：1、《小王子》“如果不去遍历世界，我们就不知道什么是我们精神和情感的寄托，但我们一旦遍历了世界，却发现我们再也无法回到那美好的地方去了。当我们开始寻求，我们就已经失去，而我们不开始寻求，就会根本无法知道自己身边的一切是如此可贵。”</p>
+<p>​      </p>
+<h2 id="珍惜"><a href="#珍惜" class="headerlink" title="珍惜"></a>珍惜</h2><p>联想：1、苏轼《海棠》“只恐夜深花睡去，顾烧高烛照红妆“</p>
+<p>​      2、《小王子》“我始终认为一个人可以很天真简单地活下去，必是身边无数人用更大  的代价守护而来的”</p>
+<p>​      3、《今生今世的证据》“人们不假思索地抹去老物与自己存在的证据”</p>
+<h2 id="良心"><a href="#良心" class="headerlink" title="良心"></a>良心</h2><p>联想：1、《悲惨世界》“最高的法律是良心”</p>
+<p>​     2、俄罗斯的良心——索尔仁尼琴</p>
+<p>​     3、乔治·奥威尔——一代人的冷峻良知</p>
+<h2 id="幽默"><a href="#幽默" class="headerlink" title="幽默"></a>幽默</h2><p>联想：1、帕斯“堂吉诃德用一个微笑加强了现实与想象之间的裂痕”</p>
+<h2 id="创新-探求"><a href="#创新-探求" class="headerlink" title="创新/探求"></a>创新/探求</h2><p>联想：1、《小王子》“沙漠之所以美丽，是因为不知在哪里藏着一口水井”</p>
+<h2 id="财富"><a href="#财富" class="headerlink" title="财富"></a>财富</h2><p>联想：1、鲁迅“钱是必要的”</p>
+<p>​     2、伍尔夫“一个女人，还要有一间自己的房屋”</p>
+<p>​     3、布鲁诺“我们理解思想上的财富不是从外部教导，而是从内部启蒙”</p>
+<p>   4、亚里士多德“一定数量物质财富是必要的，贫穷使人贪婪和吝啬”</p>
+<h2 id="价值"><a href="#价值" class="headerlink" title="价值"></a>价值</h2><p>联想：1、亚里士多德“人生最终的价值在于觉醒和思考能力，而不在于生存”</p>
+<p>​     2、费其诺“认识自己。呵，你这藏在凡俗躯体内的神明子孙啊”</p>
+<p>​      3、叔本华“唯有对自己卓越的才能和独特的价值有着坚定不移之确信的人才能称之为 骄傲”</p>
+<p>​      4、萨特“人是一堆无价值的激情”“人生越没有意义越值得过”</p>
+<p>​      5、苏格拉底”至少我可以练习这支曲子”</p>
+<h2 id="自尊"><a href="#自尊" class="headerlink" title="自尊"></a>自尊</h2><p>联想：1、崔卫平“我是女性，但不主义“</p>
+<p>2、《德米安》“我们来自同一个深渊，我们可以彼此理解，然而能解读自己的人只有自己“”每个人的生命都是通向自我的征途，是对一条道路的尝试，是一条小径的悄然召唤“</p>
+<p>3、伍尔夫“拥有一间自己的房子“”杀死房中的天使“（指失去自我的女性）</p>
+<p>4、狄金森“把青春、诗、无望的爱全关闭在一个连一朵栀子花也没有的小房间里“</p>
+<p>5、《爱的艺术》“成熟的爱是在保持自己的尊严和个性条件下的结合，尊重即意指对另一个人成长发展顺其自身规律的意愿“我因爱而被爱</p>
+<p>6、孟子”人不可以无耻。无耻之耻，无耻矣”</p>
+<p>7、子路“楚兰生于森林,不以无人而不芳,君子修道立德,不因穷困而变节“</p>
+<p>8、朱熹“自敬，则人敬之；自慢，则人慢之“</p>
+<p>9、苏霍姆林斯基“人类有许多高尚的品格，担有一种高尚的品格使人性的顶峰，这就是个人的自尊心“</p>
+<p>10、席勒“一个没有自尊的人，也很难得别人的尊重“</p>
+<p>11、毛姆“自尊心是一种美德，是促使一个人不断向上发展的一种原动力“</p>
+<h2 id="自信"><a href="#自信" class="headerlink" title="自信"></a>自信</h2><p>联想：1、毛泽东“自信人生二百年，会当水击三千里“</p>
+<p>​     2、惠特曼”自信是灵魂的防腐剂”</p>
+<p>​     3、雨果“应该相信，自己是生活的战胜者“</p>
+<p>​     4、但丁“能够使我漂浮于人生泥沼中而不致陷落的，是我的信心“</p>
+<p>​     5、徐特立”自尊不是轻人，自信不是自满，独立不是孤立”</p>
+<p>​     6、苏格拉底“一个人能否有成就，只看他是否具备自尊心与自信心两个条件“</p>
+<h2 id="科学"><a href="#科学" class="headerlink" title="科学"></a>科学</h2><p>联想：1、《爱因斯坦文集》“关心人的本身，应当始终成为一切技术上奋斗的主要目标“</p>
+<p>​     2、克尔凯格尔“望远镜无助于限定灵魂“</p>
+<h2 id="乐观"><a href="#乐观" class="headerlink" title="乐观"></a>乐观</h2><p>联想：1、拜伦“悲观的人虽生犹死，乐观的人永生不老”</p>
+<p>​      2、达尔文“乐观是希望的明灯，它指引着你从危险峡谷中步向坦途，使你得到新的生  命，新的希望，支持着你的理想永不泯灭”</p>
+<p>​      3、罗曼罗兰”内心的欢乐是一个人过着健全的，正常的，和谐的生活所感到的喜悦”“世界上只有一种真正的英雄主义，那就是在人情生活的真相后依然热爱生活”</p>
+<p>​      4、华盛顿“一切的和谐与平衡，健康与健美，成功与幸福，都是乐观与希望的向上心理产生与造成的”</p>
+<h2 id="心态"><a href="#心态" class="headerlink" title="心态"></a>心态</h2><p>联想：1、狄更斯“一个健全的心态比百种智慧更有力量”</p>
+<p>​     2、爱迪生“登高必自卑，自视太高不能达到成功，因而成功者必须培养泰然心态，凡  事专注，这才是成功的要点”</p>
+<p>​      3、马斯洛“心态若改变，态度跟着改变；态度改变，习惯跟着改变；习惯改变，性格跟着改变；性格改变，人生就跟着改变”</p>
+<p>​      4、弗兰克“我可以拿走人的任何东西，但有一样东西不行，那就是在特定环境下选择自己的生活态度的自由”</p>
+<h2 id="勇气"><a href="#勇气" class="headerlink" title="勇气"></a>勇气</h2><p>联想：1、丘吉尔”勇气很有理由被当作人类德性之首，因为这种德性保证了所有其余德性”</p>
+<p>​     2、托尔斯泰“勇气是智慧和一定程度教养的必然结果”</p>
+<p>​     3、鲁迅“勇者发怒，抽刃向更强者；怯者发怒，即抽刃向更弱者”</p>
+<p>​      4、卢梭“在不幸中所表现出来的勇气，通常总是使卑怯的心灵愤怒，而使高尚的心灵  喜悦的”</p>
+<p>​      5、雨果“一个有坚强心志的人，财产可以被人掠夺，勇气却不能被人剥夺”</p>
+<p>​      6、贡萨罗·罗哈斯“让我们燃烧，让我们毫不畏惧地呼吸“</p>
+<p>​      7、辛波斯卡“反抗这一切的，我们称之灵魂，这是唯一的，未列入长单的部分，面对必将到来的死亡结局，人们挣扎求生或活得漂亮“</p>
+<h2 id="执著"><a href="#执著" class="headerlink" title="执著"></a>执著</h2><p>联想：1、巴尔扎克“拼着一切代价，奔你的前程”</p>
+<p>​      2、毛姆“你应将心思精心专注于你的事业上。日光不经透镜曲折，集于焦点，绝不能  使物体燃烧”</p>
+<h2 id="坚韧"><a href="#坚韧" class="headerlink" title="坚韧"></a>坚韧</h2><p>联想：1、爱默生”强者容易坚强，正如弱者容易软弱”</p>
+<p>​     2、陀思妥耶夫斯基“只有坚强的意志力，就自然而然地会有能耐，机灵和知识”</p>
+<p>​     3、歌德“只有刚强的人，才有神圣的意志，凡是战斗的人，就能取得胜利”</p>
+<p>​     4、罗素“伟大的事业使根源于坚持不断地工作，以全副精神去从事，不避艰苦”</p>
+<p>​     5、马克思“生活就像海洋，只有意志坚强的人，才能到达彼岸“</p>
+<h2 id="超越-突围"><a href="#超越-突围" class="headerlink" title="超越/突围"></a>超越/突围</h2><p>联想：1、《苏东坡黄州突围》“厚实，一种并不陡峭的高度。勃郁的豪情发过了酵，尖利的山风收住了劲，湍急的细流汇成了湖“</p>
+<p>​      2、陶渊明“久在樊笼中，复得返自然“</p>
+<p>​      3、（未知出处）“诗是一种想象力，是一种超越现实的激情“</p>
+<p>​      4、陈东东“它们迫使我写出欲望的美好，超现实的美好“愤怒出使人，现实与美好之间，总有一种古老的敌意</p>
+<p>​      5、（突围结果）余秋雨“成熟是一种明亮而不刺眼的光芒，一种圆润而不腻耳的音响；一种不再需要对别人察言观色的从容；一种终于停止向周围申诉求告的大气，一种不理会哄闹的微笑；一种洗刷了偏激的淡漠，一种无须声张的厚实，一种并不陡峭的高度“</p>
+<p>​      </p>
+<h2 id="自然"><a href="#自然" class="headerlink" title="自然"></a>自然</h2><p>联想：1、黑格尔《逻辑科学》“理念在它自身的绝对真理中，自己决定其特殊环节，或其最初的规定和其异在的环节，以及直接性的理念，作为它的反映。自由地外化为自然“</p>
+<p>​      2、梅特林克《花的智慧》“真实情况似乎是，我们不愿意承认在世界上还有其他生物具有与人类同等的智慧或者道德，不愿意承认其他生物与我们具有相同的重要性，并且认为其他生物命中注定在世界上扮演某些额外角色……我们不打算承认它们或许与我们类似，我们宁可相信除人之外的其他生物都是愚蠢的，只能靠本能生存和活动“</p>
+]]></content>
+      <categories>
+        <category>-语文</category>
+      </categories>
+      <tags>
+        <tag>-思想 -语文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pictures</title>
+    <url>/2019/11/24/Pictures/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我决定新开一个博客页存放收藏的照片-amp-视频"><a href="#我决定新开一个博客页存放收藏的照片-amp-视频" class="headerlink" title="我决定新开一个博客页存放收藏的照片&amp;视频"></a>我决定新开一个博客页存放收藏的照片&amp;视频</h1><a id="more"></a>
 
-      </div>
-    </main>
+<h2 id="张小兵和上海滩大哥"><a href="#张小兵和上海滩大哥" class="headerlink" title="张小兵和上海滩大哥"></a>张小兵和上海滩大哥</h2><p><img src="https://i.loli.net/2020/01/22/wklbyIadxjPOf5T.jpg" alt></p>
+<h2 id="张小兵在烟酒店"><a href="#张小兵在烟酒店" class="headerlink" title="张小兵在烟酒店"></a>张小兵在烟酒店</h2><p><img src="https://i.loli.net/2020/01/22/In2p7NithKPjWJB.jpg" alt></p>
+<h2 id="憨憨小兵"><a href="#憨憨小兵" class="headerlink" title="憨憨小兵"></a>憨憨小兵</h2><p><img src="https://i.loli.net/2020/01/22/OxfSqEuepMBzkC6.jpg" alt></p>
+<h2 id="兰松斌在上课"><a href="#兰松斌在上课" class="headerlink" title="兰松斌在上课"></a>兰松斌在上课</h2><p><img src="https://i.loli.net/2020/01/22/ZJ2yIOgLCWNzv1S.jpg" alt></p>
+<h2 id="2018年圣诞晚会"><a href="#2018年圣诞晚会" class="headerlink" title="2018年圣诞晚会"></a>2018年圣诞晚会</h2><iframe height="498" width="510" src="http://player.youku.com/embed/XNDUxOTQ0MTc4NA==" frameborder="0" 'allowfullscreen'></iframe>
+## 2017年圣诞晚会
 
-    <footer class="footer">
-      <div class="footer-inner">
-        
+<iframe height="498" width="510" src="http://player.youku.com/embed/XNDQ1NDA2MjYwOA==" frameborder="0" 'allowfullscreen'></iframe>]]></content>
+      <categories>
+        <category>-照片</category>
+      </categories>
+      <tags>
+        <tag>-照片 -视频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记</title>
+    <url>/2019/11/17/blog1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="关于目前"><a href="#关于目前" class="headerlink" title="关于目前"></a>关于目前</h1><a id="more"></a>
 
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">SuBonan</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.5.0
-  </div>
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-  </div>
-
-  
-  
-  <script color='0,0,0' opacity='0.5' zIndex='-1' count='150' src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/pisces.js"></script>
-<script src="/js/next-boot.js"></script>
-
-
-
-  
-
-
-
-
-  <script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-<script>
-  window.livereOptions = {
-    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
-  };
-  (function(d, s) {
-    var j, e = d.getElementsByTagName(s)[0];
-    if (typeof LivereTower === 'function') { return; }
-    j = d.createElement(s);
-    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-    j.async = true;
-    e.parentNode.insertBefore(j, e);
-  })(document, 'script');
-</script>
-
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
-</html>
+<p>刚刚考完CSP心情低落删除了之前博客上所有关于OI的文章，然后整理了下这个网站，<del>辣鸡DNSpod解析巨慢等我有钱必换</del>，发现换了hexo手机无法访问又不想更IOS13……</p>
+<p>然后高三期中考试刚过，马上就是一阵接一阵的考试，让人完全无法停下来想一下自己想想的东西…真的是人菜事情多。</p>
+<p>然后这个博客估计以后也是随缘更新的状态，因为没了技术内容日常也没啥好更新的，<del>或者更新点摘抄？尝试下把kindle剪贴导出来看看</del>，然后主要是自己使用，可惜就是手机看不了，<del>越想越气</del>。</p>
+<p><img src="/2019/11/17/blog1/1.jpg" alt></p>
+]]></content>
+      <categories>
+        <category>-记录</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>纪念徐子焓</title>
+    <url>/2019/08/21/%E7%BA%AA%E5%BF%B5%E5%BE%90%E5%AD%90%E7%84%93/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><u>他已经去了3天了</u></p>
+<a id="more"></a>
+<p>是我的一个同班同学在一天晚上突然告诉我</p>
+<p>“徐子焓身体不太好”</p>
+<p>我以为本就没什么大事情，高三高考完的暑假是安逸的</p>
+<p>然后空间里就出现了黑白的图片</p>
+<p>我当天晚上震惊，然后不相信这件事，翻看他生前的聊天记录和空间</p>
+<p>然后逐渐觉得这并不太可能决定睡觉</p>
+<p>一关灯，死亡就来了</p>
+<p>真真切切的死亡，就发生在我身边，同学，邻居。我补课回家还每次都能碰到他</p>
+<p>我战网看到他在打炉石，在他建立的算法群里发言</p>
+<p>最近一次发言在6月13号</p>
+<p>明天早晨六点，南京市殡仪馆，葬礼</p>
+<p>这些和一个十八岁少年毫不相关的词汇</p>
+<p>可就是出现了，我一宿没有睡好</p>
+<p>第二天上学我仔细数着上楼的台阶</p>
+<p>感觉树叶确是更绿了</p>
+<p>我突然有一种自己其实也已经死亡，以灵魂的形式来到学校</p>
+<p>我感受不到走路的感觉，但能听到蝉叫，看到鱼儿窜出水面</p>
+<p>我忽然不知道自己要去哪里，上楼的路太长太长</p>
+<p>我总觉得他还活着，来到课堂，上学</p>
+<p>一切的正常让我相信不了这个噩耗</p>
+<p>同学们都微笑着，让我忘记了伤痛</p>
+<p>可是一停下来，满教室都是他的影子</p>
+<p>也许是我们太相像了吧</p>
+<p>我没有想到自己身边最先离去的不是爷爷奶奶，却是一位看起来最健康的人</p>
+<p>陈天告诉我，他撞在了门上，脑部缺氧</p>
+<p>我难以想象他最后的挣扎和父母葬礼上的绝望</p>
+<p>所有谈到他的人都没有伤心的表情</p>
+<p>更多的是震惊和平淡</p>
+<p>罗碚说，天妒英才</p>
+<p>我无话可说</p>
+]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+  </entry>
+</search>
