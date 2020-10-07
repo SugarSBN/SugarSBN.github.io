@@ -1,19 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>关于复合函数极限的运算法则</title>
+    <url>/2020/10/07/%E5%85%B3%E4%BA%8E%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>关于复合函数极限的运算法则的证明和理解</p>
+<a id="more"></a>
+<p>在数学分析课本P60页有这么一个定理：</p>
+<blockquote>
+<script type="math/tex; mode=display">
+定理7（复合函数极限的运算法则）设y=f[g(x)]是函数y=f(u)与u=g(x)的复合函数\\若满足下列两条件之一：\\
+1、\lim_{u\rightarrow u_{0}}f(u)=f(u_{0}),\lim_{x\rightarrow x_{0}}g(x)=u_{0}\\
+2、\lim_{u\rightarrow u_{0}}f(u)=A,\lim_{x\rightarrow x_{0}}g(x)=u_{0},但在0<|x-x_{0}|<\delta内g(x)\neq u_{0}(\delta >0)\\
+则\lim_{x\rightarrow x_{0}}f[g(x)]=\lim_{u\rightarrow u_{0}}f(u)</script></blockquote>
+<p>然后这个定理的证明以及条件2里那个</p>
+<script type="math/tex; mode=display">
+但在0<|x-x_{0}|<\delta内g(x)\neq u_{0}(\delta >0)</script><p>条件不知道怎么理解</p>
+<hr>
+<h1 id="先来尝试证明条件2-注意不同角标的不同含义"><a href="#先来尝试证明条件2-注意不同角标的不同含义" class="headerlink" title="先来尝试证明条件2(注意不同角标的不同含义)"></a>先来尝试证明条件2(注意不同角标的不同含义)</h1><script type="math/tex; mode=display">
+由\lim_{u\rightarrow u_{0}}f(u)=A有：\\
+\forall \epsilon_{1}>0,\exists \delta_{1}>0,使得当0<|u-u_{0}|<\delta_{1}时，恒有
+|f(u)-A|<\epsilon_{1}············(1)\\
+同样由\lim_{x\rightarrow x_{0}}g(x)=u_{0}有：\\
+\forall \epsilon_{2}>0,\exists \delta_{2}>0,使得当0<|x-x_{0}|<\delta_{2}时，恒有
+|g(x)-u_{0}|<\epsilon_{1}··············(2)\\
+对(2)式中\epsilon_{2}\pmb{取\epsilon_{2}=\delta_{1}}，再结合(1)，用g(x)代替u则构成如下逻辑命题：\\
+*\forall \epsilon_{1}>0,\exists \delta_{1}>0,而对于存在的这个\delta_{1}，又一定存在\delta_{2}使得：\\
+当0<|x-x_{0}|<\delta_2时恒有|g(x)-u_0|<\delta_1\\
+*而当|g(x)-u_0|<\delta_1时，由(1)则可以推出恒有|f(g(x))-A|<\epsilon_1\\
+综上所以有\forall \epsilon_1>0,\exists \delta_2>0使得0<|x-x_0|<\delta_2时恒有|f(g(x))-A|<\epsilon_1</script><p>不过注意到其中有个错误：</p>
+<script type="math/tex; mode=display">
+(1)式中条件有0<|u-u_0|<\delta_1，而(2)式只能得出|g(x)-u_0|<\epsilon_1</script><p>左边的不等号无法得出。所以条件(1),(2)均有其补救措施：</p>
+<script type="math/tex; mode=display">
+在条件(1)中有\\当0=|g(x)-u_0|时,即不满足(1)中的0<|g(x)-u_0|<\delta_1时\\
+但是此时有g(x)=u_0,那么|f(g(x))-f(u_0)|=0<\epsilon_1自然成立了\\</script><script type="math/tex; mode=display">
+在条件(2)则更为直接，强行令0<|x-x_0|<min(\delta_2,\delta)=\delta_2'时，g(x)\neq u_0自然有0<|g(x)-u_0|<\delta_1\\</script><script type="math/tex; mode=display">
+那么如果不加那个g(x)\neq u_0会怎么样呢？</script><p>此时条件应该否定为:</p>
+<script type="math/tex; mode=display">
+\forall \delta>0，总\exists x_1,0<|x_1-x_0|<\delta，使得g(x_1)=u_0=\lim_{x\rightarrow x_0}g(x)\\
+形象化理解，即x_0处的g(x)是平的，即x_0处g(x)未发生变化\\
+于是找到反例：\\
+g(x)=2\\
+f(u)=\left\{
+\begin{aligned}
+2,u=2\\
+1,u\neq 2
+\end{aligned}
+\right.\\
+此时g(x)就处处是平的常函数，而\\
+\lim_{u\rightarrow2}f(u)=1=A\neq2=f(2)\\
+故有\lim_{x\rightarrow1}f(g(x))=\lim_{x\rightarrow1}f(2)=2\neq A</script><p>感性化理解，则是极限描绘了<strong>变化的过程</strong>，若g(x)在x0处是平的话，那么在x0的邻域上g(x)未发生变化，那么f(u)的<strong><u>自变量根本没有发生变化</u></strong>，故求出的极限是错误的</p>
+]]></content>
+      <tags>
+        <tag>-数学分析</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于java域和静态方法不支持多态导致的缺陷</title>
     <url>/2020/10/06/%E5%85%B3%E4%BA%8Ejava%E5%9F%9F%E5%92%8C%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E4%B8%8D%E6%94%AF%E6%8C%81%E5%A4%9A%E6%80%81%E5%AF%BC%E8%87%B4%E7%9A%84%E7%BC%BA%E9%99%B7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>关于java<strong>域和静态方法不支持多态</strong>导致的缺陷</p>
 <a id="more"></a>
-
 <h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>在java编程思想里有这么一句话：</p>
 <p><img src="/2020/10/06/%E5%85%B3%E4%BA%8Ejava%E5%9F%9F%E5%92%8C%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E4%B8%8D%E6%94%AF%E6%8C%81%E5%A4%9A%E6%80%81%E5%AF%BC%E8%87%B4%E7%9A%84%E7%BC%BA%E9%99%B7/1.png" alt="1"></p>
 <p>例如代码</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A1</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> field = <span class="number">5</span>;</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">print1</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getfield</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> field;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A2</span> <span class="keyword">extends</span> <span class="title">A1</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> field = <span class="number">1</span>;</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">print2</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getfield</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> field;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PolymorphismDrawbacks</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		A1 a2 = <span class="keyword">new</span> A2();</span><br><span class="line">		System.out.printf(<span class="string">"%d,%d\n"</span>,a2.field,a2.getfield());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>对应输出结果为</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">5,1</span><br></pre></td></tr></table></figure>
-
 <p>虽然类A2对field有重载的初始化，但是由于“域不支持多态”，使对域的访问在编译期间已经完成而不是执行期间。故在访问a2域时其仍为A1类，而重载初始化并未进行。这样很容易和我的理解出现偏差导致逻辑错误</p>
 <h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>把所有域设置为private(高度封装不可继承)</p>
 <p>然后如要访问则写一个方法getValue()去访问域即可</p>
@@ -24,7 +75,6 @@
     <url>/2020/09/23/20200924/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>加藤恵ちゃん誕生日おめでとうございます！</p>
 <a id="more"></a>
-
 <p><img src="/2020/09/23/20200924/megumi.jpg" alt="megumi"></p>
 ]]></content>
   </entry>
@@ -33,7 +83,6 @@
     <url>/2020/08/29/mio/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>…………………………………………………………………………………………………..</p>
 <a id="more"></a>
-
 <p><img src="/2020/08/29/mio/mio.jpg" alt="mio"></p>
 <p>目前最喜欢的一张！</p>
 ]]></content>
@@ -42,7 +91,6 @@
     <title>憋出来的废话</title>
     <url>/2020/03/08/%E6%86%8B%E5%87%BA%E6%9D%A5%E7%9A%84%E5%BA%9F%E8%AF%9D/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="论他的“英特莱真思”"><a href="#论他的“英特莱真思”" class="headerlink" title="论他的“英特莱真思”"></a>论他的“英特莱真思”</h2><a id="more"></a>
-
 <p>​    鲁讯先生说，人寂寞时，会创作；一感到干净时，即无创作，他已经一无所爱。正巧我闷在家中孤苦寂寞，再者内心龌龊肮脏，又憋了满肚子废话，跟人说怕是无端耗费时间。那真应该感谢美利坚合众国发明的电脑，让“生脑”可以噼里啪啦敲下一堆字，然后慷慨地全部存在电脑里，反正它也说不出什么所以然来。</p>
 <p>​    然而这点自由也马上要被科学家夺去了。愈来愈多科学家崇尚“阿踢费首”，什么都要人造一下，无论甚么飞禽走兽的肉还是转基因的食品再到草地和森林，他们总是想掺和一下，来展现作为人类代表的无尚的“英特莱真思”。</p>
 <p>​    我觉得把“英特莱真思”应该翻译为智力，而wisdom译为智慧。人人都有智力，可是就是这力字，不免又让人联想到力量再又到权力（这真是人们联想能力的体现），然后便成了有智力则得以统治他人，成为“人上人”，于是开始盲目地追求和对有智力的人的盲目崇拜。相比智力，智慧理应是更能代表人高尚的一面，也只是相比智力而言。（人身上大有比智慧和智力更美好的东西）所谓大智若愚我猜也就是说有智慧而却缺乏智力。光荣的荆棘路上的革命者们，选择牺牲绝不是什么高智力的算法机器可以计算的最优决策，但却是人乃至各种生物都具有的本能的奉献。</p>
@@ -65,7 +113,6 @@
     <url>/2020/02/14/%E6%A0%B8%E5%BF%83%E8%AF%8D/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><del>同学们个个都是人才，说话又好听</del></p>
 <a id="more"></a>
-
 <h2 id="和谐"><a href="#和谐" class="headerlink" title="和谐"></a>和谐</h2><p>定义：交融共生，包容矛盾，丰富充实，心灵体验。和谐是交响乐而不是独奏</p>
 <p>联想：1、圣埃克絮佩里：飞行的风险、黑暗的神秘、星空的灿烂、风雨的无情。独特体验与文学作品交融，人格价值与文学价值结合，成为和谐的大写的人。</p>
 <p>​     2、《要塞》：“你同意为之而死的东西，就是你能够为之而生的东西”</p>
@@ -364,7 +411,6 @@
     <title>Pictures</title>
     <url>/2019/11/24/Pictures/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我决定新开一个博客页存放收藏的照片-amp-视频"><a href="#我决定新开一个博客页存放收藏的照片-amp-视频" class="headerlink" title="我决定新开一个博客页存放收藏的照片&amp;视频"></a>我决定新开一个博客页存放收藏的照片&amp;视频</h1><a id="more"></a>
-
 <h2 id="张小兵和上海滩大哥"><a href="#张小兵和上海滩大哥" class="headerlink" title="张小兵和上海滩大哥"></a>张小兵和上海滩大哥</h2><p><img src="https://i.loli.net/2020/01/22/wklbyIadxjPOf5T.jpg" alt></p>
 <h2 id="张小兵在烟酒店"><a href="#张小兵在烟酒店" class="headerlink" title="张小兵在烟酒店"></a>张小兵在烟酒店</h2><p><img src="https://i.loli.net/2020/01/22/In2p7NithKPjWJB.jpg" alt></p>
 <h2 id="憨憨小兵"><a href="#憨憨小兵" class="headerlink" title="憨憨小兵"></a>憨憨小兵</h2><p><img src="https://i.loli.net/2020/01/22/OxfSqEuepMBzkC6.jpg" alt></p>
@@ -384,7 +430,6 @@
     <title>记</title>
     <url>/2019/11/17/blog1/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="关于目前"><a href="#关于目前" class="headerlink" title="关于目前"></a>关于目前</h1><a id="more"></a>
-
 <p>刚刚考完CSP心情低落删除了之前博客上所有关于OI的文章，然后整理了下这个网站，<del>辣鸡DNSpod解析巨慢等我有钱必换</del>，发现换了hexo手机无法访问又不想更IOS13……</p>
 <p>然后高三期中考试刚过，马上就是一阵接一阵的考试，让人完全无法停下来想一下自己想想的东西…真的是人菜事情多。</p>
 <p>然后这个博客估计以后也是随缘更新的状态，因为没了技术内容日常也没啥好更新的，<del>或者更新点摘抄？尝试下把kindle剪贴导出来看看</del>，然后主要是自己使用，可惜就是手机看不了，<del>越想越气</del>。</p>
@@ -400,9 +445,7 @@
   <entry>
     <title>纪念徐子焓</title>
     <url>/2019/08/21/%E7%BA%AA%E5%BF%B5%E5%BE%90%E5%AD%90%E7%84%93/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><u>他已经去了3天了</u></p>
-<a id="more"></a>
-<p>是我的一个同班同学在一天晚上突然告诉我</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><u>他已经去了3天了</u><br><a id="more"></a><br>是我的一个同班同学在一天晚上突然告诉我</p>
 <p>“徐子焓身体不太好”</p>
 <p>我以为本就没什么大事情，高三高考完的暑假是安逸的</p>
 <p>然后空间里就出现了黑白的图片</p>
