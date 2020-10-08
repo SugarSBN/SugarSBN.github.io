@@ -60,7 +60,7 @@ f(u)=\left\{
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>关于java<strong>域和静态方法不支持多态</strong>导致的缺陷</p>
 <a id="more"></a>
 <h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>在java编程思想里有这么一句话：</p>
-<p><img src="/2020/10/06/%E5%85%B3%E4%BA%8Ejava%E5%9F%9F%E5%92%8C%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E4%B8%8D%E6%94%AF%E6%8C%81%E5%A4%9A%E6%80%81%E5%AF%BC%E8%87%B4%E7%9A%84%E7%BC%BA%E9%99%B7/1.png" alt="1"></p>
+<p><img data-original="1.png" alt="1" data-src="/images/bj.jpg"></p>
 <p>例如代码</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A1</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> field = <span class="number">5</span>;</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">print1</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getfield</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> field;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A2</span> <span class="keyword">extends</span> <span class="title">A1</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> field = <span class="number">1</span>;</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">print2</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getfield</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> field;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PolymorphismDrawbacks</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		A1 a2 = <span class="keyword">new</span> A2();</span><br><span class="line">		System.out.printf(<span class="string">"%d,%d\n"</span>,a2.field,a2.getfield());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>对应输出结果为</p>
@@ -75,7 +75,7 @@ f(u)=\left\{
     <url>/2020/09/23/20200924/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>加藤恵ちゃん誕生日おめでとうございます！</p>
 <a id="more"></a>
-<p><img src="/2020/09/23/20200924/megumi.jpg" alt="megumi"></p>
+<p><img data-original="megumi.jpg" alt="megumi" data-src="/images/bj.jpg"></p>
 ]]></content>
   </entry>
   <entry>
@@ -83,7 +83,7 @@ f(u)=\left\{
     <url>/2020/08/29/mio/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>…………………………………………………………………………………………………..</p>
 <a id="more"></a>
-<p><img src="/2020/08/29/mio/mio.jpg" alt="mio"></p>
+<p><img data-original="mio.jpg" alt="mio" data-src="/images/bj.jpg"></p>
 <p>目前最喜欢的一张！</p>
 ]]></content>
   </entry>
@@ -411,10 +411,10 @@ f(u)=\left\{
     <title>Pictures</title>
     <url>/2019/11/24/Pictures/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我决定新开一个博客页存放收藏的照片-amp-视频"><a href="#我决定新开一个博客页存放收藏的照片-amp-视频" class="headerlink" title="我决定新开一个博客页存放收藏的照片&amp;视频"></a>我决定新开一个博客页存放收藏的照片&amp;视频</h1><a id="more"></a>
-<h2 id="张小兵和上海滩大哥"><a href="#张小兵和上海滩大哥" class="headerlink" title="张小兵和上海滩大哥"></a>张小兵和上海滩大哥</h2><p><img src="https://i.loli.net/2020/01/22/wklbyIadxjPOf5T.jpg" alt></p>
-<h2 id="张小兵在烟酒店"><a href="#张小兵在烟酒店" class="headerlink" title="张小兵在烟酒店"></a>张小兵在烟酒店</h2><p><img src="https://i.loli.net/2020/01/22/In2p7NithKPjWJB.jpg" alt></p>
-<h2 id="憨憨小兵"><a href="#憨憨小兵" class="headerlink" title="憨憨小兵"></a>憨憨小兵</h2><p><img src="https://i.loli.net/2020/01/22/OxfSqEuepMBzkC6.jpg" alt></p>
-<h2 id="兰松斌在上课"><a href="#兰松斌在上课" class="headerlink" title="兰松斌在上课"></a>兰松斌在上课</h2><p><img src="https://i.loli.net/2020/01/22/ZJ2yIOgLCWNzv1S.jpg" alt></p>
+<h2 id="张小兵和上海滩大哥"><a href="#张小兵和上海滩大哥" class="headerlink" title="张小兵和上海滩大哥"></a>张小兵和上海滩大哥</h2><p><img data-original="https://i.loli.net/2020/01/22/wklbyIadxjPOf5T.jpg" alt data-src="/images/bj.jpg"></p>
+<h2 id="张小兵在烟酒店"><a href="#张小兵在烟酒店" class="headerlink" title="张小兵在烟酒店"></a>张小兵在烟酒店</h2><p><img data-original="https://i.loli.net/2020/01/22/In2p7NithKPjWJB.jpg" alt data-src="/images/bj.jpg"></p>
+<h2 id="憨憨小兵"><a href="#憨憨小兵" class="headerlink" title="憨憨小兵"></a>憨憨小兵</h2><p><img data-original="https://i.loli.net/2020/01/22/OxfSqEuepMBzkC6.jpg" alt data-src="/images/bj.jpg"></p>
+<h2 id="兰松斌在上课"><a href="#兰松斌在上课" class="headerlink" title="兰松斌在上课"></a>兰松斌在上课</h2><p><img data-original="https://i.loli.net/2020/01/22/ZJ2yIOgLCWNzv1S.jpg" alt data-src="/images/bj.jpg"></p>
 <h2 id="2018年圣诞晚会"><a href="#2018年圣诞晚会" class="headerlink" title="2018年圣诞晚会"></a>2018年圣诞晚会</h2><iframe height="498" width="510" src="http://player.youku.com/embed/XNDUxOTQ0MTc4NA==" frameborder="0" 'allowfullscreen'></iframe>
 ## 2017年圣诞晚会
 
@@ -433,7 +433,7 @@ f(u)=\left\{
 <p>刚刚考完CSP心情低落删除了之前博客上所有关于OI的文章，然后整理了下这个网站，<del>辣鸡DNSpod解析巨慢等我有钱必换</del>，发现换了hexo手机无法访问又不想更IOS13……</p>
 <p>然后高三期中考试刚过，马上就是一阵接一阵的考试，让人完全无法停下来想一下自己想想的东西…真的是人菜事情多。</p>
 <p>然后这个博客估计以后也是随缘更新的状态，因为没了技术内容日常也没啥好更新的，<del>或者更新点摘抄？尝试下把kindle剪贴导出来看看</del>，然后主要是自己使用，可惜就是手机看不了，<del>越想越气</del>。</p>
-<p><img src="/2019/11/17/blog1/1.jpg" alt></p>
+<p><img data-original="1.jpg" alt data-src="/images/bj.jpg"></p>
 ]]></content>
       <categories>
         <category>-记录</category>
