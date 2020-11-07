@@ -1,6 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>数学分析</title>
+    <url>/2020/11/07/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>吾生而有涯，而知也无涯。以有涯随无涯，则殆矣！</p>
+<a id="more"></a>
+<h1 id="极限部分"><a href="#极限部分" class="headerlink" title="极限部分"></a>极限部分</h1><h2 id="“趋向的描述”——ε-δ语言"><a href="#“趋向的描述”——ε-δ语言" class="headerlink" title="“趋向的描述”——ε-δ语言"></a>“趋向的描述”——ε-δ语言</h2><p>我认为极限一直在描述下面这种推导关系</p>
+<script type="math/tex; mode=display">
+x\rightarrow x_{0} \Rightarrow f(x)\rightarrow f(x_{0})\\</script><p>严谨地，有</p>
+<script type="math/tex; mode=display">
+\forall\epsilon>0,\exists\delta>0,使\forall x \in \mathring{U}(x_{0},\delta)，恒有f(x)\in U(f(x_0),\epsilon)</script><p>其实我认为这样的定义并没有反映出<strong>”趋近“</strong>的趋势，而只是描述了无限接近,其中 </p>
+<script type="math/tex; mode=display">
+x\rightarrow x_{0} 翻译为：\forall x \in \mathring{U}(x_{0},\delta)\\
+f(x)\rightarrow f(x_{0})翻译为：恒有f(x)\in U(f(x_0),\epsilon)\\
+而前者推出后者决定了\forall\epsilon>0,\exists\delta>0</script><h2 id="极限存在与否"><a href="#极限存在与否" class="headerlink" title="极限存在与否"></a>极限存在与否</h2><p>由于我们研究的极限总是形如</p>
+<script type="math/tex; mode=display">
+\lim_{x\rightarrow x_0}f(x)</script><p>则总有自变量到因变量的映射，于是总是会牵扯到极限是否存在的问题</p>
+<p>常用判断极限存在的方法有：</p>
+<p><strong>迫敛性</strong>、<strong>单调有界定理</strong>、<strong>区间套定理</strong></p>
+<h3 id="海涅定理"><a href="#海涅定理" class="headerlink" title="海涅定理"></a>海涅定理</h3><script type="math/tex; mode=display">
+\lim_{x\rightarrow a}f(x)=A \Leftrightarrow 对任意以a为极限的数列\{x_n\},恒有\lim_{n\rightarrow\infin}f(x_n)=A\\
+*要注意的是，f(x)是函数，是连续的，而x_n以及f(x_n)都是离散的数列</script><p><em>“海涅定理深刻地揭示了变量连续和离散的关系，以及变量在变化过程中的整体和部分关系”</em></p>
+<p><strong>往往利用逆否命题证明极限的不存在</strong></p>
+<h3 id="柯西收敛准则"><a href="#柯西收敛准则" class="headerlink" title="柯西收敛准则"></a>柯西收敛准则</h3><p>我认为这是更符合正常人理解的一种<strong>收敛</strong>的定义</p>
+<script type="math/tex; mode=display">
+\lim_{x\rightarrow x_0}f(x)=A \Leftrightarrow\forall\epsilon>0,\exists\delta>0,使\\
+\forall x^{'},x^{''}\in\mathring{U}(x_0,\delta),恒有|f(x^{'})-f(x^{''})|<\epsilon</script><h2 id="极限的性质"><a href="#极限的性质" class="headerlink" title="极限的性质"></a>极限的性质</h2><p>关于数列，我认为其对于函数只有一点不同就是：</p>
+<p>​                                                                                <em>收敛数列必有界</em> </p>
+<p>因为数列有<strong>起始项</strong>，导致其一端天然有界，以及数列我们都在讨论自变量趋于无穷的情况</p>
+<p>下面主要讨论函数</p>
+<h3 id="唯一、有界、保号、保序、迫敛、压缩、运算"><a href="#唯一、有界、保号、保序、迫敛、压缩、运算" class="headerlink" title="唯一、有界、保号、保序、迫敛、压缩、运算"></a>唯一、有界、保号、保序、迫敛、压缩、运算</h3><p>要注意的是，有界，保号，保序，迫敛都是基于在x0的某一个去心邻域里讨论的</p>
+<h3 id="复合函数极限运算"><a href="#复合函数极限运算" class="headerlink" title="复合函数极限运算"></a>复合函数极限运算</h3><p>可以见<a href="https://subonan.com/2020/10/07/%E5%85%B3%E4%BA%8E%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99/" target="_blank" rel="noopener">https://subonan.com/2020/10/07/%E5%85%B3%E4%BA%8E%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99/</a></p>
+<h3 id="从一个有界函数中可以找出一个收敛子列"><a href="#从一个有界函数中可以找出一个收敛子列" class="headerlink" title="从一个有界函数中可以找出一个收敛子列"></a>从一个有界函数中可以找出一个收敛子列</h3><p>当时我想了一段时间这个<em>子列</em>的概念，实际上就是从连续中抽出离散，然后就是废话了</p>
+<h2 id="关于等价无穷小"><a href="#关于等价无穷小" class="headerlink" title="关于等价无穷小"></a>关于等价无穷小</h2><p>使用条件是乘除可用，而加减不可</p>
+<p>？？？？？？？？？？？？？？？？？？<br>由于课本没有仔细说明，先搁置</p>
+<h1 id="函数的连续性"><a href="#函数的连续性" class="headerlink" title="函数的连续性"></a>函数的连续性</h1><h2 id="连续函数的判定"><a href="#连续函数的判定" class="headerlink" title="连续函数的判定"></a>连续函数的判定</h2><p>初等函数（幂函数，指数函数，对函数，三角函数，反三角函数）是连续的</p>
+<p>连续函数四则运算出来仍是连续函数</p>
+<p>连续函数复合出来的函数仍是连续的</p>
+<h2 id="连续函数的性质"><a href="#连续函数的性质" class="headerlink" title="连续函数的性质"></a>连续函数的性质</h2><p>其实都是一堆废话</p>
+<p>中间值定理不如拉格朗日中值定理广义</p>
+<p>反函数的连续性又太侠义</p>
+<p>以及废话：闭区间上连续函数必有界</p>
+<h2 id="一致连续性"><a href="#一致连续性" class="headerlink" title="一致连续性"></a>一致连续性</h2><script type="math/tex; mode=display">
+\forall\epsilon>0,若\exists\delta>0,使\forall x_1,x_2\in I,|x_1-x_2|<\delta,都有|f(x_1)-f(x_2)|<\epsilon\\
+则称f(x)在I上一致连续</script><p>一时语塞</p>
+<h1 id="微分法"><a href="#微分法" class="headerlink" title="微分法"></a>微分法</h1><h2 id="导数的定义"><a href="#导数的定义" class="headerlink" title="导数的定义"></a>导数的定义</h2><script type="math/tex; mode=display">
+\lim_{x\rightarrow x_0}\frac{f(x)-f(x_0)}{x-x_0}</script><p>需要注意的是</p>
+<script type="math/tex; mode=display">
+在\frac{d^ny}{dx^n}中，dx^n\neq(dx)^n\\
+相应应是\frac{d}{dx}\frac{d}{dx}\frac{d}{dx}......\frac{d}{dx}y\\
+其实我的理解是把\frac{d}{dx}看作一个算符，它进行了n次计算</script><h2 id="微分"><a href="#微分" class="headerlink" title="微分"></a>微分</h2><p>下面进行最为精彩部分的说明</p>
+<p>关于无穷小的数域定义</p>
+<p>在无穷小数域中，既可以说<strong>相等</strong>，也可以说<strong>等价</strong></p>
+<script type="math/tex; mode=display">
+在x\rightarrow 0的情况下\\
+如果我们把x定义为单位无穷小\\
+则A*x^B则为权为A的B阶无穷小</script><p>用<strong>阶</strong>和<strong>权</strong>就可以定义所有的无穷小数。</p>
+<p>下面阐释Δx和dx的区别</p>
+<p><strong><em>dx是Δx的线性主项，它们不相等，但它们等价</em></strong></p>
+<p>严谨地</p>
+<script type="math/tex; mode=display">
+当x作自变量时，dx=Δx\\
+当x=h(t)时，Δx=AΔt+\alpha,其中\alpha是Δx的高阶无穷小，而dx=AΔx\\
+可以证明，Δx一定可以化成f^{'}(t)Δt+\alpha的形式\\
+所以有dx=f^{'}(t)Δt,若t不再是其他自变量的函数，则Δt=dt</script><p>高阶地，有</p>
+<script type="math/tex; mode=display">
+d^2y=f^{''}(x)(dx)^2+f^{'}(x)d^2x\\</script><p>然后传统定义中，x往往看作是最底层的自变量，即<strong>dx处处相等</strong>，永远等于那个**权为1，阶为1的单位无穷小量</p>
+<script type="math/tex; mode=display">
+所以有d^2x=0\\
+原式化为d^2y=f^{''}(x)(dx)^2</script><p>但是注意，这里是用定义推出的A正好等于f(x)的二阶导数，而</p>
+<script type="math/tex; mode=display">
+\frac{d^2y}{dx^2}中，分子分母是不可拆开的。\frac{d}{dx}是一个整个算符，再次强调</script><h2 id="中值定理"><a href="#中值定理" class="headerlink" title="中值定理"></a>中值定理</h2><p>说法多多，主要有拉格朗日定理和广义中值定理</p>
+<script type="math/tex; mode=display">
+(拉格朗日中值定理)若f(x)在[a,b]上连续，在(a,b)可导，则\exists c\in(a,b)使\\
+\frac{f(b)-f(a)}{b-a}=f^{'}(c)</script><script type="math/tex; mode=display">
+(广义中值定理)若f(x),g(x)在[a,b]上连续，(a,b)上可导，则\exists c\in(a,b)使\\
+\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f^{'}(c)}{g^{'}(c)}</script><p>根据广义中值定理，我尝试创造了个<strong>伪</strong>洛必达法则</p>
+<script type="math/tex; mode=display">
+若要计算\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}，但是f(x_0)=g(x_0)=0
+那么，就可以:\\
+\frac{f(x)}{g(x)}=\frac{f(x)-0}{g(x)-0}=\frac{f(x)-f(x_0)}{g(x)-g(x_0)}=\frac{f^{'}(x^{'})}{g^{'}(x^{'})}\\
+而x^{'}总在x与x_0之间，故\\
+\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\lim_{x^{'}\rightarrow x_0}\frac{f(x^{'})}{g(x^{'})}=\frac{f^{'}(x_0)}{g^{'}(x_0)}</script><h2 id="泰勒公式"><a href="#泰勒公式" class="headerlink" title="泰勒公式"></a>泰勒公式</h2><script type="math/tex; mode=display">
+f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
+其中，o((x-x_0)^n)被称为配亚诺形式余项，拉格朗日给出了更为精确的形式\\
+\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}，\xi\in(x_0,x)</script><p>素晴らしい</p>
+]]></content>
+      <tags>
+        <tag>-数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>杂想</title>
     <url>/2020/10/28/%E6%9D%82%E6%83%B3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>偶然看到《少女终末旅行》</p>
@@ -487,8 +577,6 @@
 <h2 id="下定义-解释"><a href="#下定义-解释" class="headerlink" title="下定义 解释"></a>下定义 解释</h2><p>桜<strong>という</strong>花は    日本の    いちばん    有名な花    です</p>
 <p>（樱花这种花，是日本最有名的花</p>
 <p>このマークは　”タバコを吸うな”    <strong>という意味です</strong></p>
-<h2 id="假设-一…就…"><a href="#假设-一…就…" class="headerlink" title="假设  一…就…"></a>假设  一…就…</h2><p>动词基本型/ない形 + と</p>
-<p>春に　<strong>なると</strong>、暖かくなります</p>
 <h2 id="时而，有时会"><a href="#时而，有时会" class="headerlink" title="时而，有时会"></a>时而，有时会</h2><p>动词基本型/ない形 + ことがあります</p>
 <p>父は    たまに    怒る　ことがあります</p>
 <h2 id="委婉提问"><a href="#委婉提问" class="headerlink" title="委婉提问"></a>委婉提问</h2><p>これは日本のお菓子ですか　</p>
@@ -526,6 +614,53 @@
 <p><em>いい大学に    <strong>入る　ために</strong>    勉強しています</em></p>
 <h2 id="表尝试，做…看看"><a href="#表尝试，做…看看" class="headerlink" title="表尝试，做…看看"></a>表尝试，做…看看</h2><p>て形＋みる</p>
 <p><em>食べて    みてください</em>    （请试着吃吃看！</p>
+<h2 id="假设-一…就…"><a href="#假设-一…就…" class="headerlink" title="假设  一…就…"></a>假设  一…就…</h2><p>动词基本型/ない形 + と</p>
+<p>春に　<strong>なると</strong>、暖かくなります</p>
+<h2 id="假定条件"><a href="#假定条件" class="headerlink" title="假定条件"></a>假定条件</h2><p>~たら、～    常与副词“もし”搭配使用</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>肯定</th>
+<th>否定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>动词た形＋たら（ましたら）</td>
+<td>动词なかった＋たら</td>
+</tr>
+<tr>
+<td>形1かったら</td>
+<td>形1くなかったら</td>
+</tr>
+<tr>
+<td>形2だったら（でしたら）</td>
+<td>形2ではかったら</td>
+</tr>
+<tr>
+<td>名词だったら(でしたら)</td>
+<td>名词ではかったら</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>eg. もし北京に来たら、知らせてください。</p>
+<p>eg. 機会があったら、世界旅行をしたいです。</p>
+<p>eg. 外へ出たら、すごい雨でした（一…..就…..)</p>
+<p>eg. わたしが社長だったら、きっと給料が上げます。(不可实现)</p>
+<h2 id="让步条件（即使，也）"><a href="#让步条件（即使，也）" class="headerlink" title="让步条件（即使，也）"></a>让步条件（即使，也）</h2><p>~ても、～</p>
+<p>动ても、形1くても、形2/名词でも</p>
+<p>eg.　給料は少なくても、今の仕事を続けたいです。</p>
+<p>eg. ——安かったら、買いますか。</p>
+<p>​      ——いいえ、安くても、買いません　</p>
+<p>eg. この計算は、子供でもできます（这种计算，就连小孩子都会做）</p>
+<h2 id="限定（只有）"><a href="#限定（只有）" class="headerlink" title="限定（只有）"></a>限定（只有）</h2><p>限定于某种范围，数量，程度</p>
+<p>eg. 李さんは漫画<strong>だけ</strong>を読みます。(小李只读漫画)</p>
+<p>eg. わたし<strong>だけ</strong>が家にいます。（只有我在家）</p>
+<p>しか＋否定</p>
+<p>eg. 会議室には李さん<strong>しか</strong>いません。（会议室里除了小李没有其他人）</p>
+<p>eg. こんな話ができる友達はあなた<strong>しか</strong>いません。（能说这样话的人除了你没别人了）</p>
 ]]></content>
       <tags>
         <tag>-日本语</tag>
