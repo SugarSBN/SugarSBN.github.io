@@ -361,7 +361,13 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 </tbody>
 </table>
 </div>
-<p>​                </p>
+<p>​        </p>
+<h2 id="假定形"><a href="#假定形" class="headerlink" title="假定形"></a>假定形</h2><p>1、动词肯定：词尾う段改成同行え段+ば</p>
+<p>​                         eg. する-&gt;すれば　来る-&gt;来れば　起きる-&gt;起きれば</p>
+<p>2、动词否定：ない形去い+ければ</p>
+<p>​                        eg.　遊ぶ-&gt;遊ばければ　ある-&gt;なければ　来る-&gt;来なければ</p>
+<p>3、形1肯定：去い加ければ　（いい-&gt;よければ）</p>
+<p>4、形1否定：变くない去い加ければ</p>
 <h1 id="敬体和简体"><a href="#敬体和简体" class="headerlink" title="敬体和简体"></a>敬体和简体</h1><h2 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h2><div class="table-container">
 <table>
 <thead>
@@ -649,6 +655,9 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 <p>eg. 機会があったら、世界旅行をしたいです。</p>
 <p>eg. 外へ出たら、すごい雨でした（一…..就…..)</p>
 <p>eg. わたしが社長だったら、きっと給料が上げます。(不可实现)</p>
+<h2 id="如果…-就…-ば形"><a href="#如果…-就…-ば形" class="headerlink" title="如果….就….(ば形)"></a>如果….就….(ば形)</h2><p>eg. この薬を飲めば、熱がすぐ下がります。</p>
+<p>eg. 毎日日本人と話せば、日本語が上手になります。</p>
+<p>eg. どうすればいい。</p>
 <h2 id="让步条件（即使，也）"><a href="#让步条件（即使，也）" class="headerlink" title="让步条件（即使，也）"></a>让步条件（即使，也）</h2><p>~ても、～</p>
 <p>动ても、形1くても、形2/名词でも</p>
 <p>eg.　給料は少なくても、今の仕事を続けたいです。</p>
@@ -658,9 +667,32 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 <h2 id="限定（只有）"><a href="#限定（只有）" class="headerlink" title="限定（只有）"></a>限定（只有）</h2><p>限定于某种范围，数量，程度</p>
 <p>eg. 李さんは漫画<strong>だけ</strong>を読みます。(小李只读漫画)</p>
 <p>eg. わたし<strong>だけ</strong>が家にいます。（只有我在家）</p>
-<p>しか＋否定</p>
+<p><strong>しか＋否定</strong></p>
 <p>eg. 会議室には李さん<strong>しか</strong>いません。（会议室里除了小李没有其他人）</p>
 <p>eg. こんな話ができる友達はあなた<strong>しか</strong>いません。（能说这样话的人除了你没别人了）</p>
+<p><strong>はかり</strong>（不用于否定）</p>
+<p>eg. うちの子は　漫画<strong>ばかり</strong>　読んでいます。(我们家孩子净看漫画)</p>
+<p>eg. あの子は　いつも　泣いて<strong>ばかり</strong>います 。(那孩子总是一个劲哭)</p>
+<h2 id="听得见-看得见…"><a href="#听得见-看得见…" class="headerlink" title="听得见/看得见…."></a>听得见/看得见….</h2><p>~（の）が　見えます/聞こえます</p>
+<p>eg. 家から　海が　見えます</p>
+<p>eg. 庭に　きれいな花が　咲いている　のが見えます</p>
+<h2 id="解释、原因"><a href="#解释、原因" class="headerlink" title="解释、原因"></a>解释、原因</h2><p>动词て，形1くて，形2/名词+で，~</p>
+<p>后句不可使祈使句，命令句，用于陈述客观事实</p>
+<p>eg. 遅くなって、すみません。</p>
+<p>eg. ひどい風が吹いて、木が倒れてしまいました。</p>
+<p>eg. 時間がなくて、昼ご飯はたべませんでした。</p>
+<h1 id="格助词"><a href="#格助词" class="headerlink" title="格助词"></a>格助词</h1><h2 id="に"><a href="#に" class="headerlink" title="に"></a>に</h2><h3 id="存在场所"><a href="#存在场所" class="headerlink" title="存在场所"></a>存在场所</h3><p>机の上に    本が    ３冊あります。</p>
+<h3 id="具体时间点"><a href="#具体时间点" class="headerlink" title="具体时间点"></a>具体时间点</h3><p>７時に    起きます。</p>
+<h3 id="动作对象"><a href="#动作对象" class="headerlink" title="动作对象"></a>动作对象</h3><p>李さんに    花を　あげました。</p>
+<h3 id="频率"><a href="#频率" class="headerlink" title="频率"></a>频率</h3><p>週に　３回　プールへ　行きます。</p>
+<h3 id="目的地"><a href="#目的地" class="headerlink" title="目的地"></a>目的地</h3><p>日本に    着きました。</p>
+<h3 id="移动行为目的"><a href="#移动行为目的" class="headerlink" title="移动行为目的"></a>移动行为目的</h3><p>デパートへ　服を買いに    行きます。</p>
+<h3 id="附着点"><a href="#附着点" class="headerlink" title="附着点"></a>附着点</h3><p>ボートに　乗ります。</p>
+<h3 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h3><p>この写真は    パスポートの申請（するの）に　使います。</p>
+<p>これは何に    使いますか。</p>
+<h3 id="基准"><a href="#基准" class="headerlink" title="基准"></a>基准</h3><p>スーパーが　近いので、このマンションは　買い物に　便利です。</p>
+<p>​    由于离超市很近，这个公寓对于买东西这件事很方便。    </p>
+<p>秋は　読書に　いいです。</p>
 ]]></content>
       <tags>
         <tag>-日本语</tag>
