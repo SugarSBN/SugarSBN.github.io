@@ -579,6 +579,16 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 </tbody>
 </table>
 </div>
+<h1 id="书面语"><a href="#书面语" class="headerlink" title="书面语"></a>书面语</h1><h2 id="句尾"><a href="#句尾" class="headerlink" title="句尾"></a>句尾</h2><ul>
+<li>动词·形1    敬体变简体</li>
+<li>名词·形2    だー＞である</li>
+</ul>
+<h2 id="中顿"><a href="#中顿" class="headerlink" title="中顿"></a>中顿</h2><ul>
+<li>动词    て形变连用形</li>
+<li>形1      ～くて－＞～く</li>
+<li>名词·形2    ~だー＞～で　　～であるー＞～であり</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>～から～に至るまで＝～から～まで</p>
 <h1 id="接续-amp-句型"><a href="#接续-amp-句型" class="headerlink" title="接续&amp;句型"></a>接续&amp;句型</h1><h2 id="存在句"><a href="#存在句" class="headerlink" title="存在句"></a>存在句</h2><p>部屋に　机が　あります（无生命）＝机は　部屋に　あります</p>
 <p>部屋に　猫が　います（有生命）=猫は　部屋に　います</p>
 <h2 id="受授句"><a href="#受授句" class="headerlink" title="受授句"></a>受授句</h2><p>私は　李さんに　本を　読んで　あげました                ”我给小李读书“</p>
@@ -840,13 +850,21 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 </li>
 </ul>
 <h3 id="物主被动句-损失"><a href="#物主被动句-损失" class="headerlink" title="物主被动句(损失)"></a>物主被动句(损失)</h3><p>eg. 小野さんは　李さんの　カメラを    壊しました。</p>
-<p>​    　李さんは　小野さんに　カメラを　壊されました。</p>
+<p>​    　李さんは　小野さん<strong>に</strong>　カメラを　壊されました。</p>
 <p>eg. 李さんは　昨日犬に　手を　噛まれました。</p>
-<h3 id="受害被动句"><a href="#受害被动句" class="headerlink" title="受害被动句"></a>受害被动句</h3><p>eg. 小鳥が    逃げました。</p>
-<p>　　私は    小鳥に    逃げられました。(我让小鸟给逃了)</p>
+<h3 id="受害被动句"><a href="#受害被动句" class="headerlink" title="受害被动句"></a>受害被动句</h3><p>eg. 小鳥<strong>が</strong>    逃げました。</p>
+<p>　　私は    小鳥<strong>に</strong>    逃げられました。(我让小鸟给逃了)</p>
 <p>eg.昨日、雨に降られて、風邪を引きました。</p>
 <p>eg.友達に来られて、宿題ができなかった。</p>
-<h3 id="事物作主语被动句"><a href="#事物作主语被动句" class="headerlink" title="事物作主语被动句"></a>事物作主语被动句</h3><p>eg.駅前に高いビルが建てられました。(有人在车站前建起了楼)</p>
+<h3 id="事物作主语被动句"><a href="#事物作主语被动句" class="headerlink" title="事物作主语被动句"></a>事物作主语被动句</h3><p>eg.駅前に　高いビル<strong>が</strong> 建てられました。(有人在车站前建起了楼)</p>
+<p>eg.この歌は日本でよく歌われています。</p>
+<p>eg.会議は明日の９時から開かれます。</p>
+<ul>
+<li><p>如果有动作主题，则用によって引导</p>
+<p>eg.この本は　山田先生によって書かれました。</p>
+</li>
+</ul>
+<h2 id="一块，都（とも）"><a href="#一块，都（とも）" class="headerlink" title="一块，都（とも）"></a>一块，都（とも）</h2><p>eg. 二日とも雨に降られて、大変でしたよ。(连着两天都下雨)</p>
 <h1 id="格助词"><a href="#格助词" class="headerlink" title="格助词"></a>格助词</h1><h2 id="に"><a href="#に" class="headerlink" title="に"></a>に</h2><h3 id="存在场所"><a href="#存在场所" class="headerlink" title="存在场所"></a>存在场所</h3><p>机の上に    本が    ３冊あります。</p>
 <h3 id="具体时间点"><a href="#具体时间点" class="headerlink" title="具体时间点"></a>具体时间点</h3><p>７時に    起きます。</p>
 <h3 id="动作对象"><a href="#动作对象" class="headerlink" title="动作对象"></a>动作对象</h3><p>李さんに    花を　あげました。</p>
