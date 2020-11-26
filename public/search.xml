@@ -301,7 +301,7 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 </div>
 <h2 id="た形"><a href="#た形" class="headerlink" title="た形"></a>た形</h2><p>和て形一样</p>
 <h2 id="命令形"><a href="#命令形" class="headerlink" title="命令形"></a>命令形</h2><p>１、三类动词  する-&gt;しろ　　来る-&gt;来（こ）い</p>
-<p>２、一段动词  る-&gt;ろ　　　　e.g.　食べる-&gt;食べろ</p>
+<p>２、一段动词  る-&gt;ろ　　　　eg.　食べる-&gt;食べろ</p>
 <p>３、五段动词  词尾う段变成同行え段</p>
 <p>​    </p>
 <div class="table-container">
@@ -336,7 +336,7 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 </div>
 <p>　　</p>
 <h2 id="意志形"><a href="#意志形" class="headerlink" title="意志形"></a>意志形</h2><p>１、三类动词  する-&gt;しよう　　　来る-&gt;来（こ）よう</p>
-<p>２、一段动词  る-&gt;よう　　　e.g.　起きる-&gt;起きよう</p>
+<p>２、一段动词  る-&gt;よう　　　eg.　起きる-&gt;起きよう</p>
 <p>３、五段动词  词尾う段变成同行お段加う</p>
 <p>​        </p>
 <div class="table-container">
@@ -415,6 +415,40 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 <p>eg. 書ける（能写）書けない（不能写）書けた（过去能写)書けなかった（过去不能写）</p>
 <p>eg. 李さんは泳ぐことができます。=eg. 李さんは泳げます。</p>
 <p>eg. ここでタバコを吸えます。(这里可以吸烟)</p>
+<h2 id="被动态"><a href="#被动态" class="headerlink" title="被动态"></a>被动态</h2><p>1、三类    する-&gt;される    来る-&gt;来（こ）られる</p>
+<p>2、一段    る变られる    eg. 寝られる、見られる</p>
+<p>3、五段    う段变あ段加れる</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">言う</th>
+<th style="text-align:center">泣く</th>
+<th style="text-align:center">急ぐ</th>
+<th style="text-align:center">話す</th>
+<th style="text-align:center">待つ</th>
+<th style="text-align:center">死ぬ</th>
+<th style="text-align:center">呼ぶ</th>
+<th style="text-align:center">飲む</th>
+<th style="text-align:center">帰る</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">言われる</td>
+<td style="text-align:center">泣かれる</td>
+<td style="text-align:center">急がれる</td>
+<td style="text-align:center">話される</td>
+<td style="text-align:center">待たれる</td>
+<td style="text-align:center">死なれる</td>
+<td style="text-align:center">呼ばれる</td>
+<td style="text-align:center">飲まれる</td>
+<td style="text-align:center">帰られる</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>被动态时态，否定变化和一段动词相同</strong></p>
 <h1 id="敬体和简体"><a href="#敬体和简体" class="headerlink" title="敬体和简体"></a>敬体和简体</h1><h2 id="名词"><a href="#名词" class="headerlink" title="名词"></a>名词</h2><div class="table-container">
 <table>
 <thead>
@@ -787,6 +821,32 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 <p>eg. 昨日から<strong>降り始めた</strong>雨が今でも<strong>降り続いて</strong>います。</p>
 <p>eg. 咲き終わる　書き終わる</p>
 <p>eg. 桜の花が<strong>咲き終わる</strong>前に、花見に行きましょう。</p>
+<h2 id="被动句"><a href="#被动句" class="headerlink" title="被动句"></a>被动句</h2><ul>
+<li>直接被动句</li>
+<li><p>间接被动句</p>
+<ul>
+<li>物主被动句</li>
+<li>受害被动句</li>
+</ul>
+</li>
+<li><p>事物作主语被动句</p>
+</li>
+</ul>
+<h3 id="直接被动句"><a href="#直接被动句" class="headerlink" title="直接被动句"></a>直接被动句</h3><p>名<strong>は</strong>（名<strong>に</strong>）+动词被动</p>
+<p>eg. 部長は    李さんを    褒めました。＝李さんは　部長に    褒められまして。</p>
+<ul>
+<li><p>在受益的时候常常使用~てもらう。</p>
+<p>eg. 李さんは友達に助け<strong>てもらいました</strong>。(小李得到了朋友的帮助)</p>
+</li>
+</ul>
+<h3 id="物主被动句-损失"><a href="#物主被动句-损失" class="headerlink" title="物主被动句(损失)"></a>物主被动句(损失)</h3><p>eg. 小野さんは　李さんの　カメラを    壊しました。</p>
+<p>​    　李さんは　小野さんに　カメラを　壊されました。</p>
+<p>eg. 李さんは　昨日犬に　手を　噛まれました。</p>
+<h3 id="受害被动句"><a href="#受害被动句" class="headerlink" title="受害被动句"></a>受害被动句</h3><p>eg. 小鳥が    逃げました。</p>
+<p>　　私は    小鳥に    逃げられました。(我让小鸟给逃了)</p>
+<p>eg.昨日、雨に降られて、風邪を引きました。</p>
+<p>eg.友達に来られて、宿題ができなかった。</p>
+<h3 id="事物作主语被动句"><a href="#事物作主语被动句" class="headerlink" title="事物作主语被动句"></a>事物作主语被动句</h3><p>eg.駅前に高いビルが建てられました。(有人在车站前建起了楼)</p>
 <h1 id="格助词"><a href="#格助词" class="headerlink" title="格助词"></a>格助词</h1><h2 id="に"><a href="#に" class="headerlink" title="に"></a>に</h2><h3 id="存在场所"><a href="#存在场所" class="headerlink" title="存在场所"></a>存在场所</h3><p>机の上に    本が    ３冊あります。</p>
 <h3 id="具体时间点"><a href="#具体时间点" class="headerlink" title="具体时间点"></a>具体时间点</h3><p>７時に    起きます。</p>
 <h3 id="动作对象"><a href="#动作对象" class="headerlink" title="动作对象"></a>动作对象</h3><p>李さんに    花を　あげました。</p>
