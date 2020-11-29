@@ -62,29 +62,28 @@ M_{A-B}(a)=M_A(a)-M_B(a),M_{A+B}(a)=M_A(a)+M_B(a)</script></li>
 </li>
 </ul>
 <script type="math/tex; mode=display">
-  *注：x与y是/否有关系也可记为xRy，x\cancel{R}y,R 为关系</script><h2 id="关系的性质"><a href="#关系的性质" class="headerlink" title="关系的性质"></a>关系的性质</h2><ul>
-<li><strong>自反性</strong>：</li>
-</ul>
+  *注：x与y是/否有关系也可记为xRy，x\not Ry,R 为关系</script><h2 id="关系的性质"><a href="#关系的性质" class="headerlink" title="关系的性质"></a>关系的性质</h2><ul>
+<li><p><strong>自反性</strong>：</p>
 <script type="math/tex; mode=display">
-  \forall x\in A,均有xRx</script><p>  <strong>反自反</strong>：</p>
+\forall x\in A,均有xRx</script><p><strong>反自反</strong>：</p>
 <script type="math/tex; mode=display">
-  \forall x\in A,均有x\cancel{R}x</script><ul>
+\forall x\in A,均有x\not Rx</script></li>
 <li><p><strong>对称性</strong>：</p>
 <script type="math/tex; mode=display">
 当xRy时，均有yRx</script><p><strong>反对称性</strong>：</p>
 <script type="math/tex; mode=display">
-当xRy,yRx时，必有x =y。也可以说，\cancel{\exists}x\neq y使得xRy且yRx</script></li>
+当xRy,yRx时，必有x =y。也可以说，\not\exists x\neq y使得xRy且yRx</script></li>
 <li><p><strong>传递性</strong>：</p>
 <script type="math/tex; mode=display">
 若xRy,yRz,则有xRz</script></li>
 </ul>
 <h2 id="关系的复合"><a href="#关系的复合" class="headerlink" title="关系的复合"></a>关系的复合</h2><ul>
-<li>定义：<script type="math/tex; mode=display">
+<li><p>定义：</p>
+<script type="math/tex; mode=display">
 R是A到B的关系，S是B到C的关系。则R\circ S为：\\
 \{<a,c>|\exists b\in B,<a,b>\in R,<b,c>\in S\}</script></li>
-</ul>
-<ul>
-<li>关系的复合<strong>满足结合律</strong>，<strong>不满足交换律</strong>，并且满足：<script type="math/tex; mode=display">
+<li><p>关系的复合<strong>满足结合律</strong>，<strong>不满足交换律</strong>，并且满足：</p>
+<script type="math/tex; mode=display">
 R^m\circ R^n=R^{m+n},(R^m)^n=R^{mn}</script></li>
 </ul>
 <h2 id="关系的逆"><a href="#关系的逆" class="headerlink" title="关系的逆"></a>关系的逆</h2><ul>
@@ -103,7 +102,7 @@ domR^{-1}=ranR,ranR^{-1}=domR,(R^{-1})^{-1}=R\\
 <script type="math/tex; mode=display">
 若A上的关系R，R'满足：\\
 （1）R'是传递（自反、或对称的）(2)R\subseteq R'\\
-(3)\cancel{\exists}R''\subseteq R'，使R'' 满足(1)(2)\\</script><p>​    则称R‘为R的<strong>传递（自反、或对称）闭包</strong>，记为t(R),r(R),s(R)</p>
+(3)\not\exists R''\subseteq R'，使R'' 满足(1)(2)\\</script><p>​    则称R‘为R的<strong>传递（自反、或对称）闭包</strong>，记为t(R),r(R),s(R)</p>
 <ul>
 <li><p>自反闭包：</p>
 <script type="math/tex; mode=display">
@@ -111,8 +110,6 @@ r(R)=R\cup I_A,其中I_A是A上的恒等关系，其关系矩阵为单位矩阵<
 <li><p>对称闭包：</p>
 <script type="math/tex; mode=display">
 s(R)=R\cup R^{-1}</script></li>
-</ul>
-<ul>
 <li><p>传递闭包：</p>
 <script type="math/tex; mode=display">
 t(R)=\bigcup_{i=1}^{|A|}R^{i}</script></li>
@@ -124,7 +121,7 @@ t(R)=\bigcup_{i=1}^{|A|}R^{i}</script></li>
 </ul>
 <script type="math/tex; mode=display">
 若R_1,R_2 为A上的等价关系，则R_1\cap R_2,(R_1\cup R_2)^+为A上的等价关系\\
-其中，R^+=\bigcup_{i=1}^{\infin}R^{i}</script><h3 id="等价类"><a href="#等价类" class="headerlink" title="等价类"></a>等价类</h3><ul>
+其中，R^+=\bigcup_{i=1}^{\infty}R^{i}</script><h3 id="等价类"><a href="#等价类" class="headerlink" title="等价类"></a>等价类</h3><ul>
 <li>定义：</li>
 </ul>
 <script type="math/tex; mode=display">
@@ -137,7 +134,7 @@ A/R=\{[a]|a\in A\},称为A对R的商集，即由A中所有元素生成的等价�
 <li>性质：</li>
 </ul>
 <script type="math/tex; mode=display">
-(1)a\in[a]\\(2)[a]=[b]\Leftrightarrow aRb\\(3)[a]\cap[b]=\varnothing\Leftrightarrow a\cancel{R}b</script><h2 id="划分与覆盖"><a href="#划分与覆盖" class="headerlink" title="划分与覆盖"></a>划分与覆盖</h2><ul>
+(1)a\in[a]\\(2)[a]=[b]\Leftrightarrow aRb\\(3)[a]\cap[b]=\varnothing\Leftrightarrow a\not R b</script><h2 id="划分与覆盖"><a href="#划分与覆盖" class="headerlink" title="划分与覆盖"></a>划分与覆盖</h2><ul>
 <li>定义：</li>
 </ul>
 <script type="math/tex; mode=display">
@@ -162,7 +159,7 @@ A/R=\{[a]|a\in A\},称为A对R的商集，即由A中所有元素生成的等价�
 <li><p>若集合P上定义了一个偏序关系，则<p,≤>称为一个<strong>偏序集</strong>。</p,≤></p>
 </li>
 <li><script type="math/tex; mode=display">
-<P,\leq>为一偏序集，若a,b\in P ，a<b(a\leq b,a\neq b),且\cancel{\exists}c\in P使a<c<b\\
+<P,\leq>为一偏序集，若a,b\in P ，a<b(a\leq b,a\neq b),且\not\exists c\in P使a<c<b\\
 则称b\textbf{盖住}a，或称b是a的\textbf{直接前辈}，a是b的\textbf{直接后辈}</script></li>
 <li><p>Hasse图：(1)用原点表示P中元素(2)若b<strong>盖住</strong>a，则把b画在a的上方并连一条线。</p>
 <ul>
@@ -183,7 +180,7 @@ A/R=\{[a]|a\in A\},称为A对R的商集，即由A中所有元素生成的等价�
 </ul>
 </li>
 <li><script type="math/tex; mode=display">
-偏序集<P,\leq>中，a\in P,若\cancel{\exists}b\in P,使b<a,则称a为\textbf{极小元}。</script><ul>
+偏序集<P,\leq>中，a\in P,若\not \exists b\in P,使b<a,则称a为\textbf{极小元}。</script><ul>
 <li><strong>有限集</strong>中<strong>极大（小）元</strong>一定是<strong>最大（小）元</strong></li>
 </ul>
 </li>
@@ -1102,6 +1099,7 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 <h2 id="逆接～のに、～"><a href="#逆接～のに、～" class="headerlink" title="逆接～のに、～"></a>逆接～のに、～</h2><ul>
 <li><strong>说明后项结果出乎意料，表示意外、遗憾、不满的心情</strong></li>
 <li>动词形1简体，名词形2　だー＞な（类似ので）</li>
+<li>常与せっかく连用，“好不容易…，却….”</li>
 <li><strong>后半句不可是祈使和请求</strong></li>
 </ul>
 <p>eg. 森さんは昨日病気だったのに、出勤しました。（明明生病了，却来上班了）</p>
@@ -1127,6 +1125,12 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 </ul>
 <p>eg.そんなにおもしろい映画は、見ないはずがありません。(这么有意思的电影不会不去看的)</p>
 <p>eg.そんなにおもしろい映画は、見ないはずはありません。（这么有意思的电影，不去看的可能是没有的）</p>
+<h2 id="终助词もの"><a href="#终助词もの" class="headerlink" title="终助词もの"></a>终助词もの</h2><ul>
+<li>用于强调理由，辩解自己行为正当。</li>
+</ul>
+<p>eg. だって、目覚ましが壊れたもの。</p>
+<p>eg.だって、お金がないんだもの。(因为，没钱啊)</p>
+<p>eg.だって、すきだもん(因为喜欢嘛)</p>
 <h1 id="格助词"><a href="#格助词" class="headerlink" title="格助词"></a>格助词</h1><h2 id="に"><a href="#に" class="headerlink" title="に"></a>に</h2><h3 id="存在场所"><a href="#存在场所" class="headerlink" title="存在场所"></a>存在场所</h3><p>机の上に    本が    ３冊あります。</p>
 <h3 id="具体时间点"><a href="#具体时间点" class="headerlink" title="具体时间点"></a>具体时间点</h3><p>７時に    起きます。</p>
 <h3 id="动作对象"><a href="#动作对象" class="headerlink" title="动作对象"></a>动作对象</h3><p>李さんに    花を　あげました。</p>
