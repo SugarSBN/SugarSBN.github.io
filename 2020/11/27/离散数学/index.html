@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="BokkeNasu" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="[object Object]">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: './public/search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="又名抽象代数、近式代数 学科の中で、一番好きのんです。">
+<meta name="keywords" content="-数学">
+<meta property="og:type" content="article">
+<meta property="og:title" content="离散数学">
+<meta property="og:url" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2020&#x2F;11&#x2F;27&#x2F;%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6&#x2F;index.html">
+<meta property="og:site_name" content="BokkeNasu">
+<meta property="og:description" content="又名抽象代数、近式代数 学科の中で、一番好きのんです。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-11-27T09:07:31.980Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://sugarsbn.github.io/2020/11/27/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>离散数学 | BokkeNasu</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BokkeNasu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://sugarsbn.github.io/2020/11/27/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="SuBonan">
+      <meta itemprop="description" content="やがて、平凡な人になる">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BokkeNasu">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          离散数学
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-11-27 15:07:09 / 修改时间：17:07:31" itemprop="dateCreated datePublished" datetime="2020-11-27T15:07:09+08:00">2020-11-27</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><del>又名抽象代数、近式代数</del></p>
+<p>学科の中で、一番好きのんです。</p>
+<a id="more"></a>
+<h1 id="集合论"><a href="#集合论" class="headerlink" title="集合论"></a>集合论</h1><h2 id="幂集"><a href="#幂集" class="headerlink" title="幂集"></a>幂集</h2><ul>
+<li><p><strong>定义</strong>：A的所有子集构成的集合。</p>
+<p>例: </p>
+<script type="math/tex; mode=display">
+P(P(\varnothing))=P(\{\varnothing\})=\{\varnothing,\{\varnothing\}\}</script></li>
+</ul>
+<h2 id="集合的运算"><a href="#集合的运算" class="headerlink" title="集合的运算"></a>集合的运算</h2><ul>
+<li>集合的运算满足分配律</li>
+<li><strong>对称差定义：</strong></li>
+</ul>
+<script type="math/tex; mode=display">
+A\bigoplus B=(A-B)\cup(B-A)=(A\cup B)-(A\cap B)</script><p>​        对称差满足结合律，交换律。</p>
+<h2 id="有序n元组"><a href="#有序n元组" class="headerlink" title="有序n元组"></a>有序n元组</h2><ul>
+<li><p>相等定义：</p>
+</li>
+<li><script type="math/tex; mode=display">
+<a_{1},a_{2},...,a_{n}>=<b_1,b_2,...,b_n>\Leftrightarrow a_i=b_i,\forall i=1,2...,n</script></li>
+<li><p>传递定义：</p>
+<script type="math/tex; mode=display">
+<<x,y>,z>=<x,y,z></script><h3 id="笛卡尔积"><a href="#笛卡尔积" class="headerlink" title="笛卡尔积"></a>笛卡尔积</h3><ul>
+<li><p>定义：</p>
+<script type="math/tex; mode=display">
+A\times B=\{<x,y>|x\in A,y\in B\}\\
+A_1\times A_2\times ...\times A_n=\{<a_1,a_2,...,a_n>|a_i\in A_i\}</script></li>
+<li><p>笛卡尔积对集合交并满足<strong>分配律</strong>。</p>
+</li>
+<li><script type="math/tex; mode=display">
+|A_1\times A_2\times...\times A_n|=|A_1|\times|A_2|\times...\times |A_n|</script></li>
+</ul>
+</li>
+</ul>
+<h2 id="多重集"><a href="#多重集" class="headerlink" title="多重集"></a>多重集</h2><ul>
+<li><p><strong>重复度</strong>定义：</p>
+<script type="math/tex; mode=display">
+元素在多重集中出现次数记为该元素的重复度M_A(a)，例如：\\
+A=\{b,c,c,a,a,a,..\}中M_A(a)=\infin,M_A(b)=1,M_A(c)=2</script></li>
+<li></li>
+<li><p>多重集的<strong>交</strong>、<strong>并</strong>、<strong>差</strong>、<strong>和</strong>运算：</p>
+<script type="math/tex; mode=display">
+M_{A\cup B}(a)=max(M_A(a),M_B(a)),M_{A\cap B}(a)=min(M_A(a),M_B(a))\\
+M_{A-B}(a)=M_A(a)-M_B(a),M_{A+B}(a)=M_A(a)+M_B(a)</script></li>
+</ul>
+<h1 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h1><h2 id="关系的概念"><a href="#关系的概念" class="headerlink" title="关系的概念"></a>关系的概念</h2><ul>
+<li><p>一个<strong>有序对</strong>的集合R称为一个<strong>二元关系</strong>，简称关系。</p>
+</li>
+<li><script type="math/tex; mode=display">
+当R\subseteq A\times B时，称R为A到B的关系，当R\subseteq A\times A时，称R为A上的关系</script></li>
+<li><script type="math/tex; mode=display">
+关系的\textbf{定义域}domR=\{x|\exists y\in B,使<x,y>\in R\}\\
+关系的\textbf{值域}ranR=\{y|\exists x\in A,使<x,y>\in R\}</script></li>
+<li><p><strong>关系图</strong>：用点表示元素，用带箭头的线表示关系。</p>
+</li>
+<li><p><strong>关系矩阵</strong>：关系图的邻接矩阵，只含0\1代表无\有关系<script type="math/tex">M_R</script></p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+  *注：x与y是/否有关系也可记为xRy，x\cancel{R}y,R 为关系</script><h2 id="关系的性质"><a href="#关系的性质" class="headerlink" title="关系的性质"></a>关系的性质</h2><ul>
+<li><strong>自反性</strong>：</li>
+</ul>
+<script type="math/tex; mode=display">
+  \forall x\in A,均有xRx</script><p>  <strong>反自反</strong>：</p>
+<script type="math/tex; mode=display">
+  \forall x\in A,均有x\cancel{R}x</script><ul>
+<li><p><strong>对称性</strong>：</p>
+<script type="math/tex; mode=display">
+当xRy时，均有yRx</script><p><strong>反对称性</strong>：</p>
+<script type="math/tex; mode=display">
+当xRy,yRx时，必有x =y。也可以说，\cancel{\exists}x\neq y使得xRy且yRx</script></li>
+<li><p><strong>传递性</strong>：</p>
+<script type="math/tex; mode=display">
+若xRy,yRz,则有xRz</script></li>
+</ul>
+<h2 id="关系的复合"><a href="#关系的复合" class="headerlink" title="关系的复合"></a>关系的复合</h2><ul>
+<li>定义：<script type="math/tex; mode=display">
+R是A到B的关系，S是B到C的关系。则R\circ S为：\\
+\{<a,c>|\exists b\in B,<a,b>\in R,<b,c>\in S\}</script></li>
+</ul>
+<ul>
+<li>关系的复合<strong>满足结合律</strong>，<strong>不满足交换律</strong>，并且满足：<script type="math/tex; mode=display">
+R^m\circ R^n=R^{m+n},(R^m)^n=R^{mn}</script></li>
+</ul>
+<h2 id="关系的逆"><a href="#关系的逆" class="headerlink" title="关系的逆"></a>关系的逆</h2><ul>
+<li>定义：</li>
+</ul>
+<script type="math/tex; mode=display">
+R^{-1}=\{<y,x>|<x,y>\in R\}</script><ul>
+<li><script type="math/tex; mode=display">
+domR^{-1}=ranR,ranR^{-1}=domR,(R^{-1})^{-1}=R\\
+(R\circ S)^{-1}=S^{-1}\circ R^{-1}</script></li>
+<li></li>
+</ul>
+<h2 id="关系的闭包"><a href="#关系的闭包" class="headerlink" title="关系的闭包"></a>关系的闭包</h2><ul>
+<li>定义：</li>
+</ul>
+<script type="math/tex; mode=display">
+若A上的关系R，R'满足：\\
+（1）R'是传递（自反、或对称的）(2)R\subseteq R'\\
+(3)\cancel{\exists}R''\subseteq R'，使R'' 满足(1)(2)\\</script><p>​    则称R‘为R的<strong>传递（自反、或对称）闭包</strong>，记为t(R),r(R),s(R)</p>
+<ul>
+<li><p>自反闭包：</p>
+<script type="math/tex; mode=display">
+r(R)=R\cup I_A,其中I_A是A上的恒等关系，其关系矩阵为单位矩阵</script></li>
+<li><p>对称闭包：</p>
+<script type="math/tex; mode=display">
+s(R)=R\cup R^{-1}</script></li>
+</ul>
+<ul>
+<li><p>传递闭包：</p>
+<script type="math/tex; mode=display">
+t(R)=\bigcup_{i=1}^{|A|}R^{i}</script></li>
+<li></li>
+</ul>
+<h2 id="等价关系"><a href="#等价关系" class="headerlink" title="等价关系"></a>等价关系</h2><ul>
+<li>定义：如果A上的关系R是<strong>自反、对称、传递</strong>的，则称R为一个<strong>等价关系</strong>。通常用“~”表示</li>
+<li>定理：</li>
+</ul>
+<script type="math/tex; mode=display">
+若R_1,R_2 为A上的等价关系，则R_1\cap R_2,(R_1\cup R_2)^+为A上的等价关系\\
+其中，R^+=\bigcup_{i=1}^{\infin}R^{i}</script><h3 id="等价类"><a href="#等价类" class="headerlink" title="等价类"></a>等价类</h3><ul>
+<li>定义：</li>
+</ul>
+<script type="math/tex; mode=display">
+[a]_R=\{x|x\in A,xRa\},其中R为A上的\textbf{等价关系},[a]记为由a生成的等价类</script><h3 id="商集"><a href="#商集" class="headerlink" title="商集"></a>商集</h3><ul>
+<li>定义：</li>
+</ul>
+<script type="math/tex; mode=display">
+A/R=\{[a]|a\in A\},称为A对R的商集，即由A中所有元素生成的等价类组成的集合\\
+特别地，Z/R_m通常称作模m剩余类集，用符号Z_m表示</script><ul>
+<li>性质：</li>
+</ul>
+<script type="math/tex; mode=display">
+(1)a\in[a]\\(2)[a]=[b]\Leftrightarrow aRb\\(3)[a]\cap[b]=\varnothing\Leftrightarrow a\cancel{R}b</script><h2 id="划分与覆盖"><a href="#划分与覆盖" class="headerlink" title="划分与覆盖"></a>划分与覆盖</h2><ul>
+<li>定义：</li>
+</ul>
+<script type="math/tex; mode=display">
+集合族C=\{C_i|C_i是集合，i\in J\}若满足\bigcup_{i\in J}C_i=A，则称C是A的一个覆盖，\\
+若还有C_i\cap C_j=\varnothing(i\neq j),则称C为A的一个划分，C_i称为划分块</script><ul>
+<li><p>定理：</p>
+<ul>
+<li><p>A/R是A的一个划分（<strong>商集是原集合的一个划分</strong>）</p>
+</li>
+<li><p>对于任意一个划分C，可以决定一个等价关系R，使A/R=C</p>
+</li>
+<li><script type="math/tex; mode=display">
+设R_1,R_2 是A上的等价关系，则R_1=R_2\Leftrightarrow A/R_1=A/R_2</script></li>
+</ul>
+</li>
+</ul>
+<h2 id="偏序关系与偏序集"><a href="#偏序关系与偏序集" class="headerlink" title="偏序关系与偏序集"></a>偏序关系与偏序集</h2><ul>
+<li><p>定义：</p>
+<ul>
+<li><p>若A上的一个关系R是<strong>自反、反对称、传递</strong>的，则称其为一个<strong>偏序关系</strong>。习惯用”≤“表示。</p>
+</li>
+<li><p>若集合P上定义了一个偏序关系，则<p,≤>称为一个<strong>偏序集</strong>。</p,≤></p>
+</li>
+<li><script type="math/tex; mode=display">
+<P,\leq>为一偏序集，若a,b\in P ，a<b(a\leq b,a\neq b),且\cancel{\exists}c\in P使a<c<b\\
+则称b\textbf{盖住}a，或称b是a的\textbf{直接前辈}，a是b的\textbf{直接后辈}</script></li>
+<li><p>Hasse图：(1)用原点表示P中元素(2)若b<strong>盖住</strong>a，则把b画在a的上方并连一条线。</p>
+<ul>
+<li><script type="math/tex; mode=display">
+这里补充了一个习惯，S_n为n的所有正因子组成的集合</script></li>
+</ul>
+</li>
+<li><script type="math/tex; mode=display">
+<P,\leq>中，若\forall x,y,总有x\leq y或y\leq x，则称\leq为\textbf{全序关系}，<P,\leq>为全序集</script></li>
+<li><script type="math/tex; mode=display">
+设<A,\leq>是偏序集，若B\subseteq A且<B,\leq>是全序集，则称B为\textbf{链}</script></li>
+<li><script type="math/tex; mode=display">
+偏序集<P,\leq>中，a\in P,若\forall b\in P，均有a\leq b，则称a为<P,\leq>中\textbf{最小元}。</script><ul>
+<li><script type="math/tex; mode=display">
+\forall A,<P(A),\leq>的最大元是A，最小元是\varnothing</script></li>
+<li><p>​            偏序集中最大（小）元若存在，则唯一，且它们一定是唯一<strong>极大（小）</strong>元</p>
+</li>
+</ul>
+</li>
+<li><script type="math/tex; mode=display">
+偏序集<P,\leq>中，a\in P,若\cancel{\exists}b\in P,使b<a,则称a为\textbf{极小元}。</script><ul>
+<li><strong>有限集</strong>中<strong>极大（小）元</strong>一定是<strong>最大（小）元</strong></li>
+</ul>
+</li>
+<li><script type="math/tex; mode=display">
+偏序集<P,\leq>中，A\subseteq P,b\in P,若\forall a\in A,都有a\leq b,则称b为A的一个\textbf{上界}</script></li>
+<li><script type="math/tex; mode=display">
+若a是A的一个上界，且\forall b是A的上界，a\leq b,则称a为A的最小上界（\textbf{上确界}）\\
+    上确界记为supA，下确界记为infA</script><ul>
+<li>偏序集上（下）确界若存在，则唯一。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><ul>
+<li>定义：<script type="math/tex; mode=display">
+f是A到B的关系，若\forall x\in A,存在唯一的y\in B,使<x,y>\in f,则f称为A到B的函数，记为f:A\rightarrow B\\ 
+*<x,y>\in f可记为y=f(x),或f:x\mapsto y,y为x在f下的\textbf{象}，x为y在f下的\textbf{原象}。\\
+*进一步地，对于集合A_1\subseteq A,A_1中所有元素在f下的象构成的集合称为A_1的象，记为f(A_1)\\
+同理对于集合B_1\subseteq B,B_1中所有元素在f下的原象构成的集合称为B_1的完全原象，记为f^{-1}(B_1)\\
+*f(A)为f的值域domf，f^{-1}(B)为f的定义域ranf</script></li>
+</ul>
+<ul>
+<li><script type="math/tex; mode=display">
+*规定\varphi:a\mapsto [a]_R \forall a\in A,为A到A/R的\textbf{自然映射}</script></li>
+</ul>
+<script type="math/tex; mode=display">
+若f:A\rightarrow B,A_1\subseteq A,g=\{<x,y>|x\in A_1,y=f(x)\}，则称g为f在A_1上的\textbf{限制}，记为f|_{A_1},\\也称f为g在A上的\textbf{扩张}。</script><script type="math/tex; mode=display">
+f:A\rightarrow B,若\forall x,y\in A,x\neq y,f(x)\neq f(y),则称f为A到B的\textbf{单射}</script><script type="math/tex; mode=display">
+f:A\rightarrow B,若ranf=B，则称f为A到B的\textbf{满射}</script><p>若f既为单射，也为满射，则称f为A到B的<strong>一一映射（双射）</strong>。</p>
+<ul>
+<li><script type="math/tex; mode=display">
+*习惯规定，B^A为从所有从A到B的函数组成的集合。|B^A|=|B|^{|A|},A,B可为无限集</script></li>
+<li></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># -数学</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2020/11/23/%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F/" rel="next" title="基数排序">
+                  <i class="fa fa-chevron-left"></i> 基数排序
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80Nzc2NC8yNDI2MQ=="></div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+		
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#集合论"><span class="nav-number">1.</span> <span class="nav-text">集合论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#幂集"><span class="nav-number">1.1.</span> <span class="nav-text">幂集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#集合的运算"><span class="nav-number">1.2.</span> <span class="nav-text">集合的运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有序n元组"><span class="nav-number">1.3.</span> <span class="nav-text">有序n元组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#笛卡尔积"><span class="nav-number">1.3.1.</span> <span class="nav-text">笛卡尔积</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多重集"><span class="nav-number">1.4.</span> <span class="nav-text">多重集</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关系"><span class="nav-number">2.</span> <span class="nav-text">关系</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的概念"><span class="nav-number">2.1.</span> <span class="nav-text">关系的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的性质"><span class="nav-number">2.2.</span> <span class="nav-text">关系的性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的复合"><span class="nav-number">2.3.</span> <span class="nav-text">关系的复合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的逆"><span class="nav-number">2.4.</span> <span class="nav-text">关系的逆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的闭包"><span class="nav-number">2.5.</span> <span class="nav-text">关系的闭包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#等价关系"><span class="nav-number">2.6.</span> <span class="nav-text">等价关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#等价类"><span class="nav-number">2.6.1.</span> <span class="nav-text">等价类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#商集"><span class="nav-number">2.6.2.</span> <span class="nav-text">商集</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#划分与覆盖"><span class="nav-number">2.7.</span> <span class="nav-text">划分与覆盖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#偏序关系与偏序集"><span class="nav-number">2.8.</span> <span class="nav-text">偏序关系与偏序集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">2.9.</span> <span class="nav-text">函数</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1409311773&auto=1&height=66"></iframe>
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SuBonan"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">SuBonan</p>
+  <div class="site-description" itemprop="description">やがて、平凡な人になる</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">苏博南</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+
+  
+
+<script>
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/asuna_04.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
+</html>
