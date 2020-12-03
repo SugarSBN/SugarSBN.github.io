@@ -41,7 +41,7 @@ A_1\times A_2\times ...\times A_n=\{<a_1,a_2,...,a_n>|a_i\in A_i\}</script></li>
 <li><p><strong>重复度</strong>定义：</p>
 <script type="math/tex; mode=display">
 元素在多重集中出现次数记为该元素的重复度M_A(a)，例如：\\
-A=\{b,c,c,a,a,a,..\}中M_A(a)=\infin,M_A(b)=1,M_A(c)=2</script></li>
+A=\{b,c,c,a,a,a,..\}中M_A(a)=\infty,M_A(b)=1,M_A(c)=2</script></li>
 <li></li>
 <li><p>多重集的<strong>交</strong>、<strong>并</strong>、<strong>差</strong>、<strong>和</strong>运算：</p>
 <script type="math/tex; mode=display">
@@ -212,9 +212,142 @@ f是A到B的关系，若\forall x\in A,存在唯一的y\in B,使<x,y>\in f,则f�
 f:A\rightarrow B,若\forall x,y\in A,x\neq y,f(x)\neq f(y),则称f为A到B的\textbf{单射}</script><script type="math/tex; mode=display">
 f:A\rightarrow B,若ranf=B，则称f为A到B的\textbf{满射}</script><p>若f既为单射，也为满射，则称f为A到B的<strong>一一映射（双射）</strong>。</p>
 <ul>
+<li></li>
 <li><script type="math/tex; mode=display">
 *习惯规定，B^A为从所有从A到B的函数组成的集合。|B^A|=|B|^{|A|},A,B可为无限集</script></li>
 <li></li>
+</ul>
+<h3 id="函数的复合"><a href="#函数的复合" class="headerlink" title="函数的复合"></a>函数的复合</h3><ul>
+<li>函数的符合即关系的复合，但特别地，规定：</li>
+</ul>
+<script type="math/tex; mode=display">
+(f\circ g)(x)=f(g(x))=g\diamond f(\diamond 指关系的复合)</script><ul>
+<li><p>函数的复合满足结合律，且保映射性质：</p>
+<ul>
+<li><script type="math/tex; mode=display">
+若f，g均为满(单/双)射，则f\circ g也为满(单/双)射</script></li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h3 id="函数的求逆"><a href="#函数的求逆" class="headerlink" title="函数的求逆"></a>函数的求逆</h3><ul>
+<li><p><strong>函数f可逆，当且仅当f是双射</strong>。</p>
+</li>
+<li><script type="math/tex; mode=display">
+f的逆记为f^{-1},即关系f的逆</script></li>
+<li><script type="math/tex; mode=display">
+设f:A\rightarrow B,g:B\rightarrow C均可逆，则g\circ f可逆，且(g\circ f)^{-1}=f^{-1}\circ g^{-1}</script></li>
+</ul>
+<h1 id="无限集"><a href="#无限集" class="headerlink" title="无限集"></a>无限集</h1><h2 id="集合的势"><a href="#集合的势" class="headerlink" title="集合的势"></a>集合的势</h2><ul>
+<li><p>定义：若存在集合A到集合B的<strong>双射</strong>，则称A与B<strong>等势（对等）</strong>。（等价于含有相同多元素）</p>
+<ul>
+<li><script type="math/tex; mode=display">
+例：N\sim 2N,(0,1)\sim R,[0,1]\sim(0,1)</script></li>
+</ul>
+</li>
+<li><p>显然，等势关系是一个<strong>等价关系</strong>。</p>
+</li>
+<li><script type="math/tex; mode=display">
+定理，若A_1\cap A_2=\varnothing,B_1\cap B_2=\varnothing,A_1\sim B_1,A_2\sim B_2,则A_1\cup A_2\sim B_1\cup B_2</script></li>
+<li><script type="math/tex; mode=display">
+定理：\textbf{无限集必定与它的一个真子集等势},(A\sim A-\{a\},a\in A)</script></li>
+<li><p>规定：</p>
+<script type="math/tex; mode=display">
+与N等势的集合势记为\aleph_0,记为|N|=|Q|=\aleph_0,而|R|=|(0,1)|=\aleph</script></li>
+<li><script type="math/tex; mode=display">
+定义：若A\not\sim B且A\sim C\subseteq B,则记为|A|<|B|,|A|\leq|B|\Leftrightarrow A到B存在单射\\
+特别地，\aleph_0 <\aleph\\
+\textbf{康托猜想：}\aleph_0与\aleph之间不存在其他势</script></li>
+<li><p><strong>Bernstein定理：</strong></p>
+<script type="math/tex; mode=display">
+|A|\leq|B|,|B|\leq|A|\Longrightarrow |A|=|B|</script></li>
+</ul>
+<ul>
+<li><p><strong>三歧定理</strong>：|A|&lt;|B|,|A|&gt;|B|,|A|=|B|必然有一个成立。</p>
+</li>
+<li><p><strong>康托定理</strong>：</p>
+<script type="math/tex; mode=display">
+\forall集合A，|A|<|2^A|</script></li>
+</ul>
+<h2 id="可数集"><a href="#可数集" class="headerlink" title="可数集"></a>可数集</h2><ul>
+<li><p><strong>定义</strong>：与N等势的集合称为<strong>可数集</strong>。即其中的元素可<strong>不重复</strong>排成一个<strong>无穷序列</strong>。</p>
+</li>
+<li><p><strong>定理</strong>：可数集的无穷子集均为可数集。</p>
+</li>
+<li><p><strong>定理</strong>：任何无限集必有可数子集。</p>
+</li>
+<li><p><strong>定理</strong>：在可数集中加入或删除有限个元素仍为可数集</p>
+</li>
+<li><p><strong>定理</strong>：</p>
+<script type="math/tex; mode=display">
+可数集A，B，则|A|=|B|=\aleph_0 ,A\cup B仍为可数集，但A\cap B 不一定为无限集。A\times B仍为可数集</script></li>
+<li><p><strong>定理</strong>：</p>
+<script type="math/tex; mode=display">
+若A为无限集，B为\textbf{可数集或有限集},则A\sim A\cup B</script></li>
+</ul>
+<h2 id="连续势集"><a href="#连续势集" class="headerlink" title="连续势集"></a>连续势集</h2><ul>
+<li><p><strong>定义</strong>：与R等势的集合称为<strong>连续势集</strong>。</p>
+</li>
+<li><script type="math/tex; mode=display">
+若A为连续势集，B至多为连续势集，则A\cup B仍为连续势集。即:\\
+|A|=\aleph,|B|\leq\aleph,则|A\cup B|=\aleph</script></li>
+<li></li>
+<li><script type="math/tex; mode=display">
+|(0,1)\times(0,1)|=\aleph,所以(0,1)\sim(0,1)\times(0,1)</script></li>
+<li><script type="math/tex; mode=display">
+若|A|=|B|=\aleph,则|A\times B|=\aleph</script></li>
+<li><p>特别地，有：</p>
+<script type="math/tex; mode=display">
+|2^N|=\aleph</script></li>
+<li></li>
+</ul>
+<h1 id="关于集合的几个有趣的东西"><a href="#关于集合的几个有趣的东西" class="headerlink" title="关于集合的几个有趣的东西"></a>关于集合的几个有趣的东西</h1><h2 id="Cantor悖论"><a href="#Cantor悖论" class="headerlink" title="Cantor悖论"></a>Cantor悖论</h2><script type="math/tex; mode=display">
+设C为所有集合构成的集合，则又康托定理，|C|<|2^C|，而2^C也是个集合所以2^C\subseteq C,矛盾</script><h2 id="Russell悖论"><a href="#Russell悖论" class="headerlink" title="Russell悖论"></a>Russell悖论</h2><script type="math/tex; mode=display">
+记S=\{A|A\not\in A\},则S是否\in S?</script><h2 id="Godel不完全定理"><a href="#Godel不完全定理" class="headerlink" title="Godel不完全定理"></a>Godel不完全定理</h2><h3 id="第一定理"><a href="#第一定理" class="headerlink" title="第一定理"></a>第一定理</h3><ul>
+<li>任意一个包含一阶谓词逻辑与初等数论的形式系统，都存在一个命题，它在这个系统中既不能被证明为真，也不能被证明为否。（另外一种简单表达：一个不弱于初等数论的形式系统，如果一致则必不完全。）</li>
+</ul>
+<h3 id="第二定理"><a href="#第二定理" class="headerlink" title="第二定理"></a>第二定理</h3><ul>
+<li>如果系统S含有初等数论，当S无矛盾时，它的无矛盾性不可能在S内证明。（另外一种简单表达：这样的系统如果一致，则一致性无法再系统内证明。）</li>
+</ul>
+<h1 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h1><ul>
+<li><strong>定义：</strong><script type="math/tex; mode=display">
+设A是集合,A\times A 到A上的映射称为A上的二元运算。A^n到A上的运算称为A上的n元运算\\
+例：S是一个集合，则其子集的交/并是P(S)上的二元运算</script></li>
+</ul>
+<ul>
+<li><p><strong>定义</strong>：</p>
+<script type="math/tex; mode=display">
+设f是A上的n元运算，若\forall x_1,x_2,...,x_n\in A,f(x_1,x_2,...,x_n)\in A,则称A对运算f\textbf{封闭}</script></li>
+<li><p><em>注意，由于运算的新定义，运算的性质包括交换律，结合律，左\右分配律，消去律与一般数的运算不是一个概念</em>。</p>
+</li>
+</ul>
+<h1 id="代数系统"><a href="#代数系统" class="headerlink" title="代数系统"></a>代数系统</h1><ul>
+<li><p><strong>定义</strong>：</p>
+<script type="math/tex; mode=display">
+若A是一个非空集合，f_1,f_2,...,f_n是A上的运算，则<A,f_1,f_2,...,f_n>构成一个代数系统。也可简记为A。\\
+若S\subseteq A，且S也对这些运算封闭，则称S为A的一个\textbf{子代数}</script></li>
+<li></li>
+</ul>
+<h2 id="单位元"><a href="#单位元" class="headerlink" title="单位元"></a>单位元</h2><ul>
+<li><script type="math/tex; mode=display">
+代数系统<A,*> 中e\in A,若\forall x\in A,都有ex=x，则称e为A中的左单位元。右单位元类似定义.\\
+若A中既有左单位元e_l,又有右单位元e_r,则e_l=e_r=e为单位元。</script></li>
+<li><p><strong>定理</strong>：代数系统A中的单位元若存在，则唯一。</p>
+</li>
+</ul>
+<h2 id="逆元"><a href="#逆元" class="headerlink" title="逆元"></a>逆元</h2><ul>
+<li><script type="math/tex; mode=display">
+代数系统<A,*>的单位元为e，对于a\in A,若\exists b\in A,使ba=e，则称a左可逆，左逆元为b。右同理。\\
+若\exists a'\in A,使aa'=a'a=e，则称a可逆，逆元为a'</script></li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+若代数系统<A,*>中，*满足\textbf{结合律}。那么a\in A的左右逆元若存在，则相等且唯一。\\
+简单证明：左逆元b右逆元c,b=be=b(ac)=(ba)c=ec=c</script></li>
+<li></li>
+</ul>
+<h2 id="幂等元"><a href="#幂等元" class="headerlink" title="幂等元"></a>幂等元</h2><ul>
+<li><script type="math/tex; mode=display">
+代数系统<A,*>中，a\in A,a*a=a，则称a为幂等元</script></li>
 </ul>
 ]]></content>
       <tags>
@@ -1260,7 +1393,56 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 <p><em>be largely attributed to = be caused by</em></p>
 <p><em>project that…=predict that…=forecast/estimate..</em></p>
 <p><em>at a set time = at a fixed time</em></p>
-<p><em>Village culture is characterized by distant bloodlines,unfamiliar relations and compretitive behavior.</em></p>
+<p><em>Village culture <strong>is characterized by</strong> distant bloodlines,unfamiliar relations and compretitive behavior.</em></p>
+<h2 id="reading-2"><a href="#reading-2" class="headerlink" title="reading 2"></a>reading 2</h2><ul>
+<li><p><strong><em>be swollen with</em></strong> <em>pride</em>, <em>the populatiion is expected to <strong>swell to</strong> almost 5 million</em></p>
+</li>
+<li><p><em>the accumulated urban growth of these two regions during the whole span of history will be</em></p>
+<p> <strong><em>duplicated</em></strong> (重演)<em>in a single generation.</em></p>
+</li>
+<li><p><em>A represent the best hope of doing sth</em>  A也是做…最大的可能</p>
+</li>
+<li><em>advantages <strong>far outweight</strong> disadvantages</em></li>
+<li><strong><em>exploit its possibility</em></strong></li>
+<li><em>specify the ambition of…</em> (表明了…的决心)</li>
+<li>slum dweller 平民窟居民</li>
+</ul>
+<h2 id="reading-3"><a href="#reading-3" class="headerlink" title="reading 3"></a>reading 3</h2><ul>
+<li><em>have many <strong>adverse</strong> effects on</em></li>
+<li><strong><em>stains on sanitation</em></strong> 公共卫生设施的负担</li>
+<li><em>mental health disorder</em></li>
+<li><em>scattered(分散的) populations in rural areas</em></li>
+</ul>
+<h2 id="reading-4"><a href="#reading-4" class="headerlink" title="reading 4"></a>reading 4</h2><ul>
+<li><em>deny (doing) sth, deny sth to be(拒绝承认), deny sb sth(拒绝为某人提供…), deny onself nothing(放纵)</em></li>
+<li><em>Three suggestions</em> <strong><em>stand out</em></strong></li>
+<li><em>a violation of people’s rights</em></li>
+<li><em>promote the equality of work and pay</em></li>
+<li><em>This kind of people-centred development <strong>knits together the social fabric</strong> and encourages economic growth</em></li>
+<li><em>The “urban footprint” <strong>stretches far beyond</strong> city boundaries</em></li>
+<li><em>A <strong>concerted</strong> international effort <strong>at this critical time</strong> is crucial to clarify policy options and provide information and analyses that will support strategies to improve our urban future</em></li>
+</ul>
+<h2 id="collocation-1"><a href="#collocation-1" class="headerlink" title="collocation"></a>collocation</h2><h3 id="exceed"><a href="#exceed" class="headerlink" title="exceed"></a>exceed</h3><p><em>exceed my estimation</em>                 <em>exceed in number</em>         <em>exceed the supply</em>         <em>exceed all expectations</em></p>
+<p><del><em>exceed the speed</em></del>        <em>exceed $7 million</em>         <strong><em>exceed their authority</em></strong></p>
+<h3 id="reach"><a href="#reach" class="headerlink" title="reach"></a>reach</h3><p><em>reach into his pocket</em>        <em>reach the second goal</em>        <em>reach the point/level/stage</em></p>
+<p><em>reach an agreement</em>        <em>reach a decision</em>        <del><em>reach to Paris</em></del></p>
+<h3 id="lack"><a href="#lack" class="headerlink" title="lack"></a>lack</h3><p><em>the lack of common sense</em>        <em>be lacking in intelligence</em>        <em>the lack of funds</em></p>
+<p><em>lack courage</em>        <em>feel a lack of confidence</em></p>
+<h3 id="result"><a href="#result" class="headerlink" title="result"></a>result</h3><p><em>result from hardworking</em>        <em>result of the examination</em>        <em>result in failure</em></p>
+<p><del><em>result to the discussion</em></del>        <em>negative results</em>        <em>bring about results</em></p>
+<h3 id="compete"><a href="#compete" class="headerlink" title="compete"></a>compete</h3><p><em>compete for the post</em>        <em>compete with that company</em>        <em>competitive prices</em></p>
+<p><em>compete against sb</em>        <em>compete honestly</em>        <em>compete on the equal basis</em></p>
+<h3 id="effective"><a href="#effective" class="headerlink" title="effective"></a>effective</h3><p><em>effective methods</em>        <strong><em>be effective against cancer</em></strong>        <em>effective in fighting</em></p>
+<p><del><strong><em>effective management</em></strong></del>    <strong><em>effective use of money</em></strong>        <em>effective control of the city</em></p>
+<h3 id="profound"><a href="#profound" class="headerlink" title="profound"></a>profound</h3><p><em>profound effects on his work</em>        <em>profound sense of guilt</em>    <del><em>profound river</em></del></p>
+<p><strong><em>profound thinker</em></strong>        <em>profound questions</em>        <em>profound man</em>    (知识渊博的)</p>
+<h3 id="voice"><a href="#voice" class="headerlink" title="voice"></a>voice</h3><p><em>make a voice</em>        <em>recognize a voice</em>        <em>voice opinions</em></p>
+<p><del><em>voice of footsteps</em></del> <em>sound of footsteps</em>        <em>raise one’s voice</em>        <em>in a high voice</em></p>
+<h3 id="access"><a href="#access" class="headerlink" title="access"></a>access</h3><p><em>access to information</em>        <del><em>access in the area</em></del>        <em>gain access</em></p>
+<p><em>easy access</em>        <em>have access</em>        <em>access to the lawyer</em>        <em>a cite access</em>(网站入口)</p>
+<h3 id="ensure"><a href="#ensure" class="headerlink" title="ensure"></a>ensure</h3><p><em>ensure good quality</em>        <em>ensure safety</em>        <em>ensure people’s health</em></p>
+<p><em><del>ensure to be there on time</del></em> <em>make sure to be there on time</em>        <em>ensure workers against accidents</em>        </p>
+<p><em>ensure a successful experience</em></p>
 ]]></content>
       <categories>
         <category>-英语</category>

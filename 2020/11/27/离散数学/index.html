@@ -54,7 +54,7 @@
 <meta property="og:site_name" content="BokkeNasu">
 <meta property="og:description" content="又名抽象代数、近式代数 学科の中で、一番好きのんです。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-11-29T02:21:13.378Z">
+<meta property="og:updated_time" content="2020-12-03T09:00:04.452Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://sugarsbn.github.io/2020/11/27/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/">
@@ -225,7 +225,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-11-29 10:21:13" itemprop="dateModified" datetime="2020-11-29T10:21:13+08:00">2020-11-29</time>
+                <time title="修改时间：2020-12-03 17:00:04" itemprop="dateModified" datetime="2020-12-03T17:00:04+08:00">2020-12-03</time>
               </span>
 
           
@@ -277,7 +277,7 @@ A_1\times A_2\times ...\times A_n=\{<a_1,a_2,...,a_n>|a_i\in A_i\}</script></li>
 <li><p><strong>重复度</strong>定义：</p>
 <script type="math/tex; mode=display">
 元素在多重集中出现次数记为该元素的重复度M_A(a)，例如：\\
-A=\{b,c,c,a,a,a,..\}中M_A(a)=\infin,M_A(b)=1,M_A(c)=2</script></li>
+A=\{b,c,c,a,a,a,..\}中M_A(a)=\infty,M_A(b)=1,M_A(c)=2</script></li>
 <li></li>
 <li><p>多重集的<strong>交</strong>、<strong>并</strong>、<strong>差</strong>、<strong>和</strong>运算：</p>
 <script type="math/tex; mode=display">
@@ -448,9 +448,142 @@ f是A到B的关系，若\forall x\in A,存在唯一的y\in B,使<x,y>\in f,则f�
 f:A\rightarrow B,若\forall x,y\in A,x\neq y,f(x)\neq f(y),则称f为A到B的\textbf{单射}</script><script type="math/tex; mode=display">
 f:A\rightarrow B,若ranf=B，则称f为A到B的\textbf{满射}</script><p>若f既为单射，也为满射，则称f为A到B的<strong>一一映射（双射）</strong>。</p>
 <ul>
+<li></li>
 <li><script type="math/tex; mode=display">
 *习惯规定，B^A为从所有从A到B的函数组成的集合。|B^A|=|B|^{|A|},A,B可为无限集</script></li>
 <li></li>
+</ul>
+<h3 id="函数的复合"><a href="#函数的复合" class="headerlink" title="函数的复合"></a>函数的复合</h3><ul>
+<li>函数的符合即关系的复合，但特别地，规定：</li>
+</ul>
+<script type="math/tex; mode=display">
+(f\circ g)(x)=f(g(x))=g\diamond f(\diamond 指关系的复合)</script><ul>
+<li><p>函数的复合满足结合律，且保映射性质：</p>
+<ul>
+<li><script type="math/tex; mode=display">
+若f，g均为满(单/双)射，则f\circ g也为满(单/双)射</script></li>
+</ul>
+</li>
+<li></li>
+</ul>
+<h3 id="函数的求逆"><a href="#函数的求逆" class="headerlink" title="函数的求逆"></a>函数的求逆</h3><ul>
+<li><p><strong>函数f可逆，当且仅当f是双射</strong>。</p>
+</li>
+<li><script type="math/tex; mode=display">
+f的逆记为f^{-1},即关系f的逆</script></li>
+<li><script type="math/tex; mode=display">
+设f:A\rightarrow B,g:B\rightarrow C均可逆，则g\circ f可逆，且(g\circ f)^{-1}=f^{-1}\circ g^{-1}</script></li>
+</ul>
+<h1 id="无限集"><a href="#无限集" class="headerlink" title="无限集"></a>无限集</h1><h2 id="集合的势"><a href="#集合的势" class="headerlink" title="集合的势"></a>集合的势</h2><ul>
+<li><p>定义：若存在集合A到集合B的<strong>双射</strong>，则称A与B<strong>等势（对等）</strong>。（等价于含有相同多元素）</p>
+<ul>
+<li><script type="math/tex; mode=display">
+例：N\sim 2N,(0,1)\sim R,[0,1]\sim(0,1)</script></li>
+</ul>
+</li>
+<li><p>显然，等势关系是一个<strong>等价关系</strong>。</p>
+</li>
+<li><script type="math/tex; mode=display">
+定理，若A_1\cap A_2=\varnothing,B_1\cap B_2=\varnothing,A_1\sim B_1,A_2\sim B_2,则A_1\cup A_2\sim B_1\cup B_2</script></li>
+<li><script type="math/tex; mode=display">
+定理：\textbf{无限集必定与它的一个真子集等势},(A\sim A-\{a\},a\in A)</script></li>
+<li><p>规定：</p>
+<script type="math/tex; mode=display">
+与N等势的集合势记为\aleph_0,记为|N|=|Q|=\aleph_0,而|R|=|(0,1)|=\aleph</script></li>
+<li><script type="math/tex; mode=display">
+定义：若A\not\sim B且A\sim C\subseteq B,则记为|A|<|B|,|A|\leq|B|\Leftrightarrow A到B存在单射\\
+特别地，\aleph_0 <\aleph\\
+\textbf{康托猜想：}\aleph_0与\aleph之间不存在其他势</script></li>
+<li><p><strong>Bernstein定理：</strong></p>
+<script type="math/tex; mode=display">
+|A|\leq|B|,|B|\leq|A|\Longrightarrow |A|=|B|</script></li>
+</ul>
+<ul>
+<li><p><strong>三歧定理</strong>：|A|&lt;|B|,|A|&gt;|B|,|A|=|B|必然有一个成立。</p>
+</li>
+<li><p><strong>康托定理</strong>：</p>
+<script type="math/tex; mode=display">
+\forall集合A，|A|<|2^A|</script></li>
+</ul>
+<h2 id="可数集"><a href="#可数集" class="headerlink" title="可数集"></a>可数集</h2><ul>
+<li><p><strong>定义</strong>：与N等势的集合称为<strong>可数集</strong>。即其中的元素可<strong>不重复</strong>排成一个<strong>无穷序列</strong>。</p>
+</li>
+<li><p><strong>定理</strong>：可数集的无穷子集均为可数集。</p>
+</li>
+<li><p><strong>定理</strong>：任何无限集必有可数子集。</p>
+</li>
+<li><p><strong>定理</strong>：在可数集中加入或删除有限个元素仍为可数集</p>
+</li>
+<li><p><strong>定理</strong>：</p>
+<script type="math/tex; mode=display">
+可数集A，B，则|A|=|B|=\aleph_0 ,A\cup B仍为可数集，但A\cap B 不一定为无限集。A\times B仍为可数集</script></li>
+<li><p><strong>定理</strong>：</p>
+<script type="math/tex; mode=display">
+若A为无限集，B为\textbf{可数集或有限集},则A\sim A\cup B</script></li>
+</ul>
+<h2 id="连续势集"><a href="#连续势集" class="headerlink" title="连续势集"></a>连续势集</h2><ul>
+<li><p><strong>定义</strong>：与R等势的集合称为<strong>连续势集</strong>。</p>
+</li>
+<li><script type="math/tex; mode=display">
+若A为连续势集，B至多为连续势集，则A\cup B仍为连续势集。即:\\
+|A|=\aleph,|B|\leq\aleph,则|A\cup B|=\aleph</script></li>
+<li></li>
+<li><script type="math/tex; mode=display">
+|(0,1)\times(0,1)|=\aleph,所以(0,1)\sim(0,1)\times(0,1)</script></li>
+<li><script type="math/tex; mode=display">
+若|A|=|B|=\aleph,则|A\times B|=\aleph</script></li>
+<li><p>特别地，有：</p>
+<script type="math/tex; mode=display">
+|2^N|=\aleph</script></li>
+<li></li>
+</ul>
+<h1 id="关于集合的几个有趣的东西"><a href="#关于集合的几个有趣的东西" class="headerlink" title="关于集合的几个有趣的东西"></a>关于集合的几个有趣的东西</h1><h2 id="Cantor悖论"><a href="#Cantor悖论" class="headerlink" title="Cantor悖论"></a>Cantor悖论</h2><script type="math/tex; mode=display">
+设C为所有集合构成的集合，则又康托定理，|C|<|2^C|，而2^C也是个集合所以2^C\subseteq C,矛盾</script><h2 id="Russell悖论"><a href="#Russell悖论" class="headerlink" title="Russell悖论"></a>Russell悖论</h2><script type="math/tex; mode=display">
+记S=\{A|A\not\in A\},则S是否\in S?</script><h2 id="Godel不完全定理"><a href="#Godel不完全定理" class="headerlink" title="Godel不完全定理"></a>Godel不完全定理</h2><h3 id="第一定理"><a href="#第一定理" class="headerlink" title="第一定理"></a>第一定理</h3><ul>
+<li>任意一个包含一阶谓词逻辑与初等数论的形式系统，都存在一个命题，它在这个系统中既不能被证明为真，也不能被证明为否。（另外一种简单表达：一个不弱于初等数论的形式系统，如果一致则必不完全。）</li>
+</ul>
+<h3 id="第二定理"><a href="#第二定理" class="headerlink" title="第二定理"></a>第二定理</h3><ul>
+<li>如果系统S含有初等数论，当S无矛盾时，它的无矛盾性不可能在S内证明。（另外一种简单表达：这样的系统如果一致，则一致性无法再系统内证明。）</li>
+</ul>
+<h1 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h1><ul>
+<li><strong>定义：</strong><script type="math/tex; mode=display">
+设A是集合,A\times A 到A上的映射称为A上的二元运算。A^n到A上的运算称为A上的n元运算\\
+例：S是一个集合，则其子集的交/并是P(S)上的二元运算</script></li>
+</ul>
+<ul>
+<li><p><strong>定义</strong>：</p>
+<script type="math/tex; mode=display">
+设f是A上的n元运算，若\forall x_1,x_2,...,x_n\in A,f(x_1,x_2,...,x_n)\in A,则称A对运算f\textbf{封闭}</script></li>
+<li><p><em>注意，由于运算的新定义，运算的性质包括交换律，结合律，左\右分配律，消去律与一般数的运算不是一个概念</em>。</p>
+</li>
+</ul>
+<h1 id="代数系统"><a href="#代数系统" class="headerlink" title="代数系统"></a>代数系统</h1><ul>
+<li><p><strong>定义</strong>：</p>
+<script type="math/tex; mode=display">
+若A是一个非空集合，f_1,f_2,...,f_n是A上的运算，则<A,f_1,f_2,...,f_n>构成一个代数系统。也可简记为A。\\
+若S\subseteq A，且S也对这些运算封闭，则称S为A的一个\textbf{子代数}</script></li>
+<li></li>
+</ul>
+<h2 id="单位元"><a href="#单位元" class="headerlink" title="单位元"></a>单位元</h2><ul>
+<li><script type="math/tex; mode=display">
+代数系统<A,*> 中e\in A,若\forall x\in A,都有ex=x，则称e为A中的左单位元。右单位元类似定义.\\
+若A中既有左单位元e_l,又有右单位元e_r,则e_l=e_r=e为单位元。</script></li>
+<li><p><strong>定理</strong>：代数系统A中的单位元若存在，则唯一。</p>
+</li>
+</ul>
+<h2 id="逆元"><a href="#逆元" class="headerlink" title="逆元"></a>逆元</h2><ul>
+<li><script type="math/tex; mode=display">
+代数系统<A,*>的单位元为e，对于a\in A,若\exists b\in A,使ba=e，则称a左可逆，左逆元为b。右同理。\\
+若\exists a'\in A,使aa'=a'a=e，则称a可逆，逆元为a'</script></li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+若代数系统<A,*>中，*满足\textbf{结合律}。那么a\in A的左右逆元若存在，则相等且唯一。\\
+简单证明：左逆元b右逆元c,b=be=b(ac)=(ba)c=ec=c</script></li>
+<li></li>
+</ul>
+<h2 id="幂等元"><a href="#幂等元" class="headerlink" title="幂等元"></a>幂等元</h2><ul>
+<li><script type="math/tex; mode=display">
+代数系统<A,*>中，a\in A,a*a=a，则称a为幂等元</script></li>
 </ul>
 
     </div>
@@ -519,7 +652,7 @@ f:A\rightarrow B,若ranf=B，则称f为A到B的\textbf{满射}</script><p>若f�
 		
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#集合论"><span class="nav-number">1.</span> <span class="nav-text">集合论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#幂集"><span class="nav-number">1.1.</span> <span class="nav-text">幂集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#集合的运算"><span class="nav-number">1.2.</span> <span class="nav-text">集合的运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有序n元组"><span class="nav-number">1.3.</span> <span class="nav-text">有序n元组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#笛卡尔积"><span class="nav-number">1.3.1.</span> <span class="nav-text">笛卡尔积</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多重集"><span class="nav-number">1.4.</span> <span class="nav-text">多重集</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关系"><span class="nav-number">2.</span> <span class="nav-text">关系</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的概念"><span class="nav-number">2.1.</span> <span class="nav-text">关系的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的性质"><span class="nav-number">2.2.</span> <span class="nav-text">关系的性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的复合"><span class="nav-number">2.3.</span> <span class="nav-text">关系的复合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的逆"><span class="nav-number">2.4.</span> <span class="nav-text">关系的逆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的闭包"><span class="nav-number">2.5.</span> <span class="nav-text">关系的闭包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#等价关系"><span class="nav-number">2.6.</span> <span class="nav-text">等价关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#等价类"><span class="nav-number">2.6.1.</span> <span class="nav-text">等价类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#商集"><span class="nav-number">2.6.2.</span> <span class="nav-text">商集</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#划分与覆盖"><span class="nav-number">2.7.</span> <span class="nav-text">划分与覆盖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#偏序关系与偏序集"><span class="nav-number">2.8.</span> <span class="nav-text">偏序关系与偏序集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">2.9.</span> <span class="nav-text">函数</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#集合论"><span class="nav-number">1.</span> <span class="nav-text">集合论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#幂集"><span class="nav-number">1.1.</span> <span class="nav-text">幂集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#集合的运算"><span class="nav-number">1.2.</span> <span class="nav-text">集合的运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有序n元组"><span class="nav-number">1.3.</span> <span class="nav-text">有序n元组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#笛卡尔积"><span class="nav-number">1.3.1.</span> <span class="nav-text">笛卡尔积</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多重集"><span class="nav-number">1.4.</span> <span class="nav-text">多重集</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关系"><span class="nav-number">2.</span> <span class="nav-text">关系</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的概念"><span class="nav-number">2.1.</span> <span class="nav-text">关系的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的性质"><span class="nav-number">2.2.</span> <span class="nav-text">关系的性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的复合"><span class="nav-number">2.3.</span> <span class="nav-text">关系的复合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的逆"><span class="nav-number">2.4.</span> <span class="nav-text">关系的逆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系的闭包"><span class="nav-number">2.5.</span> <span class="nav-text">关系的闭包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#等价关系"><span class="nav-number">2.6.</span> <span class="nav-text">等价关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#等价类"><span class="nav-number">2.6.1.</span> <span class="nav-text">等价类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#商集"><span class="nav-number">2.6.2.</span> <span class="nav-text">商集</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#划分与覆盖"><span class="nav-number">2.7.</span> <span class="nav-text">划分与覆盖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#偏序关系与偏序集"><span class="nav-number">2.8.</span> <span class="nav-text">偏序关系与偏序集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">2.9.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#函数的复合"><span class="nav-number">2.9.1.</span> <span class="nav-text">函数的复合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数的求逆"><span class="nav-number">2.9.2.</span> <span class="nav-text">函数的求逆</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#无限集"><span class="nav-number">3.</span> <span class="nav-text">无限集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#集合的势"><span class="nav-number">3.1.</span> <span class="nav-text">集合的势</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可数集"><span class="nav-number">3.2.</span> <span class="nav-text">可数集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连续势集"><span class="nav-number">3.3.</span> <span class="nav-text">连续势集</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于集合的几个有趣的东西"><span class="nav-number">4.</span> <span class="nav-text">关于集合的几个有趣的东西</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Cantor悖论"><span class="nav-number">4.1.</span> <span class="nav-text">Cantor悖论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Russell悖论"><span class="nav-number">4.2.</span> <span class="nav-text">Russell悖论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Godel不完全定理"><span class="nav-number">4.3.</span> <span class="nav-text">Godel不完全定理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一定理"><span class="nav-number">4.3.1.</span> <span class="nav-text">第一定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二定理"><span class="nav-number">4.3.2.</span> <span class="nav-text">第二定理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运算"><span class="nav-number">5.</span> <span class="nav-text">运算</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代数系统"><span class="nav-number">6.</span> <span class="nav-text">代数系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#单位元"><span class="nav-number">6.1.</span> <span class="nav-text">单位元</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逆元"><span class="nav-number">6.2.</span> <span class="nav-text">逆元</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#幂等元"><span class="nav-number">6.3.</span> <span class="nav-text">幂等元</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1409311773&auto=1&height=66"></iframe>
@@ -699,10 +832,10 @@ f:A\rightarrow B,若ranf=B，则称f为A到B的\textbf{满射}</script><p>若f�
   })(document, 'script');
 </script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/asuna_04.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script><script>
+<script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/asuna_04.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
 </html>
