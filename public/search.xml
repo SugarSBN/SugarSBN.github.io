@@ -1,8 +1,437 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>离散数学</title>
-    <url>/2020/11/27/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</url>
+    <title>离散数学-代数系统</title>
+    <url>/2020/12/05/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E4%BB%A3%E6%95%B0%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><del>又名抽象代数、近式代数</del></p>
+<p>学科の中で、一番好きのんです。</p>
+<a id="more"></a>
+<h1 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h1><ul>
+<li><p><strong>定义：</strong></p>
+<script type="math/tex; mode=display">
+设A是集合,A\times A 到A上的映射称为A上的二元运算。A^n到A上的运算称为A上的n元运算\\
+例：S是一个集合，则其子集的交/并是P(S)上的二元运算</script></li>
+<li><p><strong>定义</strong>：</p>
+<script type="math/tex; mode=display">
+设f是A上的n元运算，若\forall x_1,x_2,...,x_n\in A,f(x_1,x_2,...,x_n)\in A,则称A对运算f\textbf{封闭}</script></li>
+<li><p><em>注意，由于运算的新定义，运算的性质包括交换律，结合律，左\右分配律，消去律与一般数的运算不是一个概念</em>。</p>
+</li>
+</ul>
+<h1 id="代数系统"><a href="#代数系统" class="headerlink" title="代数系统"></a>代数系统</h1><ul>
+<li><strong>定义</strong>：<script type="math/tex; mode=display">
+若A是一个非空集合，f_1,f_2,...,f_n是A上的运算，则<A,f_1,f_2,...,f_n>构成一个代数系统。也可简记为A。\\
+若S\subseteq A，且S也对这些运算封闭，则称S为A的一个\textbf{子代数}</script></li>
+</ul>
+<h2 id="特殊元素"><a href="#特殊元素" class="headerlink" title="特殊元素"></a>特殊元素</h2><h3 id="单位元"><a href="#单位元" class="headerlink" title="单位元"></a>单位元</h3><ul>
+<li><script type="math/tex; mode=display">
+代数系统<A,*> 中e\in A,若\forall x\in A,都有ex=x，则称e为A中的左单位元。右单位元类似定义.\\
+若A中既有左单位元e_l,又有右单位元e_r,则e_l=e_r=e为单位元。</script></li>
+<li><p><strong>定理</strong>：代数系统A中的单位元若存在，则唯一。</p>
+</li>
+</ul>
+<h3 id="逆元"><a href="#逆元" class="headerlink" title="逆元"></a>逆元</h3><ul>
+<li><script type="math/tex; mode=display">
+代数系统<A,*>的单位元为e，对于a\in A,若\exists b\in A,使ba=e，则称a左可逆，左逆元为b。右同理。\\
+若\exists a'\in A,使aa'=a'a=e，则称a可逆，逆元为a'</script></li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+若代数系统<A,*>中，*满足\textbf{结合律}。那么a\in A的左右逆元若存在，则相等且唯一。\\
+简单证明：左逆元b右逆元c,b=be=b(ac)=(ba)c=ec=c</script></li>
+<li></li>
+</ul>
+<h3 id="幂等元"><a href="#幂等元" class="headerlink" title="幂等元"></a>幂等元</h3><ul>
+<li><script type="math/tex; mode=display">
+代数系统<A,*>中，a\in A,a*a=a，则称a为幂等元</script></li>
+</ul>
+<h2 id="同态与同构"><a href="#同态与同构" class="headerlink" title="同态与同构"></a>同态与同构</h2><ul>
+<li><p><strong>定义</strong>：</p>
+<script type="math/tex; mode=display">
+<A,*>,<B,\circ>为两个代数系统，f:A\rightarrow B,如果\forall x,y\in A,有:\\
+f(A*B)=f(A)\circ f(B),则称f为A到B的\textbf{同态}映射\\
+同样，若f为单/满射时，称为单/满同态（映射），特别地，若f为双射，则称为\textbf{同构}映射。\\
+当f为满射时，B称为A的同态象，记为f：A\sim B\\
+当f为双射时，称A与B同构（等价关系）记为f:A\cong B</script></li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+若f为A到B的同态，g为B到C的同态。则g\circ f(f\diamond g)为A到C的同态。\\
+且当且仅当f，g均为单（满）射时，g\circ f也为单（满）射。\\
+若\varphi:A\cong B,则\varphi^{-1}:B\cong A</script></li>
+<li><p><strong>定理</strong>：</p>
+<script type="math/tex; mode=display">
+满同态保持结合律:若f:<A,*>\sim <B,\circ>,若*满足结合律，则\circ 也满足结合律。\\
+满同态保持交换律:若f:<A,*>\sim <B,\circ>,若*满足交换律，则\circ 也满足交换律\\
+满同态保持单位元,逆元:f:<A,*>\sim<B,\circ>,则f(e)=e',f(x^{-1})=(f(x))^{-1}\\
+满同态保持幂等元。</script></li>
+<li><p>规定：<a,*>到自身的同态（构）称为A上的自同态（构）。</a,*></p>
+</li>
+</ul>
+<h2 id="直积"><a href="#直积" class="headerlink" title="直积"></a>直积</h2><ul>
+<li><p>定义：</p>
+<script type="math/tex; mode=display">
+<A,*>,<B,\circ>的直积<A\times B,\bigtriangleup>的\bigtriangleup定义为:\\
+<x,y>\bigtriangleup<c,d>=<x*y,c\circ d></script></li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+若代数系统<A,*>,<B,\circ>中分别有单位元e_A,e_B,则在他们的直积<A\times B,\bigtriangleup>中存在子代数S，T\\
+使S\cong A,T\cong B,S=A\times\{e_A\},T=\{e_A\}\times B</script></li>
+</ul>
+<h1 id="群论"><a href="#群论" class="headerlink" title="群论"></a>群论</h1><h2 id="半群"><a href="#半群" class="headerlink" title="半群"></a>半群</h2><ul>
+<li><p>定义：</p>
+<script type="math/tex; mode=display">
+若代数系统<A,*>中*满足结合律，则称这个代数系统为一个\textbf{半群}\\
+记a^n=a*a*...*a(n个)\\
+特别地，若半群满足交换律，则称为可交换半群，满足(ab)^2=a^2b^2\\
+而如果运算符号用+表示时，记为na(*时a^n)</script></li>
+<li><p>指数律：</p>
+<script type="math/tex; mode=display">
++下：ma+na=(m+n)a    \qquad(不能写成an)\\
+      m(na)=(m*n)a,m(a+b)=ma+mb\qquad(其中m,n\in N^*)</script></li>
+</ul>
+<h2 id="幺半群"><a href="#幺半群" class="headerlink" title="幺半群"></a>幺半群</h2><ul>
+<li><p>定义：有单位元的半群记为<strong>有1半群/幺半群</strong></p>
+</li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+幺半群中元素a若可逆，则逆元唯一。记作a^{-1},+时也可记作-a\\
+(a^{-1})^{-1}=a,(ab)^{-1}=b^{-1}a^{-1}</script></li>
+</ul>
+<h2 id="子-幺-半群"><a href="#子-幺-半群" class="headerlink" title="子(幺)半群"></a>子(幺)半群</h2><ul>
+<li><p>若S的子群T也在*下构成半群，则称T为S的子半群。</p>
+</li>
+<li><p>若S为幺半群，其单位元e在子半群T中，则称T为S的子幺半群。</p>
+</li>
+</ul>
+<h2 id="群"><a href="#群" class="headerlink" title="群"></a>群</h2><ul>
+<li><p><strong>三大群公理</strong></p>
+<script type="math/tex; mode=display">
+若一个代数系统<G，*>满足:\\
+(1)结合律成立\qquad(半群)\\
+(2)有单位元\qquad(幺半群)\\
+(3)所有元素均可逆\\
+则称<G,*>为一个群</script></li>
+<li><p>规定：</p>
+<script type="math/tex; mode=display">
+|G| 表示G中元素个数，称为G的阶。若G为无限群，则|G|=\infty\\
+若G中*满足交换律，则称其为一个Abel群。</script></li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+(1)群G中消去律成立.\\
+(2)群G中单位元e为唯一幂等元.\\
+(3)在群与群的同态中，不需要是满同态就保持单位元和逆元.\\
+(4)G是群，H是代数系统.若\exists f:G\sim H,则H也为群.\\
+(5)有限群G中运算表每一行/列均为G中元素一个全排列.</script></li>
+<li><p><strong>半群构成群的要求</strong></p>
+<ul>
+<li><script type="math/tex; mode=display">
+G是半群，且(1)G中存在左单位元(2)G中任一元素均有左逆元，则G为群</script></li>
+<li><script type="math/tex; mode=display">
+G是半群，若\forall a,b\in G,ax=b,ya=b均在G中有解，则G为群</script></li>
+<li><script type="math/tex; mode=display">
+\textbf{有限半群消去律}成立则必为群.</script></li>
+</ul>
+</li>
+<li><p><strong>特殊的群</strong></p>
+<ul>
+<li><p>三阶群（唯一，同构观点上）</p>
+<p>|  *   |  e   |  a   |  b   |<br>| :—: | :—: | :—: | :—: |<br>|  e   |  e   |  a   |  b   |<br>|  a   |  a   |  b   |  e   |<br>|  b   |  b   |  e   |  a   |</p>
+</li>
+<li><p>四阶群（唯二，同构观点上）</p>
+<p>|  *   |  e   |  a   |  b   |  c   |<br>| :—: | :—: | :—: | :—: | :—: |<br>|  e   |  e   |  a   |  b   |  c   |<br>|  a   |  a   |  e   |  c   |  b   |<br>|  b   |  b   |  c   |  e   |  a   |<br>|  c   |  c   |  b   |  a   |  e   |</p>
+<p>这个四阶群称为Klein四元群。</p>
+<p>|  *   |  e   |  a   |  b   |  c   |<br>| :—: | :—: | :—: | :—: | :—: |<br>|  e   |  e   |  a   |  b   |  c   |<br>|  a   |  a   |  e   |  c   |  b   |<br>|  b   |  b   |  c   |  a   |  e   |<br>|  c   |  c   |  b   |  e   |  a   |</p>
+</li>
+</ul>
+</li>
+<li><p>特别地，二阶群的直积为Klein四元群。</p>
+</li>
+</ul>
+<h2 id="子群"><a href="#子群" class="headerlink" title="子群"></a>子群</h2><ul>
+<li><p>定义：群G的子集H若关于也构成群，则称H是G的子群。</p>
+</li>
+<li><p>特别地，{e},G称为G的<strong>平凡子群</strong>，而其他子群称为G的<strong>真子群</strong>。</p>
+</li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+(1)子群保持单位元：H\subseteq G,则G中单位元e也在H中.\\
+(2)子群保持逆元：H\subseteq G,则H中元素a的逆元也就是a在G中的逆元.\\
+(3)同态保持子群：若f:G\rightarrow S,A是G的子群，则f(A)是S的子群</script></li>
+<li><p><strong>子集构成子集的条件</strong>：</p>
+<ul>
+<li><script type="math/tex; mode=display">
+若G的子集H对*封闭，且\forall a\in H,a^{-1}(在G中的逆元)\in H(求逆封闭),则H为子群.\\
+上条件可合并为:\forall a,b\in H,a*b^{-1}\in H，则H为子群.(对除(减)法封闭)</script></li>
+</ul>
+</li>
+</ul>
+<h2 id="元素的周期-阶"><a href="#元素的周期-阶" class="headerlink" title="元素的周期(阶)"></a>元素的周期(阶)</h2><ul>
+<li><p>定义：</p>
+<script type="math/tex; mode=display">
+群G中的元素a，满足a^n=e的最小正整数n称为a的周期(阶)，记为|a|.若n不存在则|a|=\infty\\
+显然,a^m=e\Leftrightarrow |a||m(a的阶整除m)</script></li>
+<li><p><strong>循环子群</strong></p>
+<script type="math/tex; mode=display">
+群G中元素a的阶为n，则\{e,a,a^2,...,a^{n-1}\}称为由a生成的循环子群,记为(a).\\
+显然，|(a)|=|a|.</script></li>
+<li><p>引理：</p>
+<script type="math/tex; mode=display">
+群G中，x,y\in G,若x^n=e\Leftrightarrow y^n=e,则|x|=|y|.</script></li>
+</ul>
+<h2 id="循环群"><a href="#循环群" class="headerlink" title="循环群"></a>循环群</h2><ul>
+<li><p>定义：</p>
+<script type="math/tex; mode=display">
+若\exists a \in G,使(a)=G,则称G为由a生成的循环群</script></li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+(1)若G是一个无限循环群，则G\cong <Z,+>,若G是有限n阶循环群，则G\cong <Z_n,+_n>\\
+f:[i]->a^i\\
+(2)循环群的子群一定是循环群\\
+(3)设<G,*>是n阶循环群，m\in N^*且m|n,则G中存在唯一m阶子群。</script></li>
+<li></li>
+</ul>
+<h2 id="置换群"><a href="#置换群" class="headerlink" title="置换群"></a>置换群</h2><ul>
+<li><p><strong>置换的定义</strong>：有限集S到自身的双射称为S上的置换。</p>
+</li>
+<li><p>置换群的复合和求逆遵循函数技法。</p>
+<script type="math/tex; mode=display">
+\sigma(x)=\begin{pmatrix} 1 & 2 & ... & n \\ \sigma(1) & \sigma(2) & ... & \sigma(n) \end{pmatrix}
+\tau(x)=\begin{pmatrix} 1 & 2 & ... & n \\ \tau(1) & \tau(2) & ... & \tau(n) \end{pmatrix}\\
+则\tau(x)\sigma(x)=\begin{pmatrix} 1 & 2 & ... & n \\ \tau(\sigma(1)) & \tau(\sigma(2)) & ... & \tau(\sigma(n)) \end{pmatrix}=\sigma\diamond \tau=\tau\circ\sigma</script></li>
+<li><p><strong>循环置换定义：</strong></p>
+<script type="math/tex; mode=display">
+形如：\sigma=\begin{pmatrix} i_1 & i_2&...&i_{d-1}&i_d&i_{d+1}&...&i_n \\ i_2&i_3&...&i_d&i1&i_{d+1}&...&i_n \end{pmatrix}\\
+的置换称为循环置换，记为(i_1,i_2,...,i_d),d为循环长度当</script></li>
+<li></li>
+<li><script type="math/tex; mode=display">
+规定：S是n阶有限集，S上的所有置换构成的集合记为S_n.\\
+显然，S_n在置换乘法下构成群。且|S_n|=n!\\
+我们把这个群称为\textbf{n次对称群}，其子群称为n次置换群。</script></li>
+<li><p><strong>特别记住三次置换的记法：</strong></p>
+<script type="math/tex; mode=display">
+\sigma_0=\begin{pmatrix}1&2&3\\1&2&3\end{pmatrix}\sigma_1=\begin{pmatrix}1&2&3\\2&1&3\end{pmatrix}\sigma_2=\begin{pmatrix}1&2&3\\3&2&1\end{pmatrix}\\
+\sigma_3=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\sigma_4=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\sigma_2=\begin{pmatrix}1&2&3\\3&1&2\end{pmatrix}\\
+(\sigma_0)=\{\sigma_0\},(\sigma_1)=\{\sigma_0,\sigma_1\},(\sigma_2)=\{\sigma_0,\sigma_2\}\\
+(\sigma_3)=\{\sigma_0,\sigma_3\},(\sigma_4)=(\sigma_5)=\{\sigma_0,\sigma_4,\sigma_5\}</script><p><strong>而且三次对称群就不是Abel群</strong>。</p>
+</li>
+<li><p><strong>（Cayley定理）任何一个n阶群必同构于一个n次置换群</strong></p>
+<script type="math/tex; mode=display">
+简单证明：可以将置换描述为f(x),x=1,2,...,n.\\
+那么考虑映射f:A\rightarrow S_n,a\mapsto f_a(x)，其中f_a(x)表示f(x)=ax的一个置换.\\
+则f_{a*b}(x)=(a*b)x=a(bx)=f_a(f_b(x))=f_a(x)\circ f_b(a)\\
+这里利用了n阶群的一行/列为其元素的一个全排列。</script></li>
+</ul>
+<h2 id="同余与陪集与商集"><a href="#同余与陪集与商集" class="headerlink" title="同余与陪集与商集"></a>同余与陪集与商集</h2><ul>
+<li><p>定义：</p>
+<script type="math/tex; mode=display">
+G是一个群，H是其子群。定义G上的\textbf{模H同余关系}：\\
+a\equiv b\quad modH    \Leftrightarrow b^{-1}a\in H(左同余关系)\\
+a\equiv_r b\quad modH    \Leftrightarrow ab^{-1}\in H(右同余关系)</script></li>
+<li><p>不难证明，左右同余关系均为<strong>等价关系</strong>。</p>
+</li>
+<li><p>于是考虑由左同余关系产生的<strong>等价类</strong>(陪集)：</p>
+<script type="math/tex; mode=display">
+[a]=\{x|x\equiv a\quad modH\}=\{x|a^{-1}x=h\in H\}=\{x|x=ah,h\in H\}=\{ah|h\in H\}\\
+a\in G\\
+所以形象化地，[a]就是a与H里每一个元素做左乘法。可记为aH.\\
+称为H在G内由a决定的左陪集.如果运算是加法时，也可记为a+H.</script></li>
+<li><p>陪集的性质：</p>
+<script type="math/tex; mode=display">
+eH=H,aH=bH\Leftrightarrow a^{-1}b\in H\\
+aH=H\Leftrightarrow a\in H.(e^{-1}a\in H即a\in H)</script></li>
+<li><p>定义：</p>
+<script type="math/tex; mode=display">
+H是群G的子群，则H的所有左陪集构成的集合S_L=\{aH|a\in G\}称为G对H的左商集。记为G/R_H</script></li>
+<li><p>性质：<strong>任意群G对其子群H的左右陪集数相等。即左右商集等势。</strong></p>
+<script type="math/tex; mode=display">
+简单证明。建立映射f:S_L\rightarrow S_R,aH\mapsto Ha^{-1}.\\
+这里说明为什么不是f:aH\mapsto Ha因为如果这样，\\
+aH=bH\not\Rightarrow Ha=Hb.\\
+不能说明f(aH)的唯一确定而与代表元无关.选取a或b作代表元得出的原象是相同的(aH=bH)，但象却不同。</script></li>
+<li></li>
+<li></li>
+</ul>
+<script type="math/tex; mode=display">
+于是可以定义H的左(右)陪集数称为H在G内的\textbf{指数}，记作[G:H]=|S_L|=|S_R|\\
+由于群的消去律成立，又可推出，|aH|=|Ha|=|H|</script><ul>
+<li><p><strong>(拉格朗日定理)|G|=[G:H]*|H|</strong>,因为商集构成了群的一个划分。</p>
+<ul>
+<li>推论：素数阶群必为循环群。因为其中元素生成的循环子群阶要么为1要么为|G|.</li>
+<li>推论：有限群G中元素的阶整除群的阶。|a|=|(a)|=|G|/[G : (a)]</li>
+<li>推论：有限群中元素的|G|次幂一定为e.</li>
+</ul>
+</li>
+<li><p><em>补充说明：要证明一个群是循环群则只要证明其中一个元素的阶等于群的阶即可</em></p>
+<p>​    <em>（来自某次作业不动脑子）</em></p>
+</li>
+</ul>
+<h2 id="正规子群。"><a href="#正规子群。" class="headerlink" title="正规子群。"></a>正规子群。</h2><ul>
+<li><p>定义:</p>
+<script type="math/tex; mode=display">
+群G中，H是子群，若\forall a\in G,都有aH=Ha，则称H为G的一个正规子群.</script></li>
+<li><p>以下条件两两等价：</p>
+<script type="math/tex; mode=display">
+(1)H是G的一个正规子群\\
+(2)\forall a\in G,h\in H,必存在h'\in H,使ha=ah'(废话嗷)\\
+(3)a^{-1}ha\in H,\forall a\in G,h\in H</script></li>
+<li><p>显然对于正规子群不必区分左右陪集，左右商集。统一记为S=G/H</p>
+</li>
+<li><p>在商群上定义陪集(商群的元素)运算：</p>
+<script type="math/tex; mode=display">
+aH\circ bH=(ab)H\\
+注：aH=a_1H,bH=b_1H\Rightarrow (ab)H=(a_1b_1)H,所以定义合理\\
+在此定义下,<G/H,\circ>构成群.eH=H是其单位元.\\
+而g_H:a\mapsto aH为<G,*>到<G/H,\circ>的一个满同态，也称为\textbf{自然同态}</script></li>
+</ul>
+<h2 id="子集乘积"><a href="#子集乘积" class="headerlink" title="子集乘积"></a>子集乘积</h2><ul>
+<li><p>定义</p>
+<script type="math/tex; mode=display">
+A*B=AB=\{ab|\forall a\in A,b\in B\}</script></li>
+<li></li>
+<li><p>显然子集乘积满足结合律。且任何子集均为幂等元。aH={a}*H。</p>
+</li>
+<li><script type="math/tex; mode=display">
+aH*bH=\{a\}*(H*\{b\})*H=(\{a\}*\{b\}) * (H * H)=(ab)H</script></li>
+</ul>
+<h2 id="群同态基本定理"><a href="#群同态基本定理" class="headerlink" title="群同态基本定理"></a>群同态基本定理</h2><h3 id="同态的核"><a href="#同态的核" class="headerlink" title="同态的核"></a>同态的核</h3><ul>
+<li><script type="math/tex; mode=display">
+定义：\varphi是群G到群H的同态，则定义\varphi的核Ker\varphi=\{x|x\in G,\varphi(x)=e'\},e'为H中单位元</script></li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+Ker\varphi 为G的一个正规子群.\\
+若H是G一个正规子群，则G到G/N的自然同态g_H:a\mapsto aN的核Ker\varphi=N</script></li>
+<li><p><strong>群同态基本定理</strong></p>
+<script type="math/tex; mode=display">
+群G的任一商群均为G的同态象，即G\sim G/N\\
+(*简单证明：a\in Ker{g_N}\Leftrightarrow g_N(a)=N\Leftrightarrow aN=N\Leftrightarrow a\in N)\\
+若G'为G的一个同态象(f:G\sim G')，则G'\cong G/Kerf\\
+(*同构映射\varphi:G/Kerf\rightarrow G',aKerf\mapsto f(a))</script></li>
+</ul>
+<h1 id="环与域"><a href="#环与域" class="headerlink" title="环与域"></a>环与域</h1><ul>
+<li><p><strong>环的定义</strong></p>
+<script type="math/tex; mode=display">
+代数系统<R,+,\cdot>中，<R,+>是一个Abel群，<R,\cdot>是一个半群，且\cdot对+满足分配律\\则称
+<R,+,\cdot>为一个环.(对+作最高要求，对\cdot作最低要求)</script><ul>
+<li>规定乘法优先级高于加法</li>
+</ul>
+</li>
+<li><p>规定：</p>
+<script type="math/tex; mode=display">
+<R,+>的单位元用0表示，也称为零元。a的逆元用-a表示，也成为a的负元。</script></li>
+<li><p>定律：</p>
+<script type="math/tex; mode=display">
+\textbf{(1)0*a=0*a=0.(加法单位元乘任何元素为加法单位元)}\\
+(0*a+1*a=(0+1)*a=1*a,  所以0*a=0)\\
+\textbf{(2)a*(-b)=(-a)*b=-(a*b)}\\
+(a*b+a*(-b)=a*0=0,所以a*(-b)=-(ab))\\
+\textbf{(3)(-a)*(-b)=a*b}\\
+\textbf{(4)a(b-c)=ab-ac乘法对减法分配律成立}\\
+\textbf{(5)(na)*b=a*(nb)=n(a*b)}(注：na是a在+下的指数形式，n个a相加,n\in Z</script></li>
+<li><script type="math/tex; mode=display">
+定义：环R中，若<R,\cdot>为幺半群，则R称为有1环.将R中所有乘法可逆的元素拿出来在乘法下构成的群R^*\\
+称为R的乘法群.\\
+特别地，R=\{0\}称为零环.</script></li>
+<li></li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+有1环中若不只含一个元素，则1\neq 0,加法单位元不等于乘法单位元。\\</script></li>
+</ul>
+<h2 id="整环与除环"><a href="#整环与除环" class="headerlink" title="整环与除环"></a>整环与除环</h2><h3 id="零因子"><a href="#零因子" class="headerlink" title="零因子"></a>零因子</h3><ul>
+<li><script type="math/tex; mode=display">
+定义：对于a\in R,a\neq 0,R是环，若\exists b\in R,b\neq 0,使得ab=0，则\\
+称a是一个左零因子。显然，b就是一个右零因子。</script></li>
+</ul>
+<ul>
+<li>定理：<strong>无零因子的环R中乘法消去律成立</strong></li>
+</ul>
+<h3 id="整环"><a href="#整环" class="headerlink" title="整环"></a>整环</h3><ul>
+<li>定义：<strong>有单位元，无零因子的交换环称为整环。</strong></li>
+</ul>
+<h3 id="除环"><a href="#除环" class="headerlink" title="除环"></a>除环</h3><ul>
+<li><script type="math/tex; mode=display">
+定义：R是一个有1环，\hat{R}=R-\{0\}\neq\varnothing,若<\hat R,\cdot>构成群，则\\
+称R为除环。</script></li>
+<li><p>定理：无零因子，阶大于1的有限环必为除环。(消去律成立，半群-&gt;群)</p>
+</li>
+</ul>
+<h2 id="域"><a href="#域" class="headerlink" title="域"></a>域</h2><ul>
+<li><p>定义：<strong>可交换的除环称为域</strong></p>
+</li>
+<li><p>性质：<strong>有限整环必为域</strong>(消去律成立，成为Abel群)</p>
+</li>
+<li><p>规定：</p>
+<script type="math/tex; mode=display">
+在域中，a^{-1}往往记为\frac{1}{a},求逆也可表示为除法。则一般分数运算法则均成立。</script></li>
+</ul>
+<h1 id="理想与商环"><a href="#理想与商环" class="headerlink" title="理想与商环"></a>理想与商环</h1><h2 id="子环"><a href="#子环" class="headerlink" title="子环"></a>子环</h2><ul>
+<li><p>定义，环R的一个子集T也构成环，则称T为R的<strong>子环</strong>，R为T的<strong>扩环</strong></p>
+</li>
+<li><p>子集构成子环条件：</p>
+<script type="math/tex; mode=display">
+(1)S\subseteq R,S\neq\varnothing(2)S对减法封闭(构成子群的条件)(3)S对乘法封闭</script></li>
+</ul>
+<h3 id="理想子环"><a href="#理想子环" class="headerlink" title="理想子环"></a>理想子环</h3><ul>
+<li><script type="math/tex; mode=display">
+定义：S\subseteq R,R是环，若:\\
+(1)S\neq\varnothing(2)S对减法封闭(3)\forall x\in S,a\in R都有ax\in S,xa\in S.\\
+则称S为R的一个理想子环，简称理想.</script></li>
+<li><p>显然，理想子环一定是子环.而R和{0}为R的两个平凡理想，其他理想称为R的真理想.</p>
+</li>
+<li><script type="math/tex; mode=display">
+定义：R为一个有1交换环，令(a)=aR,a\in R,则(a)是R的理想，称为\textbf{由a生成的主理想}.\\
+(*简单证明：\forall ar\in R,r'\in R,(ar)r'=a(rr')\in aR=(a))</script></li>
+<li><p>理想在环论中起的作用，相当于正规子群在群论中起的所用</p>
+</li>
+<li><script type="math/tex; mode=display">
+由于环<R,+,\cdot>中+满足交换律，所以其理想N,<N,+>一定是个正规子群.\\
+所以可以定义关于modN的同余关系：\\
+a\equiv b\quad modN\Leftrightarrow a-b\in N\\
+而陪集就是a+N,记为[a],有[a]+[b]=[a+b],[a]\cdot[b]=[ab]\\
+而<R/N,+,\cdot>则是R中模N剩余类环.</script></li>
+<li></li>
+<li><p><em>补充说明：degf(x)用于表示f(x)的次数</em></p>
+</li>
+</ul>
+<h2 id="主理想整环："><a href="#主理想整环：" class="headerlink" title="主理想整环："></a>主理想整环：</h2><ul>
+<li>定义：若<strong>整环</strong>R的每个理想都是主理想，则称R为一个<strong>主理想整环</strong>。</li>
+</ul>
+<h2 id="域的性质与素域"><a href="#域的性质与素域" class="headerlink" title="域的性质与素域"></a>域的性质与素域</h2><ul>
+<li><p>子域定义：完全类似环</p>
+</li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+(1)域F中，加法群<F,+>中所有元素的加法周期都等于乘法单位元的周期。|a|=|e|\\
+(2)域F中，加法群<F,+>中非零元素的加法周期若为有限数p，则p必为素数.</script></li>
+</ul>
+<ul>
+<li></li>
+<li><p>定义：</p>
+<script type="math/tex; mode=display">
+域F的加法群<F,+>中，非零元周期若为有限数p，则称F的特征为p.特别地，若周期为\infty,则称特征为0.</script></li>
+<li></li>
+<li><p>定理：<strong>子域和域有相同的特征</strong></p>
+<p>​            n元有限域的特征必为素数p，且p整除n</p>
+</li>
+<li><p><strong>素域的定义</strong>：不含真子域的域，或称最小域.</p>
+</li>
+</ul>
+<h2 id="环同态"><a href="#环同态" class="headerlink" title="环同态"></a>环同态</h2><ul>
+<li><p>定义：同态映射对加法乘法分别保持运算。</p>
+</li>
+<li><p>定理：</p>
+<script type="math/tex; mode=display">
+特征为素数p的域F必定存在与<Z_p,+_p,\cdot_p>同构的子域Z_p'.\\
+(*Z_p'=\{0,e,2e,...,(p-1)e\},\varphi:[i]\mapsto ie)\\
+而Z_p'为F的最小子域，因为任何子域都要包含e的整数倍.\\
+特别地，若F的特征为0，则存在与有理数Q同构的子域.\\
+(\varphi :\frac{m}{n}\mapsto\frac{me}{ne},m,n\in Z)</script></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>-离散数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>离散数学-集合部分</title>
+    <url>/2020/11/27/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E9%9B%86%E5%90%88%E9%83%A8%E5%88%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><del>又名抽象代数、近式代数</del></p>
 <p>学科の中で、一番好きのんです。</p>
 <a id="more"></a>
@@ -261,8 +690,6 @@ f的逆记为f^{-1},即关系f的逆</script></li>
 <li><p><strong>Bernstein定理：</strong></p>
 <script type="math/tex; mode=display">
 |A|\leq|B|,|B|\leq|A|\Longrightarrow |A|=|B|</script></li>
-</ul>
-<ul>
 <li><p><strong>三歧定理</strong>：|A|&lt;|B|,|A|&gt;|B|,|A|=|B|必然有一个成立。</p>
 </li>
 <li><p><strong>康托定理</strong>：</p>
@@ -309,49 +736,9 @@ f的逆记为f^{-1},即关系f的逆</script></li>
 <h3 id="第二定理"><a href="#第二定理" class="headerlink" title="第二定理"></a>第二定理</h3><ul>
 <li>如果系统S含有初等数论，当S无矛盾时，它的无矛盾性不可能在S内证明。（另外一种简单表达：这样的系统如果一致，则一致性无法再系统内证明。）</li>
 </ul>
-<h1 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h1><ul>
-<li><strong>定义：</strong><script type="math/tex; mode=display">
-设A是集合,A\times A 到A上的映射称为A上的二元运算。A^n到A上的运算称为A上的n元运算\\
-例：S是一个集合，则其子集的交/并是P(S)上的二元运算</script></li>
-</ul>
-<ul>
-<li><p><strong>定义</strong>：</p>
-<script type="math/tex; mode=display">
-设f是A上的n元运算，若\forall x_1,x_2,...,x_n\in A,f(x_1,x_2,...,x_n)\in A,则称A对运算f\textbf{封闭}</script></li>
-<li><p><em>注意，由于运算的新定义，运算的性质包括交换律，结合律，左\右分配律，消去律与一般数的运算不是一个概念</em>。</p>
-</li>
-</ul>
-<h1 id="代数系统"><a href="#代数系统" class="headerlink" title="代数系统"></a>代数系统</h1><ul>
-<li><p><strong>定义</strong>：</p>
-<script type="math/tex; mode=display">
-若A是一个非空集合，f_1,f_2,...,f_n是A上的运算，则<A,f_1,f_2,...,f_n>构成一个代数系统。也可简记为A。\\
-若S\subseteq A，且S也对这些运算封闭，则称S为A的一个\textbf{子代数}</script></li>
-<li></li>
-</ul>
-<h2 id="单位元"><a href="#单位元" class="headerlink" title="单位元"></a>单位元</h2><ul>
-<li><script type="math/tex; mode=display">
-代数系统<A,*> 中e\in A,若\forall x\in A,都有ex=x，则称e为A中的左单位元。右单位元类似定义.\\
-若A中既有左单位元e_l,又有右单位元e_r,则e_l=e_r=e为单位元。</script></li>
-<li><p><strong>定理</strong>：代数系统A中的单位元若存在，则唯一。</p>
-</li>
-</ul>
-<h2 id="逆元"><a href="#逆元" class="headerlink" title="逆元"></a>逆元</h2><ul>
-<li><script type="math/tex; mode=display">
-代数系统<A,*>的单位元为e，对于a\in A,若\exists b\in A,使ba=e，则称a左可逆，左逆元为b。右同理。\\
-若\exists a'\in A,使aa'=a'a=e，则称a可逆，逆元为a'</script></li>
-<li><p>定理：</p>
-<script type="math/tex; mode=display">
-若代数系统<A,*>中，*满足\textbf{结合律}。那么a\in A的左右逆元若存在，则相等且唯一。\\
-简单证明：左逆元b右逆元c,b=be=b(ac)=(ba)c=ec=c</script></li>
-<li></li>
-</ul>
-<h2 id="幂等元"><a href="#幂等元" class="headerlink" title="幂等元"></a>幂等元</h2><ul>
-<li><script type="math/tex; mode=display">
-代数系统<A,*>中，a\in A,a*a=a，则称a为幂等元</script></li>
-</ul>
 ]]></content>
       <tags>
-        <tag>-数学</tag>
+        <tag>-离散数学</tag>
       </tags>
   </entry>
   <entry>
