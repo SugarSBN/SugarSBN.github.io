@@ -123,7 +123,7 @@ f(A*B)=f(A)\circ f(B),则称f为A到B的\textbf{同态}映射\\
 <li><p><strong>半群构成群的要求</strong></p>
 <ul>
 <li><script type="math/tex; mode=display">
-G是半群，且(1)G中存在左单位元(2)G中任一元素均有左逆元，则G为群</script></li>
+G是半群，且(1)G中存在左单位元(2)G中任一元素均有左逆元(相对左单位云)，则G为群</script></li>
 <li><script type="math/tex; mode=display">
 G是半群，若\forall a,b\in G,ax=b,ya=b均在G中有解，则G为群</script></li>
 <li><script type="math/tex; mode=display">
@@ -155,7 +155,7 @@ G是半群，若\forall a,b\in G,ax=b,ya=b均在G中有解，则G为群</script>
 (1)子群保持单位元：H\subseteq G,则G中单位元e也在H中.\\
 (2)子群保持逆元：H\subseteq G,则H中元素a的逆元也就是a在G中的逆元.\\
 (3)同态保持子群：若f:G\rightarrow S,A是G的子群，则f(A)是S的子群</script></li>
-<li><p><strong>子集构成子集的条件</strong>：</p>
+<li><p><strong>子集构成子群的条件</strong>：</p>
 <ul>
 <li><script type="math/tex; mode=display">
 若G的子集H对*封闭，且\forall a\in H,a^{-1}(在G中的逆元)\in H(求逆封闭),则H为子群.\\
@@ -208,7 +208,7 @@ f:[i]->a^i\\
 <li><p><strong>特别记住三次置换的记法：</strong></p>
 <script type="math/tex; mode=display">
 \sigma_0=\begin{pmatrix}1&2&3\\1&2&3\end{pmatrix}\sigma_1=\begin{pmatrix}1&2&3\\2&1&3\end{pmatrix}\sigma_2=\begin{pmatrix}1&2&3\\3&2&1\end{pmatrix}\\
-\sigma_3=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\sigma_4=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\sigma_2=\begin{pmatrix}1&2&3\\3&1&2\end{pmatrix}\\
+\sigma_3=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\sigma_4=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\sigma_5=\begin{pmatrix}1&2&3\\3&1&2\end{pmatrix}\\
 (\sigma_0)=\{\sigma_0\},(\sigma_1)=\{\sigma_0,\sigma_1\},(\sigma_2)=\{\sigma_0,\sigma_2\}\\
 (\sigma_3)=\{\sigma_0,\sigma_3\},(\sigma_4)=(\sigma_5)=\{\sigma_0,\sigma_4,\sigma_5\}</script><p><strong>而且三次对称群就不是Abel群</strong>。</p>
 </li>
@@ -266,7 +266,8 @@ aH=bH\not\Rightarrow Ha=Hb.\\
 <h2 id="正规子群。"><a href="#正规子群。" class="headerlink" title="正规子群。"></a>正规子群。</h2><ul>
 <li><p>定义:</p>
 <script type="math/tex; mode=display">
-群G中，H是子群，若\forall a\in G,都有aH=Ha，则称H为G的一个正规子群.</script></li>
+群G中，H是子群，若\forall a\in G,都有aH=Ha，则称H为G的一个正规子群.\\
+若\forall h\in H,又均有ah=ha,则称H为G的一个中心.</script></li>
 <li><p>以下条件两两等价：</p>
 <script type="math/tex; mode=display">
 (1)H是G的一个正规子群\\
@@ -279,9 +280,7 @@ aH=bH\not\Rightarrow Ha=Hb.\\
 aH\circ bH=(ab)H\\
 注：aH=a_1H,bH=b_1H\Rightarrow (ab)H=(a_1b_1)H,所以定义合理\\
 在此定义下,<G/H,\circ>构成群.eH=H是其单位元.\\
-而g_H:a\mapsto aH为<G,*>到<G/H,\circ>的一个满同态，也称为\textbf{自然同态}</script></li>
-</ul>
-<h2 id="子集乘积"><a href="#子集乘积" class="headerlink" title="子集乘积"></a>子集乘积</h2><ul>
+而g_H:a\mapsto aH为<G,*>到<G/H,\circ>的一个满同态，也称为\textbf{自然同态}</script><h2 id="子集乘积"><a href="#子集乘积" class="headerlink" title="子集乘积"></a>子集乘积</h2></li>
 <li><p>定义</p>
 <script type="math/tex; mode=display">
 A*B=AB=\{ab|\forall a\in A,b\in B\}</script></li>
@@ -297,15 +296,13 @@ aH*bH=\{a\}*(H*\{b\})*H=(\{a\}*\{b\}) * (H * H)=(ab)H</script></li>
 <li><p>定理：</p>
 <script type="math/tex; mode=display">
 Ker\varphi 为G的一个正规子群.\\
-若H是G一个正规子群，则G到G/N的自然同态g_H:a\mapsto aN的核Ker\varphi=N</script></li>
+若N是G一个正规子群，则G到G/N的自然同态g_H:a\mapsto aN的核Ker\varphi=N\\
+(*简单证明：a\in Ker{g_N}\Leftrightarrow g_N(a)=N\Leftrightarrow aN=N\Leftrightarrow a\in N)</script></li>
 <li><p><strong>群同态基本定理</strong></p>
 <script type="math/tex; mode=display">
 群G的任一商群均为G的同态象，即G\sim G/N\\
-(*简单证明：a\in Ker{g_N}\Leftrightarrow g_N(a)=N\Leftrightarrow aN=N\Leftrightarrow a\in N)\\
 若G'为G的一个同态象(f:G\sim G')，则G'\cong G/Kerf\\
-(*同构映射\varphi:G/Kerf\rightarrow G',aKerf\mapsto f(a))</script></li>
-</ul>
-<h1 id="环与域"><a href="#环与域" class="headerlink" title="环与域"></a>环与域</h1><ul>
+(*同构映射\varphi:G/Kerf\rightarrow G',aKerf\mapsto f(a))</script><h1 id="环与域"><a href="#环与域" class="headerlink" title="环与域"></a>环与域</h1></li>
 <li><p><strong>环的定义</strong></p>
 <script type="math/tex; mode=display">
 代数系统<R,+,\cdot>中，<R,+>是一个Abel群，<R,\cdot>是一个半群，且\cdot对+满足分配律\\则称
@@ -316,8 +313,7 @@ Ker\varphi 为G的一个正规子群.\\
 <li><p>规定：</p>
 <script type="math/tex; mode=display">
 <R,+>的单位元用0表示，也称为零元。a的逆元用-a表示，也成为a的负元。</script></li>
-<li><p>定律：</p>
-<script type="math/tex; mode=display">
+<li>定律：<script type="math/tex; mode=display">
 \textbf{(1)0*a=0*a=0.(加法单位元乘任何元素为加法单位元)}\\
 (0*a+1*a=(0+1)*a=1*a,  所以0*a=0)\\
 \textbf{(2)a*(-b)=(-a)*b=-(a*b)}\\
@@ -399,9 +395,9 @@ a\equiv b\quad modN\Leftrightarrow a-b\in N\\
 <li><p>定理：</p>
 <script type="math/tex; mode=display">
 (1)域F中，加法群<F,+>中所有元素的加法周期都等于乘法单位元的周期。|a|=|e|\\
-(2)域F中，加法群<F,+>中非零元素的加法周期若为有限数p，则p必为素数.</script></li>
-</ul>
-<ul>
+(*简单证明,na=e*a+e*a+..=(ne)*a,又因为无零因子,na=0\Leftrightarrow ne=0)\\
+(2)域F中，加法群<F,+>中非零元素的加法周期若为有限数p，则p必为素数.\\
+(*简单证明,若p=p_1*p_2,pe=(p_1*p_2)e=p_1(p_2e)=(p_1e)</script></li>
 <li></li>
 <li><p>定义：</p>
 <script type="math/tex; mode=display">
@@ -1756,6 +1752,69 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 <li>动词，形1简体，形2名词だー＞な</li>
 </ul>
 <p>eg. 彼は場所を間違うのではないでしょうか。(他是把地方弄错了吧)</p>
+<h2 id="～ようです表示推测"><a href="#～ようです表示推测" class="headerlink" title="～ようです表示推测"></a>～ようです表示推测</h2><ul>
+<li>ようだー＞推量助动词、ようです表示根据主观感觉的主观推测。</li>
+<li><p>接续</p>
+<ul>
+<li>动词形1简体</li>
+<li>形2简体だー＞な</li>
+<li>名词简体だー＞の</li>
+</ul>
+</li>
+<li><p>eg. 電車は事故のために、少し遅れている<strong>ようです</strong>。</p>
+<p>eg. クラスの中で、花子さんは絵がいちばん上手なようです。</p>
+</li>
+</ul>
+<h3 id="～みたいです-表示推测"><a href="#～みたいです-表示推测" class="headerlink" title="～みたいです 表示推测"></a>～みたいです 表示推测</h3><ul>
+<li><p>用法みたいです＝ようです</p>
+<p>但みたいです是俗语，不用于书面语</p>
+</li>
+<li><p>接续，动词/形1简体，形2/名词省去だ</p>
+</li>
+<li><p>eg.　雨の声が聞こえません。雨が止んだ<strong>みたいです</strong>。</p>
+<p>eg.　あの人は森さんの先生<strong>みたいです</strong>。</p>
+</li>
+</ul>
+<h2 id="～らしいです-推测，传闻"><a href="#～らしいです-推测，传闻" class="headerlink" title="～らしいです 推测，传闻"></a>～らしいです 推测，传闻</h2><ul>
+<li><p>用于有客观根据的<strong>断定的推测</strong>。</p>
+<ul>
+<li>根据个人经历，传闻等信息的推测。</li>
+</ul>
+</li>
+<li><p>接续和みたいです一样。</p>
+</li>
+<li><p>eg.　電気が消えています。李さんは出かけた<strong>らしいです</strong>。</p>
+<p>eg.　田中さんはいつも一人ですから、友達がいない<strong>らしいです</strong>。</p>
+<p>eg.　ニュースによると、中国では日本語を勉強する人は多いらしいです。</p>
+</li>
+</ul>
+<h2 id="关于推测的分辨和说明"><a href="#关于推测的分辨和说明" class="headerlink" title="关于推测的分辨和说明"></a>关于推测的分辨和说明</h2><ul>
+<li><p>ようだ＝みたいだ。（强调<strong>主观</strong>推测）</p>
+</li>
+<li><p>らしい（根据<strong>传闻或所见</strong>进行的客观推断）</p>
+</li>
+<li><p>そうだ样态助动词（只凭视觉或直觉，看起来好像….）</p>
+</li>
+<li><p>そうだ传闻助动词（不带有推断，相当于引用他人说明）</p>
+</li>
+<li><p>会議室は今だれも使っていない<strong>ようです</strong>。</p>
+<p>李さんは寿司が嫌い<strong>みたいですね</strong>。</p>
+</li>
+</ul>
+<h3 id="～過ぎる"><a href="#～過ぎる" class="headerlink" title="～過ぎる"></a>～過ぎる</h3><ul>
+<li><p>接续：动词连用形，形1去い，形2+過ぎる</p>
+</li>
+<li><p>表示超过了正常的程度。译为….多了。</p>
+</li>
+<li><p>eg.　晩ご飯を食べ過ぎました。(晚饭吃多了)</p>
+<p>eg.　笑いすぎて、おなかが痛くなりました。(笑得太厉害肚子疼)</p>
+</li>
+</ul>
+<h3 id="形容词-さ名词化"><a href="#形容词-さ名词化" class="headerlink" title="形容词+さ名词化"></a>形容词+さ名词化</h3><ul>
+<li>形1去い＋さ、少量形2+さ</li>
+<li>重さ、大きさ、長さ、広さ、太さ、速さ、深さ、重要さ</li>
+<li>eg.　仕事の<strong>面白さ</strong>がやっとわかりました。(这个工作的趣味性我终于了解了)··</li>
+</ul>
 <h1 id="格助词"><a href="#格助词" class="headerlink" title="格助词"></a>格助词</h1><h2 id="に"><a href="#に" class="headerlink" title="に"></a>に</h2><h3 id="存在场所"><a href="#存在场所" class="headerlink" title="存在场所"></a>存在场所</h3><p>机の上に    本が    ３冊あります。</p>
 <h3 id="具体时间点"><a href="#具体时间点" class="headerlink" title="具体时间点"></a>具体时间点</h3><p>７時に    起きます。</p>
 <h3 id="动作对象"><a href="#动作对象" class="headerlink" title="动作对象"></a>动作对象</h3><p>李さんに    花を　あげました。</p>

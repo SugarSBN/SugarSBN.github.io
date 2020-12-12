@@ -54,7 +54,7 @@
 <meta property="og:site_name" content="BokkeNasu">
 <meta property="og:description" content="又名抽象代数、近式代数 学科の中で、一番好きのんです。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-12-06T09:24:25.770Z">
+<meta property="og:updated_time" content="2020-12-10T00:07:33.876Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://sugarsbn.github.io/2020/12/05/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E4%BB%A3%E6%95%B0%E7%B3%BB%E7%BB%9F/">
@@ -225,7 +225,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-12-06 17:24:25" itemprop="dateModified" datetime="2020-12-06T17:24:25+08:00">2020-12-06</time>
+                <time title="修改时间：2020-12-10 08:07:33" itemprop="dateModified" datetime="2020-12-10T08:07:33+08:00">2020-12-10</time>
               </span>
 
           
@@ -359,7 +359,7 @@ f(A*B)=f(A)\circ f(B),则称f为A到B的\textbf{同态}映射\\
 <li><p><strong>半群构成群的要求</strong></p>
 <ul>
 <li><script type="math/tex; mode=display">
-G是半群，且(1)G中存在左单位元(2)G中任一元素均有左逆元，则G为群</script></li>
+G是半群，且(1)G中存在左单位元(2)G中任一元素均有左逆元(相对左单位云)，则G为群</script></li>
 <li><script type="math/tex; mode=display">
 G是半群，若\forall a,b\in G,ax=b,ya=b均在G中有解，则G为群</script></li>
 <li><script type="math/tex; mode=display">
@@ -391,7 +391,7 @@ G是半群，若\forall a,b\in G,ax=b,ya=b均在G中有解，则G为群</script>
 (1)子群保持单位元：H\subseteq G,则G中单位元e也在H中.\\
 (2)子群保持逆元：H\subseteq G,则H中元素a的逆元也就是a在G中的逆元.\\
 (3)同态保持子群：若f:G\rightarrow S,A是G的子群，则f(A)是S的子群</script></li>
-<li><p><strong>子集构成子集的条件</strong>：</p>
+<li><p><strong>子集构成子群的条件</strong>：</p>
 <ul>
 <li><script type="math/tex; mode=display">
 若G的子集H对*封闭，且\forall a\in H,a^{-1}(在G中的逆元)\in H(求逆封闭),则H为子群.\\
@@ -444,7 +444,7 @@ f:[i]->a^i\\
 <li><p><strong>特别记住三次置换的记法：</strong></p>
 <script type="math/tex; mode=display">
 \sigma_0=\begin{pmatrix}1&2&3\\1&2&3\end{pmatrix}\sigma_1=\begin{pmatrix}1&2&3\\2&1&3\end{pmatrix}\sigma_2=\begin{pmatrix}1&2&3\\3&2&1\end{pmatrix}\\
-\sigma_3=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\sigma_4=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\sigma_2=\begin{pmatrix}1&2&3\\3&1&2\end{pmatrix}\\
+\sigma_3=\begin{pmatrix}1&2&3\\1&3&2\end{pmatrix}\sigma_4=\begin{pmatrix}1&2&3\\2&3&1\end{pmatrix}\sigma_5=\begin{pmatrix}1&2&3\\3&1&2\end{pmatrix}\\
 (\sigma_0)=\{\sigma_0\},(\sigma_1)=\{\sigma_0,\sigma_1\},(\sigma_2)=\{\sigma_0,\sigma_2\}\\
 (\sigma_3)=\{\sigma_0,\sigma_3\},(\sigma_4)=(\sigma_5)=\{\sigma_0,\sigma_4,\sigma_5\}</script><p><strong>而且三次对称群就不是Abel群</strong>。</p>
 </li>
@@ -502,7 +502,8 @@ aH=bH\not\Rightarrow Ha=Hb.\\
 <h2 id="正规子群。"><a href="#正规子群。" class="headerlink" title="正规子群。"></a>正规子群。</h2><ul>
 <li><p>定义:</p>
 <script type="math/tex; mode=display">
-群G中，H是子群，若\forall a\in G,都有aH=Ha，则称H为G的一个正规子群.</script></li>
+群G中，H是子群，若\forall a\in G,都有aH=Ha，则称H为G的一个正规子群.\\
+若\forall h\in H,又均有ah=ha,则称H为G的一个中心.</script></li>
 <li><p>以下条件两两等价：</p>
 <script type="math/tex; mode=display">
 (1)H是G的一个正规子群\\
@@ -515,9 +516,7 @@ aH=bH\not\Rightarrow Ha=Hb.\\
 aH\circ bH=(ab)H\\
 注：aH=a_1H,bH=b_1H\Rightarrow (ab)H=(a_1b_1)H,所以定义合理\\
 在此定义下,<G/H,\circ>构成群.eH=H是其单位元.\\
-而g_H:a\mapsto aH为<G,*>到<G/H,\circ>的一个满同态，也称为\textbf{自然同态}</script></li>
-</ul>
-<h2 id="子集乘积"><a href="#子集乘积" class="headerlink" title="子集乘积"></a>子集乘积</h2><ul>
+而g_H:a\mapsto aH为<G,*>到<G/H,\circ>的一个满同态，也称为\textbf{自然同态}</script><h2 id="子集乘积"><a href="#子集乘积" class="headerlink" title="子集乘积"></a>子集乘积</h2></li>
 <li><p>定义</p>
 <script type="math/tex; mode=display">
 A*B=AB=\{ab|\forall a\in A,b\in B\}</script></li>
@@ -533,15 +532,13 @@ aH*bH=\{a\}*(H*\{b\})*H=(\{a\}*\{b\}) * (H * H)=(ab)H</script></li>
 <li><p>定理：</p>
 <script type="math/tex; mode=display">
 Ker\varphi 为G的一个正规子群.\\
-若H是G一个正规子群，则G到G/N的自然同态g_H:a\mapsto aN的核Ker\varphi=N</script></li>
+若N是G一个正规子群，则G到G/N的自然同态g_H:a\mapsto aN的核Ker\varphi=N\\
+(*简单证明：a\in Ker{g_N}\Leftrightarrow g_N(a)=N\Leftrightarrow aN=N\Leftrightarrow a\in N)</script></li>
 <li><p><strong>群同态基本定理</strong></p>
 <script type="math/tex; mode=display">
 群G的任一商群均为G的同态象，即G\sim G/N\\
-(*简单证明：a\in Ker{g_N}\Leftrightarrow g_N(a)=N\Leftrightarrow aN=N\Leftrightarrow a\in N)\\
 若G'为G的一个同态象(f:G\sim G')，则G'\cong G/Kerf\\
-(*同构映射\varphi:G/Kerf\rightarrow G',aKerf\mapsto f(a))</script></li>
-</ul>
-<h1 id="环与域"><a href="#环与域" class="headerlink" title="环与域"></a>环与域</h1><ul>
+(*同构映射\varphi:G/Kerf\rightarrow G',aKerf\mapsto f(a))</script><h1 id="环与域"><a href="#环与域" class="headerlink" title="环与域"></a>环与域</h1></li>
 <li><p><strong>环的定义</strong></p>
 <script type="math/tex; mode=display">
 代数系统<R,+,\cdot>中，<R,+>是一个Abel群，<R,\cdot>是一个半群，且\cdot对+满足分配律\\则称
@@ -552,8 +549,7 @@ Ker\varphi 为G的一个正规子群.\\
 <li><p>规定：</p>
 <script type="math/tex; mode=display">
 <R,+>的单位元用0表示，也称为零元。a的逆元用-a表示，也成为a的负元。</script></li>
-<li><p>定律：</p>
-<script type="math/tex; mode=display">
+<li>定律：<script type="math/tex; mode=display">
 \textbf{(1)0*a=0*a=0.(加法单位元乘任何元素为加法单位元)}\\
 (0*a+1*a=(0+1)*a=1*a,  所以0*a=0)\\
 \textbf{(2)a*(-b)=(-a)*b=-(a*b)}\\
@@ -635,9 +631,9 @@ a\equiv b\quad modN\Leftrightarrow a-b\in N\\
 <li><p>定理：</p>
 <script type="math/tex; mode=display">
 (1)域F中，加法群<F,+>中所有元素的加法周期都等于乘法单位元的周期。|a|=|e|\\
-(2)域F中，加法群<F,+>中非零元素的加法周期若为有限数p，则p必为素数.</script></li>
-</ul>
-<ul>
+(*简单证明,na=e*a+e*a+..=(ne)*a,又因为无零因子,na=0\Leftrightarrow ne=0)\\
+(2)域F中，加法群<F,+>中非零元素的加法周期若为有限数p，则p必为素数.\\
+(*简单证明,若p=p_1*p_2,pe=(p_1*p_2)e=p_1(p_2e)=(p_1e)</script></li>
 <li></li>
 <li><p>定义：</p>
 <script type="math/tex; mode=display">
