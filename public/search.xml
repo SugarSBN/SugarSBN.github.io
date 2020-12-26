@@ -1591,7 +1591,6 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 </ul>
 </li>
 <li><p>动词</p>
-<p>|    基本形    |                            尊他语                            |<br>| :—————: | :—————————————————————————————: |<br>|     する     |                            なさる                            |<br>|     来る     | いらっしゃる、おいでになる、見える、お見えになる、お越しになる |<br>|     行く     |           いらっしゃる、おいでになる、お越しになる           |<br>|   ～ている   |                       ～ていらっしゃる                       |<br>|     言う     |                          おっしゃる                          |<br>|  知っている  |                          ご存知です                          |<br>| 食べる・飲む |                          召し上がる                          |<br>|     見る     |                          ご覧になる                          |<br>|     聞く     |                          お耳に入る                          |<br>|     いる     |                  いらっしゃる、おいでになる                  |<br>|    くれる    |                           くださる                           |<br>|  ～てくれる  |                         ～てくださる                         |</p>
 <p>其中，くださる、おっしゃる、いらっしゃる、なさる变ます形都是る变います。其他动词直接变成尊他形</p>
 <p>eg. 先生がお土産をくださいました。</p>
 <p>eg. 部長はどこへいらっしゃいましたか。</p>
@@ -1615,6 +1614,66 @@ f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 </ul>
 </li>
 </ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">基本形</th>
+<th style="text-align:center">尊他语</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">する</td>
+<td style="text-align:center">なさる</td>
+</tr>
+<tr>
+<td style="text-align:center">来る</td>
+<td style="text-align:center">いらっしゃる<br>おいでになる<br>見える<br>お見えになる<br>お越しになる<br></td>
+</tr>
+<tr>
+<td style="text-align:center">行く</td>
+<td style="text-align:center">いらっしゃる<br>おいでになる<br>お越しになる</td>
+</tr>
+<tr>
+<td style="text-align:center">～ている</td>
+<td style="text-align:center">～ていらっしゃる</td>
+</tr>
+<tr>
+<td style="text-align:center">言う</td>
+<td style="text-align:center">おっしゃる</td>
+</tr>
+<tr>
+<td style="text-align:center">知っている</td>
+<td style="text-align:center">ご存知です</td>
+</tr>
+<tr>
+<td style="text-align:center">食べる・飲む</td>
+<td style="text-align:center">召し上がる</td>
+</tr>
+<tr>
+<td style="text-align:center">見る</td>
+<td style="text-align:center">ご覧になる</td>
+</tr>
+<tr>
+<td style="text-align:center">聞く</td>
+<td style="text-align:center">お耳に入る</td>
+</tr>
+<tr>
+<td style="text-align:center">いる</td>
+<td style="text-align:center">いらっしゃる<br>おいでになる</td>
+</tr>
+<tr>
+<td style="text-align:center">くれる</td>
+<td style="text-align:center">くださる</td>
+</tr>
+<tr>
+<td style="text-align:center">～てくれる</td>
+<td style="text-align:center">～てくださる</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h1 id="接续-amp-句型"><a href="#接续-amp-句型" class="headerlink" title="接续&amp;句型"></a>接续&amp;句型</h1><h2 id="存在句"><a href="#存在句" class="headerlink" title="存在句"></a>存在句</h2><p>部屋に　机が　あります（无生命）＝机は　部屋に　あります</p>
 <p>部屋に　猫が　います（有生命）=猫は　部屋に　います</p>
 <h2 id="受授句"><a href="#受授句" class="headerlink" title="受授句"></a>受授句</h2><p>私は　李さんに　本を　読んで　あげました                ”我给小李读书“</p>
