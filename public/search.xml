@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>杂感</title>
+    <url>/2021/01/05/2021-01-05%E6%9D%82%E6%84%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>。</p>
+<a id="more"></a>
+<p>今天下午突发奇想证明了不等式族</p>
+<script type="math/tex; mode=display">
+sinx<x\\
+sinx>x-\frac{x^3}{3！}\\
+sinx<x-\frac{x^3}{3!}+\frac{x^5}{5!}\\
+sinx>x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}\\
+....</script><p>实际上就是利用sinx和cosx泰勒展开式求导可以相互转化，并且求导后项数减少来用数学归纳法证明。</p>
+<p>想起高三还曾经和杨翛然同学在晚自习前关于sinx和cosx泰勒展开式可相互转化的讨论</p>
+<p>我当时根据 sinx和cosx的导数可以相互转化，构造了一个满足可以求导相互转换的两个多项式，就是sinx和cosx的泰勒展开式</p>
+<p>当时还不知道有这个东西，觉得发现了新大陆般欣喜，虽然兴奋地告诉了很多人，但最后只有杨翛然听了，并且对这创造性表示了赞赏。</p>
+<p>可是反而上了大学愈没有人再讨论有趣的东西了，反而盯绩点卷得死去活来。</p>
+<p><em>人间正自有赖 嬉戏、无邪与过剩的花朵， 否则世界就太小， 生趣就太枯涸。</em></p>
+<p><strong>你，不幸者，独听在夜阑！</strong></p>
+]]></content>
+  </entry>
+  <entry>
     <title>时而夕拾</title>
     <url>/2020/12/21/%E6%91%98%E6%8A%84/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p> 平淡惹人惰，岁月空蹉跎。</p>
@@ -949,6 +969,11 @@ tanx-x\sim\frac{1}{3}x^3\Leftrightarrow arctanx-x\sim\frac{1}{3}x^3</script><ul>
 <h1 id="函数的连续性"><a href="#函数的连续性" class="headerlink" title="函数的连续性"></a>函数的连续性</h1><h2 id="连续函数的判定"><a href="#连续函数的判定" class="headerlink" title="连续函数的判定"></a>连续函数的判定</h2><p>初等函数（幂函数，指数函数，对函数，三角函数，反三角函数）是连续的</p>
 <p>连续函数四则运算出来仍是连续函数</p>
 <p>连续函数复合出来的函数仍是连续的</p>
+<h2 id="间断点"><a href="#间断点" class="headerlink" title="间断点"></a>间断点</h2><ul>
+<li>左右极限存在相等，但不等于函数值：可去间断点</li>
+<li>左右极限存在不相等：跳跃间断点（第一类间断点）</li>
+<li>左右极限至少一个不存在：第二类间断点</li>
+</ul>
 <h2 id="连续函数的性质"><a href="#连续函数的性质" class="headerlink" title="连续函数的性质"></a>连续函数的性质</h2><p>其实都是一堆废话</p>
 <p>中间值定理不如拉格朗日中值定理广义</p>
 <p>反函数的连续性又太侠义</p>
