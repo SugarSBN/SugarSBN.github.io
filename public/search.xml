@@ -905,7 +905,7 @@ f的逆记为f^{-1},即关系f的逆</script></li>
   <entry>
     <title>数学分析</title>
     <url>/2020/11/07/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>吾生而有涯，而知也无涯。以有涯随无涯，则殆矣！</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最不喜欢的，还是学分第一大课，可恶</p>
 <a id="more"></a>
 <h1 id="极限部分"><a href="#极限部分" class="headerlink" title="极限部分"></a>极限部分</h1><h2 id="“趋向的描述”——ε-δ语言"><a href="#“趋向的描述”——ε-δ语言" class="headerlink" title="“趋向的描述”——ε-δ语言"></a>“趋向的描述”——ε-δ语言</h2><p>我认为极限一直在描述下面这种推导关系</p>
 <script type="math/tex; mode=display">
@@ -935,7 +935,17 @@ f(x)\rightarrow f(x_{0})翻译为：恒有f(x)\in U(f(x_0),\epsilon)\\
 <h3 id="复合函数极限运算"><a href="#复合函数极限运算" class="headerlink" title="复合函数极限运算"></a>复合函数极限运算</h3><p>可以见<a href="https://subonan.com/2020/10/07/%E5%85%B3%E4%BA%8E%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99/" target="_blank" rel="noopener">https://subonan.com/2020/10/07/%E5%85%B3%E4%BA%8E%E5%A4%8D%E5%90%88%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99/</a></p>
 <h3 id="从一个有界函数中可以找出一个收敛子列"><a href="#从一个有界函数中可以找出一个收敛子列" class="headerlink" title="从一个有界函数中可以找出一个收敛子列"></a>从一个有界函数中可以找出一个收敛子列</h3><p>当时我想了一段时间这个<em>子列</em>的概念，实际上就是从连续中抽出离散，然后就是废话了</p>
 <h2 id="关于等价无穷小"><a href="#关于等价无穷小" class="headerlink" title="关于等价无穷小"></a>关于等价无穷小</h2><p>使用条件是乘除可用，而加减不可</p>
-<p>？？？？？？？？？？？？？？？？？？<br>由于课本没有仔细说明，先搁置</p>
+<p>？？？？？？？？？？？？？？？？？？<br>先用着，给出常用等价无穷小</p>
+<script type="math/tex; mode=display">
+*************x\rightarrow0时有*************\\
+x\sim sinx\sim tanx\sim arcsinx\sim arctanx\sim ln(1+x)\sim e^x-1\\
+a^x-1\sim xlna,(1+x)^a\sim 1+ax,1-cosx\sim \frac{1}{2}x^2\\
+更多地\\
+x-sinx\sim\frac{1}{6}x^3\Leftrightarrow arcsinx-x\sim\frac{1}{6}(arcsinx)^3
+\sim\frac{1}{6}x^3\\
+tanx-x\sim\frac{1}{3}x^3\Leftrightarrow arctanx-x\sim\frac{1}{3}x^3</script><ul>
+<li><em>upd：在讨论后我确定了等价无穷小本质就是极限的四则运算</em></li>
+</ul>
 <h1 id="函数的连续性"><a href="#函数的连续性" class="headerlink" title="函数的连续性"></a>函数的连续性</h1><h2 id="连续函数的判定"><a href="#连续函数的判定" class="headerlink" title="连续函数的判定"></a>连续函数的判定</h2><p>初等函数（幂函数，指数函数，对函数，三角函数，反三角函数）是连续的</p>
 <p>连续函数四则运算出来仍是连续函数</p>
 <p>连续函数复合出来的函数仍是连续的</p>
@@ -977,7 +987,7 @@ d^2y=f^{''}(x)(dx)^2+f^{'}(x)d^2x\\</script><p>然后传统定义中，x往往�
 (拉格朗日中值定理)若f(x)在[a,b]上连续，在(a,b)可导，则\exists c\in(a,b)使\\
 \frac{f(b)-f(a)}{b-a}=f^{'}(c)</script><script type="math/tex; mode=display">
 (广义中值定理)若f(x),g(x)在[a,b]上连续，(a,b)上可导，则\exists c\in(a,b)使\\
-\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f^{'}(c)}{g^{'}(c)}</script><p>根据广义中值定理，我尝试创造了个<strong>伪</strong>洛必达法则</p>
+\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f^{'}(c)}{g^{'}(c)}</script><p>根据广义中值定理，我尝试创造了个<strong>伪</strong>洛必达法则（后来发现好像是真的</p>
 <script type="math/tex; mode=display">
 若要计算\lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}，但是f(x_0)=g(x_0)=0
 那么，就可以:\\
@@ -986,7 +996,101 @@ d^2y=f^{''}(x)(dx)^2+f^{'}(x)d^2x\\</script><p>然后传统定义中，x往往�
 \lim_{x\rightarrow x_0}\frac{f(x)}{g(x)}=\lim_{x^{'}\rightarrow x_0}\frac{f(x^{'})}{g(x^{'})}=\frac{f^{'}(x_0)}{g^{'}(x_0)}</script><h2 id="泰勒公式"><a href="#泰勒公式" class="headerlink" title="泰勒公式"></a>泰勒公式</h2><script type="math/tex; mode=display">
 f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k+o((x-x_0)^n)\\
 其中，o((x-x_0)^n)被称为配亚诺形式余项，拉格朗日给出了更为精确的形式\\
-\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}，\xi\in(x_0,x)</script><p>素晴らしい</p>
+\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}，\xi\in(x_0,x)</script><ul>
+<li>根据我的发现，若想求f(x),则在x或x附近展开是最准确的，相反地，若展开点离x越远，若想保持精度需要展开的项数关于距离呈指数倍增加。</li>
+<li>特别地，在x=0处的展开式称为麦克劳林展开式，给出几个常用展开式：</li>
+</ul>
+<script type="math/tex; mode=display">
+\frac{1}{1-x}=1+x+x^2+x^3+...\\
+e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3！}+\frac{x^4}{4!}+...\\
+cosx=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\frac{x^8}{8!}-...\\
+sinx=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+\frac{x^9}{9!}-...\\
+ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\frac{x^5}{5}-...\\
+\frac{1}{tanx}=x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+\frac{x^9}{9}-...\\</script><h2 id="微分的应用"><a href="#微分的应用" class="headerlink" title="微分的应用"></a>微分的应用</h2><ul>
+<li><p>注意，在讨论单调性、增减性、凹凸性时，满足的条件都是f(x)在闭区间内连续，开区间内可微（二次可微）。</p>
+<p>根据我的理解，这其实已经保证了端点处单侧可导</p>
+</li>
+<li><p>渐近线</p>
+<ul>
+<li><p>定义：曲线到该直线距离趋近于0</p>
+</li>
+<li><script type="math/tex; mode=display">
+k=\lim_{x\rightarrow \infin}\frac{f(x)}{x},b=\lim_{x\rightarrow\infin}f(x)-kx</script></li>
+</ul>
+</li>
+<li><p>曲率</p>
+<script type="math/tex; mode=display">
+给出定义式：曲率K=|\lim_{\Delta x\rightarrow0}\frac{\Delta \alpha}{\Delta s}|\\
+K=|\frac{y''}{(1+y'^2)^\frac{3}{2}}|\\
+K=|\frac{y''x'-x''y'}{(x'^2+y'^2)^\frac{3}{2}}|(参数方程形式)</script></li>
+</ul>
+<h1 id="洛必达法则求极限"><a href="#洛必达法则求极限" class="headerlink" title="洛必达法则求极限"></a>洛必达法则求极限</h1><script type="math/tex; mode=display">
+f(x)和g(x)需要在a的一个去心邻域可微分，才可以进行洛必达法则\\
+\frac{\infin}{\infin}和\frac{0}{0}都可以洛必达\\
+这里有个结论，log_ax的上升速度小于x^a,再小于a^x</script><h1 id="积分学"><a href="#积分学" class="headerlink" title="积分学"></a>积分学</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><script type="math/tex; mode=display">
+设f(x)在[a,b]上有定义，用\textbf{任意}的方法，将[a,b]分成\textbf{有限}个小部分：\\
+a=x_0<x_1<x_2<...<x_n=b,\\
+用T表示这种分法，d(T)表示max\{x_i-x_{i-1}\}\\
+作和数\sigma=\sum_{i=1}^{n}f(\bar{x_i})\Delta x_i,其中，\bar{x_i}是[x_{i-1},x_i]中任取的一点\\
+则\sigma称为积分和。当d(T)\rightarrow 0时，若\sigma存在有限极限，则称f(x)在[a,b]上黎曼可积</script><script type="math/tex; mode=display">
+注：定义中关于“存在”和“对于任意”这种逻辑关系词有欠缺，根据我的理解：\\
+f(x)在[a,b]上可积\Leftrightarrow\\
+\forall \epsilon>0,均\exists\delta>0,使得\quad\forall d(T)<\delta的分法T，和对于任意区间内\bar{x_i}的选择，均有\\
+|\sum_{i=1}^nf(\bar{x_i})\Delta x_i-I|<\epsilon,I为有限数</script><h2 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h2><script type="math/tex; mode=display">
+*f(x)在[a,b]上可积\Leftrightarrow \lim_{d(T)\rightarrow 0}\sigma_{max}-\sigma_{min}=0,注意，这里的max和min是关于同一分法T，不同\bar{x_i}选法中的最大，最小积分和。\\
+*f(x)在[a,b]上可积\Leftrightarrow \lim_{d(T)\rightarrow 0}\omega_i\Delta x_i=0,其中\omega_i=sup[x_{i-1},x_i]-inf[x_{i-1},x_i]\\
+*f(x)在[a,b]上可积\Leftrightarrow\\
+\forall \epsilon>0,\sigma>0,\exists\delta>0,对于所有d(T)<\epsilon的分法T，均有:\\
+T中振幅\omega_i\geq\epsilon的区间长度和\sum\Delta x_i<\sigma</script><h3 id="判定可积（可积的充分条件）"><a href="#判定可积（可积的充分条件）" class="headerlink" title="判定可积（可积的充分条件）"></a>判定可积（可积的充分条件）</h3><script type="math/tex; mode=display">
+*f(x)在[a,b]上连续，则在[a,b]上可积\\
+*f(x)在[a,b]上有界，且只有有限个间断点，则可积\\
+*f(x)在[a,b]上单调，则可积\\</script><h3 id="可积带来的性质（可积的必要条件）"><a href="#可积带来的性质（可积的必要条件）" class="headerlink" title="可积带来的性质（可积的必要条件）"></a>可积带来的性质（可积的必要条件）</h3><script type="math/tex; mode=display">
+*f(x)在[a,b]上可积\Rightarrow f(x)在[a,b]上有界\\
+*可积函数作加减法，数乘仍可积\\
+*函数可积区间可拼接\\
+*可积函数的积分值保留符号(若f(x)在[a,b]>0,则\int_a^bf(x)dx>0)\\
+*可积函数改变有限个点的函数值，既不影响可积性也不影响极限值</script><h2 id="积分学中值定理"><a href="#积分学中值定理" class="headerlink" title="积分学中值定理"></a>积分学中值定理</h2><script type="math/tex; mode=display">
+若f(x)在[a,b]上连续（可积），g(x)在[a,b]上可积，不变号，则:\\
+\exists \zeta\in[a,b],使得\int_a^bf(x)g(x)dx=f(\zeta)\int_a^bg(x)dx\\
+当g(x)=1可以有更好看的形式</script><hr>
+<script type="math/tex; mode=display">
+若f(x)在[a,b]上单调（可积），g(x)在[a,b]上可积，则:\\
+\exists\zeta\in[a,b],\int_a^bf(x)g(x)dx=f(a)\int_a^\zeta g(x)dx+f(b)\int_\zeta^bg(x)dx</script><hr>
+<script type="math/tex; mode=display">
+若f(x)在[a,b]上递减（可积），且非负，g(x)在[a,b]上可积，则:\\
+\exists \zeta\in[a,b],\int_a^bf(x)g(x)dx=f(a)\int_a^\zeta g(x)dx</script><script type="math/tex; mode=display">
+若f(x)在[a,b]上递增（可积），且非负，g(x)在[a,b]上可积，则:\\
+\exists \zeta\in[a,b],\int_a^bf(x)g(x)dx=f(b)\int_\zeta^b g(x)dx</script><h2 id="原函数"><a href="#原函数" class="headerlink" title="原函数"></a>原函数</h2><ul>
+<li><p>若f(x)在[a,b]上可积，则它的原函数F(x)在[a,b]上连续。</p>
+</li>
+<li><script type="math/tex; mode=display">
+若f(x)在[a,b]可积，且在x_0\in[a,b]处连续，则\Phi(x)=\int_a^xf(t)dt在x_0处的导数=f(x_0)\\
+由此推出：\\
+连续函数一定有原函数（可积），因为\Phi(x)=\int_a^tf(t)dt就是一个原函数</script></li>
+</ul>
+<h1 id="求积分"><a href="#求积分" class="headerlink" title="求积分"></a>求积分</h1><ul>
+<li><p>分部积分法规则：反函数，对数函数，幂函数，三角函数，指数函数，越靠后越优先放进dx里然后分部积分</p>
+</li>
+<li><p><strong>一切实系数多项式都能分解为次数为1和2的素因式</strong>，因为虚根都是成共轭出现的</p>
+</li>
+<li><p>当将x=g(t)变换时，积分域需要选择一个g(t)的单调区间，且这个区间的值域等于x的积分域</p>
+</li>
+<li><p>常用积分（求导）公式</p>
+<script type="math/tex; mode=display">
+\int\frac{dx}{a^2+x^2}=\frac{1}a arctan\frac{x}a+C(令x=atan\alpha)\\
+\int\frac{dx}{\sqrt{a^2-x^2}}=arcsin\frac{x}a+C(直接积出来的)\\
+\int\frac{dx}{a^2-x^2}=\frac{1}{2a}ln|\frac{a+x}{a-x}|+C(令x=asin\alpha)\\
+\int\frac{dx}{\sqrt{x^2+a^2}}=ln(x+\sqrt{x^2+a^2})+C(令x=atan\alpha)\\
+\int\frac{dx}{\sqrt{x^2-a^2}}=ln(x-\sqrt{x^2-a^2})+C(令x=\frac{a}{sin\alpha})\\
+\int\sqrt{a^2-x^2}dx=\frac{1}{2}x\sqrt{a^2-x^2}+\frac{a^2}{2}arcsin\frac{x}{a}+C(令x=asin\alpha)\\
+\int\sqrt{x^2-a^2}dx=\frac{1}{2}x\sqrt{x^2-a^2}-\frac{a^2}{2}ln|x+\sqrt{x^2-a^2}|+C(令x=\frac{a}{sin\alpha})\\
+\int\sqrt{x^2+a^2}dx=\frac{1}{2}x\sqrt{x^2+a^2}+\frac{a^2}{2}ln(x+\sqrt{x^2+a^2})+C(令x=atan\alpha)\\
+\int\frac{dx}{sinx}=ln|tan\frac{x}2|+C(把分母变形为2tan\frac{x}2cos^2\frac{x}2)\\
+\int\frac{dx}{cosx}=ln|tan(\frac{x}2+\frac{\pi}4)|+C(把sinx变成cosx)\\
+\int e^{ax}sinbxdx=\frac{e^{ax}(asinbx-bcosbx)}{a^2+b^2}+C(分部积分,解方程)\\
+\int e^{ax}cosbxdx=\frac{e^{ax}(bsinbx+acosbx)}{a^2+b^2}+C(分部积分，解方程)\\
+\int\frac{dx}{(x^2+a^2)^2}=\frac{1}{2a^2}\times\frac{x}{x^2+a^2}+\frac{1}{2a^3}arctan\frac{x}{a}+C(令x=atan\alpha)</script></li>
+</ul>
 ]]></content>
       <tags>
         <tag>-数学</tag>
