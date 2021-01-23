@@ -1,6 +1,420 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>絵</title>
+    <url>/2021/01/23/%E4%B9%B1%E6%B6%82%E4%B9%B1%E7%94%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><del>主要是最近乱涂乱画的东西</del></p>
+<a id="more"></a>
+<p><img data-original="emilia1.jpg" alt data-src="/images/bj.jpg"></p>
+<p><img data-original="emilia2.jpg" alt data-src="/images/bj.jpg"></p>
+<p>最开始的乱画比例竟然没有崩的离谱</p>
+<p><img data-original="koi.jpg" alt data-src="/images/bj.jpg"></p>
+<p><del>比例崩坏第一弹</del></p>
+<p><del>头大腿短</del></p>
+<p>以及乱涂喷枪</p>
+<p>唯一可取之处可能在地板的透视了吧..</p>
+<p><img data-original="kumiko.jpg" alt data-src="/images/bj.jpg"></p>
+<p><del>大崩坏第二弹</del></p>
+<p>一天赶出来的东西</p>
+<p>完全没法仔细看</p>
+<p><img data-original="mio1.jpg" alt data-src="/images/bj.jpg"></p>
+<p><del>为了参赛涂的</del></p>
+<p>背景稀烂</p>
+<p>但是mio和折棒还是太好看啦</p>
+<p><img data-original="mio2.jpg" alt data-src="/images/bj.jpg"></p>
+<p>最喜欢的一张！</p>
+<p><del>除了忘记处理线稿颜色</del></p>
+<p><img data-original="mio3.jpg" alt data-src="/images/bj.jpg"></p>
+<p>mio第三弹</p>
+<p>没法看，钉在耻辱柱上先</p>
+<p><img data-original="mio4.jpg" alt data-src="/images/bj.jpg"></p>
+<p>mio第四弹</p>
+<p>描的大佬的衣服褶皱和明暗交界线</p>
+<p>牢记画面信息量来源于最小色块</p>
+<p><img data-original="kaguya.jpg" alt data-src="/images/bj.jpg"></p>
+<p><del>尝试半厚涂上色没想到直接入土</del></p>
+<p>看起来有点吓人直接埋了吧</p>
+<p><img data-original="mai.jpg" alt data-src="/images/bj.jpg"></p>
+<p>信息量不足不耐看</p>
+<p><img data-original="mio.jpg" alt data-src="/images/bj.jpg"></p>
+<p>来了来了模仿クロイ先生的</p>
+<p>然后发现大佬的水彩笔在丰富画面而我在乱涂笔触</p>
+<p>发现硬边色块明暗交界线设计简直没得看</p>
+<p>（头痛</p>
+<p>真成了乱涂了要/baojin</p>
+<p><img data-original="yuri.jpg" alt data-src="/images/bj.jpg"></p>
+<p>色彩调子挺单调的但蜜汁喜欢呢</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Machine Learning</title>
+    <url>/2021/01/11/Machine-Learning/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><del>不喜欢学习数学英语而产生的眼高手低的典范</del></p>
+<a id="more"></a>
+<h1 id="definition"><a href="#definition" class="headerlink" title="definition"></a>definition</h1><ul>
+<li>Field of study that gives computers the ability to learn without being <strong>explicitly programmed</strong>    Arthur Samuel(1959)</li>
+<li>A computer program is said to <em>learn</em> from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.             Tom Mitchell</li>
+</ul>
+<h1 id="algorithms"><a href="#algorithms" class="headerlink" title="algorithms"></a>algorithms</h1><h2 id="Supervised-learning-teach-the-machine-to-do-sth"><a href="#Supervised-learning-teach-the-machine-to-do-sth" class="headerlink" title="Supervised learning(teach the machine to do sth)"></a>Supervised learning(teach the machine to do sth)</h2><ul>
+<li>the “right answers” data sets are given</li>
+<li><strong>regression(回归) problem</strong>(predict continuous value)</li>
+<li><strong>classification problem</strong>(discrete valued output(0 or 1 or 2,…))</li>
+<li>can predict according to infinite features</li>
+</ul>
+<h3 id="Notations"><a href="#Notations" class="headerlink" title="Notations:"></a><strong>Notations:</strong></h3><ul>
+<li><p>m=Number of training examples</p>
+</li>
+<li><p>x’s=”input” variable/features</p>
+</li>
+<li><p>y’s=”output” variable/features</p>
+</li>
+<li><p>(x,y)=one training example</p>
+</li>
+<li><script type="math/tex; mode=display">
+(x^{(i)},y^{(i)})=the\quad i^{th}\quad training\quad example</script></li>
+<li><p>h=hypothesis, mapping from x’s to y’s </p>
+<script type="math/tex; mode=display">
+eg.h_\theta(x)=\theta_0+\theta_1x\quad(univariable\quad linear\quad regression)</script><p><img data-original="1.png" alt="1.png" data-src="/images/bj.jpg"></p>
+</li>
+</ul>
+<h3 id="Univariable-linear-regression"><a href="#Univariable-linear-regression" class="headerlink" title="Univariable linear regression"></a>Univariable linear regression</h3><ul>
+<li><script type="math/tex; mode=display">
+Goal:to\quad minimize_{\theta_0,\theta_1}J(\theta_0,\theta_1),\\
+where\quad J(\theta_0,\theta_1)=\frac{1}{2m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2(cost\quad function)\\</script></li>
+<li><p>J is called <strong><em>cost function</em></strong> or <strong><em>squared error cost function</em></strong></p>
+</li>
+<li><p>squared error cost function is the most used function for linear regression problem and works pretty well</p>
+</li>
+</ul>
+<h4 id="Gradient-descent"><a href="#Gradient-descent" class="headerlink" title="Gradient descent"></a>Gradient descent</h4><ul>
+<li><p><em>to minimize function J</em></p>
+</li>
+<li><p>Outline:</p>
+<ul>
+<li><script type="math/tex; mode=display">
+Start\quad with\quad some\quad \theta_0,\theta_1</script></li>
+<li><script type="math/tex; mode=display">
+keep\quad changing\quad \theta_0,\theta_1\quad to\quad reduce\quad J(\theta_0,\theta_1)</script></li>
+<li><p>​                       <em>until we hopefully end up at a minimum</em></p>
+</li>
+</ul>
+</li>
+<li><script type="math/tex; mode=display">
+repeat\quad until\quad convergence\{\\
+\theta_0'=\theta_0-\alpha\frac{\partial}{\partial\theta_0}J(\theta_0,\theta_1)\\
+\theta_1'=\theta_1-\alpha\frac{\partial}{\partial\theta_1}J(\theta_0,\theta_1)\\
+\}\\
+\alpha \ is\; called\;learning\; rate</script></li>
+<li><p><strong><em>Noticing that theta0 and theta1 are simultaneously updated</em></strong></p>
+</li>
+<li><script type="math/tex; mode=display">
+\frac{\partial}{\partial\theta_0}=\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})\\
+\frac{\partial}{\partial\theta_1}=\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})\cdot x^{(i)}</script></li>
+<li><p><strong><em>univariable linear regression</em></strong> <em>is a <strong>convex function</strong>(a bowl shape function ), so it has no local optima other than the global optimum</em></p>
+</li>
+<li><p><strong><em>“Batch” Gradient Descent</em></strong> : Each step of gradient descent uses all the training examples.(from 1 to m)</p>
+</li>
+</ul>
+<h3 id="Multivariate-regression-problem"><a href="#Multivariate-regression-problem" class="headerlink" title="Multivariate regression problem"></a>Multivariate regression problem</h3><ul>
+<li><p>n=<em>number of features(variables)</em></p>
+</li>
+<li><script type="math/tex; mode=display">
+x^{(i)}_j=the\quad i^{th}\quad training\quad example\quad the\quad j^{th}\quad feature</script></li>
+<li><script type="math/tex; mode=display">
+h_\theta(x)=\sum_{i=0}^n\theta_ix_i\quad (defining\quad x_0=1)\\
+X^{(i)}=\begin{bmatrix}
+x_0^{(i)}\\
+x_1^{(i)}\\
+...\\
+x_n^{(i)}\\
+\end{bmatrix}
+\in\mathbb{R}^{n+1}
+\quad
+\theta=\begin{bmatrix}
+\theta_0\\
+\theta_1\\
+...\\
+\theta_n
+\end{bmatrix}
+\in\mathbb{R}^{n+1}\\
+h_\theta(x)=\theta^TX^{(i)}\\</script></li>
+<li><script type="math/tex; mode=display">
+J(\theta)=J(\theta_0,\theta_1,...,\theta_n)=\frac{1}{2m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2</script></li>
+<li><p>Gradient descent:</p>
+<script type="math/tex; mode=display">
+\theta_j'=\theta_j-\alpha\frac{1}{m}\sum_{i=1}^m(h_\theta(x_j^{(i)})-y^{(i)})\cdot x^{(i)}_j\\
+\theta'=\theta-\frac{\alpha}{m}*X^T(X\theta-Y)\quad(wirte\;in\;matrix)</script><h4 id="Practical-tricks-for-making-gradient-descent-work-well"><a href="#Practical-tricks-for-making-gradient-descent-work-well" class="headerlink" title="Practical tricks for making gradient descent work well"></a>Practical tricks for making gradient descent work well</h4></li>
+<li><p><strong><em>Feature Scaling(faster)</em></strong></p>
+<ul>
+<li>Idea:    <em>Make sure features are on a similar scale</em></li>
+<li><em>Get every feature into <strong>approximately(not necessarily exact)</strong>a [-1, 1] range</em></li>
+</ul>
+<p>E.g.  </p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+x_1=sizes(0-2000feet^2),x2=number\,of\,bedrooms(1-5)\\
+  x_1'=\frac{size}{2000},x_2'=\frac{\#bedrooms}{5}\\
+  x_1''=\frac{size-1000}{2000},x_2''=\frac{\#bedrooms-2}{5}\\
+  so\;that\;x_1\;and\;x_2\;are\;both\;in\;[-0.5, 0.5]\\</script><script type="math/tex; mode=display">
+let\;x_i'=\frac{x_i-\bar{x_i}}{max\{x_i\}-min\{x_i\}}\quad where\;\bar{x_i}=\frac{1}{m}\sum_{j=1}^mx^{(j)}_i</script><ul>
+<li><p><strong><em>Choose learning rate properly</em></strong></p>
+<ul>
+<li><em>Declare convergence if your cost function decreases by less than 1e-3(?) in one iteration</em></li>
+<li><em>If your cost function doesn’t decrease on every iteration, use smaller learning rate</em></li>
+</ul>
+</li>
+<li><p><em>Try to choose …, 0.001, 0.01, 0.1, 1,…</em></p>
+</li>
+<li><p><strong><em>Choose appropriate features</em></strong></p>
+</li>
+<li><p><em>Think about what features really determine the result in particular problem</em></p>
+</li>
+<li><p><strong><em>Polynomial regression</em></strong></p>
+<ul>
+<li><script type="math/tex; mode=display">
+try\quad h_\theta(x)=\theta_0+\theta_1(size)+\theta_2\sqrt{size}\quad where\;size=length*width\\
+better\quad than\quad \theta_0+\theta_1*length+\theta_2*width\\</script></li>
+<li><p><em>pay attention to features’ scale</em></p>
+<script type="math/tex; mode=display">
+h_\theta(x)=\theta_0+\theta_1\frac{size}{1000}+\theta_2\frac{\sqrt{size}}{32}\\
+if\quad size\quad ranges\quad in\quad [1,1000],\sqrt{1000}≈32</script></li>
+</ul>
+</li>
+</ul>
+<h4 id="Normal-equation"><a href="#Normal-equation" class="headerlink" title="Normal equation"></a>Normal equation</h4><ul>
+<li><script type="math/tex; mode=display">
+X=\begin{bmatrix}
+x_0^{(1)}=1&x_1^{(1)}&...&x_n^{(1)}\\
+x_0^{(2)}=1&x_1^{(2)}&...&x_n^{(2)}\\
+...&...&...&...\\
+x_0^{(m)}=1&x_1^{(m)}&...&x_n^{(m)}
+\end{bmatrix}y=\begin{bmatrix}
+y^{(1)}\\
+y^{(2)}\\
+...\\
+y^{(m)}
+\end{bmatrix}\\
+J(\theta)=\frac{1}{2m}\sum_{i=1}^m(\sum_{j=0}^nx_j^{(i)}\theta_j-y^{(i)})^2\\
+=\frac{1}{2m}(X\theta-y)^T(X\theta-y)\\
+=\frac{1}{2m}(\theta^TX^T-y^T)(X\theta-y)\\
+=\frac{1}{2m}(\theta^TX^TX\theta-\theta^TX^Ty-y^TX\theta+y^Ty)\\
+\frac{dJ(\theta)}{d\theta}=\frac{1}{2m}(\frac{d\theta^T}{d\theta}X^TX\theta+(\theta^TX^TX)^T\frac{d\theta}{d\theta}-\frac{d\theta^T}{d\theta}X^Ty-(y^TX)^T\frac{d\theta}{d\theta})\\
+=\frac{1}{2m}(IX^TX\theta+X^TX\theta^TI-X^Ty-X^Ty)\\
+=\frac{1}{2m}((X^TX+X^TX)\theta-(X^Ty+X^Ty))\\
+so\;if\;\frac{dJ(\theta)}{d\theta}=0\\
+X^TX\theta-X^Ty=0\\
+so\quad \theta=(X^TX)^{-1}X^Ty\\**************************\\
+in\;fact\;AX\;is\;also\;a\;vector\\
+\frac{d\begin{bmatrix}y_1&y_2&...&y_m\end{bmatrix}}{d\begin{bmatrix}x_1\\x_2\\...\\x_n\end{bmatrix}}=\frac{d\begin{bmatrix}y_1\\y_2\\...\\y_m\end{bmatrix}}{d\begin{bmatrix}x_1\\x_2\\...\\x_n\end{bmatrix}}=
+\begin{bmatrix}
+\frac{\partial y_1}{\partial x_1}&\frac{\partial y_2}{\partial x_1}&...&\frac{\partial y_m}{\partial x_1}\\
+\frac{\partial y_1}{\partial x_2}&\frac{\partial y_2}{\partial x_2}&...&\frac{\partial y_m}{\partial x_2}\\
+...&...&...&...\\
+\frac{\partial y_1}{\partial x_n}&\frac{\partial y_2}{\partial x_n}&...&\frac{\partial y_m}{\partial x_n}
+\end{bmatrix}\\
+so\;we\;have\;\frac{dX^T}{dX}=\frac{dX}{dX}=I,\frac{dAX}{dX}=A^T\\\frac{dAB}{dX}=\frac{dA}{dX}B+A\frac{dB}{dX}\quad while\;X\;is\;a\;vector\;and\;A\;is\;1\times n\;and\;B\;is\;n\times 1\\</script></li>
+<li><script type="math/tex; mode=display">
+When\;(X^TX)\;is\;non-invertible?\\
+*Redundant\;features(linearly\;dependent)\\
+E.g.\;x_1=size\;in\;feet^2,x_2=size\;in\;m^2,so\;x_1\equiv3.28^2x_2\\
+*Too\;many\;features(E.g.\;m\leq n)</script></li>
+</ul>
+<h3 id="Logistic-Regression-Classification"><a href="#Logistic-Regression-Classification" class="headerlink" title="Logistic Regression Classification"></a>Logistic Regression Classification</h3><h4 id="binary-class-classification"><a href="#binary-class-classification" class="headerlink" title="binary class classification"></a>binary class classification</h4><ul>
+<li><script type="math/tex; mode=display">
+y\in\{0,1\}</script><p><em>0 refers to the absence of something while 1 refers to the presence of something</em></p>
+</li>
+</ul>
+<h5 id="logistic-regression-model"><a href="#logistic-regression-model" class="headerlink" title="logistic regression model"></a>logistic regression model</h5><ul>
+<li><script type="math/tex; mode=display">
+want\;0\leq h_\theta(x)\leq 1\\
+so\;let\;h_\theta(x^{(i)})=g(\theta^TX^{(i)}),where\;g(z)=\frac{1}{1+e^{-z}}\\
+h_\theta(x)=estimated\;probability\;that\;y=1\;on\;input\;x\\
+h_\theta(x)=P(y=1|x;\theta)\\
+P(y=1|x;\theta)>0.5\Leftrightarrow 0\leq h_\theta(x^{(i)})\</script></li>
+<li><p><strong>Non-linear decision boundaries</strong></p>
+<script type="math/tex; mode=display">
+h_\theta(x)=g(\theta_0+\theta_1x_1+\theta_2x_2+\theta_3x_1^2+\theta_4x_2^2)</script><ul>
+<li><em>the parameter theta determines the decision boundary</em></li>
+</ul>
+</li>
+<li><p><strong>Cost function</strong></p>
+<script type="math/tex; mode=display">
+J(\theta)=\frac{1}{m}\sum_{i=1}^mCost(h_\theta(x^{(i)}),y^{(i)})\\
+If\;we\;choose\;Cost(h_\theta(x^{(i)}),y^{(i)})=\frac{1}{2}(h_\theta(x^{(i)})-y^{(i)})^2\;like\;linear\;regression\;problem\\
+then\;J(\theta)\;would\;be\;a\;non-convex\;function</script><script type="math/tex; mode=display">
+Cost(h_\theta(x^{(i)},y^{(i)}))=\begin{cases}-log(h_\theta(x^{(i)}))\quad if\;y=1\\-log(1-h_\theta(x^{(i)}))\quad if\;y=0\end{cases}\\
+=-y^{(i)}log(h_\theta(x^{(i)}))-(1-y^{(i)})log(1-h_\theta(x^{(i)}))</script><ul>
+<li><em>The cost function derived from <strong>Maximum Likelihood Estimation</strong> and has a nice property that it’s convex</em></li>
+</ul>
+<script type="math/tex; mode=display">
+J(\theta)=-\frac{1}{m}\sum_{i=1}^m[y^{(i)}log(h_\theta(x^{(i)}))+(1-y^{(i)})log(1-h_\theta(x^{(i)}))]\\
+min_\theta J(\theta)\\
+Repeat\{\\
+\theta_j'=\theta_j-\alpha\frac{\partial}{\partial\theta_j}J(\theta)\\
+=\theta_j-\frac{\alpha}m\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)}\\
+\}\\</script></li>
+<li><script type="math/tex; mode=display">
+A\;simple\;proof(provided\;by\;SuBonan):\\
+sigmond'(x)=sigmond(x)[1-sigmond(x)]\\
+h_\theta(x^{(i)})=sigmond(\sum_{j=0}^nx^{(i)}_j\theta_j)\\
+so\quad \frac{\partial h_\theta(x^{(i)})}{\partial\theta_j}=sigmond(\sum_{j=0}^nx_j^{(i)}\theta_j)[1-sigmond(\sum_{j=0}^nx_j^{(i)}\theta_j)]x_j^{(i)}\\
+=h_\theta(x^{(i)})[1-h_\theta(x^{(i)})]x_j^{(i)}\\
+while\quad Cost(h_\theta(x^{(i)}),y^{(i)})=-yln(h_\theta(x^{(i)}))-(1-y)ln(1-h_\theta(x^{(i)}))\\
+so\quad \frac{\partial Cost(h_\theta(x^{(i)}),y)}{\partial \theta_j}=\frac{-y}{h_\theta(x^{(i)})}\cdot \frac{\partial h_\theta(x^{(i)})}{\partial\theta_j}+\frac{1-y}{1-h_\theta(x^{(i)})}\cdot\frac{\partial h_\theta(x^{(i)})}{\partial\theta_j}\\
+=[h_\theta(x^{(i)})-y]x_j^{(i)}\\
+J(\theta)=\frac{1}{m}\sum_{i=1}^mCost(h_\theta(x^{(i)}),y^{(i)})\\
+so\quad \frac{\partial J(\theta)}{\partial \theta_j}=\frac{1}{m}\sum_{i=1}^m\frac{\partial}{\partial\theta_j}Cost(h_\theta(x^{(i)}),y^{(i)})\\
+=\frac{1}{m}\sum_{i=1}^m[h_\theta(x^{(i)})-y^{(i)}]x_j^{(i)}</script></li>
+<li><p><strong><em>So the vectorized implementation is:</em></strong></p>
+<script type="math/tex; mode=display">
+\theta'=\theta-\frac{\alpha}{m}X^T(sigmond(X\theta)-Y)</script></li>
+<li><p><strong>Advanced Optimization</strong></p>
+<ul>
+<li>Conjugate gradient</li>
+<li>BFGS</li>
+<li>L-BFGS</li>
+<li>All algorithms above has following advantages:<ul>
+<li>No need to manually pick learning rate</li>
+<li>Often faster than gradient descent</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="Multiclass-classfication"><a href="#Multiclass-classfication" class="headerlink" title="Multiclass classfication"></a>Multiclass classfication</h4><script type="math/tex; mode=display">
+y\in\{0,1,2,3,...\}</script><h5 id="One-vs-all-one-vs-rest"><a href="#One-vs-all-one-vs-rest" class="headerlink" title="One-vs-all(one-vs-rest)"></a>One-vs-all(one-vs-rest)</h5><ul>
+<li><script type="math/tex; mode=display">
+h_\theta^{(i)}(X)=P(y=i|X;\theta)\\
+so\;given\;X\;find\;max_ih_\theta^{(i)}(X)</script></li>
+</ul>
+<h3 id="The-problem-of-overfitting"><a href="#The-problem-of-overfitting" class="headerlink" title="The problem of overfitting"></a>The problem of overfitting</h3><p><img data-original="2.png" alt="2" data-src="/images/bj.jpg"></p>
+<ul>
+<li><p><strong><em>Overfitting:</em></strong> <em>If we have too many features, the learned hypothesis may fit the training set very well, but fail to generalize to new examples(predict prices on new examples).</em></p>
+</li>
+<li><p><strong><em>Adressing overfitting:</em></strong></p>
+<ul>
+<li><p><em>Reduce features:</em></p>
+<ul>
+<li><em>Manually select which features to keep.</em></li>
+<li><em>Model selection algorithm</em></li>
+</ul>
+</li>
+<li><p><em>Regularization:</em></p>
+<ul>
+<li><em>Keep all the features, but reduce magnitude/values of parameters theta</em>.</li>
+<li><em>Works well when we have a lot of features, each of which contributes a bit to predicting y.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="Cost-Function"><a href="#Cost-Function" class="headerlink" title="Cost Function"></a>Cost Function</h4><ul>
+<li><script type="math/tex; mode=display">
+h_\theta(x)=\theta_0+\theta_1x+\theta_2x^2+\theta_3x^3\\
+Cost\;function=\frac{1}{m}\sum_{i=1}^m[h_\theta(x)-y]^2+1000\theta_3^2</script><p><em>So that we can avoid theta3 being too large by minimizing cost function</em></p>
+</li>
+<li><p><em>But we don’t know which parameter theta to shrink in advance, so we choose to shrink all of them:</em></p>
+<script type="math/tex; mode=display">
+J(\theta)=\frac{1}{2m}[\sum_{i=1}^m[h_\theta(x^{(i)})-y^{(i)}]+\lambda\sum_{j=1}^n\theta_j^2]\\
+\lambda=regularization\;parameter</script><p><em>In practice, whether or not you choose to shrink theta0 makes very little difference to the results</em></p>
+</li>
+</ul>
+<h4 id="Regularized-Linear-Regression"><a href="#Regularized-Linear-Regression" class="headerlink" title="Regularized Linear Regression"></a>Regularized Linear Regression</h4><ul>
+<li><strong>Gradient descent:</strong></li>
+</ul>
+<script type="math/tex; mode=display">
+\theta'=\theta-\frac{\alpha}{m}[X^T(X\theta-Y)+\lambda\theta]</script><ul>
+<li><strong>Normal equation:</strong><script type="math/tex; mode=display">
+\theta=(X^TX+\lambda I_{n+1})^{-1}X^Ty\\
+and\;X^TX+\lambda I_{n+1}\;will\;be\;always\;invertible</script></li>
+</ul>
+<h4 id="Regularized-Logistic-Regression"><a href="#Regularized-Logistic-Regression" class="headerlink" title="Regularized Logistic Regression"></a>Regularized Logistic Regression</h4><ul>
+<li><strong>Gradient descent:</strong><script type="math/tex; mode=display">
+\theta'=\theta-\frac{\alpha}{m}X^T(sigmond(X\theta)-Y)+\frac{\lambda\alpha}{m}\theta</script></li>
+</ul>
+<h3 id="Unsupervised-learning-learn-by-AI-itself"><a href="#Unsupervised-learning-learn-by-AI-itself" class="headerlink" title="Unsupervised learning(learn by AI itself)"></a>Unsupervised learning(learn by AI itself)</h3><ul>
+<li>no given values or classification</li>
+<li>Cluster data(genes) or Non-cluster data(Cocktail party problem)</li>
+</ul>
+<h1 id="Neural-Network"><a href="#Neural-Network" class="headerlink" title="Neural Network"></a>Neural Network</h1><h2 id="Notations-1"><a href="#Notations-1" class="headerlink" title="Notations"></a>Notations</h2><script type="math/tex; mode=display">
+a_i^{(j)}="activation"\;of\;unit\;i\;in\;layer\;j\\
+\varTheta^{(j)}=matrix\;of\;weights\;controlling\;function\;mapping\;from\;layer\;j\\to\;layer\;j+1\\
+the\;dimension\;of\;\varTheta^{(j)}\;is\;s_{j+1}\times(s_j+1)\\
+s_j\;is\;the\;number\;of\;units\;in\;layer\;j</script><h2 id="Vectorized-implementation"><a href="#Vectorized-implementation" class="headerlink" title="Vectorized implementation"></a>Vectorized implementation</h2><script type="math/tex; mode=display">
+a^{(2)}=sigmoid(\varTheta^{(1)}X)\\
+Add\;a_0^{(2)}=1\\
+a^{(3)}=sigmoid(\varTheta^{(2)}a^{(2)})\\
+...\\
+output\;layer:\\
+\begin{bmatrix}
+P\{output=1\}\\
+P\{output=2\}\\
+...\\
+P\{output=numOfLabels\}
+\end{bmatrix}=sigmoid(\varTheta^{(n)}a^{(n)})\\
+but\;P\;is\;just\;prediction\;not\;the\;answer,\;so\\
+\sum_{i=1}^{numOfLabels}P\{output=i\}\;does\;not\;necessarily\;equal\;to\;1</script><h2 id="Cost-Function-1"><a href="#Cost-Function-1" class="headerlink" title="Cost Function"></a>Cost Function</h2><script type="math/tex; mode=display">
+K=numOfLabels\quad L=numOfLayers\\
+let\quad h_\varTheta(x)\in\mathbb{R}^{K}\quad represent\;the\;output\\ and\;(h_\varTheta(x))_k\;represent\;the\;i^{th}\;output\;in\;output\;layer\\
+J(\varTheta)=-\frac{1}{m}[\sum_{i=1}^m\sum_{k=1}^Ky_k^{(i)}log(h_\varTheta(x^{(i)})_k)+(1-y_k^{(i)})log(1-h_\varTheta(x^{(i)})_k)]\\+\frac{\lambda}{2m}\sum_{l=1}^{L-1}\sum_{i=2}^{s_{l+1}}\sum_{j=1}^{s_l+1}(\varTheta_{ji}^{(l)})^2</script><h2 id="Backpropagation-Algorithm"><a href="#Backpropagation-Algorithm" class="headerlink" title="Backpropagation Algorithm"></a>Backpropagation Algorithm</h2><ul>
+<li><p><strong><em>Gradient computation</em></strong></p>
+<p><em>Supposing we have only one training example (m=1)</em></p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+so\;x,y\;substitute\;for\;x^{(i)},y^{(i)}\\
+Intuition:\delta_j^{(l)}="error"\;of\;node\;j\;in\;layer\;l\\</script><p>​        <em>If the network has only four layers:</em></p>
+<script type="math/tex; mode=display">
+\delta^{(4)}=a^{(4)}-y\\
+*\delta^{(3)}=(\varTheta^{(3)})^T\delta^{(4)}.*sigmoid'(\varTheta^{(2)}a^{(2)})\\
+=(\varTheta^{(3)})^T\delta^{(4)}.*(sigmoid(\varTheta^{(2)}a^{(2)}).*(1-sigmoid(\varTheta^{(2)}a^{(2)}))\\
+=(\varTheta^{(3)})^T\delta^{(4)}.*(a^{(3)}.*(1-a^{(3)}))\\
+*\delta^{(2)}=(\varTheta^{(2)})^T\delta^{(3)}.*sigmoid'(\varTheta^{(1)}a^{(1)})\\
+=(\varTheta^{(2)})^T\delta^{(3)}.*(a^{(2)}.*(1-a^{(2)}))\\
+and\;input\;layer\;don't\;have\;\delta^{(1)}</script><ul>
+<li><script type="math/tex; mode=display">
+Set\;\Delta_{ij}^{(l)}=0\;(for\;all\;i,j,l)\\
+For\;i=1\;to\;m\\
+Set\;a^{(1)}=x^{(i)}\\
+forward\;propagation\;to\;compute\;a^{(l)},l=2,3,...,L\\
+Using\;y^{(i)},\;compute\;\delta^{(L)}=a^{(L)}-y^{(i)}\\
+Compute\;\delta^{(L-1)},\delta^{(L-2)},...,\delta^{(2)}\\
+\Delta^{(l)}:=\Delta^{(l)}+\delta^{(l+1)}(a^{(l)})^T\\
+D_{ij}^{(l)}=\frac{1}{m}\Delta_{ij}^{(l)}+\frac{\lambda}{m}\varTheta_{ij}^{(l)}\;if\;j\neq0\\
+D_{ij}^{(l)}=\frac{1}{m}\Delta_{ij}^{(l)}\;if\;j=0\\
+\frac{\partial}{\partial\varTheta_{ij}^{(l)}}J(\varTheta)=D_{ij}^{(l)}\\
+\frac{\partial}{\partial\varTheta^{(l)}}J(\varTheta)=D^{(l)}</script></li>
+<li><p><strong><em>Gradient Checking</em></strong></p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+let\;\theta="unrolled"\;\Theta^{(l)}\\
+\theta=[\Theta^{(1)}(:);\Theta^{(2)}(:);...;\Theta^{(L)}(:)]\in\mathbb{R}^{n}\\
+so\;J(\Theta^{(1)},...,\Theta^{(L)})=J(\theta)=J([\theta_1\quad\theta_2\quad...\quad\theta_n])\\
+and\;\frac{\partial}{\partial\theta_i}J(\theta)=\frac{J([\theta_1\quad...\quad\theta_i+\epsilon\quad...\quad\theta_n])-J([\theta_1\quad...\quad\theta_i-\epsilon\quad...\quad\theta_n])}{2\epsilon}</script><figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span> : n</span><br><span class="line">	thetaPlus = theta;</span><br><span class="line">	thetaPlus(<span class="built_in">i</span>) = thetaPlus(<span class="built_in">i</span>) + EPSILON;</span><br><span class="line">	thetaMinus = theta;</span><br><span class="line">	thetaMinus(<span class="built_in">i</span>) = thetaMinus(<span class="built_in">i</span>) - EPSILON;</span><br><span class="line">	gradApprox(<span class="built_in">i</span>) = (J(thetaPlus) - J(thetaMinus)) / (<span class="number">2</span> * EPSILON);</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure>
+<p> <em>Check that gradAppprox ≈ DVec, while epsilon = 1e-4</em></p>
+<ul>
+<li><p><strong><em>Implementation Note</em></strong></p>
+<ul>
+<li><em>Implement backprop to compute DVec</em></li>
+<li><em>Implement numerical gradient check to compute gradApprox</em></li>
+<li><em>Make sure they give similar values</em></li>
+<li><em>Turn off gradient checking. Using backprop code for learning</em><ul>
+<li><em>numerical gradient checking is computenionally expensive compared with backprop</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong><em>Random Initialization</em></strong></p>
+<p>E.g.</p>
+<p>Theta1 = rand(10, 11) <em> (2 </em> INIT_EPSILON) - INIT_EPSILON;</p>
+<p><em>In order to break symmetry</em></p>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>杂感</title>
     <url>/2021/01/05/2021-01-05%E6%9D%82%E6%84%9F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>。</p>
