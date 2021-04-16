@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="BokkeNasu" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="[object Object]">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: './public/search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="不喜欢学习数学英语而产生的眼高手低的典范">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Machine Learning">
+<meta property="og:url" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2021&#x2F;01&#x2F;11&#x2F;Machine-Learning&#x2F;index.html">
+<meta property="og:site_name" content="BokkeNasu">
+<meta property="og:description" content="不喜欢学习数学英语而产生的眼高手低的典范">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;images&#x2F;bj.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;images&#x2F;bj.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;images&#x2F;bj.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;images&#x2F;bj.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;images&#x2F;bj.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;images&#x2F;bj.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;images&#x2F;bj.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;images&#x2F;bj.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;images&#x2F;bj.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;images&#x2F;bj.jpg">
+<meta property="og:updated_time" content="2021-04-16T12:13:26.494Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;images&#x2F;bj.jpg">
+
+<link rel="canonical" href="http://sugarsbn.github.io/2021/01/11/Machine-Learning/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Machine Learning | BokkeNasu</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BokkeNasu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://sugarsbn.github.io/2021/01/11/Machine-Learning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="SuBonan">
+      <meta itemprop="description" content="やがて、平凡な人になる">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BokkeNasu">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Machine Learning
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-11 11:35:49" itemprop="dateCreated datePublished" datetime="2021-01-11T11:35:49+08:00">2021-01-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-16 20:13:26" itemprop="dateModified" datetime="2021-04-16T20:13:26+08:00">2021-04-16</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><del>不喜欢学习数学英语而产生的眼高手低的典范</del></p>
+<a id="more"></a>
+<h2 id="definition"><a href="#definition" class="headerlink" title="definition"></a>definition</h2><ul>
+<li>Field of study that gives computers the ability to learn without being <strong>explicitly programmed</strong>    Arthur Samuel(1959)</li>
+<li>A computer program is said to <em>learn</em> from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.             Tom Mitchell</li>
+</ul>
+<h1 id="Supervised-learning-teach-the-machine-to-do-sth"><a href="#Supervised-learning-teach-the-machine-to-do-sth" class="headerlink" title="Supervised learning(teach the machine to do sth)"></a>Supervised learning(teach the machine to do sth)</h1><ul>
+<li>the “right answers” data sets are given</li>
+<li><strong>regression(回归) problem</strong>(predict continuous value)</li>
+<li><strong>classification problem</strong>(discrete valued output(0 or 1 or 2,…))</li>
+<li>can predict according to infinite features</li>
+</ul>
+<h3 id="Notations"><a href="#Notations" class="headerlink" title="Notations:"></a><strong>Notations:</strong></h3><ul>
+<li><p>m=Number of training examples</p>
+</li>
+<li><p>x’s=”input” variable/features</p>
+</li>
+<li><p>y’s=”output” variable/features</p>
+</li>
+<li><p>(x,y)=one training example</p>
+</li>
+<li><script type="math/tex; mode=display">
+(x^{(i)},y^{(i)})=the\quad i^{th}\quad training\quad example</script></li>
+<li><p>h=hypothesis, mapping from x’s to y’s </p>
+<script type="math/tex; mode=display">
+eg.h_\theta(x)=\theta_0+\theta_1x\quad(univariable\quad linear\quad regression)</script><p><img data-original="1.png" alt="1.png" data-src="/images/bj.jpg"></p>
+</li>
+</ul>
+<h3 id="Univariable-linear-regression"><a href="#Univariable-linear-regression" class="headerlink" title="Univariable linear regression"></a>Univariable linear regression</h3><ul>
+<li><script type="math/tex; mode=display">
+Goal:to\quad minimize_{\theta_0,\theta_1}J(\theta_0,\theta_1),\\
+where\quad J(\theta_0,\theta_1)=\frac{1}{2m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2(cost\quad function)\\</script></li>
+<li><p>J is called <strong><em>cost function</em></strong> or <strong><em>squared error cost function</em></strong></p>
+</li>
+<li><p>squared error cost function is the most used function for linear regression problem and works pretty well</p>
+</li>
+</ul>
+<h4 id="Gradient-descent"><a href="#Gradient-descent" class="headerlink" title="Gradient descent"></a>Gradient descent</h4><ul>
+<li><p><em>to minimize function J</em></p>
+</li>
+<li><p>Outline:</p>
+<ul>
+<li><script type="math/tex; mode=display">
+Start\quad with\quad some\quad \theta_0,\theta_1</script></li>
+<li><script type="math/tex; mode=display">
+keep\quad changing\quad \theta_0,\theta_1\quad to\quad reduce\quad J(\theta_0,\theta_1)</script></li>
+<li><p>​                       <em>until we hopefully end up at a minimum</em></p>
+</li>
+</ul>
+</li>
+<li><script type="math/tex; mode=display">
+repeat\quad until\quad convergence\{\\
+\theta_0'=\theta_0-\alpha\frac{\partial}{\partial\theta_0}J(\theta_0,\theta_1)\\
+\theta_1'=\theta_1-\alpha\frac{\partial}{\partial\theta_1}J(\theta_0,\theta_1)\\
+\}\\
+\alpha \ is\; called\;learning\; rate</script></li>
+<li><p><strong><em>Noticing that theta0 and theta1 are simultaneously updated</em></strong></p>
+</li>
+<li><script type="math/tex; mode=display">
+\frac{\partial}{\partial\theta_0}=\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})\\
+\frac{\partial}{\partial\theta_1}=\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})\cdot x^{(i)}</script></li>
+<li><p><strong><em>univariable linear regression</em></strong> <em>is a <strong>convex function</strong>(a bowl shape function ), so it has no local optima other than the global optimum</em></p>
+</li>
+<li><p><strong><em>“Batch” Gradient Descent</em></strong> : Each step of gradient descent uses all the training examples.(from 1 to m)</p>
+</li>
+</ul>
+<h3 id="Multivariate-regression-problem"><a href="#Multivariate-regression-problem" class="headerlink" title="Multivariate regression problem"></a>Multivariate regression problem</h3><ul>
+<li><p>n=<em>number of features(variables)</em></p>
+</li>
+<li><script type="math/tex; mode=display">
+x^{(i)}_j=the\quad i^{th}\quad training\quad example\quad the\quad j^{th}\quad feature</script></li>
+<li><script type="math/tex; mode=display">
+h_\theta(x)=\sum_{i=0}^n\theta_ix_i\quad (defining\quad x_0=1)\\
+X^{(i)}=\begin{bmatrix}
+x_0^{(i)}\\
+x_1^{(i)}\\
+...\\
+x_n^{(i)}\\
+\end{bmatrix}
+\in\mathbb{R}^{n+1}
+\quad
+\theta=\begin{bmatrix}
+\theta_0\\
+\theta_1\\
+...\\
+\theta_n
+\end{bmatrix}
+\in\mathbb{R}^{n+1}\\
+h_\theta(x)=\theta^TX^{(i)}\\</script></li>
+<li><script type="math/tex; mode=display">
+J(\theta)=J(\theta_0,\theta_1,...,\theta_n)=\frac{1}{2m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2</script></li>
+<li><p>Gradient descent:</p>
+<script type="math/tex; mode=display">
+\theta_j'=\theta_j-\alpha\frac{1}{m}\sum_{i=1}^m(h_\theta(x_j^{(i)})-y^{(i)})\cdot x^{(i)}_j\\
+\theta'=\theta-\frac{\alpha}{m}*X^T(X\theta-Y)\quad(wirte\;in\;matrix)</script><h4 id="Practical-tricks-for-making-gradient-descent-work-well"><a href="#Practical-tricks-for-making-gradient-descent-work-well" class="headerlink" title="Practical tricks for making gradient descent work well"></a>Practical tricks for making gradient descent work well</h4></li>
+<li><p><strong><em>Feature Scaling(faster)</em></strong></p>
+<ul>
+<li>Idea:    <em>Make sure features are on a similar scale</em></li>
+<li><em>Get every feature into <strong>approximately(not necessarily exact)</strong>a [-1, 1] range</em></li>
+</ul>
+<p>E.g.  </p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+x_1=sizes(0-2000feet^2),x2=number\,of\,bedrooms(1-5)\\
+  x_1'=\frac{size}{2000},x_2'=\frac{\#bedrooms}{5}\\
+  x_1''=\frac{size-1000}{2000},x_2''=\frac{\#bedrooms-2}{5}\\
+  so\;that\;x_1\;and\;x_2\;are\;both\;in\;[-0.5, 0.5]\\</script><script type="math/tex; mode=display">
+let\;x_i'=\frac{x_i-\bar{x_i}}{max\{x_i\}-min\{x_i\}}\quad where\;\bar{x_i}=\frac{1}{m}\sum_{j=1}^mx^{(j)}_i</script><ul>
+<li><p><strong><em>Choose learning rate properly</em></strong></p>
+<ul>
+<li><em>Declare convergence if your cost function decreases by less than 1e-3(?) in one iteration</em></li>
+<li><em>If your cost function doesn’t decrease on every iteration, use smaller learning rate</em></li>
+</ul>
+</li>
+<li><p><em>Try to choose …, 0.001, 0.01, 0.1, 1,…</em></p>
+</li>
+<li><p><strong><em>Choose appropriate features</em></strong></p>
+</li>
+<li><p><em>Think about what features really determine the result in particular problem</em></p>
+</li>
+<li><p><strong><em>Polynomial regression</em></strong></p>
+<ul>
+<li><script type="math/tex; mode=display">
+try\quad h_\theta(x)=\theta_0+\theta_1(size)+\theta_2\sqrt{size}\quad where\;size=length*width\\
+better\quad than\quad \theta_0+\theta_1*length+\theta_2*width\\</script></li>
+<li><p><em>pay attention to features’ scale</em></p>
+<script type="math/tex; mode=display">
+h_\theta(x)=\theta_0+\theta_1\frac{size}{1000}+\theta_2\frac{\sqrt{size}}{32}\\
+if\quad size\quad ranges\quad in\quad [1,1000],\sqrt{1000}≈32</script></li>
+</ul>
+</li>
+</ul>
+<h4 id="Normal-equation"><a href="#Normal-equation" class="headerlink" title="Normal equation"></a>Normal equation</h4><ul>
+<li><script type="math/tex; mode=display">
+X=\begin{bmatrix}
+x_0^{(1)}=1&x_1^{(1)}&...&x_n^{(1)}\\
+x_0^{(2)}=1&x_1^{(2)}&...&x_n^{(2)}\\
+...&...&...&...\\
+x_0^{(m)}=1&x_1^{(m)}&...&x_n^{(m)}
+\end{bmatrix}y=\begin{bmatrix}
+y^{(1)}\\
+y^{(2)}\\
+...\\
+y^{(m)}
+\end{bmatrix}\\
+J(\theta)=\frac{1}{2m}\sum_{i=1}^m(\sum_{j=0}^nx_j^{(i)}\theta_j-y^{(i)})^2\\
+=\frac{1}{2m}(X\theta-y)^T(X\theta-y)\\
+=\frac{1}{2m}(\theta^TX^T-y^T)(X\theta-y)\\
+=\frac{1}{2m}(\theta^TX^TX\theta-\theta^TX^Ty-y^TX\theta+y^Ty)\\
+\frac{dJ(\theta)}{d\theta}=\frac{1}{2m}(\frac{d\theta^T}{d\theta}X^TX\theta+(\theta^TX^TX)^T\frac{d\theta}{d\theta}-\frac{d\theta^T}{d\theta}X^Ty-(y^TX)^T\frac{d\theta}{d\theta})\\
+=\frac{1}{2m}(IX^TX\theta+X^TX\theta^TI-X^Ty-X^Ty)\\
+=\frac{1}{2m}((X^TX+X^TX)\theta-(X^Ty+X^Ty))\\
+so\;if\;\frac{dJ(\theta)}{d\theta}=0\\
+X^TX\theta-X^Ty=0\\
+so\quad \theta=(X^TX)^{-1}X^Ty\\**************************\\
+in\;fact\;AX\;is\;also\;a\;vector\\
+\frac{d\begin{bmatrix}y_1&y_2&...&y_m\end{bmatrix}}{d\begin{bmatrix}x_1\\x_2\\...\\x_n\end{bmatrix}}=\frac{d\begin{bmatrix}y_1\\y_2\\...\\y_m\end{bmatrix}}{d\begin{bmatrix}x_1\\x_2\\...\\x_n\end{bmatrix}}=
+\begin{bmatrix}
+\frac{\partial y_1}{\partial x_1}&\frac{\partial y_2}{\partial x_1}&...&\frac{\partial y_m}{\partial x_1}\\
+\frac{\partial y_1}{\partial x_2}&\frac{\partial y_2}{\partial x_2}&...&\frac{\partial y_m}{\partial x_2}\\
+...&...&...&...\\
+\frac{\partial y_1}{\partial x_n}&\frac{\partial y_2}{\partial x_n}&...&\frac{\partial y_m}{\partial x_n}
+\end{bmatrix}\\
+so\;we\;have\;\frac{dX^T}{dX}=\frac{dX}{dX}=I,\frac{dAX}{dX}=A^T\\\frac{dAB}{dX}=\frac{dA}{dX}B+A\frac{dB}{dX}\quad while\;X\;is\;a\;vector\;and\;A\;is\;1\times n\;and\;B\;is\;n\times 1\\</script></li>
+<li><script type="math/tex; mode=display">
+When\;(X^TX)\;is\;non-invertible?\\
+*Redundant\;features(linearly\;dependent)\\
+E.g.\;x_1=size\;in\;feet^2,x_2=size\;in\;m^2,so\;x_1\equiv3.28^2x_2\\
+*Too\;many\;features(E.g.\;m\leq n)</script></li>
+</ul>
+<h3 id="Logistic-Regression-Classification"><a href="#Logistic-Regression-Classification" class="headerlink" title="Logistic Regression Classification"></a>Logistic Regression Classification</h3><h4 id="binary-class-classification"><a href="#binary-class-classification" class="headerlink" title="binary class classification"></a>binary class classification</h4><ul>
+<li><script type="math/tex; mode=display">
+y\in\{0,1\}</script><p><em>0 refers to the absence of something while 1 refers to the presence of something</em></p>
+</li>
+</ul>
+<h5 id="logistic-regression-model"><a href="#logistic-regression-model" class="headerlink" title="logistic regression model"></a>logistic regression model</h5><ul>
+<li><script type="math/tex; mode=display">
+want\;0\leq h_\theta(x)\leq 1\\
+so\;let\;h_\theta(x^{(i)})=g(\theta^TX^{(i)}),where\;g(z)=\frac{1}{1+e^{-z}}\\
+h_\theta(x)=estimated\;probability\;that\;y=1\;on\;input\;x\\
+h_\theta(x)=P(y=1|x;\theta)\\
+P(y=1|x;\theta)>0.5\Leftrightarrow 0\leq h_\theta(x^{(i)})\</script></li>
+<li><p><strong>Non-linear decision boundaries</strong></p>
+<script type="math/tex; mode=display">
+h_\theta(x)=g(\theta_0+\theta_1x_1+\theta_2x_2+\theta_3x_1^2+\theta_4x_2^2)</script><ul>
+<li><em>the parameter theta determines the decision boundary</em></li>
+</ul>
+</li>
+<li><p><strong>Cost function</strong></p>
+<script type="math/tex; mode=display">
+J(\theta)=\frac{1}{m}\sum_{i=1}^mCost(h_\theta(x^{(i)}),y^{(i)})\\
+If\;we\;choose\;Cost(h_\theta(x^{(i)}),y^{(i)})=\frac{1}{2}(h_\theta(x^{(i)})-y^{(i)})^2\;like\;linear\;regression\;problem\\
+then\;J(\theta)\;would\;be\;a\;non-convex\;function</script><script type="math/tex; mode=display">
+Cost(h_\theta(x^{(i)},y^{(i)}))=\begin{cases}-log(h_\theta(x^{(i)}))\quad if\;y=1\\-log(1-h_\theta(x^{(i)}))\quad if\;y=0\end{cases}\\
+=-y^{(i)}log(h_\theta(x^{(i)}))-(1-y^{(i)})log(1-h_\theta(x^{(i)}))</script><ul>
+<li><em>The cost function derived from <strong>Maximum Likelihood Estimation</strong> and has a nice property that it’s convex</em></li>
+</ul>
+<script type="math/tex; mode=display">
+J(\theta)=-\frac{1}{m}\sum_{i=1}^m[y^{(i)}log(h_\theta(x^{(i)}))+(1-y^{(i)})log(1-h_\theta(x^{(i)}))]\\
+min_\theta J(\theta)\\
+Repeat\{\\
+\theta_j'=\theta_j-\alpha\frac{\partial}{\partial\theta_j}J(\theta)\\
+=\theta_j-\frac{\alpha}m\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)}\\
+\}\\</script></li>
+<li><script type="math/tex; mode=display">
+A\;simple\;proof(provided\;by\;SuBonan):\\
+sigmond'(x)=sigmond(x)[1-sigmond(x)]\\
+h_\theta(x^{(i)})=sigmond(\sum_{j=0}^nx^{(i)}_j\theta_j)\\
+so\quad \frac{\partial h_\theta(x^{(i)})}{\partial\theta_j}=sigmond(\sum_{j=0}^nx_j^{(i)}\theta_j)[1-sigmond(\sum_{j=0}^nx_j^{(i)}\theta_j)]x_j^{(i)}\\
+=h_\theta(x^{(i)})[1-h_\theta(x^{(i)})]x_j^{(i)}\\
+while\quad Cost(h_\theta(x^{(i)}),y^{(i)})=-yln(h_\theta(x^{(i)}))-(1-y)ln(1-h_\theta(x^{(i)}))\\
+so\quad \frac{\partial Cost(h_\theta(x^{(i)}),y)}{\partial \theta_j}=\frac{-y}{h_\theta(x^{(i)})}\cdot \frac{\partial h_\theta(x^{(i)})}{\partial\theta_j}+\frac{1-y}{1-h_\theta(x^{(i)})}\cdot\frac{\partial h_\theta(x^{(i)})}{\partial\theta_j}\\
+=[h_\theta(x^{(i)})-y]x_j^{(i)}\\
+J(\theta)=\frac{1}{m}\sum_{i=1}^mCost(h_\theta(x^{(i)}),y^{(i)})\\
+so\quad \frac{\partial J(\theta)}{\partial \theta_j}=\frac{1}{m}\sum_{i=1}^m\frac{\partial}{\partial\theta_j}Cost(h_\theta(x^{(i)}),y^{(i)})\\
+=\frac{1}{m}\sum_{i=1}^m[h_\theta(x^{(i)})-y^{(i)}]x_j^{(i)}</script></li>
+<li><p><strong><em>So the vectorized implementation is:</em></strong></p>
+<script type="math/tex; mode=display">
+\theta'=\theta-\frac{\alpha}{m}X^T(sigmond(X\theta)-Y)</script></li>
+<li><p><strong>Advanced Optimization</strong></p>
+<ul>
+<li>Conjugate gradient</li>
+<li>BFGS</li>
+<li>L-BFGS</li>
+<li>All algorithms above has following advantages:<ul>
+<li>No need to manually pick learning rate</li>
+<li>Often faster than gradient descent</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="Multiclass-classfication"><a href="#Multiclass-classfication" class="headerlink" title="Multiclass classfication"></a>Multiclass classfication</h4><script type="math/tex; mode=display">
+y\in\{0,1,2,3,...\}</script><h5 id="One-vs-all-one-vs-rest"><a href="#One-vs-all-one-vs-rest" class="headerlink" title="One-vs-all(one-vs-rest)"></a>One-vs-all(one-vs-rest)</h5><ul>
+<li><script type="math/tex; mode=display">
+h_\theta^{(i)}(X)=P(y=i|X;\theta)\\
+so\;given\;X\;find\;max_ih_\theta^{(i)}(X)</script></li>
+</ul>
+<h3 id="The-problem-of-overfitting"><a href="#The-problem-of-overfitting" class="headerlink" title="The problem of overfitting"></a>The problem of overfitting</h3><p><img data-original="2.png" alt="2" data-src="/images/bj.jpg"></p>
+<ul>
+<li><p><strong><em>Overfitting:</em></strong> <em>If we have too many features, the learned hypothesis may fit the training set very well, but fail to generalize to new examples(predict prices on new examples).</em></p>
+</li>
+<li><p><strong><em>Adressing overfitting:</em></strong></p>
+<ul>
+<li><p><em>Reduce features:</em></p>
+<ul>
+<li><em>Manually select which features to keep.</em></li>
+<li><em>Model selection algorithm</em></li>
+</ul>
+</li>
+<li><p><em>Regularization:</em></p>
+<ul>
+<li><em>Keep all the features, but reduce magnitude/values of parameters theta</em>.</li>
+<li><em>Works well when we have a lot of features, each of which contributes a bit to predicting y.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="Cost-Function"><a href="#Cost-Function" class="headerlink" title="Cost Function"></a>Cost Function</h4><ul>
+<li><script type="math/tex; mode=display">
+h_\theta(x)=\theta_0+\theta_1x+\theta_2x^2+\theta_3x^3\\
+Cost\;function=\frac{1}{m}\sum_{i=1}^m[h_\theta(x)-y]^2+1000\theta_3^2</script><p><em>So that we can avoid theta3 being too large by minimizing cost function</em></p>
+</li>
+<li><p><em>But we don’t know which parameter theta to shrink in advance, so we choose to shrink all of them:</em></p>
+<script type="math/tex; mode=display">
+J(\theta)=\frac{1}{2m}[\sum_{i=1}^m[h_\theta(x^{(i)})-y^{(i)}]^2+\lambda\sum_{j=1}^n\theta_j^2]\\
+\lambda=regularization\;parameter</script><p><em>In practice, whether or not you choose to shrink theta0 makes very little difference to the results</em></p>
+</li>
+</ul>
+<h4 id="Regularized-Linear-Regression"><a href="#Regularized-Linear-Regression" class="headerlink" title="Regularized Linear Regression"></a>Regularized Linear Regression</h4><ul>
+<li><strong>Gradient descent:</strong></li>
+</ul>
+<script type="math/tex; mode=display">
+\theta'=\theta-\frac{\alpha}{m}[X^T(X\theta-Y)+\lambda\theta]</script><ul>
+<li><strong>Normal equation:</strong><script type="math/tex; mode=display">
+\theta=(X^TX+\lambda I_{n+1})^{-1}X^Ty\\
+and\;X^TX+\lambda I_{n+1}\;will\;be\;always\;invertible</script></li>
+</ul>
+<h4 id="Regularized-Logistic-Regression"><a href="#Regularized-Logistic-Regression" class="headerlink" title="Regularized Logistic Regression"></a>Regularized Logistic Regression</h4><ul>
+<li><strong>Gradient descent:</strong><script type="math/tex; mode=display">
+\theta'=\theta-\frac{\alpha}{m}X^T(sigmond(X\theta)-Y)+\frac{\lambda\alpha}{m}\theta</script></li>
+</ul>
+<h2 id="Neural-Network"><a href="#Neural-Network" class="headerlink" title="Neural Network"></a>Neural Network</h2><h3 id="Notations-1"><a href="#Notations-1" class="headerlink" title="Notations"></a>Notations</h3><script type="math/tex; mode=display">
+a_i^{(j)}="activation"\;of\;unit\;i\;in\;layer\;j\\
+\varTheta^{(j)}=matrix\;of\;weights\;controlling\;function\;mapping\;from\;layer\;j\\to\;layer\;j+1\\
+the\;dimension\;of\;\varTheta^{(j)}\;is\;s_{j+1}\times(s_j+1)\\
+s_j\;is\;the\;number\;of\;units\;in\;layer\;j</script><h3 id="Vectorized-implementation"><a href="#Vectorized-implementation" class="headerlink" title="Vectorized implementation"></a>Vectorized implementation</h3><script type="math/tex; mode=display">
+a^{(2)}=sigmoid(\varTheta^{(1)}X)\\
+Add\;a_0^{(2)}=1\\
+a^{(3)}=sigmoid(\varTheta^{(2)}a^{(2)})\\
+...\\
+output\;layer:\\
+\begin{bmatrix}
+P\{output=1\}\\
+P\{output=2\}\\
+...\\
+P\{output=numOfLabels\}
+\end{bmatrix}=sigmoid(\varTheta^{(n)}a^{(n)})\\
+but\;P\;is\;just\;prediction\;not\;the\;answer,\;so\\
+\sum_{i=1}^{numOfLabels}P\{output=i\}\;does\;not\;necessarily\;equal\;to\;1</script><h3 id="Cost-Function-1"><a href="#Cost-Function-1" class="headerlink" title="Cost Function"></a>Cost Function</h3><script type="math/tex; mode=display">
+K=numOfLabels\quad L=numOfLayers\\
+let\quad h_\varTheta(x)\in\mathbb{R}^{K}\quad represent\;the\;output\\ and\;(h_\varTheta(x))_k\;represent\;the\;i^{th}\;output\;in\;output\;layer\\
+J(\varTheta)=-\frac{1}{m}[\sum_{i=1}^m\sum_{k=1}^Ky_k^{(i)}log(h_\varTheta(x^{(i)})_k)+(1-y_k^{(i)})log(1-h_\varTheta(x^{(i)})_k)]\\+\frac{\lambda}{2m}\sum_{l=1}^{L-1}\sum_{i=2}^{s_{l+1}}\sum_{j=1}^{s_l+1}(\varTheta_{ji}^{(l)})^2</script><h3 id="Backpropagation-Algorithm"><a href="#Backpropagation-Algorithm" class="headerlink" title="Backpropagation Algorithm"></a>Backpropagation Algorithm</h3><ul>
+<li><p><strong><em>Gradient computation</em></strong></p>
+<p><em>Supposing we have only one training example (m=1)</em></p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+so\;x,y\;substitute\;for\;x^{(i)},y^{(i)}\\
+Intuition:\delta_j^{(l)}="error"\;of\;node\;j\;in\;layer\;l\\</script><p>​        <em>If the network has only four layers:</em></p>
+<script type="math/tex; mode=display">
+\delta^{(4)}=a^{(4)}-y\\
+*\delta^{(3)}=(\varTheta^{(3)})^T\delta^{(4)}.*sigmoid'(\varTheta^{(2)}a^{(2)})\\
+=(\varTheta^{(3)})^T\delta^{(4)}.*(sigmoid(\varTheta^{(2)}a^{(2)}).*(1-sigmoid(\varTheta^{(2)}a^{(2)}))\\
+=(\varTheta^{(3)})^T\delta^{(4)}.*(a^{(3)}.*(1-a^{(3)}))\\
+*\delta^{(2)}=(\varTheta^{(2)})^T\delta^{(3)}.*sigmoid'(\varTheta^{(1)}a^{(1)})\\
+=(\varTheta^{(2)})^T\delta^{(3)}.*(a^{(2)}.*(1-a^{(2)}))\\
+and\;input\;layer\;don't\;have\;\delta^{(1)}</script><ul>
+<li><script type="math/tex; mode=display">
+Set\;\Delta_{ij}^{(l)}=0\;(for\;all\;i,j,l)\\
+For\;i=1\;to\;m\\
+Set\;a^{(1)}=x^{(i)}\\
+forward\;propagation\;to\;compute\;a^{(l)},l=2,3,...,L\\
+Using\;y^{(i)},\;compute\;\delta^{(L)}=a^{(L)}-y^{(i)}\\
+Compute\;\delta^{(L-1)},\delta^{(L-2)},...,\delta^{(2)}\\
+\Delta^{(l)}:=\Delta^{(l)}+\delta^{(l+1)}(a^{(l)})^T\\
+D_{ij}^{(l)}=\frac{1}{m}\Delta_{ij}^{(l)}+\frac{\lambda}{m}\varTheta_{ij}^{(l)}\;if\;j\neq0\\
+D_{ij}^{(l)}=\frac{1}{m}\Delta_{ij}^{(l)}\;if\;j=0\\
+\frac{\partial}{\partial\varTheta_{ij}^{(l)}}J(\varTheta)=D_{ij}^{(l)}\\
+\frac{\partial}{\partial\varTheta^{(l)}}J(\varTheta)=D^{(l)}</script></li>
+<li><p><strong><em>Gradient Checking</em></strong></p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+let\;\theta="unrolled"\;\Theta^{(l)}\\
+\theta=[\Theta^{(1)}(:);\Theta^{(2)}(:);...;\Theta^{(L)}(:)]\in\mathbb{R}^{n}\\
+so\;J(\Theta^{(1)},...,\Theta^{(L)})=J(\theta)=J([\theta_1\quad\theta_2\quad...\quad\theta_n])\\
+and\;\frac{\partial}{\partial\theta_i}J(\theta)=\frac{J([\theta_1\quad...\quad\theta_i+\epsilon\quad...\quad\theta_n])-J([\theta_1\quad...\quad\theta_i-\epsilon\quad...\quad\theta_n])}{2\epsilon}</script><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span> : n</span><br><span class="line">	thetaPlus = theta;</span><br><span class="line">	thetaPlus(<span class="built_in">i</span>) = thetaPlus(<span class="built_in">i</span>) + EPSILON;</span><br><span class="line">	thetaMinus = theta;</span><br><span class="line">	thetaMinus(<span class="built_in">i</span>) = thetaMinus(<span class="built_in">i</span>) - EPSILON;</span><br><span class="line">	gradApprox(<span class="built_in">i</span>) = (J(thetaPlus) - J(thetaMinus)) / (<span class="number">2</span> * EPSILON);</span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure>
+<p> <em>Check that gradAppprox ≈ DVec, while epsilon = 1e-4</em></p>
+<ul>
+<li><p><strong><em>Implementation Note</em></strong></p>
+<ul>
+<li><em>Implement backprop to compute DVec</em></li>
+<li><em>Implement numerical gradient check to compute gradApprox</em></li>
+<li><em>Make sure they give similar values</em></li>
+<li><em>Turn off gradient checking. Using backprop code for learning</em><ul>
+<li><em>numerical gradient checking is computenionally expensive compared with backprop</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong><em>Random Initialization</em></strong></p>
+<p>E.g.</p>
+<p>Theta1 = rand(10, 11) <em> (2 </em> INIT_EPSILON) - INIT_EPSILON;</p>
+<p><em>In order to break symmetry</em></p>
+</li>
+</ul>
+<h2 id="Bias-and-Variance"><a href="#Bias-and-Variance" class="headerlink" title="Bias and Variance"></a>Bias and Variance</h2><p><em>Take regularized linear regression problem as an example</em></p>
+<p><em>Split the training examples into three parts randomly:</em></p>
+<ul>
+<li><p><strong>training set</strong> <em>(to train and modify parameters)</em>                <em>(around 60%)</em></p>
+<script type="math/tex; mode=display">
+J(\theta)=\frac{1}{2m}[\sum_{i=1}^m[h_\theta(x^{(i)})-y^{(i)}]^2+\lambda\sum_{j=1}^n\theta_j^2]\\
+We\;train\;the\;model\;through\;minimizing\;J(\theta)\\
+J_{train}(\theta)=\frac{1}{2m}[\sum_{i=1}^m[h_\theta(x^{(i)})-y^{(i)}]^2\\
+We\;use\;J_{train}(\theta)\;to\;evaluate\;how\;well\;our\;model\;fits\;the\;training\;set\\
+(we\;now\;only\;care\;about\;how\;well\;our\;model\;fits\;the\;training\;set)\\</script></li>
+<li><p><strong>validation set</strong> <em>(to prevent overfitting and help choose model(like degree of polynomial)) </em>          <em>(around 20%)</em></p>
+<script type="math/tex; mode=display">
+J_{cv}(\theta)=\frac{1}{2m}[\sum_{i=1}^m[h_\theta(x^{(i)})-y^{(i)}]^2\\
+We\;use\;J_{cv}(\theta)\;to\;prevent\;overfitting.\\
+After\;a\;iteration,if\;J(\theta)\;and\;J_{train}(\theta)\;decreases\;but\;J_{cv}(\theta)\;increases,\\
+that\;means\;overfitting\;problem.</script></li>
+<li><p><strong>test set</strong> <em>(only after finishing training to test the performance of the model)</em>              <em>(around 20%)</em></p>
+<script type="math/tex; mode=display">
+J_{test}(\theta)=\frac{1}{2m}[\sum_{i=1}^m[h_\theta(x^{(i)})-y^{(i)}]^2\\
+After\;all\;trainings,we\;use\;J_{test}(\theta)\;to\;evaluate\;the\;performance\;of\;the\;model</script></li>
+</ul>
+<p><img data-original="3.png" alt="3" data-src="/images/bj.jpg"></p>
+<p>Problems:</p>
+<ul>
+<li><p><strong><em>High Bias(underfit)</em></strong></p>
+<script type="math/tex; mode=display">
+J_{train}(\Theta)\;and\;J_{cv}(\Theta)\;are\;both\;high</script><p><img data-original="4.png" alt="4" data-src="/images/bj.jpg"></p>
+</li>
+<li><p><strong><em>High Variance(overfit)</em></strong></p>
+<script type="math/tex; mode=display">
+J_{train}(\Theta)\;will\;be\;low\\
+J_{cv}(\Theta)>>J_{train}(\Theta)</script><p><img data-original="5.png" alt="5" data-src="/images/bj.jpg"></p>
+</li>
+<li><p><strong><em>Solutions</em></strong></p>
+<ul>
+<li>Get more training examples        to fix high variance</li>
+<li>Try smaller sets of features         to fix high variance</li>
+<li>Try getting additional features    to fix high bias</li>
+<li>Try adding polynomial features  to fix high bias</li>
+<li>Try decreasing lambda                 to fix high bias</li>
+<li>Try increasing lambda                  to fix high variance</li>
+</ul>
+</li>
+</ul>
+<h2 id="Error-metrics-for-skewed-classes"><a href="#Error-metrics-for-skewed-classes" class="headerlink" title="Error metrics for skewed classes"></a>Error metrics for skewed classes</h2><p><em>If class y=1 only counts for 0.5%, and y=0 counts for 99.5%, then y=1 is called a skewed class.</em></p>
+<p><em>and predicting y=0 all the time may low the error rate, but it turns out not to be a good idea</em></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">predicted class↓/actual class→</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">true positive</td>
+<td style="text-align:center">false positive</td>
+</tr>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">false negative</td>
+<td style="text-align:center">true negative</td>
+</tr>
+</tbody>
+</table>
+</div>
+<script type="math/tex; mode=display">
+Precision=\frac{num\;of\;True\;positive}{num\;of\;Ture\;positive+num\;of\;False\;positive}\\
+Recall=\frac{num\;of\;True\;positive}{num\;of\;True\;positive+num\;of\;False\;negative}\\
+*on\;validation\;set</script><ul>
+<li><p><em>Suppose we want to predict y=1 only if very confident</em></p>
+<script type="math/tex; mode=display">
+0.9\leq h_\theta(x)\quad predict\;y=1\\
+h_\theta(x)<0.9\quad predict\;y=0</script><p><em>Then the precision will be higher and recall will be lower.</em></p>
+</li>
+<li><p><em>Suppose we want to avoid missing too many case of y=0</em></p>
+<script type="math/tex; mode=display">
+0.3\leq h_\theta(x)\quad predict\;y=1\\
+h_\theta(x)<0.3\quad predict\;y=0</script><p><em>Then the precision will be lower and recall will be higher.</em></p>
+</li>
+<li><script type="math/tex; mode=display">
+F_1\;Score:2\times\frac{Precision*Recall}{Precision+Recall}</script><p><em>We use F1 Score to evaluate the performance of the algorithm on skewed classes.</em></p>
+<h2 id="Support-Vector-machine-SVM"><a href="#Support-Vector-machine-SVM" class="headerlink" title="Support Vector machine(SVM)"></a>Support Vector machine(SVM)</h2></li>
+</ul>
+<p><img data-original="6.png" alt="6" data-src="/images/bj.jpg"></p>
+<script type="math/tex; mode=display">
+min_\theta\frac{1}{m}[\sum_{i=1}^my^{(i)}(-log(h_\theta(x^{(i)})))+(1-y^{(i)})(-log(1-h_\theta(x^{(i)})))]+\frac{\lambda}{2m}\sum_{j=1}^n\theta_j^2\\
+Replace\;-log(z),-log(1-z)\;with\;cost_1(z),cost_0(z):\\
+min_\theta\frac{1}{m}[\sum_{i=1}^my^{(i)}(cost_1(h_\theta(x^{(i)})))+(1-y^{(i)})(cost_0(h_\theta(x^{(i)}))]+\frac{\lambda}{2m}\sum_{j=1}^n\theta_j^2\\
+=min_\theta\sum_{i=1}^m[y^{(i)}(cost_1(h_\theta(x^{(i)})))+(1-y^{(i)})(cost_0(h_\theta(x^{(i)}))]+\frac{\lambda}{2}\sum_{j=1}^n\theta_j^2\\
+=min_\theta C\sum_{i=1}^m[y^{(i)}(cost_1(h_\theta(x^{(i)})))+(1-y^{(i)})(cost_0(h_\theta(x^{(i)}))]+\frac{1}{2}\sum_{j=1}^n\theta_j^2</script><p><em>Large C: Lower bias, high variance</em></p>
+<p><em>Small C: Higher bias, low variance</em></p>
+<h3 id="Kernels"><a href="#Kernels" class="headerlink" title="Kernels"></a>Kernels</h3><p><em>Given x, compute some new features depending on proximity to landmarks.</em></p>
+<script type="math/tex; mode=display">
+f_1=similarity(x,l^{(1)})=e^{-\frac{|x-l^{(1)}|^2}{2\sigma^2}}=exp(-\frac{\sum_{j=1}^n(x_j-l_j^{(1)})^2}{2\sigma^2})\\
+f_2=similarity(x,l^{(2)})=e^{-\frac{|x-l^{(2)}|^2}{2\sigma^2}}=exp(-\frac{\sum_{j=1}^n(x_j-l_j^{(2)})^2}{2\sigma^2})\\
+......\\
+h_\theta(x)=\theta_0+\theta_1f_1+\theta_2f_2+...\\
+predict\;y=1\;if\;h_\theta(x)\geq 0\;and\;0\;otherwise</script><ul>
+<li><p><em>f is called <strong>Gaussian kernel</strong>. when |x - l|≈0, f≈1, and |x - l|=∞, f ≈0</em></p>
+</li>
+<li><p><em>x which is near l tends to be predicted positive.</em></p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+We\;choose\;l^{(i)}=x^{(i)},i=1,2,3,...,m\\
+f_1^{(i)}=sim(x^{(i)},x^{(1)})\\
+f_2^{(i)}=sim(x^{(i)},x^{(2)})\\
+...\\
+f_i^{(i)}=sim(x^{(i)},x^{(i)})=1\\
+...\\
+f_m^{(i)}=sim(x^{(i)},x^{(m)})\\
+f^{(i)}=\begin{bmatrix}f_0^{(i)}\\f_1^{(i)}\\...\\f_m^{(m)}\end{bmatrix}\in\mathbb{R}^{m+1}</script><script type="math/tex; mode=display">
+min_\theta C\sum_{i=1}^m[y^{(i)}(cost_1(\theta^Tf^{(i)}))+(1-y^{(i)})(cost_0(\theta^Tf^{(i)}))]+\frac{1}{2}\sum_{j=1}^m\theta_j^2\\
+now\quad\theta\in\mathbb{R}^{m+1}\\
+Large\;\sigma^2:Features\;f_i\;vary\;more\;smoothly.High\;bias,lower\;variance\\
+Small\;\sigma^2:Features\;f_i\;vary\;less\;smoothly.Lower\;bias,Higher\;variance</script><ul>
+<li><p><em>If n is large (relative to m), Use logistic regression, or SVM without a kernel.</em></p>
+</li>
+<li><p><em>If n is small, m is intermediate, Use SVM with Gaussian kernel.</em></p>
+</li>
+<li><em>If n is small, m is large (n=1~1000, m=50000+), Create/add more features, then use logistic regression or SVM without a kernel.</em></li>
+<li><em>Neural network likely to work well for most of these settings, but may be slower to train.</em></li>
+</ul>
+<h1 id="Unsupervised-learning"><a href="#Unsupervised-learning" class="headerlink" title="Unsupervised learning"></a>Unsupervised learning</h1><ul>
+<li>no given values or classification</li>
+<li><p>Cluster data(genes) or Non-cluster data(Cocktail party problem)</p>
+</li>
+<li><p>find some “structure” of the dataset</p>
+</li>
+</ul>
+<h2 id="Clustering-algorithm-K-means-algorithm"><a href="#Clustering-algorithm-K-means-algorithm" class="headerlink" title="Clustering algorithm: K-means algorithm"></a>Clustering algorithm: K-means algorithm</h2><p>Repeat:</p>
+<p><em>1. Randomly choose two cluster centroids. The red one and the blue one.</em></p>
+<p><em>2. Cluster assignment: color each of the data points red or blue depending on which cluster           centroid it is more closer to.</em></p>
+<p><em>3. Move blue cluster centroid to the average point of all blue points.</em></p>
+<p>​    <em>Move red cluster centroid to the average point of all red points.</em></p>
+<p><strong><em>More formally:</em></strong></p>
+<ul>
+<li><p><strong><em>Input:</em></strong></p>
+<ul>
+<li><strong><em>K</em></strong> <em>(number of clusters)</em></li>
+<li><em>Training set{x1, x2, …, xm}</em></li>
+</ul>
+</li>
+<li><p><strong><em>Process:</em></strong></p>
+<script type="math/tex; mode=display">
+Randomly\;initialize\;K\;cluster\;centroids\;\mu_1,\mu_2,...,\mu_K\in\mathbb{R}^n\\
+Repeat:\{\\
+for\;i=1\;to\;m\\
+c^{(i)}=index(from\;1\;to\;K)\;of\;cluster\;centroid\;closest\;to\;x^{(i)}\\
+(min_{c^{(i)}=k}|x^{(i)}-\mu_k|^2)\\
+for\;k=1\;to\;K\\
+\mu_k=average\;(mean)\;of\;points\;assigned\;to\;cluser\;k\\
+(\mu_k=\frac{1}{m}\sum_{i=1}^{m,c^{(i)=k}}x^{(i)}\in\mathbb{R}^n)\\
+\}\\</script></li>
+</ul>
+<p><strong><em>Optimization objective(cost function):</em></strong></p>
+<script type="math/tex; mode=display">
+J(c^{(1)},...,c^{(m)},\mu_1,...,\mu_k)=\frac{1}{m}\sum_{i=1}^m|x^{(i)}-\mu_{c^{(i)}}|^2\\</script><p>​    <em>Randomly initialize and run K-means several times and find the lowest J</em></p>
+<p><strong><em>Elbow methord</em></strong></p>
+<p><img data-original="7.png" alt="7" data-src="/images/bj.jpg"></p>
+<p>*how to choose the number of cluster</p>
+<h2 id="Dimensionality-reduction：Principal-Component-Analysis-Algorithm"><a href="#Dimensionality-reduction：Principal-Component-Analysis-Algorithm" class="headerlink" title="Dimensionality reduction：Principal Component Analysis Algorithm"></a>Dimensionality reduction：Principal Component Analysis Algorithm</h2><ul>
+<li><p><strong><em>Data preprocessing:</em></strong></p>
+<script type="math/tex; mode=display">
+replace\;each\;x_j^{(i)}\;with\;\frac{x_j^{(i)}-\frac{1}{m}\sum_{i=1}^mx_j^{(i)}}{max_{i=1:m}\{x_j^{(i)}\}-min_{i=1:m}\{x_j^{(i)}\}}\\
+\Sigma=\frac{1}{m}\sum_{i=1}^m(x^{(i)})(x^{(i)})^T\in\mathbb{R}^{n\times n}\\
+compute\;'eigenvectors'\;of\;matrix\;Sigma\;by\\
+[U,S,V]=svd(\Sigma)(Singular\;value\;decomposition)\\</script></li>
+<li><p><strong><em>PCA</em></strong></p>
+<script type="math/tex; mode=display">
+[U,S,V]=svd(\Sigma)\\
+U=\begin{bmatrix}
+|&|&|&...&|\\
+u^{(1)}&u^{(2)}&u^{(3)}&...&u^{(n)}\\
+|&|&|&...&|\\
+\end{bmatrix}\\
+U_{reduce}=U(:,1:k)=\begin{bmatrix}
+|&|&|&...&|\\
+u^{(1)}&u^{(2)}&u^{(3)}&...&u^{(k)}\\
+|&|&|&...&|\\
+\end{bmatrix}\in\mathbb{R}^{n\times k}\\
+z^{(i)}=U_{reduce}^Tx^{(i)}\in\mathbb{R}^{k\times1}\\
+x_{approx}^{(i)}=U_{reduce}z^{(i)}\in\mathbb{R}^{n\times1}\\
+(noting\;that\;U^T\neq U^{-1}...)</script><p><img data-original="8.png" alt="8" data-src="/images/bj.jpg"></p>
+</li>
+<li><p><strong><em>Choosing k</em></strong></p>
+<script type="math/tex; mode=display">
+We\;choose\;k\;to\;minimize:\\
+\frac{\frac{1}{m}\sum_{i=1}^m|x^{(i)}-x_{approx}^{(i)}|^2}{\frac{1}{m}\sum_{i=1}^m|x^{(i)}|^2}\leq 0.01\\
+In\;other\;words,"99\%\;of\;variance\;is\;retained"\\
+\frac{\frac{1}{m}\sum_{i=1}^m|x^{(i)}-x_{approx}^{(i)}|^2}{\frac{1}{m}\sum_{i=1}^m|x^{(i)}|^2}=1-\frac{\sum_{i=1}^kS_{ii}}{\sum_{i=1}^nS_{ii}}\\
+try\;k=1,2,3,...until\;\frac{\frac{1}{m}\sum_{i=1}^m|x^{(i)}-x_{approx}^{(i)}|^2}{\frac{1}{m}\sum_{i=1}^m|x^{(i)}|^2}\leq 0.01</script></li>
+</ul>
+<h1 id="Anomaly-detection"><a href="#Anomaly-detection" class="headerlink" title="Anomaly detection"></a>Anomaly detection</h1><ul>
+<li><strong><em>Original Model</em></strong></li>
+</ul>
+<script type="math/tex; mode=display">
+\mu_j=\frac{1}{m}\sum_{i=1}^mx_j^{(i)},\sigma_j^2=\frac{1}{m}\sum_{i=1}^m(x_j^{(i)}-\mu_j)^2\\
+p(x^{(i)})=\prod_{j=1}^n\frac{1}{\sqrt{2\pi}\sigma_j}exp(-\frac{(x_j^{(i)}-\mu_j)^2}{2\sigma_j^2})\\
+Gaussian\;distribution\\
+flag\;x^{(i)}\;is\;anomaly\;if\;p(x^{(i)})<\epsilon</script><h2 id="Example-Aircraft-engines-motivating"><a href="#Example-Aircraft-engines-motivating" class="headerlink" title="Example:Aircraft engines motivating"></a>Example:Aircraft engines motivating</h2><ul>
+<li><p><em>10000 good (normal) engines</em></p>
+<p><em>20 flawed engines (anomalous)</em></p>
+</li>
+<li><p><em>Training set: 6000 good engines (all y=0)</em></p>
+<p><em>Cross validation: 2000 good engines(y=0), 10 anomalous engines(y=1)</em></p>
+<p><em>Test set: 2000 good engines(y=0), 10 anomalous engines(y=1)</em></p>
+</li>
+</ul>
+<p><em>Fit model p(x) on <strong>training set</strong>.</em></p>
+<p><em>On a <strong>cross validation/test set</strong> example, predict:</em></p>
+<script type="math/tex; mode=display">
+y=\begin{cases}1\quad if\;p(x)<\epsilon(anomaly)\\
+    0\quad if\;p(x)\geq\epsilon(nomal)
+\end{cases}</script><ul>
+<li>Possible evaluation metrics:<ul>
+<li>Precision/Recall</li>
+<li>F1-score</li>
+</ul>
+</li>
+</ul>
+<p><strong><em>When we have one or more skewed classes (the number of anomaly examples is pretty relative low), we tend to choose anomaly detection rather than logistic regression or neural network.</em></strong></p>
+<ul>
+<li><strong><em>Multivariate Gaussian Model</em></strong><ul>
+<li><strong><em>Fit model p(x) by setting:</em></strong></li>
+</ul>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+\mu=\frac{1}{m}\sum_{i=1}^mx^{(i)},\Sigma=\frac{1}{m}\sum_{i=1}^m(x^{(i)}-\mu)(x^{(i)}-\mu)^T\\
+\mu=\begin{bmatrix}\mu_1\\\mu_2\\...\\\mu_n\end{bmatrix}\in\mathbb{R}^{n\times 1},\Sigma=\begin{bmatrix}\sigma_1^2&0&...&0\\0&\sigma_2^2&...&0\\
+...&...&...&...\\0&0&...&\sigma_n^2\end{bmatrix}\in\mathbb{R}^{n\times n}</script><p>​           <strong><em>Given a new example x, compute:</em></strong></p>
+<script type="math/tex; mode=display">
+p(x)=\frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^\frac{1}{2}}exp(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu))\\
+must\;have\;m>n(m\geq 10n\;is\;ok)</script><h1 id="Recommender-System"><a href="#Recommender-System" class="headerlink" title="Recommender System"></a>Recommender System</h1><h2 id="Example-movie-rating"><a href="#Example-movie-rating" class="headerlink" title="Example: movie rating"></a>Example: movie rating</h2><p><img data-original="9.png" alt="9" data-src="/images/bj.jpg"></p>
+<script type="math/tex; mode=display">
+n_u=no.users,n_m=no.movies\\
+r(i,j)=1\quad if\;user\;j\;has\;rated\;movie\;i\\
+y^{(i,j)}=rating\;by\;user\;j\;on\;movie\;i(if\;defined)\\
+
+\theta^{(j)}=parameter\;vector\;for\;user\;j\\
+x^{(i)}=feature\;vector\;for\;movie\;i\\
+For\;user\;j,movie\;i,predicted\;rating:(\theta^{(j)})^T(x^{(i)})\\
+m^{(j)}=no.of\;movies\;rated\;by\;user\;j\\
+min_{\theta^{(j)}}\frac{1}{2m^{(j)}}\sum_{i:r(i,j)=1}((\theta^{(j)})^T(x^{(i)})-y^{(i,j)})^2+\frac{\lambda}{2m^{(j)}}\sum_{k=1}^n(\theta_k^{(j)})^2</script><p><em>Just like linear regression problem</em></p>
+<script type="math/tex; mode=display">
+J(\theta^{(1)},...,\theta^{(n_u)})=\frac{1}{2}\sum_{j=1}^{n_u}\sum_{i:r(i,j)=1}((\theta^{(j)})^Tx^{(i)}-y^{(i,j)})^2+\frac{\lambda}{2}\sum_{j=1}^{n_u}\sum_{k=1}^n(\theta_k^{(j)})^2\\
+minJ</script><p><em>Gradient descent:</em></p>
+<script type="math/tex; mode=display">
+\theta_k^{(j)}=\theta_k^{(j)}-\alpha\sum_{i:r(i,j)=1}((\theta^{(j)})^Tx^{(i)}-y^{(i,j)})x_k^{(i)},k=0\\
+\theta_k^{(j)}=\theta_k^{(j)}-\alpha(\sum_{i:r(i,j)=1}((\theta^{(j)})^Tx^{(i)}-y^{(i,j)})x_k^{(i)}+\lambda\theta_k^{(j)}),k\neq0\\</script><ul>
+<li><p><strong><em>Collaborative filtering</em></strong></p>
+<p><img data-original="10.png" alt="10" data-src="/images/bj.jpg"></p>
+<script type="math/tex; mode=display">
+x\rightarrow\theta\rightarrow x\rightarrow\;\theta\rightarrow...</script></li>
+</ul>
+<p><em>1. Initialize:</em></p>
+<script type="math/tex; mode=display">
+x^{(1)},...,x^{(n_m)},\theta^{(1)},...,\theta^{(n_u)}</script><p>​    <em>to small random values.</em></p>
+<p><em>2. Minimize:</em></p>
+<script type="math/tex; mode=display">
+J(x^{(1)},...,x^{(n_m)},\theta^{(1)},...,\theta^{(n_m)})\\
+for\;every\;j=1,...,n_u,i=1,...,n_m\\
+x_k^{(i)}=x_k^{(i)}-\alpha(\sum_{j:r(i,j)=1}((\theta^{(j)})^Tx^{(i)}-y^{(i,j)})\theta_k^{(j)}+\lambda x_k^{(i)})\\
+\theta_k^{(j)}=\theta_k^{(j)}-\alpha(\sum_{i:r(i,j)=1}((\theta^{(j)})^Tx^{(i)}-y^{(i,j)})x_k^{(i)}+\lambda\theta_k^{(j)})</script><ul>
+<li><strong><em>Low rank matrix factorization &amp; Mean normalization</em></strong><script type="math/tex; mode=display">
+X=\begin{bmatrix}
+-(x^{(1)})^T-\\
+-(x^{(2)})^T-\\
+...\\
+-(x^{(n_m)})^T-\\
+\end{bmatrix}
+\Theta=\begin{bmatrix}
+-(\theta^{(1)})^T-\\
+-(\theta^{(2)})^T-\\
+...\\
+-(\theta^{(n_u)})^T-\\
+\end{bmatrix}\\
+Y=X\Theta^T\\
+Y=\begin{bmatrix}
+5&5&0&0&?\\
+5&?&?&0&?\\
+?&4&0&?&?\\
+0&0&5&4&?\\
+0&0&5&0&?
+\end{bmatrix}\Rightarrow Y=\begin{bmatrix}
+2.5&2.5&-2.5&-2.5&?\\
+2.5&?&?&-2.5&?\\
+?&2&-2&?&?\\
+-2.25&-2.25&2.75&1.75&?\\
+-1.25&-1.25&3.75&-1.25&?
+\end{bmatrix}</script></li>
+</ul>
+<h1 id="Large-data-set"><a href="#Large-data-set" class="headerlink" title="Large data set"></a>Large data set</h1><ul>
+<li><p><strong><em>Batch gradient descent</em></strong></p>
+<script type="math/tex; mode=display">
+\theta_j'=\theta_j-\alpha\frac{1}{m}\sum_{i=1}^m(h_\theta(x_j^{(i)})-y^{(i)})\cdot x^{(i)}_j\\</script><p><em>In every iteration, we use all m examples.</em></p>
+</li>
+<li><p><strong><em>Mini-batch gradient descent</em></strong></p>
+<p>get b = mini-batch size</p>
+<script type="math/tex; mode=display">
+for\;k=1,11,21,...\{\\
+\theta_j'=\theta_j-\alpha\frac{1}{10}\sum_{i=k}^{k+9}(h_\theta(x_j^{(i)})-y^{(i)})\cdot x^{(i)}_j\\
+\}\\</script><p><em>In every iteration, we use a subset of training examples.</em></p>
+</li>
+<li><p><strong><em>Stochastic gradient descent</em></strong></p>
+<ol>
+<li><em>Randomly reshuffle your training set</em></li>
+<li></li>
+</ol>
+<script type="math/tex; mode=display">
+for\;i=1\;to\;m\{\\
+change\;\alpha=\frac{const_1}{i+const_2}\\
+\theta_j'=\theta_j-\alpha(h_\theta(x_j^{(i)})-y^{(i)})\cdot x^{(i)}_j\\
+\}</script><p><em>In every iteration, we use only one training set and slowly reduce learning rate. Calculate average cost function every 1000 iterations</em></p>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2021/01/05/2021-01-05%E6%9D%82%E6%84%9F/" rel="next" title="杂感">
+                  <i class="fa fa-chevron-left"></i> 杂感
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2021/01/23/%E4%B9%B1%E6%B6%82%E4%B9%B1%E7%94%BB/" rel="prev" title="絵">
+                  絵 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80Nzc2NC8yNDI2MQ=="></div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+		
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#definition"><span class="nav-number">1.</span> <span class="nav-text">definition</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Supervised-learning-teach-the-machine-to-do-sth"><span class="nav-number"></span> <span class="nav-text">Supervised learning(teach the machine to do sth)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Notations"><span class="nav-number">0.1.</span> <span class="nav-text">Notations:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Univariable-linear-regression"><span class="nav-number">0.2.</span> <span class="nav-text">Univariable linear regression</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Gradient-descent"><span class="nav-number">0.2.1.</span> <span class="nav-text">Gradient descent</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Multivariate-regression-problem"><span class="nav-number">0.3.</span> <span class="nav-text">Multivariate regression problem</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Practical-tricks-for-making-gradient-descent-work-well"><span class="nav-number">0.3.1.</span> <span class="nav-text">Practical tricks for making gradient descent work well</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Normal-equation"><span class="nav-number">0.3.2.</span> <span class="nav-text">Normal equation</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Logistic-Regression-Classification"><span class="nav-number">0.4.</span> <span class="nav-text">Logistic Regression Classification</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#binary-class-classification"><span class="nav-number">0.4.1.</span> <span class="nav-text">binary class classification</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#logistic-regression-model"><span class="nav-number">0.4.1.1.</span> <span class="nav-text">logistic regression model</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Multiclass-classfication"><span class="nav-number">0.4.2.</span> <span class="nav-text">Multiclass classfication</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#One-vs-all-one-vs-rest"><span class="nav-number">0.4.2.1.</span> <span class="nav-text">One-vs-all(one-vs-rest)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-problem-of-overfitting"><span class="nav-number">0.5.</span> <span class="nav-text">The problem of overfitting</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Cost-Function"><span class="nav-number">0.5.1.</span> <span class="nav-text">Cost Function</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Regularized-Linear-Regression"><span class="nav-number">0.5.2.</span> <span class="nav-text">Regularized Linear Regression</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Regularized-Logistic-Regression"><span class="nav-number">0.5.3.</span> <span class="nav-text">Regularized Logistic Regression</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Neural-Network"><span class="nav-number">1.</span> <span class="nav-text">Neural Network</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Notations-1"><span class="nav-number">1.1.</span> <span class="nav-text">Notations</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vectorized-implementation"><span class="nav-number">1.2.</span> <span class="nav-text">Vectorized implementation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cost-Function-1"><span class="nav-number">1.3.</span> <span class="nav-text">Cost Function</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Backpropagation-Algorithm"><span class="nav-number">1.4.</span> <span class="nav-text">Backpropagation Algorithm</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Bias-and-Variance"><span class="nav-number">2.</span> <span class="nav-text">Bias and Variance</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Error-metrics-for-skewed-classes"><span class="nav-number">3.</span> <span class="nav-text">Error metrics for skewed classes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Support-Vector-machine-SVM"><span class="nav-number">4.</span> <span class="nav-text">Support Vector machine(SVM)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Kernels"><span class="nav-number">4.1.</span> <span class="nav-text">Kernels</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Unsupervised-learning"><span class="nav-number"></span> <span class="nav-text">Unsupervised learning</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Clustering-algorithm-K-means-algorithm"><span class="nav-number">1.</span> <span class="nav-text">Clustering algorithm: K-means algorithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dimensionality-reduction：Principal-Component-Analysis-Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Dimensionality reduction：Principal Component Analysis Algorithm</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Anomaly-detection"><span class="nav-number"></span> <span class="nav-text">Anomaly detection</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Example-Aircraft-engines-motivating"><span class="nav-number">1.</span> <span class="nav-text">Example:Aircraft engines motivating</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Recommender-System"><span class="nav-number"></span> <span class="nav-text">Recommender System</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Example-movie-rating"><span class="nav-number">1.</span> <span class="nav-text">Example: movie rating</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Large-data-set"><span class="nav-number"></span> <span class="nav-text">Large data set</span></a></div>
+      </div>
+      <!--/noindex-->
+	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=592364&auto=1&height=66"></iframe>  <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SuBonan"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">SuBonan</p>
+  <div class="site-description" itemprop="description">やがて、平凡な人になる</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">苏博南</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+
+  
+
+<script>
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/asuna_04.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+</html>
