@@ -1,6 +1,309 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>离散数学-图论部分</title>
+    <url>/2021/04/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E5%9B%BE%E8%AE%BA%E9%83%A8%E5%88%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>(-w-)简单初等图论初步入门指导科普用</p>
+<a id="more"></a>
+<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><h2 id="关于图的定义"><a href="#关于图的定义" class="headerlink" title="关于图的定义"></a>关于图的定义</h2><ul>
+<li>V是一个非空集，E是V中元素的<strong>无序对</strong>构成的<strong>多重集</strong>，有序对G=<v,e>则称之为一个<strong>图</strong>。其中V为顶点集，E为边集。</v,e></li>
+</ul>
+<script type="math/tex; mode=display">
+若e=uv\in E(G)，则称u,v为边e的断点，或顶点u，v与边e彼此关联</script><ul>
+<li>在一个图中，同一条边关联的两个顶点称为<strong>相邻点</strong>，同一个顶点关联的若干边称为<strong>相邻边</strong>。</li>
+<li>若G中一条边的两端点为同一点，即e=uu，则称e为<strong>自环</strong>。若uv的<strong>重复度</strong>＞1，则称uv是<strong>多重边</strong>。</li>
+<li>与一个顶点u关联的边的条数称为u的<strong>度数</strong>，记为<script type="math/tex">d(u)或d_G(u)</script>。度数为0的点称为<strong>孤立点</strong>，度数为1的点称为<strong>悬挂点</strong>。度数为奇数的点称为<strong>奇顶点</strong>，度数为偶的点称为<strong>偶顶点</strong>。</li>
+</ul>
+<script type="math/tex; mode=display">
+特别地，图G中最小读数记为\delta(G)，最大度数记为\Delta(G),也可简写为\delta,\Delta</script><ul>
+<li><p>设G是图，若V(G)，E(G)均为有限集，则称G为<strong>有限图</strong>。</p>
+<p><strong>握手定理</strong>：</p>
+<script type="math/tex; mode=display">
+有限图G中满足\sum_{v\in V(G)}d(v)=2\epsilon,其中v或v(G)表示图G的顶点数，\epsilon或\epsilon(G)表示图G的边数\\</script><p>由上面引理可得出：<u>有限图中奇顶点的个数必为偶数</u>。</p>
+</li>
+<li><p>若图G中<script type="math/tex">v=1,\epsilon=0</script>，则称其为<strong>平凡图</strong>。</p>
+<p>若图G中<script type="math/tex">\epsilon=0</script>，则称其为<strong>零图</strong>。</p>
+<p>若图G中<u>不含多重边和子环</u>，则称其为<strong>简单图</strong>。</p>
+<p>若图G含有多重边，则称其为<strong>多重图</strong>。</p>
+</li>
+<li><p>若图G是一个简单图，且G中任意两顶点均有边相连，则称G为<strong>完全图</strong>。n个顶点的完全图记为<script type="math/tex">K_n</script>。</p>
+</li>
+<li><p>若图G中存在两个子集<script type="math/tex">V_1,V_2</script>,使得<script type="math/tex">V_1\cup V_2=V(G),V_1\cap V_2=\varnothing</script>,且<script type="math/tex">V_1</script>中任意两点不相邻，<script type="math/tex">V_2</script>中任意两点不相邻，则称G为<strong>二分图</strong>。进一步地，若<script type="math/tex">V_1</script>中每一点和<script type="math/tex">V_2</script>中每一点相连，则称G为<strong>完全二分图</strong>。且当<script type="math/tex">|V_1|=m，|V_2|=n</script>时记为<script type="math/tex">K_{m,n}</script></p>
+</li>
+<li><p>若图G中每个顶点度数都为k，则称G为<strong>k次正则图</strong>。</p>
+</li>
+<li>设G，H为两个图，若<script type="math/tex">V(H)\subseteq V(G)且E(H)\subseteq E(G)</script>，则称H是G的<strong>子图</strong>，记为<script type="math/tex">H\subseteq G</script>。若<script type="math/tex">H\subseteq G 且H\neq G</script>，则称H是G的<strong>真子图</strong>，记为<script type="math/tex">H\subset G</script>。若<script type="math/tex">H\subseteq G且V(H)=V(G)</script>，则称H是G的<strong>生成子图</strong>（也称支撑子图）。</li>
+<li>设G是一个图，<script type="math/tex">E_1\subseteq E(G)</script>，则把以<script type="math/tex">E_1</script>为边集，<script type="math/tex">E_1</script>中全体边的端点为顶点集的图称为<strong>由</strong><script type="math/tex">E_1</script><strong>导出的G的子图（边导出子图）</strong>，类似的，若<script type="math/tex">V_1\subseteq V(G)</script>,则把以<script type="math/tex">V_1</script>为顶点集，端点均在<script type="math/tex">E_1</script>中全体边为边集的图称为<strong>由</strong><script type="math/tex">V_1</script><strong>导出的G的子图（点导出子图）</strong>。</li>
+<li>设G为n个顶点的简单图，从这n个顶点构成的完全图<script type="math/tex">K_n</script>中删去G的所有边，但保留顶点集V(G)所得到的图称为<strong>G的补图</strong>，记为~G。</li>
+<li>设G，H是两个图，若存在双射（一一映射）：</li>
+</ul>
+<script type="math/tex; mode=display">
+\theta:V(G)\rightarrow V(H)\\
+\psi:E(G)\rightarrow E(H)\\</script><p>​        使得当且仅当e=uv时，<script type="math/tex">\psi(e)=\theta(u)\theta(v)</script>，则称G和H时同构的，记为<script type="math/tex">G\cong H</script>，而有序对<script type="math/tex"><\theta,\psi></script>称为G与H之间的一个<strong>同构映射</strong>或简        称为同构。可以证明，图的同构关系为一个<strong>等价关系</strong>，因此可以把所有图划分为若干等价类。</p>
+<ul>
+<li><em>顶点标以名称的图称为<strong>标志图</strong></em>。</li>
+</ul>
+<h2 id="路与连通"><a href="#路与连通" class="headerlink" title="路与连通"></a>路与连通</h2><ul>
+<li><p>图中的一个非空点、边交替序列<script type="math/tex">W=v_0e_1v_1e_2...e_kv_k</script>称为一条<strong>从</strong><script type="math/tex">v_0</script><strong>到</strong><script type="math/tex">v_k</script><strong>的路径</strong>，或称<script type="math/tex">(v_0,v_k)</script>-路径，其中<script type="math/tex">v_{i-1},v_i</script>是<script type="math/tex">e_i</script>的端点。称<script type="math/tex">v_0</script>为W的<strong>起点</strong>，<script type="math/tex">v_k</script>为W的<strong>终点</strong>，<script type="math/tex">v_i(0<i<k)</script>为W的<strong>内点</strong>，k为W的<strong>路长</strong>。</p>
+<ul>
+<li>把W逆转得到<script type="math/tex">W^{-1}=v_ke_k...e_2v_1e_1v_0</script></li>
+<li>而W的子序列<script type="math/tex">v_ie_iv_{i+1}...e_jv_j</script>称为W的<strong>节</strong>。</li>
+<li>若W的终点是W’的起点，则可以把W和W’首尾相接得到新路径WW’。</li>
+</ul>
+</li>
+<li><p>设<script type="math/tex">v_0e_1v_1e_2v_2...e_kv_k</script>为图G中的一条路径：</p>
+<ul>
+<li>若<script type="math/tex">k\geq 1且v_0=v_k</script>，则称该路径为<strong>闭路径</strong>，否则为<strong>开路径</strong>。 </li>
+<li><p>若<script type="math/tex">v_0,v_1,...,v_k</script>互不相同，则称该路径为为<strong>路</strong>。</p>
+</li>
+<li><p>若<script type="math/tex">e_1,e_2,...,e_k</script>互不相同，则称该路径为<strong>迹</strong>，显然，<strong>路一定是迹</strong>。</p>
+<ul>
+<li>若<script type="math/tex">k\geq 1 且v_0=v_k</script> 则称该迹为<strong>闭迹</strong>，否则称为<strong>开迹</strong>。<em>其中，闭迹也称为回路。</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>若闭迹<script type="math/tex">v_0e_1v_1e_2v_2...e_kv_0</script>中<script type="math/tex">v_0,v_1,...v_{k-1}</script>互不相同，则称该迹为<strong>圈</strong>或<strong>k圈</strong>，且当k为偶数时为<strong>偶圈</strong>，k为奇数时为<strong>奇圈</strong>。</p>
+<ul>
+<li>等价定义：只有<script type="math/tex">v_0=v_k</script>的路称为圈，即<strong>闭路为圈</strong>。</li>
+<li>定理：若图G中每个顶点的度数都大于等于2，即<script type="math/tex">\delta \geq2</script>，则G中必有圈。</li>
+<li>定理：<script type="math/tex">图G为二分图\Leftrightarrow G中不含奇圈</script></li>
+</ul>
+</li>
+<li><p>若<script type="math/tex">u,v\in V(G)</script>且存在从u到v的路，则称u和v是<strong>相连的</strong>或<strong>连通的</strong>，若G中任意两点都连通，则称图G是<strong>连通的</strong>。</p>
+<ul>
+<li>显然，连通关系是一个等价关系，根据该关系可以把图G的顶点集V分成若干等价类<script type="math/tex">V_1,V_2,...,V_n</script>，而每个由<script type="math/tex">V_i</script> 导出的G的点导出子图<script type="math/tex">G(V_i)</script>称为G的一个<strong>连通分支</strong>。</li>
+<li>图G的连通分支数由<script type="math/tex">\omega(G)</script>表示的。显然，<script type="math/tex">G是连通的\Leftrightarrow \omega(G)=1</script></li>
+<li>定理：<script type="math/tex">n-\omega\leq\epsilon\leq\frac{1}{2}(n-\omega)(n-\omega+1)</script><ul>
+<li>由上定理可知：在n和<script type="math/tex">\omega</script>固定时，当G的某一个连通分支是<script type="math/tex">n-\omega+1</script>个顶点的完全图，剩下<script type="math/tex">\omega-1</script>个分支是孤立点时，G的边数最大。</li>
+<li>由上定理可知：当<script type="math/tex">\omega=1</script>时，<script type="math/tex">\epsilon\geq n-1</script>.即<u>n个顶点的连通图至少有n-1条边</u>，因此把有n个顶点，n-1条边的连通图称为<strong>最小连通图</strong>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>图G中，若u，v是连通的，则称最短(u，v)-路的长为u，v的<strong>距离</strong>，记为d(u，v)。</p>
+<h3 id="习题部分引理（可自己证明）："><a href="#习题部分引理（可自己证明）：" class="headerlink" title="习题部分引理（可自己证明）："></a>习题部分引理（可自己证明）：</h3><ul>
+<li>若图中只有两个奇顶点，则它们必连通。</li>
+<li>简单图中，必存在长为<script type="math/tex">\delta</script>的路。</li>
+<li>简单图G中，若<script type="math/tex">\epsilon>C_{v-1}^2</script>,则G连通。</li>
+<li>若G不连通，则~G连通。</li>
+<li>连通图中，任意两条最长路必有公共顶点。</li>
+</ul>
+</li>
+</ul>
+<h2 id="最短路"><a href="#最短路" class="headerlink" title="最短路"></a>最短路</h2><ul>
+<li>若对图G中每条边e都规定一个<u>非负实数</u>w(e)，则称G为<strong>赋权图</strong>（或权图），w(e)称为e的权。G的边与非负实数的这种关系（用w表示）称为权函数。特别地，uv不相邻时，<script type="math/tex">w(uv)=\infty</script>。</li>
+<li>设G是一个赋权图，H是G的子图，H中各边的权之和称为<strong>子图G的权</strong>，记为w(H)。权图中路P的权称为P的长度，两点u，v之间最短路的长度称为u，v之间的<strong>距离</strong>，记为d(u，v)。</li>
+<li>G是一个权图，<script type="math/tex">u_0\in V(G),S\subseteq V(G),u_0</script>到S内各点的所有路中长度最小的称为<script type="math/tex">u_0</script>到S的<strong>最短路</strong>，其长度称为<script type="math/tex">u_0</script>到S的<strong>距离</strong>，记为<script type="math/tex">d(u_0,S)</script>。</li>
+<li>Dijkstra算法原理：若<script type="math/tex">S\subset V,u\in S</script>,则<script type="math/tex">d(u,\sim S)=min_{u_1\in s,v\in \sim S}\{d(u,u_1)+w(uv)\}</script></li>
+</ul>
+<h2 id="有向图"><a href="#有向图" class="headerlink" title="有向图"></a>有向图</h2><ul>
+<li>设V是一个非空集合，A是一个由V中元素的<u>有序对</u>构成的多重集，有序对D=<v,a>则称为一个<strong>有向图</strong>，其中，V为顶点集，其元素称为顶点或点，A称为<strong>弧集</strong>，其元素称为<strong>弧</strong>。</v,a></li>
+<li>设D是一个有向图，若<script type="math/tex">a=<u,v>\in A(D)</script>，则称<strong>a从u连接到v</strong>，且称u，v与a彼此相关联；称u是a的<strong>尾</strong>或<strong>起点</strong>，称v是a的<strong>头</strong>或<strong>终点</strong>。且统称u，v是a的端点。（箭头指向的是箭头的头）</li>
+<li>子有向图，真子有向图，导出子有向图等定义与无向图类似。</li>
+<li><p>对于每个有向图D，忽略其弧的方向，这样得到的无向图称为D的<strong>底图</strong>。反之，对于一个无向图，对它每一条边确定一个方向，得到的有向图称为它的一个<strong>定向图</strong>。</p>
+<ul>
+<li>有向图D的底图连通时，我们称D是连通的，底图中有圈时，我们称D中有圈。</li>
+</ul>
+</li>
+<li><p>我们用<script type="math/tex">d_D^-(v)和d_D^+(v)</script>定义v的<strong>入度</strong>和<strong>出度</strong>，即以v为头的弧的数目和以v为尾的弧的数目。同样有最大最小入度出度<script type="math/tex">\delta^+,\delta^-,\Delta^+,\Delta^-,\delta=min(\delta^-,\delta^+),\Delta=max(\Delta^-,\Delta^+)</script>。显然有<script type="math/tex">\sum_{v\in V}d^-(v)=\sum_{v\in V}d^+(v)=\epsilon</script></p>
+</li>
+<li>有向图的<strong>有向路径</strong>是指一个非空有限的点、弧交替序列<script type="math/tex">W=v_0a_1v_1a_2...a_kv_k</script>，其中<script type="math/tex">a_i的头是a_i,尾是a_{i-1}</script>。同理若W中点互不相同则成为<strong>有向路</strong>，若W中弧互不相同则成为<strong>有向迹</strong>，<strong>有向闭迹（有向回路）</strong>，<strong>有向圈</strong>也可以类比无向图定义。</li>
+<li><p>如果D中存在有向(u，v)-路，则称v是从u<strong>可达的</strong>。如果u，v是互相可达的，则称u，v是<strong>双向连通</strong>的。若D中任意两顶点，至少有一顶点可从另一顶点到达，则称D为<strong>单向连通图</strong>。若D中任意两点都是双向连通的，则称D是<strong>双向连通图</strong>或<strong>强连通图</strong>。</p>
+<ul>
+<li>只有双向连通关系是一个等价关系，根据它可以把图D分成若干<strong>强连通分支</strong>。而所有强连通分支不一定覆盖整个图。</li>
+</ul>
+</li>
+<li><p>若有向图D中每两个顶点有且恰有一条弧，则称D为<strong>竞赛图</strong>。显然，D是竞赛图当且仅当D是完全图的定向图。</p>
+</li>
+</ul>
+<h2 id="图的矩阵表示"><a href="#图的矩阵表示" class="headerlink" title="图的矩阵表示"></a>图的矩阵表示</h2><ul>
+<li>图的关联矩阵：<script type="math/tex">A_{v\times \epsilon},a_{ij}=1当且仅当点i和边j关联，否则a_{ij}=0</script>.即关联矩阵每列只有两个1，每行的1的个数为行序号代表顶点的度数。</li>
+<li>图的<strong>邻接矩阵</strong>。简单无向图的邻接矩阵X的n次方<script type="math/tex">X^n</script>中第i行第j列的数表示从顶点i到顶点j的长度为n的路径数目。</li>
+</ul>
+<h1 id="Euler图与Hamilton图"><a href="#Euler图与Hamilton图" class="headerlink" title="Euler图与Hamilton图"></a>Euler图与Hamilton图</h1><h2 id="Euler图"><a href="#Euler图" class="headerlink" title="Euler图"></a>Euler图</h2><ul>
+<li><p>图G中包含所有边的迹称为<strong>Euler迹</strong>，闭的Euler迹称为<strong>Euler闭迹（Euler回路）</strong>，具有Euler回路的图称为<strong>Euler图</strong>。只具有Euler开迹的图称为<strong>半Euler图</strong>。Euler迹实际上就是一条一笔画。</p>
+<ul>
+<li>连通图G是Euler图当且仅当<strong>G中所有顶点均为偶顶点</strong>。</li>
+<li>连通图G是半Euler图当且仅当<strong>G中恰有两个奇顶点</strong>。</li>
+</ul>
+</li>
+<li><p>有向图D中包含左右弧的有向迹称为<strong>Euler有向迹</strong>，具有Euler有向闭迹（Euler有向回路）的有向图称为<strong>Euler有向图</strong>，具有Euler有向开迹的有向图称为<strong>半Euler有向图</strong>。显然，Euler有向图中若无孤立点，则必强连通。</p>
+</li>
+<li>有向图D中，<script type="math/tex">v\in V(G)</script>，若<script type="math/tex">d^-(v)=d^+(v)</script>则称v是<strong>平衡</strong>的，若D中每个顶点都是平衡的，则称D是<strong>平衡</strong>的。若存在k，使得D中每个顶点的出度和入度都等于k，则称D是<strong>一致平衡</strong>的。<ul>
+<li>单连通有向图D是Euler图当且仅当D是平衡的。</li>
+<li>单连通有向图D是半Euler图当且仅当G中恰有两个奇顶点u，v满足<script type="math/tex">d^-(v)=d^+(v)+1,d^+(u)=d^-(u)+1</script>。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Hamilton-图"><a href="#Hamilton-图" class="headerlink" title="Hamilton 图"></a>Hamilton 图</h2><ul>
+<li><p>图G中包含所有顶点的圈称为<strong>Hamilton圈</strong>，含有Hamilton圈的图称为<strong>Hamilton图</strong>。G中含有所有顶点的路称为<strong>Hamilton路</strong>，含有Hamilton路的图称为<strong>半Hamilton图</strong>。</p>
+<ul>
+<li>判断一个图是否是Hamilton图是NP完全问题。</li>
+<li>图G是Hamilton图，则对于顶点集V的任意非空真子集S，均有<script type="math/tex">\omega(G-S)\leq |S|</script>。其中G-S表示G中删除S中的所有顶点及其关联边剩下的子图。（必要条件）</li>
+<li>简单图G中，若<script type="math/tex">v\geq 3 且\delta\geq \frac{v}{2}</script>，则G是Hamilton图。（充分条件）</li>
+<li>引理：简单图G中，<script type="math/tex">u_1</script>和<script type="math/tex">u_2</script>是不相邻的顶点，且满足<script type="math/tex">d(u_1)+d(u_2)\geq v</script>，则G是Hamilton图当且仅当<script type="math/tex">G+u_1u_2</script>是Hamilton图。（充要条件）。</li>
+</ul>
+</li>
+<li><p>图G中，反复连接满足<script type="math/tex">d(u_1)+d(u_2)\geq v</script>的不相邻顶点<script type="math/tex">u_1,u_2</script>，直到没有这样的顶点对。得到的图称作<strong>G的闭包</strong>，记为C(G)。即简单图G是Hamilton图当且仅当C(G)是Hamilton图。</p>
+<ul>
+<li>推论：若C(G)是完全图，则G是Hamilton图。</li>
+</ul>
+</li>
+<li><p>有向图D中，包含所有顶点的有向圈称为<strong>Hamilton有向圈</strong>，含有Hamilton有向圈的有向图称为<strong>Hamilton有向图</strong>，D中包含所有顶点的路称为<strong>Hamilton有向路</strong>，含有Hamilton有向路的有向图称为<strong>半Hamilton有向图</strong>。显然，半Hamilton有向图一定是强连通的。</p>
+<ul>
+<li>竞赛图必定是半Hamilton有向图。</li>
+<li>强连通的竞赛图必定是Hamilton有向图。</li>
+</ul>
+</li>
+</ul>
+<h3 id="作业引理"><a href="#作业引理" class="headerlink" title="作业引理"></a>作业引理</h3><ul>
+<li>若G是一个具有奇数个顶点的二分图，则G中没有Hamilton圈。</li>
+<li>若无向图G存在一个强连通的定向图，则称它为<strong>可定向</strong>的。<ul>
+<li>任意一个Euler图都是可定向的。</li>
+<li>任意一个Hamilton图都是可定向的。</li>
+</ul>
+</li>
+</ul>
+<h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><ul>
+<li>连通无回路的图称为<strong>树</strong>。树中度为1的点称为<strong>树叶</strong>，度大于1的点称为<strong>分枝点</strong>或<strong>内点</strong>，每个连通分支均为树的图称为<strong>森林</strong>。</li>
+<li><p>T是n个顶点<script type="math/tex">\epsilon</script>条边的非平凡图，以下条件等价：</p>
+<ul>
+<li>T是树</li>
+<li>T中无回路，且<script type="math/tex">\epsilon=n-1</script></li>
+<li>T连通，且<script type="math/tex">\epsilon=n-1</script></li>
+<li>T中无回路，且在T的任意两个不相邻点之间添加一条边都会得到回路。</li>
+<li>T连通，删去任意一边就会不连通。</li>
+<li>T的任意两个不同顶点之间恰有一条路。</li>
+</ul>
+</li>
+<li><p>定理：任意一棵非平凡树中，至少有两片树叶。</p>
+<h3 id="作业引理-1"><a href="#作业引理-1" class="headerlink" title="作业引理"></a>作业引理</h3><ul>
+<li>对于<script type="math/tex">n\geq 2</script>，设<script type="math/tex">d_1,d_2,...,d_n</script>是n个正整数，且<script type="math/tex">\sum d_i=2n-2</script>，则存在顶点度数为<script type="math/tex">d_1,d_2,...,d_n</script>的一棵树。</li>
+<li><script type="math/tex">\Delta\geq k</script>的树至少有k个树叶。</li>
+</ul>
+</li>
+</ul>
+<h2 id="生成树"><a href="#生成树" class="headerlink" title="生成树"></a>生成树</h2><ul>
+<li><p>若图G的生成子图T是树，则称T是G的<strong>生成树</strong>。</p>
+<ul>
+<li>G是连通图当且仅当G有生成树。</li>
+</ul>
+</li>
+<li><p>权图G中带权最小的生成树称为<strong>最小生成树</strong>或<strong>最优树</strong>。</p>
+<ul>
+<li>Kruskal算法（（（（</li>
+</ul>
+</li>
+</ul>
+<h2 id="有向树"><a href="#有向树" class="headerlink" title="有向树"></a>有向树</h2><ul>
+<li>底图是树的有向图称为<strong>有向树</strong>。</li>
+<li><p>若一棵有向树中恰有一个顶点入度为0，其余所有顶点的入度均为1，则称该有向树为<strong>有根树</strong>或<strong>树形图</strong>，入度为0的顶点称为<strong>根</strong>。</p>
+<ul>
+<li>有根树T的根到其余每个顶点都有且恰有一条有向路。</li>
+</ul>
+</li>
+<li><p>设u是有根树的分枝点，若从u到s有一条弧<u,s>则称s是u的<strong>儿子</strong>，u为s的<strong>父亲</strong>；同一父亲的儿子称为<strong>兄弟</strong>；若从u到v有一条有向路，则称v是u的<strong>子孙</strong>，u是v的<strong>祖先</strong>；从根到某一顶点的路长称为该顶点的<strong>路长</strong>或<strong>层数</strong>，从根到树叶的最大层数称为有根树的<strong>高</strong>。</u,s></p>
+</li>
+<li>设u是有根树T的一个顶点，<script type="math/tex">V_u</script>是u及其子孙构成的顶点集，<script type="math/tex">V_u</script>的导出子图称为T的以u为根的<strong>子树</strong>。</li>
+<li><p>在有根树中，将每个分枝点发出的弧从左到右依次标以正整数1，2，3，…，则该有根树称为<strong>有序树</strong>。</p>
+</li>
+<li><p>有序树中，如果每个顶点v都满足<script type="math/tex">d^+(v)\leq m</script>，则称该有序树为<strong>m叉树</strong>，如果每个顶点v都满足<script type="math/tex">d^+(v)=m</script>则称该有序树为<strong>正则m叉树</strong>。</p>
+<ul>
+<li>定理：正则m叉树中，分枝点数i与树叶数l满足：<script type="math/tex">(m-1)i=l-1</script></li>
+<li>定理：T是正则m叉树，i表示分枝点数，I表示分枝点的路长总和，L表示树叶的路长总和，则<script type="math/tex">L=(m-1)I+mi</script></li>
+</ul>
+</li>
+</ul>
+<h1 id="平面图和图的着色"><a href="#平面图和图的着色" class="headerlink" title="平面图和图的着色"></a>平面图和图的着色</h1><h2 id="平面图"><a href="#平面图" class="headerlink" title="平面图"></a>平面图</h2><ul>
+<li>如果一个图可以画在平面上，使得它的边在端点之外不相交，则称这个图为<strong>平面图</strong>，或说它是可<strong>平面嵌入</strong>的。平面图G的这样一种画法称为G的一个<strong>平面嵌入</strong>或<strong>平图</strong>。</li>
+<li><p>一条连续的，自身不相交的封闭曲线称为<strong>Jordan曲线</strong>。</p>
+<ul>
+<li>Jordan曲线把平面分成了两部分，其中一部分是无界的，这一部分（不含曲线本身）称为<strong>J的外部</strong>，记为extJ，extJ的点称为<strong>J的外点</strong>，extJ与J的并称为<strong>extJ的闭包</strong>，记为ExtJ。另一部分（不含曲线本身）称为<strong>J的内部</strong>，记为intJ，intJ的点称为<strong>J的内点</strong>，intJ与J的并称为intJ的闭包，记为IntJ。</li>
+<li>引理：任何连接Jordan曲线J的内点与外点的曲线必与J相交。</li>
+<li>苏博南猜想：任一个多面体，将其顶点当作顶点，棱当作边的图为平面图。</li>
+</ul>
+</li>
+<li><p>平图G把平面划分成若干个连通区域，每个连通区域的<u>闭包</u>称为G的一个<strong>面</strong>，其中恰有一个无界的面，称为<strong>外部面</strong>。（注：”面“的概念只在平图中讨论）</p>
+<ul>
+<li>欧拉公式：连通平图G中满足<script type="math/tex">v-\epsilon+f=2</script></li>
+<li>推论：给定平面连通图G，则G的所有平面嵌入都有相同的面数。</li>
+<li>推论：若G是平面简单图，<script type="math/tex">v\geq3</script>，则有<script type="math/tex">\epsilon\leq 3v-6</script><ul>
+<li>由上推论：平面简单图中，必然存在一个度数小于等于5的顶点。</li>
+</ul>
+</li>
+<li>推论：若平图G的每个面由至少四条边围成，则有<script type="math/tex">\epsilon\leq 2v-4</script>，其实如果平图G每个面至少由k条边围成，则<script type="math/tex">v\geq(1-\frac{2}{k})\epsilon+2</script></li>
+</ul>
+</li>
+<li><p>图G中删除一条边uv，并且添加一个二度点w和两条边uw和wv，则称边uv被<strong>细分</strong>。若图H是由图G经过一系列边的细分而得到，就称H是G的<strong>剖分图</strong>或<strong>细分图</strong>，G是H的<strong>收缩图</strong>。若两个图是同一个图的剖分图，则称这两个图<strong>同胚</strong>。</p>
+<ul>
+<li>Kuratowski定理：图G是平面图，当且仅当<script type="math/tex">K_5和K_{3,3}</script>的任何细分图都不是G的子图。即G的任意一个子图都不是<script type="math/tex">K_5或K_{3,3}</script>的细分图。</li>
+</ul>
+<h3 id="作业引理-2"><a href="#作业引理-2" class="headerlink" title="作业引理"></a>作业引理</h3><ul>
+<li><script type="math/tex">K_5或K_{3,3}</script>中任意删除一条边得到的图都是平面图。</li>
+<li>平面图G满足<script type="math/tex">v-\epsilon+f=\omega(G)+1</script></li>
+</ul>
+</li>
+</ul>
+<h2 id="对偶图"><a href="#对偶图" class="headerlink" title="对偶图"></a>对偶图</h2><ul>
+<li><p>设G是一个平图，先作一新图G*：</p>
+<p>（1）对应G的面<script type="math/tex">F_1,F_2,...,F_f</script>作顶点<script type="math/tex">F^*_1,F^*_2,...,F^*_f</script></p>
+<p>（2）当且仅当<script type="math/tex">e\in E(G)</script>是G的两个面<script type="math/tex">F_i,F_j</script>的公共边时，在<script type="math/tex">F^*_i和F^*_j</script>之间连一条边e*</p>
+<p>（3）当且仅当<script type="math/tex">e\in E(G)</script>两侧为同一个面时，在该面对应的顶点上作一个子环</p>
+<p>这样做成的图G<em>称为G的<strong>对偶图</strong>。图G*</em>中可以有平行边。</p>
+<ul>
+<li>对偶图必定是平面图</li>
+<li>对偶图的对偶图与原图同构，即<script type="math/tex">G^{**}\cong G</script></li>
+<li>同构的图的对偶图不一定同构。即<script type="math/tex">G_1\cong G_2\nRightarrow G_1^*\cong G_2^*</script></li>
+</ul>
+</li>
+<li><p>对偶图G和图G的关系：<script type="math/tex">v^*=f,\epsilon*=\epsilon,f^*=v</script></p>
+<h3 id="作业引理-3"><a href="#作业引理-3" class="headerlink" title="作业引理"></a>作业引理</h3><ul>
+<li>若一个图和它的对偶图同构，则称它是<strong>自对偶</strong>的。自对偶的图满足<script type="math/tex">\epsilon=2v-2</script></li>
+</ul>
+</li>
+</ul>
+<h2 id="顶点着色"><a href="#顶点着色" class="headerlink" title="顶点着色"></a>顶点着色</h2><ul>
+<li><p>图G中对G的每个顶点着色，使得没有两个相邻的顶点着上相同的颜色，这种着色称为图的<strong>正常着色</strong>。若图G的顶点可用k种颜色正常着色，则称G是<strong>k-可着色</strong>的。使G是k-可着色的最小的k称为G的<strong>色数</strong>，记为<script type="math/tex">\chi(G)</script>，若<script type="math/tex">\chi(G)=k</script>，则称G是<strong>k色的</strong>。</p>
+<ul>
+<li>对于完全图<script type="math/tex">K_n</script>，有<script type="math/tex">\chi(K_n)=n,\chi(~K_n)=1</script></li>
+<li>对于n个顶点构成的圈<script type="math/tex">C_n</script>，当n为偶数时<script type="math/tex">\chi(C_n)=2</script>，当n为奇数时，<script type="math/tex">\chi(C_n)=3</script></li>
+<li>对于非平凡树T，有<script type="math/tex">\chi(T)=2</script></li>
+<li>G是二分图，则<script type="math/tex">\chi(G)=2</script></li>
+<li>对于任意简单图G，有<script type="math/tex">\chi(G)\leq1+\Delta(G)</script></li>
+<li>若简单连通图G不是完全图且不是奇圈，则<script type="math/tex">\chi(G)\leq\Delta(G)</script></li>
+<li>五色定理：任何无自环的平面图G是5-可着色的。</li>
+</ul>
+<h3 id="作业引理-4"><a href="#作业引理-4" class="headerlink" title="作业引理"></a>作业引理</h3><ul>
+<li>图G是2-可着色的当且仅当G种无奇圈。</li>
+<li>如果对G的每个真子图H都有<script type="math/tex">\chi(H)<\chi(G)</script>，则称G是<strong>临界的</strong>。k色的临界图称为<strong>k-临界图</strong>。k-临界图满足<script type="math/tex">\delta\geq k-1</script></li>
+<li>每个k色图至少有k个度大于等于k-1的顶点。</li>
+</ul>
+</li>
+</ul>
+<h2 id="面着色"><a href="#面着色" class="headerlink" title="面着色"></a>面着色</h2><ul>
+<li><p>设e是G的一条边，若<script type="math/tex">\omega(G-e)>\omega(G)</script>，则称e是G的<strong>割边</strong>。</p>
+</li>
+<li><p>割边的两侧为同一个面。</p>
+</li>
+<li><p>一个没有割边的连通平图称为<strong>地图</strong>。地图种的两个面如果有一条公共边，则称这两个面是<strong>相邻</strong>的。</p>
+</li>
+<li><p>设G是一个地图，对G的每个面着色，使得没有两个相邻的面着上相同的颜色，则称这种着色为地图的<strong>正常面着色</strong>，地图G可用k种颜色正常面着色，则称G是<strong>k-面可着色</strong>的。使得G是k-面可着色的最小的k称为G的<strong>面色数</strong>，记为<script type="math/tex">\chi^*(G)</script>。若<script type="math/tex">\chi^*(G)=k</script>则称G是<strong>k-面色</strong>的。</p>
+<ul>
+<li>显然地图中有<script type="math/tex">\chi(G^*)=\chi^*(G)</script></li>
+<li>五色定理：任何地图G是5-面可着色的。</li>
+</ul>
+<h3 id="作业引理-5"><a href="#作业引理-5" class="headerlink" title="作业引理"></a>作业引理</h3><ul>
+<li>地图G是2-面可着色的当且仅当它是一个欧拉图。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>-离散数学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>色彩</title>
     <url>/2021/02/14/%E8%89%B2%E5%BD%A9/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>(-w-)</p>
