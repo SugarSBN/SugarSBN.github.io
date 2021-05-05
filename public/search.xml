@@ -1,6 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>线性代数翻书</title>
+    <url>/2021/05/04/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>教材为什么要说一些令人困惑的发言，我看到了感到很害怕，希望不要再发了，感觉很伤心。</p>
+<a id="more"></a>
+<h2 id="矩阵运算"><a href="#矩阵运算" class="headerlink" title="矩阵运算"></a>矩阵运算</h2><ul>
+<li>任何一个矩阵A都能表示成一个对称矩阵<script type="math/tex">\frac{1}{2}(A+A^T)</script>和一个反对称矩阵<script type="math/tex">\frac{1}{2}(A-A^T)</script>的和，且表示方法唯一。</li>
+<li><script type="math/tex; mode=display">(AB)^T=B^TA^T</script></li>
+<li><p>若AB=BA，则称A和B是<strong>可交换</strong>的。</p>
+</li>
+<li><p>若<script type="math/tex">A=kE</script>，则称A是<strong>纯量矩阵</strong>。</p>
+<ul>
+<li>A与任一n阶方阵可交换的充分必要条件是A是纯量矩阵。</li>
+</ul>
+</li>
+<li><p>数域K上全体以x为不定元的多项式的集合记为<script type="math/tex">K[x]</script>。</p>
+</li>
+<li>方阵主对角线上元素和称为方阵的<strong>迹</strong>，记为<script type="math/tex">tr(A)</script>。有<script type="math/tex">tr(AB)=tr(BA)</script>。<ul>
+<li>若<script type="math/tex">tr(AA^T)=O</script>,则<script type="math/tex">A=O</script></li>
+<li>若<script type="math/tex">A^2=AA^T</script>,则<script type="math/tex">A=A^T</script></li>
+</ul>
+</li>
+</ul>
+<h2 id="方阵的行列式"><a href="#方阵的行列式" class="headerlink" title="方阵的行列式"></a>方阵的行列式</h2><ul>
+<li><p>方阵A的行列式记作<script type="math/tex">|A|或 det(A)</script>。</p>
+</li>
+<li><script type="math/tex; mode=display">|A|=|A^T|</script></li>
+<li><script type="math/tex; mode=display">
+\left |\begin{array}{cccc}
+a_{11}&...&a_{1n}\\
+...&...&...\\
+a_{m1}&...&a_{m_n}
+\end{array}\right |+
+\left |\begin{array}{cccc}
+b_{11}&...&b_{1n}\\
+...&...&...\\
+a_{m1}&...&a_{m_n}
+\end{array}\right |=\left |\begin{array}{cccc}
+a_{11}+b_{11}&...&a_{1n}+b_{1n}\\
+...&...&...\\
+a_{m1}&...&a_{m_n}
+\end{array}\right |</script><p>只有某一行不同的两个行列式相加的值等于~</p>
+</li>
+<li><p>行列式中有两行值成比例，则行列式值为0。</p>
+</li>
+<li>交换行列式任意两行，行列式取负号，但将行列式某一行乘一个倍数加到另一行，行列式值不变。</li>
+<li><em>Laplace定理</em>，|AB|=|A||B|</li>
+<li>行列式求解<ul>
+<li>三角化<script type="math/tex">\left |\begin{array}{cccc}
+1+a&1&1&1\\
+1&1-a&1&1\\
+1&1&1+b&1\\1&1&1&1-b\end{array}\right |</script></li>
+<li>爪型<script type="math/tex">\left |\begin{array}{cccc}
+a_1&a_2&a_3&...&a_n\\c_2&b_2\\c_3&&b_3\\...&&&...\\c_n&&&&b_n
+\end{array}\right |</script></li>
+<li>降阶递推法<script type="math/tex">\left |\begin{array}{cccc}
+1&1&...&1\\x_1&x_2&...&x_n\\...&...&...&...\\x_1^{n-1}&x_2^{n-1}&...&x_n^{n-1}
+\end{array}\right |=\prod_{j>i}(x_j-x_i)</script>(范德蒙行列式)</li>
+<li>镶边法<script type="math/tex">\left |\begin{array}{cccc}1&1&...&1\\x_1&x_2&...&x_n\\...&...&...&...\\x_1^{n-2}&x_2^{n-2}&...&x_n^{n-2}\\x_1^n&x_2^n&...&x_n^n
+\end{array}\right |=\left |\begin{array}{cccc}1&1&...&1&1\\x_1&x_2&...&x_n&x\\...&...&...&...&...\\x_1^{n-2}&x_2^{n-2}&...&x_n^{n-2}&x^{n-2}\\x_1^{n-1}&x_2^{n-1}&...&x_n^{n-1}&x^{n-1}\\x_1^n&x_2^n&...&x_n^n&x^n
+\end{array}\right |</script>中<script type="math/tex">x^{n-1}</script>的系数*<script type="math/tex">(-1)^n</script></li>
+<li>三对角<script type="math/tex">\left |\begin{array}{cccc}
+a_1&b_1\\c_1&a_2&b_2\\&c_2&a_3&b_3\\&&c_3&a_4&b_4\\&&&c_4&a_5&...\\&&&&...&...\end{array}\right |</script>(递推)</li>
+<li>有时还会作<script type="math/tex">|A|=\sqrt{|A^2|}=\sqrt{|AA^T|}</script></li>
+</ul>
+</li>
+</ul>
+<h2 id="逆矩阵"><a href="#逆矩阵" class="headerlink" title="逆矩阵"></a>逆矩阵</h2><ul>
+<li><script type="math/tex; mode=display">AB=E\Leftrightarrow BA=E</script></li>
+<li><p>A可逆<script type="math/tex">\Leftrightarrow|A|\neq 0\Leftrightarrow</script>A是<strong>非奇异矩阵</strong></p>
+</li>
+<li><p><script type="math/tex">AA^*=A^*A=|A|E</script>，显然若A可逆，则<script type="math/tex">A^{-1},A^*</script>均可逆。</p>
+</li>
+<li><script type="math/tex; mode=display">(A^{-1})^T=(A^T)^{-1},(AB)^{-1}=B^{-1}A^{-1},|A^{-1}|=\frac{1}{|A|}</script></li>
+<li><p>若存在正整数m使方阵A满足<script type="math/tex">A^m=O</script>,则称A为<strong>幂零矩阵</strong></p>
+</li>
+<li><p><em>Cramer法则</em> ：若线性方程组的系数矩阵A的行列式不等于0，则方程组有唯一解。</p>
+<p>线性齐次方程组可能有非零解的前提是系数矩阵行列式等于0.</p>
+</li>
+</ul>
+<h2 id="相抵标准形"><a href="#相抵标准形" class="headerlink" title="相抵标准形"></a>相抵标准形</h2><ul>
+<li><p>行阶梯形矩阵A若满足（1）每个主元都是1（2）每个主元所在列其他元素都是0，则称其为<strong>简化行阶梯形矩阵</strong>。</p>
+<p>任意一个矩阵都可以仅由行初等变换化为简化行阶梯形矩阵。</p>
+</li>
+<li><p>如果A可以由一系列行或列初等变换化为B，则B也可以通过初等变换化为A，称A与B<strong>相抵</strong>。</p>
+</li>
+<li><p>初等变换对应的<strong>初等矩阵</strong>。</p>
+<ul>
+<li><script type="math/tex; mode=display">E(i,j)=$$把E的第i行与第j行交换。$$|E(i,j)|=-1,E(i,j)^{-1}=E(i,j)</script></li>
+<li><script type="math/tex; mode=display">E(i(k))=$$把E的第i行乘个k。$$|E(i(k))|=k,E(i(k))^{-1}=E(i(\frac{1}{k}))</script></li>
+<li><script type="math/tex; mode=display">E(i,j(k))=$$把E的第j行乘个k加到第i行。$$|E(i,j(k)|=1,E(i,j(k))^{-1}=E(i,j(-k))</script></li>
+</ul>
+</li>
+<li><p>初等行变换结果即为矩阵左乘上初等矩阵，而初等列变换的结果即为矩阵右乘上初等矩阵。</p>
+<p>值得注意的是，由于<script type="math/tex">E(i,j)和E(i(k))</script>既可以解释为“交换第i行和第j行，把第i行乘个k”，也以为解释为“交换第i列和第j列，把第i列乘个k”（对称性），所以左乘，右乘时不需要注意。</p>
+<p>但是，<script type="math/tex">E(i,j(k))</script>比较特殊，它解释为“把第j行乘个k加到第i行上”，或“把第i列乘个k加到第j列上”，所以左乘<script type="math/tex">E(i,j(k))</script>是把矩阵第j行乘个k加到第i行，但右乘的话就是第i列乘个k加到第j列了。千万注意。</p>
+</li>
+<li><p>任意矩阵都和形如<script type="math/tex">\begin{pmatrix}E_r&O\\O&O\end{pmatrix}</script>的矩阵相抵，则称该矩阵为其<strong>相抵标准形</strong>。</p>
+</li>
+<li>若矩阵A中存在一个r阶子式不等于0，而A中所有大于r阶的子式都等于0，则记<script type="math/tex">r(A)=r</script>称为矩阵的<strong>秩</strong>。特别的，<script type="math/tex">r(O)=0</script><ul>
+<li><script type="math/tex; mode=display">r(A_{m\times n})\leq min(n,m)</script></li>
+<li><script type="math/tex; mode=display">r(A)=r(A^T)</script></li>
+<li>A是阶梯数为r的行阶梯形矩阵，则<script type="math/tex">r(A)=r</script></li>
+<li>若A，B都是n阶方阵，则<script type="math/tex">r(A)+r(B)\leq n-r(AB)</script></li>
+<li><script type="math/tex; mode=display">r(A)+r(B)\geq r(A:B)\geq r(A+B)</script></li>
+</ul>
+</li>
+<li><script type="math/tex; mode=display">r(AB)\leq min\{r(A),r(B)\}</script></li>
+<li><p>若<script type="math/tex">r(A_{m\times n})=m</script>则称其为行满秩矩阵，同理有列满秩矩阵。行满秩的方阵称为满秩矩阵。</p>
+<ul>
+<li>任意矩阵左乘行满秩矩阵，右乘列满秩矩阵，秩不变。</li>
+<li>满秩矩阵可以表示为若干初等矩阵的乘积。</li>
+</ul>
+</li>
+<li><p>A与B相抵<script type="math/tex">\Leftrightarrow r(A)=r(B)\Leftrightarrow 存在可逆方阵P,Q使得PAQ=B</script></p>
+</li>
+<li><p><script type="math/tex">\left |\begin{array}{cccc}
+A&B\\C&D\end{array}\right |=|A-BD^{-1}C||D|</script>想法是利用左乘“初等分块矩阵”把分块矩阵化为三角分块矩阵从而得出结果。</p>
+</li>
+</ul>
+<h2 id="线性方程"><a href="#线性方程" class="headerlink" title="线性方程"></a>线性方程</h2><ul>
+<li><script type="math/tex">AX=\beta</script>则称A为系数矩阵，<script type="math/tex">\widetilde{A}=(A:\beta)</script>为增广矩阵。</li>
+<li>解集非空的方程组称为<strong>相容的</strong>线性方程组。</li>
+<li><p>将<script type="math/tex">\widetilde{A}</script>化为行阶梯形矩阵，且每个主元都是1后</p>
+<ul>
+<li>主元所在项的未知量叫做<strong>主未知量（真未知量）</strong>，其余未知量称为自由未知量</li>
+</ul>
+</li>
+<li><script type="math/tex; mode=display">Ax=\beta,\beta\neq0$$有解$$\Leftrightarrow r(A)=r(\widetilde{A})$$，其中有唯一解$$\Leftrightarrow r(A)=r(\widetilde{A})=n$$,有无穷多解$$\Leftrightarrow r(A)=r(\widetilde{A})<n$$。
+
+$$Ax=0$$只有零解$$\Leftrightarrow r(A)=n$$,$$Ax=0$$有无穷多组解（有非零解）$$\Leftrightarrow r(A)<n</script></li>
+</ul>
+<h2 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h2><ul>
+<li><p>一个数域K（数域要求对加法和纯量乘法封闭）中元素组成的n元有序组称为K上的一个n元向量。数域K上的向量<script type="math/tex">K^n</script>已经加法和纯量乘法组成的代数系统称为K上的n维向量空间。</p>
+<p>若<script type="math/tex">W\subseteq K^n</script>且W中向量对加法和纯量乘法封闭，则称W是一个线性子空间。其中{<strong>0</strong>}称作平凡子空间。</p>
+</li>
+<li><p>由一个向量组<script type="math/tex">\{\alpha_1,\alpha_2,...,\alpha_n\}</script>中向量线性组合可以产生一个向量空间，记作<script type="math/tex">L\{\alpha_1,\alpha_2,...,\alpha_n\}</script>,其中，<script type="math/tex">\{\alpha_1,\alpha_2,...,\alpha_n\}</script>称为该空间的一个生成组。其实一般只考虑R上的向量组。</p>
+</li>
+<li><p>线性方程组有解的充要条件是<script type="math/tex">\beta</script>可以由系数矩阵A的列向量组线性表示。</p>
+</li>
+<li><p>若向量组<script type="math/tex">\Sigma_1和\Sigma_2中的向量都都能由另一个向量组线性表示</script>，则称<script type="math/tex">\Sigma_1\sim\Sigma_2</script>，向量组等价。</p>
+<p>向量组等价<script type="math/tex">\Leftrightarrow L\{\alpha_1,\alpha_2,..,\alpha_n\}=L\{\beta_1,\beta_2,...,\beta_m\}</script></p>
+</li>
+<li><p>若存在不全为0的数<script type="math/tex">k_1,...,k_n</script>使得对向量组<script type="math/tex">\Sigma</script>中所有向量满足<script type="math/tex">k_1\alpha_1+k_2\alpha_2+...+k_n\alpha_n=0</script>（这是一个线性齐次方程组），则称向量组<script type="math/tex">\Sigma</script>线性相关。反之，若不存在则称其线性无关。线性相关其实就是向量组中有个向量可以表示为向量组内其他向量的线性表示。</p>
+</li>
+<li><p>若<script type="math/tex">\Sigma_2可由\Sigma_1线性表示，且\Sigma_2线性无关</script>，则<script type="math/tex">|\Sigma_2|\leq|\Sigma_1|</script></p>
+<ul>
+<li>推论：<script type="math/tex">K^n</script>中任意多于n个向量的向量组线性相关。</li>
+<li>推论：若<script type="math/tex">\Sigma_1,\Sigma_2</script>均线性无关，且<script type="math/tex">\Sigma_1\sim\Sigma_2</script>则<script type="math/tex">|\Sigma_1|=|\Sigma_2|</script></li>
+</ul>
+</li>
+<li><p>一个向量组中，能取出最多的向量个数使得他们线性无关称为<strong>向量组的秩</strong>（r({0})=0）。而取出的向量组称为其一个<strong>极大线性无关组</strong>。</p>
+<p>向量组中的任一个向量都能由向量组的极大线性无关组线性表示。</p>
+</li>
+<li><p>若向量组<script type="math/tex">\Sigma</script>组成<script type="math/tex">K^n</script>的一个子空间，且<script type="math/tex">r(\Sigma)=r</script>，则称<script type="math/tex">\Sigma</script>为<script type="math/tex">K^n</script>的一个r维子空间。把<script type="math/tex">\Sigma</script>的一个极大线性无关组称为子空间<script type="math/tex">\Sigma</script>的一组<strong>基</strong>。</p>
+<ul>
+<li><em>注：其实我认为，向量组通常用<script type="math/tex">\Sigma</script>来表示，而由该向量组生成的向量空间应写成<script type="math/tex">L(\Sigma)</script>，或简写成L。</em></li>
+</ul>
+</li>
+<li><p>矩阵行向量组的秩=矩阵列向量组的秩=矩阵的秩</p>
+</li>
+</ul>
+<h2 id="线性方程组的解空间"><a href="#线性方程组的解空间" class="headerlink" title="线性方程组的解空间"></a>线性方程组的解空间</h2><ul>
+<li><p>解空间就是由解向量构成（注意不是生成）的向量空间。</p>
+</li>
+<li><p>齐次线性方程组解空间的一组基称为齐次线性方程组的一个<strong>基础解系</strong>。</p>
+<p>而其解空间的结构为：<script type="math/tex">W=L\{\eta_1,..,\eta_{n-r}\}</script>，其中r是系数矩阵A的秩。转化成语言：</p>
+<p><strong>存在n-r个线性无关的向量<script type="math/tex">\eta_1,...\eta_{n-r}</script>，使得齐次线性方程组<script type="math/tex">AX=0</script>的任意一个解向量都可以表示为<script type="math/tex">\Sigma=\{\eta_1,..,\eta_{n-r}\}</script>的线性表示</strong></p>
+<p>而<script type="math/tex">X=k_1\eta_1+...+k_{n-r}\eta_{n-r}</script> 则为齐次线性方程组的通解形式。</p>
+</li>
+<li><p>非齐次线性方程组<script type="math/tex">AX=\beta</script>的通解形式则为其导出齐次线性方程组<script type="math/tex">AX=0</script>的通解形式加上一个特解。</p>
+<p>即<script type="math/tex">W=k_1\eta_1+...+k_{n-r}\eta_{n-r}+\xi</script>,其中<script type="math/tex">\eta_1,..,\eta_{n-r}</script>是<script type="math/tex">AX=0</script>的基础解系，而<script type="math/tex">\xi</script>是<script type="math/tex">AX=\beta</script>的一个特解。</p>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>离散数学-图论部分</title>
     <url>/2021/04/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E5%9B%BE%E8%AE%BA%E9%83%A8%E5%88%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>(-w-)简单初等图论初步入门指导科普用</p>
@@ -8592,6 +8768,7 @@ sinx>x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}\\
 <li>她的眼睛同灯火重叠的那一瞬间，就像在夕阳的余晖里飞舞的妖艳而美丽的夜光虫。</li>
 <li>在窗玻璃上流动的景色一消失，镜子也就完全失去了吸引力。</li>
 <li>这是清彻得近乎悲戚的优美的声音。像是从什么地方传来的一种回响。</li>
+<li>这种虚伪的麻木不仁是危险的，它是一种寡廉鲜耻的表现。</li>
 </ul>
 <h1 id="孤独或类似的东西"><a href="#孤独或类似的东西" class="headerlink" title="孤独或类似的东西"></a>孤独或类似的东西</h1><ul>
 <li>我喜欢你，喜欢到仅仅看到你夕阳下的侧影都会心生哀愁，感情在胸中激荡澎湃喷薄欲出，冲到嘴边却开不了口，只能化作眼泪溢出。</li>
@@ -8638,6 +8815,54 @@ sinx>x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}\\
 <li><strong>正当她把心里话一吐为快时，有人把月光熄灭了</strong></li>
 <li>在宁静中超越了激情的陷阱，超越了幻想的无情嘲弄和醒悟的海市蜃楼：超越了爱情。因为他们已在一起生活了足够长时间，足以发现无论何时何地，爱情始终都是爱情，只不过距离死亡越近，爱就越浓郁。</li>
 <li>船长看了看费尔明娜·达萨，在她睫毛上看到初霜的闪光。然后，他又看了看弗洛伦蒂诺·阿里萨，看到的是他那不可战胜的决心和勇敢无畏的爱。这份迟来的顿悟使他吓了一跳，<strong>原来是生命，而非死亡，才是没有止境的。</strong></li>
+</ul>
+<h1 id="Memoirs-of-a-Geisha"><a href="#Memoirs-of-a-Geisha" class="headerlink" title="Memoirs of a Geisha"></a>Memoirs of a Geisha</h1><p>这本书真的可惜了，原本感觉非常好看但看到拍卖水揚げ的时候属实精神污染就弃了</p>
+<ul>
+<li>“None of us find as much kindness in the world as we should,” he told me. “Keep the handkerchief.”</li>
+<li>“I’m sure you’re an intelligent girl, Chiyo,” said Mameha. “But I don’t think that was a very intelligent thing to do. People like you and me, who have water in our personalities, don’t choose where we’ll flow to.”</li>
+</ul>
+<h1 id="砂女"><a href="#砂女" class="headerlink" title="砂女"></a>砂女</h1><ul>
+<li>风景画在自然风景欠佳的地方畅销，报业在人际关系稀薄的产业地带发达。</li>
+<li>能写，就是作家了嘛……快，怎么样，天经地义，教师这种人动不动就想乱写……这就是职业习惯，那是比较接近作家的关系嘛……就是你说过的“创造性教育”那玩意儿吗？自己甚至连一个粉笔盒都没做过……所谓粉笔盒，可是非同寻常呐。仅就它能提醒自己是个什么角色这一点来看，难道它不是个优秀的创造吗？</li>
+<li>连声音都躲在保护色里，成了沙的颜色。</li>
+<li>男人顺从地弯腰捡起铁锹。现在这地步，自尊心什么的，就像用熨斗熨烫满是污垢的衬衫似的。像被赶出来似的，他跑到了外面。</li>
+<li>相同图形的反复，是有效的保护色。如果融化到生活的单纯反复之中，那么，迟早他也就可以从村里人的意识里消失了，这并非没有可能。</li>
+<li>到底为什么要叫做“孤独地狱”呢？当时他曾觉得该不会是标题搞错了吧？现在总算搞清楚了，能够理解了。所谓孤独，就是追求幻想而得不到满足的饥渴。</li>
+<li>到底为什么要叫做“孤独地狱”呢？当时他曾觉得该不会是标题搞错了吧？现在总算搞清楚了，能够理解了。所谓孤独，就是追求幻想而得不到满足的饥渴。 所以，心脏的鼓动不能使他放心，他啃指甲。脑波的节奏不能使他满足，他抽香烟。性交不能使他感到充实，他的腿下意识地晃动。</li>
+</ul>
+<h1 id="春琴抄"><a href="#春琴抄" class="headerlink" title="春琴抄"></a>春琴抄</h1><ul>
+<li>佐藤春夫曾说：“聋者看似愚人，盲者看似贤者。”只因聋者每当听人说话时，会蹙起眉头，张口瞠目，或斜首或仰面，给人呆头呆脑之感，而盲人则默然端坐，低眉垂首，宛如瞑目沉思，俨然深思熟虑者，故有此说。</li>
+<li>佐助从未曾见过春琴的明亮眼眸，但他直到晚年也不曾抱憾，反而觉得无比幸福，因为如果看到过春琴失明前的模样，或许会觉得她失明后的相貌有缺憾吧。因此，在佐助眼里，春琴的容貌没有丝毫缺憾，从一开始就是完美的。</li>
+<li>虽为小禽，尚能解艺道之奥妙，汝等生而为人竟不及鸟类</li>
+</ul>
+<h1 id="反朴"><a href="#反朴" class="headerlink" title="反朴"></a>反朴</h1><ul>
+<li>我会去的。水岛先生如果不来的话，我会认为是时间不方便。如果连续两三次不来，我就会当作您是搬到别的地方去了，即使是想来也来不了了。只要我们彼此都抱着想见到对方的心情，一定会相遇。</li>
+</ul>
+<h1 id="孤独小说家"><a href="#孤独小说家" class="headerlink" title="孤独小说家"></a>孤独小说家</h1><ul>
+<li>他不是没有过梦想，只是当他一次又一次地被关在梦想的门外，所谓梦想本身都已经疲惫不堪了。</li>
+<li>一个没有才华没有灵感的人有资格轻言放弃么？</li>
+</ul>
+<h1 id="The-Bridges-of-Madison-County"><a href="#The-Bridges-of-Madison-County" class="headerlink" title="The Bridges of Madison County"></a>The Bridges of Madison County</h1><ul>
+<li><em>Preparing and writing this book has altered my world view, transformed the way I think, and , most of all, reduced my level of cynicism about what is possible in the arena of human relationships.</em></li>
+<li><em>Words have physical feeling, not just meaning….how they sounded, how they tasted and what they conjured up in his mind.</em></li>
+<li><em>Sometimes he stopped and just stared at her, through her, around her, inside of her.</em></li>
+<li><em>His eyes looked directly at her, and she felt something jump inside. The eyes, the voice, the face, the silver hair, the easy way he moved his body, old ways, disturbing ways, ways that draw you in. Ways that whisper to you in the final moment before sleep comes, when the barriers have fallen. Ways that rearrange the molecular space between male and female, regardless of species.</em></li>
+<li><em>Then, after twenty years of living the close life, a life of circumscribed behavior and hidden feelings demanded by a rural culture, Francesca Johnson surprised herself by saying, “I’ll be glad to show it to you, if you want.”</em></li>
+<li><em>Her voice sounded strange, as if it belonged to someone else, to a teenage girl leaning out of a window in Naples, looking far down city streets toward the trains or out at the harbor and thinking of distant lovers yet to come.</em></li>
+<li><em>Such physical matters were nice, yet, to him, intelligence and passion born of living, the ability to move and be moved by subtleties of the mind and spirit, were what really counted.</em></li>
+<li><em>The market kills more artistic passion than anything else. It’s a world of safety out there, for most people. They want safety, the magazines and manufacturers give them safety, give the homogeneity, give them the familiar and comfortable, don’t challenge them.</em></li>
+<li><em>The talk was about weather and farm prices and new babies and funerals and government programs and athletic teams. Not about art and dreams.</em></li>
+<li><em>a man to whom the difference between a pasture and a meadow seemed important, who got excited about sky color, who wrote a little poetry but not much fiction.</em></li>
+<li><em>Poets are not welcome here. It’s a good place to raise kids, but is it a good place to raise adults?</em></li>
+<li><p><em>She wondered in how many kitchens, how many good restaurants, how many living rooms with subdued light he had practiced that small trade. How many sets of long fingernails had he watched delicately pointing toward him from the stems of brandy glasses, how many pairs of blue-round and brown-ovals eyes had looked at him through foreign evenings, while anchored sailboats rocked offshore and water slapped against the quays of ancient ports?</em></p>
+</li>
+<li><p><em>Faron Young didn’t care about her feelings. Neither did the moth above the sink.</em></p>
+</li>
+<li><em>She hurried to shorten her dress to knee length. The Des Moines Register had carried an article earlier in the summer saying that was the preferred length this year.</em></li>
+<li><em>Why the walls and the fences preventing open, natural relationships between men and women? Why the lack of intimacy, the absence of eroticism?</em></li>
+<li><em>And the sound of it blurred his criteria and funneled down his alternatives toward unity. inexorably it did that, until there was nowhere left to go, except toward Francesca Johnson.</em></li>
+<li><em>In a universe of ambiguity, this kind of certainty comes only once, and never again, no matter how many lifetimes you live.</em></li>
+<li></li>
 </ul>
 ]]></content>
       <tags>

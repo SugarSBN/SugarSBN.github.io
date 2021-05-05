@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="BokkeNasu" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="[object Object]">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: true,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: './public/search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="教材为什么要说一些令人困惑的发言，我看到了感到很害怕，希望不要再发了，感觉很伤心。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性代数翻书">
+<meta property="og:url" content="http:&#x2F;&#x2F;sugarsbn.github.io&#x2F;2021&#x2F;05&#x2F;04&#x2F;%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0&#x2F;index.html">
+<meta property="og:site_name" content="BokkeNasu">
+<meta property="og:description" content="教材为什么要说一些令人困惑的发言，我看到了感到很害怕，希望不要再发了，感觉很伤心。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2021-05-04T08:37:44.894Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://sugarsbn.github.io/2021/05/04/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>线性代数翻书 | BokkeNasu</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BokkeNasu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://sugarsbn.github.io/2021/05/04/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="SuBonan">
+      <meta itemprop="description" content="やがて、平凡な人になる">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BokkeNasu">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          线性代数翻书
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-05-04 09:31:07 / 修改时间：16:37:44" itemprop="dateCreated datePublished" datetime="2021-05-04T09:31:07+08:00">2021-05-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>教材为什么要说一些令人困惑的发言，我看到了感到很害怕，希望不要再发了，感觉很伤心。</p>
+<a id="more"></a>
+<h2 id="矩阵运算"><a href="#矩阵运算" class="headerlink" title="矩阵运算"></a>矩阵运算</h2><ul>
+<li>任何一个矩阵A都能表示成一个对称矩阵<script type="math/tex">\frac{1}{2}(A+A^T)</script>和一个反对称矩阵<script type="math/tex">\frac{1}{2}(A-A^T)</script>的和，且表示方法唯一。</li>
+<li><script type="math/tex; mode=display">(AB)^T=B^TA^T</script></li>
+<li><p>若AB=BA，则称A和B是<strong>可交换</strong>的。</p>
+</li>
+<li><p>若<script type="math/tex">A=kE</script>，则称A是<strong>纯量矩阵</strong>。</p>
+<ul>
+<li>A与任一n阶方阵可交换的充分必要条件是A是纯量矩阵。</li>
+</ul>
+</li>
+<li><p>数域K上全体以x为不定元的多项式的集合记为<script type="math/tex">K[x]</script>。</p>
+</li>
+<li>方阵主对角线上元素和称为方阵的<strong>迹</strong>，记为<script type="math/tex">tr(A)</script>。有<script type="math/tex">tr(AB)=tr(BA)</script>。<ul>
+<li>若<script type="math/tex">tr(AA^T)=O</script>,则<script type="math/tex">A=O</script></li>
+<li>若<script type="math/tex">A^2=AA^T</script>,则<script type="math/tex">A=A^T</script></li>
+</ul>
+</li>
+</ul>
+<h2 id="方阵的行列式"><a href="#方阵的行列式" class="headerlink" title="方阵的行列式"></a>方阵的行列式</h2><ul>
+<li><p>方阵A的行列式记作<script type="math/tex">|A|或 det(A)</script>。</p>
+</li>
+<li><script type="math/tex; mode=display">|A|=|A^T|</script></li>
+<li><script type="math/tex; mode=display">
+\left |\begin{array}{cccc}
+a_{11}&...&a_{1n}\\
+...&...&...\\
+a_{m1}&...&a_{m_n}
+\end{array}\right |+
+\left |\begin{array}{cccc}
+b_{11}&...&b_{1n}\\
+...&...&...\\
+a_{m1}&...&a_{m_n}
+\end{array}\right |=\left |\begin{array}{cccc}
+a_{11}+b_{11}&...&a_{1n}+b_{1n}\\
+...&...&...\\
+a_{m1}&...&a_{m_n}
+\end{array}\right |</script><p>只有某一行不同的两个行列式相加的值等于~</p>
+</li>
+<li><p>行列式中有两行值成比例，则行列式值为0。</p>
+</li>
+<li>交换行列式任意两行，行列式取负号，但将行列式某一行乘一个倍数加到另一行，行列式值不变。</li>
+<li><em>Laplace定理</em>，|AB|=|A||B|</li>
+<li>行列式求解<ul>
+<li>三角化<script type="math/tex">\left |\begin{array}{cccc}
+1+a&1&1&1\\
+1&1-a&1&1\\
+1&1&1+b&1\\1&1&1&1-b\end{array}\right |</script></li>
+<li>爪型<script type="math/tex">\left |\begin{array}{cccc}
+a_1&a_2&a_3&...&a_n\\c_2&b_2\\c_3&&b_3\\...&&&...\\c_n&&&&b_n
+\end{array}\right |</script></li>
+<li>降阶递推法<script type="math/tex">\left |\begin{array}{cccc}
+1&1&...&1\\x_1&x_2&...&x_n\\...&...&...&...\\x_1^{n-1}&x_2^{n-1}&...&x_n^{n-1}
+\end{array}\right |=\prod_{j>i}(x_j-x_i)</script>(范德蒙行列式)</li>
+<li>镶边法<script type="math/tex">\left |\begin{array}{cccc}1&1&...&1\\x_1&x_2&...&x_n\\...&...&...&...\\x_1^{n-2}&x_2^{n-2}&...&x_n^{n-2}\\x_1^n&x_2^n&...&x_n^n
+\end{array}\right |=\left |\begin{array}{cccc}1&1&...&1&1\\x_1&x_2&...&x_n&x\\...&...&...&...&...\\x_1^{n-2}&x_2^{n-2}&...&x_n^{n-2}&x^{n-2}\\x_1^{n-1}&x_2^{n-1}&...&x_n^{n-1}&x^{n-1}\\x_1^n&x_2^n&...&x_n^n&x^n
+\end{array}\right |</script>中<script type="math/tex">x^{n-1}</script>的系数*<script type="math/tex">(-1)^n</script></li>
+<li>三对角<script type="math/tex">\left |\begin{array}{cccc}
+a_1&b_1\\c_1&a_2&b_2\\&c_2&a_3&b_3\\&&c_3&a_4&b_4\\&&&c_4&a_5&...\\&&&&...&...\end{array}\right |</script>(递推)</li>
+<li>有时还会作<script type="math/tex">|A|=\sqrt{|A^2|}=\sqrt{|AA^T|}</script></li>
+</ul>
+</li>
+</ul>
+<h2 id="逆矩阵"><a href="#逆矩阵" class="headerlink" title="逆矩阵"></a>逆矩阵</h2><ul>
+<li><script type="math/tex; mode=display">AB=E\Leftrightarrow BA=E</script></li>
+<li><p>A可逆<script type="math/tex">\Leftrightarrow|A|\neq 0\Leftrightarrow</script>A是<strong>非奇异矩阵</strong></p>
+</li>
+<li><p><script type="math/tex">AA^*=A^*A=|A|E</script>，显然若A可逆，则<script type="math/tex">A^{-1},A^*</script>均可逆。</p>
+</li>
+<li><script type="math/tex; mode=display">(A^{-1})^T=(A^T)^{-1},(AB)^{-1}=B^{-1}A^{-1},|A^{-1}|=\frac{1}{|A|}</script></li>
+<li><p>若存在正整数m使方阵A满足<script type="math/tex">A^m=O</script>,则称A为<strong>幂零矩阵</strong></p>
+</li>
+<li><p><em>Cramer法则</em> ：若线性方程组的系数矩阵A的行列式不等于0，则方程组有唯一解。</p>
+<p>线性齐次方程组可能有非零解的前提是系数矩阵行列式等于0.</p>
+</li>
+</ul>
+<h2 id="相抵标准形"><a href="#相抵标准形" class="headerlink" title="相抵标准形"></a>相抵标准形</h2><ul>
+<li><p>行阶梯形矩阵A若满足（1）每个主元都是1（2）每个主元所在列其他元素都是0，则称其为<strong>简化行阶梯形矩阵</strong>。</p>
+<p>任意一个矩阵都可以仅由行初等变换化为简化行阶梯形矩阵。</p>
+</li>
+<li><p>如果A可以由一系列行或列初等变换化为B，则B也可以通过初等变换化为A，称A与B<strong>相抵</strong>。</p>
+</li>
+<li><p>初等变换对应的<strong>初等矩阵</strong>。</p>
+<ul>
+<li><script type="math/tex; mode=display">E(i,j)=$$把E的第i行与第j行交换。$$|E(i,j)|=-1,E(i,j)^{-1}=E(i,j)</script></li>
+<li><script type="math/tex; mode=display">E(i(k))=$$把E的第i行乘个k。$$|E(i(k))|=k,E(i(k))^{-1}=E(i(\frac{1}{k}))</script></li>
+<li><script type="math/tex; mode=display">E(i,j(k))=$$把E的第j行乘个k加到第i行。$$|E(i,j(k)|=1,E(i,j(k))^{-1}=E(i,j(-k))</script></li>
+</ul>
+</li>
+<li><p>初等行变换结果即为矩阵左乘上初等矩阵，而初等列变换的结果即为矩阵右乘上初等矩阵。</p>
+<p>值得注意的是，由于<script type="math/tex">E(i,j)和E(i(k))</script>既可以解释为“交换第i行和第j行，把第i行乘个k”，也以为解释为“交换第i列和第j列，把第i列乘个k”（对称性），所以左乘，右乘时不需要注意。</p>
+<p>但是，<script type="math/tex">E(i,j(k))</script>比较特殊，它解释为“把第j行乘个k加到第i行上”，或“把第i列乘个k加到第j列上”，所以左乘<script type="math/tex">E(i,j(k))</script>是把矩阵第j行乘个k加到第i行，但右乘的话就是第i列乘个k加到第j列了。千万注意。</p>
+</li>
+<li><p>任意矩阵都和形如<script type="math/tex">\begin{pmatrix}E_r&O\\O&O\end{pmatrix}</script>的矩阵相抵，则称该矩阵为其<strong>相抵标准形</strong>。</p>
+</li>
+<li>若矩阵A中存在一个r阶子式不等于0，而A中所有大于r阶的子式都等于0，则记<script type="math/tex">r(A)=r</script>称为矩阵的<strong>秩</strong>。特别的，<script type="math/tex">r(O)=0</script><ul>
+<li><script type="math/tex; mode=display">r(A_{m\times n})\leq min(n,m)</script></li>
+<li><script type="math/tex; mode=display">r(A)=r(A^T)</script></li>
+<li>A是阶梯数为r的行阶梯形矩阵，则<script type="math/tex">r(A)=r</script></li>
+<li>若A，B都是n阶方阵，则<script type="math/tex">r(A)+r(B)\leq n-r(AB)</script></li>
+<li><script type="math/tex; mode=display">r(A)+r(B)\geq r(A:B)\geq r(A+B)</script></li>
+</ul>
+</li>
+<li><script type="math/tex; mode=display">r(AB)\leq min\{r(A),r(B)\}</script></li>
+<li><p>若<script type="math/tex">r(A_{m\times n})=m</script>则称其为行满秩矩阵，同理有列满秩矩阵。行满秩的方阵称为满秩矩阵。</p>
+<ul>
+<li>任意矩阵左乘行满秩矩阵，右乘列满秩矩阵，秩不变。</li>
+<li>满秩矩阵可以表示为若干初等矩阵的乘积。</li>
+</ul>
+</li>
+<li><p>A与B相抵<script type="math/tex">\Leftrightarrow r(A)=r(B)\Leftrightarrow 存在可逆方阵P,Q使得PAQ=B</script></p>
+</li>
+<li><p><script type="math/tex">\left |\begin{array}{cccc}
+A&B\\C&D\end{array}\right |=|A-BD^{-1}C||D|</script>想法是利用左乘“初等分块矩阵”把分块矩阵化为三角分块矩阵从而得出结果。</p>
+</li>
+</ul>
+<h2 id="线性方程"><a href="#线性方程" class="headerlink" title="线性方程"></a>线性方程</h2><ul>
+<li><script type="math/tex">AX=\beta</script>则称A为系数矩阵，<script type="math/tex">\widetilde{A}=(A:\beta)</script>为增广矩阵。</li>
+<li>解集非空的方程组称为<strong>相容的</strong>线性方程组。</li>
+<li><p>将<script type="math/tex">\widetilde{A}</script>化为行阶梯形矩阵，且每个主元都是1后</p>
+<ul>
+<li>主元所在项的未知量叫做<strong>主未知量（真未知量）</strong>，其余未知量称为自由未知量</li>
+</ul>
+</li>
+<li><script type="math/tex; mode=display">Ax=\beta,\beta\neq0$$有解$$\Leftrightarrow r(A)=r(\widetilde{A})$$，其中有唯一解$$\Leftrightarrow r(A)=r(\widetilde{A})=n$$,有无穷多解$$\Leftrightarrow r(A)=r(\widetilde{A})<n$$。
+
+$$Ax=0$$只有零解$$\Leftrightarrow r(A)=n$$,$$Ax=0$$有无穷多组解（有非零解）$$\Leftrightarrow r(A)<n</script></li>
+</ul>
+<h2 id="向量空间"><a href="#向量空间" class="headerlink" title="向量空间"></a>向量空间</h2><ul>
+<li><p>一个数域K（数域要求对加法和纯量乘法封闭）中元素组成的n元有序组称为K上的一个n元向量。数域K上的向量<script type="math/tex">K^n</script>已经加法和纯量乘法组成的代数系统称为K上的n维向量空间。</p>
+<p>若<script type="math/tex">W\subseteq K^n</script>且W中向量对加法和纯量乘法封闭，则称W是一个线性子空间。其中{<strong>0</strong>}称作平凡子空间。</p>
+</li>
+<li><p>由一个向量组<script type="math/tex">\{\alpha_1,\alpha_2,...,\alpha_n\}</script>中向量线性组合可以产生一个向量空间，记作<script type="math/tex">L\{\alpha_1,\alpha_2,...,\alpha_n\}</script>,其中，<script type="math/tex">\{\alpha_1,\alpha_2,...,\alpha_n\}</script>称为该空间的一个生成组。其实一般只考虑R上的向量组。</p>
+</li>
+<li><p>线性方程组有解的充要条件是<script type="math/tex">\beta</script>可以由系数矩阵A的列向量组线性表示。</p>
+</li>
+<li><p>若向量组<script type="math/tex">\Sigma_1和\Sigma_2中的向量都都能由另一个向量组线性表示</script>，则称<script type="math/tex">\Sigma_1\sim\Sigma_2</script>，向量组等价。</p>
+<p>向量组等价<script type="math/tex">\Leftrightarrow L\{\alpha_1,\alpha_2,..,\alpha_n\}=L\{\beta_1,\beta_2,...,\beta_m\}</script></p>
+</li>
+<li><p>若存在不全为0的数<script type="math/tex">k_1,...,k_n</script>使得对向量组<script type="math/tex">\Sigma</script>中所有向量满足<script type="math/tex">k_1\alpha_1+k_2\alpha_2+...+k_n\alpha_n=0</script>（这是一个线性齐次方程组），则称向量组<script type="math/tex">\Sigma</script>线性相关。反之，若不存在则称其线性无关。线性相关其实就是向量组中有个向量可以表示为向量组内其他向量的线性表示。</p>
+</li>
+<li><p>若<script type="math/tex">\Sigma_2可由\Sigma_1线性表示，且\Sigma_2线性无关</script>，则<script type="math/tex">|\Sigma_2|\leq|\Sigma_1|</script></p>
+<ul>
+<li>推论：<script type="math/tex">K^n</script>中任意多于n个向量的向量组线性相关。</li>
+<li>推论：若<script type="math/tex">\Sigma_1,\Sigma_2</script>均线性无关，且<script type="math/tex">\Sigma_1\sim\Sigma_2</script>则<script type="math/tex">|\Sigma_1|=|\Sigma_2|</script></li>
+</ul>
+</li>
+<li><p>一个向量组中，能取出最多的向量个数使得他们线性无关称为<strong>向量组的秩</strong>（r({0})=0）。而取出的向量组称为其一个<strong>极大线性无关组</strong>。</p>
+<p>向量组中的任一个向量都能由向量组的极大线性无关组线性表示。</p>
+</li>
+<li><p>若向量组<script type="math/tex">\Sigma</script>组成<script type="math/tex">K^n</script>的一个子空间，且<script type="math/tex">r(\Sigma)=r</script>，则称<script type="math/tex">\Sigma</script>为<script type="math/tex">K^n</script>的一个r维子空间。把<script type="math/tex">\Sigma</script>的一个极大线性无关组称为子空间<script type="math/tex">\Sigma</script>的一组<strong>基</strong>。</p>
+<ul>
+<li><em>注：其实我认为，向量组通常用<script type="math/tex">\Sigma</script>来表示，而由该向量组生成的向量空间应写成<script type="math/tex">L(\Sigma)</script>，或简写成L。</em></li>
+</ul>
+</li>
+<li><p>矩阵行向量组的秩=矩阵列向量组的秩=矩阵的秩</p>
+</li>
+</ul>
+<h2 id="线性方程组的解空间"><a href="#线性方程组的解空间" class="headerlink" title="线性方程组的解空间"></a>线性方程组的解空间</h2><ul>
+<li><p>解空间就是由解向量构成（注意不是生成）的向量空间。</p>
+</li>
+<li><p>齐次线性方程组解空间的一组基称为齐次线性方程组的一个<strong>基础解系</strong>。</p>
+<p>而其解空间的结构为：<script type="math/tex">W=L\{\eta_1,..,\eta_{n-r}\}</script>，其中r是系数矩阵A的秩。转化成语言：</p>
+<p><strong>存在n-r个线性无关的向量<script type="math/tex">\eta_1,...\eta_{n-r}</script>，使得齐次线性方程组<script type="math/tex">AX=0</script>的任意一个解向量都可以表示为<script type="math/tex">\Sigma=\{\eta_1,..,\eta_{n-r}\}</script>的线性表示</strong></p>
+<p>而<script type="math/tex">X=k_1\eta_1+...+k_{n-r}\eta_{n-r}</script> 则为齐次线性方程组的通解形式。</p>
+</li>
+<li><p>非齐次线性方程组<script type="math/tex">AX=\beta</script>的通解形式则为其导出齐次线性方程组<script type="math/tex">AX=0</script>的通解形式加上一个特解。</p>
+<p>即<script type="math/tex">W=k_1\eta_1+...+k_{n-r}\eta_{n-r}+\xi</script>,其中<script type="math/tex">\eta_1,..,\eta_{n-r}</script>是<script type="math/tex">AX=0</script>的基础解系，而<script type="math/tex">\xi</script>是<script type="math/tex">AX=\beta</script>的一个特解。</p>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2021/04/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6-%E5%9B%BE%E8%AE%BA%E9%83%A8%E5%88%86/" rel="next" title="离散数学-图论部分">
+                  <i class="fa fa-chevron-left"></i> 离散数学-图论部分
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80Nzc2NC8yNDI2MQ=="></div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+		
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#矩阵运算"><span class="nav-number">1.</span> <span class="nav-text">矩阵运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方阵的行列式"><span class="nav-number">2.</span> <span class="nav-text">方阵的行列式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逆矩阵"><span class="nav-number">3.</span> <span class="nav-text">逆矩阵</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相抵标准形"><span class="nav-number">4.</span> <span class="nav-text">相抵标准形</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性方程"><span class="nav-number">5.</span> <span class="nav-text">线性方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向量空间"><span class="nav-number">6.</span> <span class="nav-text">向量空间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性方程组的解空间"><span class="nav-number">7.</span> <span class="nav-text">线性方程组的解空间</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=592364&auto=1&height=66"></iframe>  <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SuBonan"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">SuBonan</p>
+  <div class="site-description" itemprop="description">やがて、平凡な人になる</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">苏博南</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+
+  
+
+<script>
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/asuna_04.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script></body>
+</html>
